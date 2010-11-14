@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  planned_date: 2010-11-10 20:12:39
+  actual_date: 2010-11-10 20:12:39
+  deliverable_id: 1
+
+two:
+  planned_date: 2010-11-10 20:12:39
+  actual_date: 2010-11-10 20:12:39
+  deliverable_id: 1
