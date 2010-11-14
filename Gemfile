@@ -9,13 +9,12 @@ gem "haml", "3.0.23"
 gem "heroku", "1.12.2"
 gem "nifty-generators", "0.3.2"
 
-group :development do
-  gem "sqlite3-ruby", :require => "sqlite3"
-end
+gem "sqlite3-ruby", :group => :development # :require => "sqlite3"
 
-group :production do
-  gem "pg"
-end
+
+
+gem "pg", :group => :production
+
  
 group :test do
   gem "rspec", "2.1.0"
