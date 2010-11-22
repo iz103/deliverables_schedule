@@ -1,1 +1,36 @@
-# Logfile created on Sun Nov 21 21:40:47 +0000 2010
+# Logfile created on Sun Nov 21 21:40:47 +0000 2010  [4;36;1mDeliverable Create (0.7ms)[0m   [0;1mINSERT INTO "deliverables" ("number", "created_at", "title", "updated_at", "discipline") VALUES('123', '2010-11-22 20:05:11', NULL, '2010-11-22 20:05:11', NULL)[0m
+  [4;35;1mDeliverable Create (0.2ms)[0m   [0mINSERT INTO "deliverables" ("number", "created_at", "title", "updated_at", "discipline") VALUES('124', '2010-11-22 20:05:11', NULL, '2010-11-22 20:05:11', NULL)[0m
+  [4;36;1mDeliverable Create (0.7ms)[0m   [0;1mINSERT INTO "deliverables" ("number", "created_at", "title", "updated_at", "discipline") VALUES('123', '2010-11-22 20:13:53', NULL, '2010-11-22 20:13:53', NULL)[0m
+  [4;35;1mDeliverable Create (0.1ms)[0m   [0mINSERT INTO "deliverables" ("number", "created_at", "title", "updated_at", "discipline") VALUES('124', '2010-11-22 20:13:53', NULL, '2010-11-22 20:13:53', NULL)[0m
+  [4;36;1mDeliverable Create (0.8ms)[0m   [0;1mINSERT INTO "deliverables" ("number", "created_at", "title", "updated_at", "discipline") VALUES('123', '2010-11-22 20:15:14', NULL, '2010-11-22 20:15:14', NULL)[0m
+  [4;35;1mDeliverable Create (0.1ms)[0m   [0mINSERT INTO "deliverables" ("number", "created_at", "title", "updated_at", "discipline") VALUES('124', '2010-11-22 20:15:14', NULL, '2010-11-22 20:15:14', NULL)[0m
+REQUESTING PAGE: GET /deliverables with {} and HTTP headers {}
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2010-11-22 20:15:14) [GET]
+Redirected to http://www.example.com/
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 22ms (DB: 1) | 302 Found [http://www.example.com/deliverables]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/deliverables"}
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2010-11-22 20:15:14) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 42ms (View: 35, DB: 0) | 200 OK [http://www.example.com/]
+  [4;36;1mDeliverable Create (0.7ms)[0m   [0;1mINSERT INTO "deliverables" ("number", "created_at", "title", "updated_at", "discipline") VALUES('123', '2010-11-22 20:19:00', NULL, '2010-11-22 20:19:00', NULL)[0m
+  [4;35;1mDeliverable Create (0.1ms)[0m   [0mINSERT INTO "deliverables" ("number", "created_at", "title", "updated_at", "discipline") VALUES('124', '2010-11-22 20:19:00', NULL, '2010-11-22 20:19:00', NULL)[0m
+REQUESTING PAGE: GET /deliverables with {} and HTTP headers {}
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2010-11-22 20:19:00) [GET]
+Redirected to http://www.example.com/
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/deliverables]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/deliverables"}
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2010-11-22 20:19:00) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://www.example.com/]
