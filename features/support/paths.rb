@@ -10,16 +10,19 @@ module NavigationHelpers
 
     when /the home\s?page/
       '/'
+    when /the list of deliverables/
+      deliverables_path
 
+    when /the signup page/
+      new_user_path
+    when /the login page/
+      login_path
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
     #   when /^(.*)'s profile page$/i
     #     user_profile_path(User.find_by_login($1))
     
-   when /the list of deliverables/
-     deliverables_path 
-
     else
       begin
         page_name =~ /the (.*) page/

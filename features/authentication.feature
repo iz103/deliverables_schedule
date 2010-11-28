@@ -11,21 +11,25 @@ Feature: Manage deliverables schedule
 Scenario: Signup
   Given I go to the signup page
   When I fill in the following:
-    | Login | IzIz |
+
+    # | Username | Email | Password | Password confirmation |
+    #    | IzIz     | iziz@iziz.com | 123456 | 123456 |
+
+    | Username | IzIz |
     | Email | iziz@iziz.com |
     | Password | 123456 |
-    | Confirm Password | 123456 |
-  And I press "Sign up"
-  Then I should see "Thank you for signing up"
+    | Password confirmation | 123456 |
+  And I press "Create"
+  Then I should see "User was successfully created."
 
 
 
-Scenario: Log in
-  Given I am a valid user
-  When I go to the login page
-  And  I fill in the following:
-    | Login | iz |
-    | Password | 123456|
-  And I press login
-  Then I should see "Welcome Iz"
+# Scenario: Log in
+#   Given a valid user
+#   When I go to the login page
+#   And  I fill in the following:
+#     | Username | IzIz |
+#     | Password | 123456 |
+#   And I press "Log in"
+#   Then I should see "logged in"
   
