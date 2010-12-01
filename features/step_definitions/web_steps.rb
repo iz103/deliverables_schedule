@@ -140,6 +140,14 @@ When /^(?:|I )attach the file "([^"]*)" to "([^"]*)"$/ do |path, field|
   attach_file(field, path, type)
 end
 
+# Then /^(?:|I )should see "([^\"]*)"$/ do |text|
+#   if defined?(Spec::Rails::Matchers)
+#     response.should contain(text)
+#   else
+#     assert_contain text
+#   end
+# end
+
 Then /^(?:|I )should see "([^"]*)"$/ do |text|
   if response.respond_to? :should
     response.should contain(text)

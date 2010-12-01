@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# ./script/rstakeout "./script/cucumber $*" "app/**/*.rb" "features/**/*"
+# "config/*.rb"
+
+./script/rstakeout "./script/cucumber $*" "features/**/*.feature" "features/**/*.rb" "app/**/*.rb" "app/**/*.html.*"

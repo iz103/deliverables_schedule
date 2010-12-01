@@ -3,8 +3,8 @@ class DeliverablesController < ApplicationController
   # GET /deliverables
   # GET /deliverables.xml
   def index
+    # flash[:notice] = "logged in"  # TODO remove this after fixing cucumber 
     @deliverables = Deliverable.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @deliverables }

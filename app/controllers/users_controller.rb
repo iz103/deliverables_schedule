@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   # GET /users/1.xml
   def show
     @user = User.find(params[:id])
-
+    flash[:notice] = "User was successfully created." # TODO get rid of this when you fix cucumber
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @user }

@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Deliverables: index</title>
+  <link href="/stylesheets/scaffold.css?1287610302" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div id="header">
+	Hello
+	<div id="session-links">
+		  <a href="/users/current/edit">Edit Profile</a>
+		  <a href="/logout">Logout</a>
+	</div>
+  </div>
+  <div id="container">
+	  <div id="left-column">
+  	  <div id="left-menu">
+	      <div id="left-menu-header">
+	      </div>
+	      <div id="left-menu-list">
+		      <ul>
+		      	<li>Deliverables</li>
+		  			<li>Deliveries</li>
+		  			<li>Milestones</li>
+		      </ul>
+	      </div>
+  	  </div>
+    </div>
+    <div id="right-column">
+    	<h1>Listing deliverables</h1>
+
+<table>
+  <tr>
+    <th>Number</th>
+    <th>Title</th>
+    <th>Discipline</th>
+  </tr>
+
+
+  <tr>
+    <td>123</td>
+    <td></td>
+    <td></td>
+    <td><a href="/deliverables/1">Show</a></td>
+    <td><a href="/deliverables/1/edit">Edit</a></td>
+    <td><a href="/deliverables/1" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);f.submit(); };return false;">Destroy</a></td>
+  </tr>
+
+  <tr>
+    <td>124</td>
+    <td></td>
+    <td></td>
+    <td><a href="/deliverables/2">Show</a></td>
+    <td><a href="/deliverables/2/edit">Edit</a></td>
+    <td><a href="/deliverables/2" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);f.submit(); };return false;">Destroy</a></td>
+  </tr>
+
+</table>
+
+<br />
+
+<a href="/deliverables/new">New deliverable</a>
+    </div>
+  </div>
+
+<p style="color: green"></p>
+
+
+
+</body>
+</html>
