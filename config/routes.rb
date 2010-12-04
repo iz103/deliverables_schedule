@@ -2,6 +2,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
 
   map.resources :deliverables
+  map.resources :statuses
   
   
   map.login "login", :controller => "user_sessions", :action => "new"
