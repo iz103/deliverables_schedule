@@ -8,12 +8,20 @@ Feature: Manage Deliverables
 Background:
   Given a logged in user
 	
-	
+
 Scenario: Deliverables List
 	Given I have deliverables numbered 123, 124
 	When I go to the list of deliverables
 	Then I should see "123"
 	And I should see "124"
+	
+Scenario: Show Deliverable
+  Given a deliverable exists with number: "123", title: "drainage drawing", discipline: "Drainage"
+  When I go to the deliverable page
+  Then I should see "123"
+  When I go to the deliverable's deliveries page
+  # Then I should see "Deliveries"
+      
 	
 # Scenario: Deliverable show
 #   Given I have a deliverable numbered 123

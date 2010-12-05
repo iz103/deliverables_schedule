@@ -21,6 +21,12 @@ module NavigationHelpers
       
     when /the show page for (.+)/
       polymorphic_path(model($1))
+      
+    when /the list of statuses/
+      statuses_path
+      
+    when /new status page/
+      new_status_path
 
     # the following are examples using path_to_pickle
 

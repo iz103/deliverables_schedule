@@ -1,2 +1,9 @@
-<h1>Statuses#index</h1>
-<p>Find me in app/views/statuses/index.html.erb</p>
+<%= flash[:notice] %>
+<h1>Statuses</h1>
+<table border="0" cellspacing="5" cellpadding="5">
+	<% @statuses.each do |status|%>
+	<tr><td><%=status.position %></td></tr><tr><td><%= status.name %></td></tr>
+	<% end %>
+</table>
+
+

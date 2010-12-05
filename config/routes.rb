@@ -1,7 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :users
 
-  map.resources :deliverables
+  map.resources :deliverables do |deliverable|
+    deliverable.resources :deliveries
+  end
+  map.resources :deliveries
   map.resources :statuses
   
   

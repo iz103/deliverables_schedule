@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(:version => 20101203192127) do
     t.integer  "deliverable_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "type"
   end
 
   create_table "statuses", :force => true do |t|

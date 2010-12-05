@@ -1,20 +1,26 @@
-# @deliveries
-# 
-# Feature: Manage Deliveries
-# 	In order to make a deliverables schedule 
-# 	As a user
-# 	I want to create and manage deliveries
-# 
-# Background:
-#   Given a logged in user
+@deliveries
 
-# Scenario: List statuses
-# Given I have a status named P
-# And I have a status named A
-# And I have a status named C
-# When I go to the statuses page
-# Then I should see "P"
-# And I should see "A"
+Feature: Manage Deliveries
+	In order to make a deliverables schedule 
+	As a user
+	I want to create and manage deliveries
+
+Background:
+  Given a logged in user
+
+# Scenario: Create Delivery
+#   Given I go to new delivery page
+#   When I fill in the following:
+#     | Status | Preliminary |
+#     | Deliverable Number | 123 |
+#     | Planned Date | 01/01/2010 |
+#   And I press "Create"
+#   Then I should see "New Delivery Successfully Created"
+
+# Scenario: Show Delivery
+#   Given a delivery exists with Status: "preliminary", Deliverable Number: "123", Planned Date: "01/01/2011"
+#   When I go to the show page for that delivery
+#   Then I should see 
 
 
 
