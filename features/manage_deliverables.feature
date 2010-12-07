@@ -16,7 +16,9 @@ Scenario: Deliverables List
 	And I should see "124"
 	
 Scenario: Show Deliverable
-  Given a deliverable exists with number: "123", title: "drainage drawing", discipline: "Drainage"
+  Given a deliverable: "deliverable" exists with number: "123", title: "drainage drawing", discipline: "Drainage"
+  And a status: "status" exists with name: "A"
+  And a delivery exists with deliverable: deliverable, status: status
   When I go to the deliverable page
   Then I should see "123"
   When I go to the deliverable's deliveries page

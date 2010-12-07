@@ -1,6 +1,6 @@
 class Deliverable < ActiveRecord::Base
-  has_many :statuses
-  has_many :deliveries, :through => :statuses
+  has_many :statuses, :through => :deliveries
+  has_many :deliveries
   
   validates_presence_of :number, :message => "can't be blank"
 end
