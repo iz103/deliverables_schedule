@@ -3,11 +3,7 @@ class DeliveriesController < ApplicationController
   
   def index
     @deliverable = Deliverable.find(params[:deliverable_id])
-    @status = Status.find(params[:status_id])
     @deliverable_deliveries = @deliverable.deliveries
-    @status_deliveries = @status.deliveries
-    @delivery = Delivery.find(params[:id])
-    @delivery_status = @delivery.status
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @deliverables }

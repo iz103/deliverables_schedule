@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Deliverables: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'application' %>
+</head>
+<body>
+  <div id="header">
+	Hello
+	<div id="session-links">
+		  <%= link_to "Edit Profile", edit_user_path (:current)%>
+		  <%= link_to "Logout", logout_path %>
+	</div>
+  </div>
+  <div id="container">
+	  <div id="left-column">
+  	  <div id="left-menu">
+	      <div id="left-menu-header">
+	      </div>
+	      <div id="left-menu-list">
+		      <ul>
+		      	<li>Deliverables</li>
+		  			<li>Deliveries</li>
+		  			<li>Milestones</li>
+		      </ul>
+	      </div>
+  	  </div>
+    </div>
+    <div id="right-column">
+    	<%= yield %>
+    </div>
+  </div>
+
+<p style="color: green"><%= notice %></p>
+
+
+
+</body>
+</html>

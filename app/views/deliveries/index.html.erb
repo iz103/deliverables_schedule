@@ -1,4 +1,4 @@
-<h1>Deliveries for <%=@deliverable.name%></h1>
+<h1>Deliveries for <%#=@deliverable.name%></h1>
 
 <% if @deliverable_deliveries.empty?%>
   <p>There are no deliveries for this deliverable</p>
@@ -11,3 +11,4 @@
 
 
 <%= link_to 'back', deliverable_path(@deliverable) %>
+<%= link_to 'New delivery', new_deliverable_delivery_path %>
