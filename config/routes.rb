@@ -1,8 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
-   map.resources :deliveries, :only => [:index]
-  map.resources :deliverables, :shallow => true do |deliverable|
+  map.resources :deliveries, :only => [:index]
+  map.resources :deliverables do |deliverable|    # , :shallow => :true 
     deliverable.resources :deliveries
   end
+
   map.resources :statuses
   map.resources :users
   

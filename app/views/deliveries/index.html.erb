@@ -4,11 +4,11 @@
   <p>There are no deliveries for this deliverable</p>
 <% else %>
   <ul> <% @deliveries.each do |delivery|%>
-	<li><%=h delivery.status.name %><%= link_to "show", delivery_path%></li>
+	<li><%=h delivery.status.name %><%#= link_to "show", deliverable_delivery_path%></li>
 	<% end %>	
   </ul>
 <% end %>
 
 
 <%#= link_to 'back', deliverable_path(@deliverable) %>
-<%= link_to 'New delivery', new_deliverable_delivery_path(@deliverable) %>
+<%#= link_to 'New delivery', new_deliverable_delivery_path(:deliverable_id => @deliverable) %>

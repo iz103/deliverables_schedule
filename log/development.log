@@ -6882,3 +6882,1308 @@ ActionView::TemplateError (delivery_url failed to generate from {:action=>"show"
 Rendered rescues/_trace (115.1ms)
 Rendered rescues/_request_and_response (2.9ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2010-12-16 19:54:40) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 129ms (View: 121, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-16 19:54:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2010-12-16 19:54:45) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.6ms)[0m   [0;1mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 144ms (View: 66, DB: 1) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2010-12-16 19:54:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 89ms (View: 36, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 19:54:48) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mDelivery Load (0.4ms)[0m   [0;1mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+
+ActionView::TemplateError (delivery_url failed to generate from {:action=>"show", :controller=>"deliveries"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["deliveries", :id] - are they all satisfied?) on line #7 of app/views/deliveries/index.html.erb:
+4:   <p>There are no deliveries for this deliverable</p>
+5: <% else %>
+6:   <ul> <% @deliveries.each do |delivery|%>
+7: 	<li><%=h delivery.status.name %><%= link_to "show", delivery_path%></li>
+8: 	<% end %>	
+9:   </ul>
+10: <% end %>
+
+    (eval):17:in `delivery_path'
+    app/views/deliveries/index.html.erb:7
+    app/views/deliveries/index.html.erb:6
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (222.6ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 20:25:50) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.9ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.3ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+
+ActionView::TemplateError (delivery_url failed to generate from {:action=>"show", :controller=>"deliveries"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["deliveries", :id] - are they all satisfied?) on line #7 of app/views/deliveries/index.html.erb:
+4:   <p>There are no deliveries for this deliverable</p>
+5: <% else %>
+6:   <ul> <% @deliveries.each do |delivery|%>
+7: 	<li><%=h delivery.status.name %><%= link_to "show", delivery_path%></li>
+8: 	<% end %>	
+9:   </ul>
+10: <% end %>
+
+    (eval):17:in `delivery_path'
+    app/views/deliveries/index.html.erb:7
+    app/views/deliveries/index.html.erb:6
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (221.8ms)
+Rendered rescues/_request_and_response (2.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 20:27:23) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mDelivery Load (0.3ms)[0m   [0;1mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+
+ActionView::TemplateError (undefined local variable or method `deliverable_delivery_path' for #<ActionView::Base:0x103665f90>) on line #7 of app/views/deliveries/index.html.erb:
+4:   <p>There are no deliveries for this deliverable</p>
+5: <% else %>
+6:   <ul> <% @deliveries.each do |delivery|%>
+7: 	<li><%=h delivery.status.name %><%= link_to "show", deliverable_delivery_path%></li>
+8: 	<% end %>	
+9:   </ul>
+10: <% end %>
+
+    app/views/deliveries/index.html.erb:7
+    app/views/deliveries/index.html.erb:6
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (216.6ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 20:27:44) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.3ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.3ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `deliverable_delivery_path' for #<ActionView::Base:0x103699020>) on line #7 of app/views/deliveries/index.html.erb:
+4:   <p>There are no deliveries for this deliverable</p>
+5: <% else %>
+6:   <ul> <% @deliveries.each do |delivery|%>
+7: 	<li><%=h delivery.status.name %><%= link_to "show", deliverable_delivery_path(@deliverable)%></li>
+8: 	<% end %>	
+9:   </ul>
+10: <% end %>
+
+    app/views/deliveries/index.html.erb:7
+    app/views/deliveries/index.html.erb:6
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (209.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 20:28:56) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mDelivery Load (0.3ms)[0m   [0;1mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `deliverable_delivery_path' for #<ActionView::Base:0x1036bf018>) on line #7 of app/views/deliveries/index.html.erb:
+4:   <p>There are no deliveries for this deliverable</p>
+5: <% else %>
+6:   <ul> <% @deliveries.each do |delivery|%>
+7: 	<li><%=h delivery.status.name %><%= link_to "show", deliverable_delivery_path(@deliverable)%></li>
+8: 	<% end %>	
+9:   </ul>
+10: <% end %>
+
+    app/views/deliveries/index.html.erb:7
+    app/views/deliveries/index.html.erb:6
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (211.6ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 20:29:26) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.4ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.3ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 107ms (View: 46, DB: 2) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-16 20:29:40) [GET]
+
+ActionController::RoutingError (No route matches "/deliverables/1/deliveries/1" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-16 20:29:56) [GET]
+
+ActionController::RoutingError (No route matches "/deliverables/1/deliveries/nw" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DeliveriesController#new (for 127.0.0.1 at 2010-12-16 20:29:59) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+  [4;35;1mStatus Load (0.5ms)[0m   [0mSELECT * FROM "statuses" [0m
+Rendering template within layouts/application
+Rendering deliveries/new
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" [0m
+Completed in 222ms (View: 42, DB: 1) | 200 OK [http://localhost/deliverables/1/deliveries/new]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 20:30:06) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"O9X7m6WzYHkbnquIxPfPj1KdSHgUN3Ji7MhGdBwGxS8=", "delivery"=>{"planned_date"=>"01/11/2010", "status_id"=>"1"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+ActiveRecord::RecordNotFound (Couldn't find Deliverable without an ID):
+  app/controllers/deliveries_controller.rb:8:in `index'
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (73.0ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (not_found)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 20:32:08) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (18.6ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.3ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 107ms (View: 25, DB: 21) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 20:32:15) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mDelivery Load (0.3ms)[0m   [0;1mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+
+ActionView::TemplateError (deliverable_delivery_url failed to generate from {:deliverable_id=>#<Deliverable id: 1, number: "123", title: "deliverable1", discipline: "discipline 1", created_at: "2010-11-10 20:22:16", updated_at: "2010-11-10 20:22:16">, :action=>"show", :controller=>"deliveries"}, expected: {:action=>"show", :controller=>"deliveries"}, diff: {:deliverable_id=>#<Deliverable id: 1, number: "123", title: "deliverable1", discipline: "discipline 1", created_at: "2010-11-10 20:22:16", updated_at: "2010-11-10 20:22:16">}) on line #7 of app/views/deliveries/index.html.erb:
+4:   <p>There are no deliveries for this deliverable</p>
+5: <% else %>
+6:   <ul> <% @deliveries.each do |delivery|%>
+7: 	<li><%=h delivery.status.name %><%= link_to "show", deliverable_delivery_path(@deliverable)%></li>
+8: 	<% end %>	
+9:   </ul>
+10: <% end %>
+
+    (eval):17:in `deliverable_delivery_path'
+    app/views/deliveries/index.html.erb:7
+    app/views/deliveries/index.html.erb:6
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 20:32:53) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.3ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.4ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+
+ActionView::TemplateError (deliverable_delivery_url failed to generate from {:action=>"show", :controller=>"deliveries"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["deliverables", :deliverable_id, "deliveries", :id] - are they all satisfied?) on line #7 of app/views/deliveries/index.html.erb:
+4:   <p>There are no deliveries for this deliverable</p>
+5: <% else %>
+6:   <ul> <% @deliveries.each do |delivery|%>
+7: 	<li><%=h delivery.status.name %><%= link_to "show", deliverable_delivery_path%></li>
+8: 	<% end %>	
+9:   </ul>
+10: <% end %>
+
+    (eval):17:in `deliverable_delivery_path'
+    app/views/deliveries/index.html.erb:7
+    app/views/deliveries/index.html.erb:6
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.5ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 20:34:23) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mDelivery Load (0.3ms)[0m   [0;1mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+
+ActionView::TemplateError (deliverable_delivery_url failed to generate from {:action=>"show", :controller=>"deliveries"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["deliverables", :deliverable_id, "deliveries", :id] - are they all satisfied?) on line #7 of app/views/deliveries/index.html.erb:
+4:   <p>There are no deliveries for this deliverable</p>
+5: <% else %>
+6:   <ul> <% @deliveries.each do |delivery|%>
+7: 	<li><%=h delivery.status.name %><%= link_to "show", deliverable_delivery_path%></li>
+8: 	<% end %>	
+9:   </ul>
+10: <% end %>
+
+    (eval):17:in `deliverable_delivery_path'
+    app/views/deliveries/index.html.erb:7
+    app/views/deliveries/index.html.erb:6
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.2ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2010-12-16 20:34:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.4ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 107ms (View: 35, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 20:34:30) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.4ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.3ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+
+ActionView::TemplateError (deliverable_delivery_url failed to generate from {:action=>"show", :controller=>"deliveries"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["deliverables", :deliverable_id, "deliveries", :id] - are they all satisfied?) on line #7 of app/views/deliveries/index.html.erb:
+4:   <p>There are no deliveries for this deliverable</p>
+5: <% else %>
+6:   <ul> <% @deliveries.each do |delivery|%>
+7: 	<li><%=h delivery.status.name %><%= link_to "show", deliverable_delivery_path%></li>
+8: 	<% end %>	
+9:   </ul>
+10: <% end %>
+
+    (eval):17:in `deliverable_delivery_path'
+    app/views/deliveries/index.html.erb:7
+    app/views/deliveries/index.html.erb:6
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (110.1ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 20:35:02) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+
+NoMethodError (undefined method `delivery' for #<Deliverable:0x1030adcd8>):
+  app/controllers/deliveries_controller.rb:10:in `index'
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (71.8ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 21:12:21) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+
+NoMethodError (undefined method `delivery' for #<Deliverable:0x1033b1038>):
+  app/controllers/deliveries_controller.rb:10:in `index'
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (72.9ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 21:12:46) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mDelivery Load (0.3ms)[0m   [0;1mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+
+ActionView::TemplateError (deliverable_delivery_url failed to generate from {:action=>"show", :controller=>"deliveries"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["deliverables", :deliverable_id, "deliveries", :id] - are they all satisfied?) on line #7 of app/views/deliveries/index.html.erb:
+4:   <p>There are no deliveries for this deliverable</p>
+5: <% else %>
+6:   <ul> <% @deliveries.each do |delivery|%>
+7: 	<li><%=h delivery.status.name %><%= link_to "show", deliverable_delivery_path%></li>
+8: 	<% end %>	
+9:   </ul>
+10: <% end %>
+
+    (eval):17:in `deliverable_delivery_path'
+    app/views/deliveries/index.html.erb:7
+    app/views/deliveries/index.html.erb:6
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.5ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 21:13:28) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.3ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.3ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+
+ActionView::TemplateError (deliverable_delivery_url failed to generate from {:action=>"show", :controller=>"deliveries"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["deliverables", :deliverable_id, "deliveries", :id] - are they all satisfied?) on line #7 of app/views/deliveries/index.html.erb:
+4:   <p>There are no deliveries for this deliverable</p>
+5: <% else %>
+6:   <ul> <% @deliveries.each do |delivery|%>
+7: 	<li><%=h delivery.status.name %><%= link_to "show", deliverable_delivery_path%></li>
+8: 	<% end %>	
+9:   </ul>
+10: <% end %>
+
+    (eval):17:in `deliverable_delivery_path'
+    app/views/deliveries/index.html.erb:7
+    app/views/deliveries/index.html.erb:6
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (108.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#new (for 127.0.0.1 at 2010-12-16 21:45:37) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (17.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.8ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+  [4;35;1mStatus Load (0.5ms)[0m   [0mSELECT * FROM "statuses" [0m
+Rendering template within layouts/application
+Rendering deliveries/new
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" [0m
+Completed in 731ms (View: 14, DB: 19) | 200 OK [http://localhost/deliverables/1/deliveries/new]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 21:45:46) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"O9X7m6WzYHkbnquIxPfPj1KdSHgUN3Ji7MhGdBwGxS8=", "delivery"=>{"planned_date"=>"01/11/2010", "status_id"=>"1"}}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+ActiveRecord::RecordNotFound (Couldn't find Deliverable without an ID):
+  app/controllers/deliveries_controller.rb:8:in `index'
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (80.3ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (not_found)
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2010-12-16 21:55:09) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.5ms)[0m   [0mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 215ms (View: 54, DB: 1) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#new (for 127.0.0.1 at 2010-12-16 21:55:10) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering deliverables/new
+Completed in 75ms (View: 25, DB: 0) | 200 OK [http://localhost/deliverables/new]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2010-12-16 21:55:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 59ms (View: 7, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 21:55:17) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mSQL (23.1ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mDelivery Load (0.5ms)[0m   [0;1mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+
+ActionView::TemplateError (deliverable_delivery_url failed to generate from {:action=>"show", :controller=>"deliveries"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["deliverables", :deliverable_id, "deliveries", :id] - are they all satisfied?) on line #7 of app/views/deliveries/index.html.erb:
+4:   <p>There are no deliveries for this deliverable</p>
+5: <% else %>
+6:   <ul> <% @deliveries.each do |delivery|%>
+7: 	<li><%=h delivery.status.name %><%= link_to "show", deliverable_delivery_path%></li>
+8: 	<% end %>	
+9:   </ul>
+10: <% end %>
+
+    (eval):17:in `deliverable_delivery_path'
+    app/views/deliveries/index.html.erb:7
+    app/views/deliveries/index.html.erb:6
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (111.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 21:56:49) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.3ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.3ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+
+ActionView::TemplateError (deliverable_delivery_url failed to generate from {:action=>"show", :controller=>"deliveries"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["deliverables", :deliverable_id, "deliveries", :id] - are they all satisfied?) on line #7 of app/views/deliveries/index.html.erb:
+4:   <p>There are no deliveries for this deliverable</p>
+5: <% else %>
+6:   <ul> <% @deliveries.each do |delivery|%>
+7: 	<li><%=h delivery.status.name %><%= link_to "show", deliverable_delivery_path%></li>
+8: 	<% end %>	
+9:   </ul>
+10: <% end %>
+
+    (eval):17:in `deliverable_delivery_path'
+    app/views/deliveries/index.html.erb:7
+    app/views/deliveries/index.html.erb:6
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (108.5ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 21:57:21) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mDelivery Load (0.5ms)[0m   [0;1mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 203ms (View: 143, DB: 2) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#new (for 127.0.0.1 at 2010-12-16 21:57:24) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.3ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" [0m
+Rendering template within layouts/application
+Rendering deliveries/new
+
+ActionView::TemplateError (undefined method `planned_date' for #<Deliverable:0x10351f488>) on line #8 of app/views/deliveries/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :planned_date %><br />
+8:     <%= f.text_field :planned_date %>
+9:   </p>
+10:   <p>
+11:     <%= collection_select(:delivery, :status_id, Status.all, :id, :name) %>
+
+    app/views/deliveries/new.html.erb:8
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/deliveries/new.html.erb:3
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (217.8ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#new (for 127.0.0.1 at 2010-12-16 22:02:15) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" [0m
+Rendering template within layouts/application
+Rendering deliveries/new
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" [0m
+Completed in 115ms (View: 26, DB: 1) | 200 OK [http://localhost/deliverables/1/deliveries/new]
+
+
+Processing DeliveriesController#new (for 127.0.0.1 at 2010-12-16 22:07:27) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (23.8ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+  [4;35;1mStatus Load (0.5ms)[0m   [0mSELECT * FROM "statuses" [0m
+Rendering template within layouts/application
+Rendering deliveries/new
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" [0m
+Completed in 206ms (View: 17, DB: 25) | 200 OK [http://localhost/deliverables/1/deliveries/new]
+
+
+Processing DeliveriesController#create (for 127.0.0.1 at 2010-12-16 22:07:35) [POST]
+  Parameters: {"deliverable_id"=>"1", "commit"=>"Create", "authenticity_token"=>"O9X7m6WzYHkbnquIxPfPj1KdSHgUN3Ji7MhGdBwGxS8=", "delivery"=>{"planned_date"=>"01/11/2010", "status_id"=>"1"}}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+NoMethodError (undefined method `statuses' for #<Delivery:0x10373a088>):
+  app/controllers/deliveries_controller.rb:56:in `create'
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (72.3ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#create (for 127.0.0.1 at 2010-12-16 22:09:29) [POST]
+  Parameters: {"deliverable_id"=>"1", "commit"=>"Create", "authenticity_token"=>"O9X7m6WzYHkbnquIxPfPj1KdSHgUN3Ji7MhGdBwGxS8=", "delivery"=>{"planned_date"=>"01/11/2010", "status_id"=>"1"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+
+ActiveRecord::UnknownAttributeError (unknown attribute: deliverable_id):
+  app/controllers/deliveries_controller.rb:56:in `create'
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (191.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#create (for 127.0.0.1 at 2010-12-16 22:13:03) [POST]
+  Parameters: {"deliverable_id"=>"1", "commit"=>"Create", "authenticity_token"=>"O9X7m6WzYHkbnquIxPfPj1KdSHgUN3Ji7MhGdBwGxS8=", "delivery"=>{"planned_date"=>"01/11/2010", "status_id"=>"1"}}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.4ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+
+NoMethodError (undefined method `status' for #<Deliverable:0x1034f7910>):
+  app/controllers/deliveries_controller.rb:57:in `create'
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (71.9ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#create (for 127.0.0.1 at 2010-12-16 22:14:00) [POST]
+  Parameters: {"deliverable_id"=>"1", "commit"=>"Create", "authenticity_token"=>"O9X7m6WzYHkbnquIxPfPj1KdSHgUN3Ji7MhGdBwGxS8=", "delivery"=>{"planned_date"=>"01/11/2010", "status_id"=>"1"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.3ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+
+NoMethodError (undefined method `status' for #<Deliverable:0x103110950>):
+  app/controllers/deliveries_controller.rb:57:in `create'
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (183.9ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#create (for 127.0.0.1 at 2010-12-16 22:18:54) [POST]
+  Parameters: {"deliverable_id"=>"1", "commit"=>"Create", "authenticity_token"=>"O9X7m6WzYHkbnquIxPfPj1KdSHgUN3Ji7MhGdBwGxS8=", "delivery"=>{"planned_date"=>"01/11/2010", "status_id"=>"1"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.4ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+  [4;36;1mDelivery Create (61.2ms)[0m   [0;1mINSERT INTO "deliveries" ("planned_date", "actual_date", "deliverable_id", "created_at", "updated_at", "status_id") VALUES('2010-01-11 00:00:00', NULL, 1, '2010-12-16 22:18:54', '2010-12-16 22:18:54', 1)[0m
+
+NoMethodError (undefined method `deliverables_deliveries_path' for #<DeliveriesController:0x1034a0098>):
+  app/controllers/deliveries_controller.rb:64:in `create'
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (70.1ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 22:20:21) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mDelivery Load (0.4ms)[0m   [0;1mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 86ms (View: 26, DB: 2) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#new (for 127.0.0.1 at 2010-12-16 22:24:44) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+  [4;35;1mStatus Load (0.5ms)[0m   [0mSELECT * FROM "statuses" [0m
+Rendering template within layouts/application
+Rendering deliveries/new
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" [0m
+Completed in 166ms (View: 17, DB: 1) | 200 OK [http://localhost/deliverables/1/deliveries/new]
+
+
+Processing DeliveriesController#create (for 127.0.0.1 at 2010-12-16 22:24:49) [POST]
+  Parameters: {"deliverable_id"=>"1", "commit"=>"Create", "authenticity_token"=>"O9X7m6WzYHkbnquIxPfPj1KdSHgUN3Ji7MhGdBwGxS8=", "delivery"=>{"planned_date"=>"01/11/2010", "status_id"=>"2"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+  [4;35;1mDelivery Create (34.7ms)[0m   [0mINSERT INTO "deliveries" ("planned_date", "actual_date", "deliverable_id", "created_at", "updated_at", "status_id") VALUES('2010-01-11 00:00:00', NULL, 1, '2010-12-16 22:24:49', '2010-12-16 22:24:49', 2)[0m
+
+NoMethodError (undefined method `deliverables_deliveries_path' for #<DeliveriesController:0x1033137e8>):
+  app/controllers/deliveries_controller.rb:64:in `create'
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (70.7ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#create (for 127.0.0.1 at 2010-12-16 22:25:37) [POST]
+  Parameters: {"deliverable_id"=>"1", "commit"=>"Create", "authenticity_token"=>"O9X7m6WzYHkbnquIxPfPj1KdSHgUN3Ji7MhGdBwGxS8=", "delivery"=>{"planned_date"=>"01/11/2010", "status_id"=>"2"}}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.4ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+  [4;36;1mDelivery Create (0.5ms)[0m   [0;1mINSERT INTO "deliveries" ("planned_date", "actual_date", "deliverable_id", "created_at", "updated_at", "status_id") VALUES('2010-01-11 00:00:00', NULL, 1, '2010-12-16 22:25:37', '2010-12-16 22:25:37', 2)[0m
+Redirected to http://localhost:3000/deliverables/1/deliveries
+Completed in 102ms (DB: 1) | 302 Found [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 22:25:37) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mDelivery Load (0.6ms)[0m   [0;1mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+Completed in 204ms (View: 28, DB: 2) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 22:26:42) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+ActiveRecord::RecordNotFound (Couldn't find Deliverable without an ID):
+  app/controllers/deliveries_controller.rb:8:in `index'
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (73.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (not_found)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 22:59:14) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (0.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+Completed in 134ms (View: 58, DB: 2) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 22:59:24) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (24.4ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.6ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+Completed in 118ms (View: 29, DB: 26) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 22:59:28) [GET]
+  Parameters: {"deliverable_id"=>"2"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.4ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 2) [0m
+Completed in 166ms (View: 6, DB: 1) | 200 OK [http://localhost/deliverables/2/deliveries]
+
+
+Processing DeliveriesController#new (for 127.0.0.1 at 2010-12-16 22:59:31) [GET]
+  Parameters: {"deliverable_id"=>"2"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 2) [0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" [0m
+Rendering template within layouts/application
+Rendering deliveries/new
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" [0m
+Completed in 95ms (View: 26, DB: 1) | 200 OK [http://localhost/deliverables/2/deliveries/new]
+
+
+Processing DeliveriesController#create (for 127.0.0.1 at 2010-12-16 22:59:37) [POST]
+  Parameters: {"deliverable_id"=>"2", "commit"=>"Create", "authenticity_token"=>"O9X7m6WzYHkbnquIxPfPj1KdSHgUN3Ji7MhGdBwGxS8=", "delivery"=>{"planned_date"=>"01/11/2010", "status_id"=>"1"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 2) [0m
+  [4;35;1mDelivery Create (0.6ms)[0m   [0mINSERT INTO "deliveries" ("planned_date", "actual_date", "deliverable_id", "created_at", "updated_at", "status_id") VALUES('2010-01-11 00:00:00', NULL, 2, '2010-12-16 22:59:37', '2010-12-16 22:59:37', 1)[0m
+Redirected to http://localhost:3000/deliverables/2/deliveries
+Completed in 105ms (DB: 1) | 302 Found [http://localhost/deliverables/2/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 22:59:37) [GET]
+  Parameters: {"deliverable_id"=>"2"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.4ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 2) [0m
+  [4;35;1mDelivery Load (0.3ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 2) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 83ms (View: 23, DB: 2) | 200 OK [http://localhost/deliverables/2/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 22:59:45) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDelivery Load (0.7ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 74ms (View: 24, DB: 2) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 23:00:20) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (0.8ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 72ms (View: 23, DB: 2) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 23:00:26) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mDelivery Load (0.6ms)[0m   [0;1mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+Completed in 87ms (View: 27, DB: 2) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#new (for 127.0.0.1 at 2010-12-16 23:00:29) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" [0m
+Rendering template within layouts/application
+Rendering deliveries/new
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" [0m
+Completed in 186ms (View: 17, DB: 1) | 200 OK [http://localhost/deliverables/1/deliveries/new]
+
+
+Processing DeliveriesController#create (for 127.0.0.1 at 2010-12-16 23:00:33) [POST]
+  Parameters: {"deliverable_id"=>"1", "commit"=>"Create", "authenticity_token"=>"O9X7m6WzYHkbnquIxPfPj1KdSHgUN3Ji7MhGdBwGxS8=", "delivery"=>{"planned_date"=>"01/11/2010", "status_id"=>"1"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+  [4;35;1mDelivery Create (0.5ms)[0m   [0mINSERT INTO "deliveries" ("planned_date", "actual_date", "deliverable_id", "created_at", "updated_at", "status_id") VALUES('2010-01-11 00:00:00', NULL, 1, '2010-12-16 23:00:33', '2010-12-16 23:00:33', 1)[0m
+Redirected to http://localhost:3000/deliverables/1/deliveries
+Completed in 73ms (DB: 1) | 302 Found [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 23:00:33) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.3ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.7ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 190ms (View: 130, DB: 2) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2010-12-16 23:00:39) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 153ms (View: 103, DB: 1) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2010-12-16 23:00:40) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 87ms (View: 36, DB: 1) | 200 OK [http://localhost/deliverables/2]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 23:00:42) [GET]
+  Parameters: {"deliverable_id"=>"2"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 2) [0m
+  [4;36;1mDelivery Load (0.3ms)[0m   [0;1mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 2) [0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 190ms (View: 24, DB: 2) | 200 OK [http://localhost/deliverables/2/deliveries]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2010-12-16 23:01:22) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.3ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 64ms (View: 7, DB: 1) | 200 OK [http://localhost/deliverables/2]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 23:01:25) [GET]
+  Parameters: {"deliverable_id"=>"2"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.4ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 2) [0m
+  [4;35;1mDelivery Load (0.3ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 2) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 187ms (View: 24, DB: 2) | 200 OK [http://localhost/deliverables/2/deliveries]
+
+
+Processing DeliveriesController#new (for 127.0.0.1 at 2010-12-16 23:01:29) [GET]
+  Parameters: {"deliverable_id"=>"2"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 2) [0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" [0m
+Rendering template within layouts/application
+Rendering deliveries/new
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" [0m
+Completed in 86ms (View: 17, DB: 1) | 200 OK [http://localhost/deliverables/2/deliveries/new]
+
+
+Processing DeliveriesController#create (for 127.0.0.1 at 2010-12-16 23:01:32) [POST]
+  Parameters: {"deliverable_id"=>"2", "commit"=>"Create", "authenticity_token"=>"O9X7m6WzYHkbnquIxPfPj1KdSHgUN3Ji7MhGdBwGxS8=", "delivery"=>{"planned_date"=>"01/11/2010", "status_id"=>"1"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 2) [0m
+  [4;35;1mDelivery Create (0.5ms)[0m   [0mINSERT INTO "deliveries" ("planned_date", "actual_date", "deliverable_id", "created_at", "updated_at", "status_id") VALUES('2010-01-11 00:00:00', NULL, 2, '2010-12-16 23:01:32', '2010-12-16 23:01:32', 1)[0m
+Redirected to http://localhost:3000/deliverables/2/deliveries
+Completed in 75ms (DB: 1) | 302 Found [http://localhost/deliverables/2/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2010-12-16 23:01:32) [GET]
+  Parameters: {"deliverable_id"=>"2"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.3ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 2) [0m
+  [4;35;1mDelivery Load (0.4ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 2) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 86ms (View: 25, DB: 2) | 200 OK [http://localhost/deliverables/2/deliveries]
+
+
+Processing StatusesController#index (for 127.0.0.1 at 2010-12-16 23:01:42) [GET]
+  [4;36;1mStatus Load (0.7ms)[0m   [0;1mSELECT * FROM "statuses" [0m
+Rendering template within layouts/application
+Rendering statuses/index
+Completed in 84ms (View: 66, DB: 1) | 200 OK [http://localhost/statuses]
