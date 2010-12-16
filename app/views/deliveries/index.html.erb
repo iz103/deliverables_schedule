@@ -1,14 +1,14 @@
 <h1>Deliveries for <%#=@deliverable.name%></h1>
 
-<% if @deliverable_deliveries.empty?%>
+<% if @deliveries.empty?%>
   <p>There are no deliveries for this deliverable</p>
 <% else %>
-  <ul> <% @deliverable_deliveries.each do |delivery|%>
-	<li><%=h delivery.status.name %><%= link_to "show"%></li>
+  <ul> <% @deliveries.each do |delivery|%>
+	<li><%=h delivery.status.name %><%= link_to "show", delivery_path%></li>
 	<% end %>	
   </ul>
 <% end %>
 
 
-<%= link_to 'back', deliverable_path(@deliverable) %>
-<%= link_to 'New delivery', new_deliverable_delivery_path %>
+<%#= link_to 'back', deliverable_path(@deliverable) %>
+<%= link_to 'New delivery', new_deliverable_delivery_path(@deliverable) %>

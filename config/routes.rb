@@ -1,11 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :users
-
+   map.resources :deliveries, :only => [:index]
   map.resources :deliverables, :shallow => true do |deliverable|
     deliverable.resources :deliveries
   end
-  map.resources :deliveries, :only => [:index]
   map.resources :statuses
+  map.resources :users
   
   
   map.login "login", :controller => "user_sessions", :action => "new"

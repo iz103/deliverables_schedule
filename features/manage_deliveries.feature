@@ -7,6 +7,12 @@ Feature: Manage Deliveries
 
 Background:
   Given a logged in user
+# 
+# Feature: List deliveries
+# 
+# Feature: Graph of cumulative deliveries and dates
+
+
 
 # Scenario: Create Delivery
 #   Given I go to new delivery page

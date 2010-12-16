@@ -32,6 +32,5 @@ Scenario: Create deliverable delivery
   # Then I should see
 
 
-
 # Then show me the page
 

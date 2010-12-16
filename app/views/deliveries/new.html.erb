@@ -1,0 +1,21 @@
+<h1>New delivery</h1>
+
+<% form_for(@delivery) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :planned_date %><br />
+    <%= f.text_field :planned_date %>
+  </p>
+  <p>
+   <%= collection_select(:delivery, :status_id, Status.all, :id, :name) %>
+  </p>
+  <p>
+   <%= collection_select(:delivery, :deliverable_id, Deliverable.all, :id, :number) %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%#= link_to 'Back', deliverable_deliverablies_path %>

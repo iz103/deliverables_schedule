@@ -27,6 +27,9 @@ module NavigationHelpers
       
     when /new status page/
       new_status_path
+      
+    when /new deliverable's delivery page/
+      new_deliverable_delivery_path
 
     # the following are examples using path_to_pickle
 
@@ -35,6 +38,9 @@ module NavigationHelpers
 
     when /^#{capture_model}(?:'s)? #{capture_model}(?:'s)? page$/   # eg. the forum's post's page
       path_to_pickle $1, $2
+      
+    # when /^new #{capture_model}(?:'s)? #{capture_model}(?:'s)? page$/   # eg. the forum's post's page
+    #   path_to_pickle $1, $2
 
     when /^#{capture_model}(?:'s)? #{capture_model}'s (.+?) page$/  # eg. the forum's post's comments page
       path_to_pickle $1, $2, :extra => $3                           #  or the forum's post's edit page
