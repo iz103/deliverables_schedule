@@ -28,7 +28,7 @@ Scenario: Show Deliverable and deliverable deliveries
 Scenario: Create deliverable delivery
   Given a deliverable: "001" exists with number: "123", title: "drainage drawing", discipline: "Drainage"
   And a status: "002" exists with name: "C"
-  When I go to the new deliverable's delivery page
+  # When I go to the new deliverable's delivery page
   # Then I should see
 
 

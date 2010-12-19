@@ -6,10 +6,14 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Deliverables: <%= controller.action_name %></title>
   <%= stylesheet_link_tag 'application' %>
+  <%=javascript_include_tag :defaults%>
 </head>
 <body>
   <div id="header">
 	Hello
+	<div id="tab-links">
+	  
+	</div>
 	<div id="session-links">
 		  <%= link_to "Edit Profile", edit_user_path (:current)%>
 		  <%= link_to "Logout", logout_path %>
@@ -22,9 +26,9 @@
 	      </div>
 	      <div id="left-menu-list">
 		      <ul>
-		      	<li>Deliverables</li>
-		  			<li>Deliveries</li>
-		  			<li>Milestones</li>
+		      	<li>Tags</li>
+		  			<li>Tag 1</li>
+		  			<li>Tag 2</li>
 		      </ul>
 	      </div>
   	  </div>

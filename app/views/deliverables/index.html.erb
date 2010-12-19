@@ -1,24 +1,40 @@
-<h1>Listing deliverables</h1>
+<div id="right-column-1">
+	
+  <div id="rc1h">
+    <h1>Listing deliverables</h1>
+    <div id="rc1l">
+      <%= link_to 'New deliverable', new_deliverable_path %>
+      <!-- <%#= link_to_remote "New Deliverable", 
+               :url => { :action => "show", :id => Deliverable.id },
+               :update => "right-column-2"%> -->
+    </div>
+  </div>
+	
+  <div id="rc1c">
+	<table>
+	  <tr>
+	    <th>Number</th>
+	    <th>Title</th>
+	  </tr>
+	  <% @deliverables.each do |deliverable| %>
+	  <tr>
+	    <td><%=h deliverable.number %></td>
+	    <td><%=h deliverable.title %></td>
+	    <td><%= link_to 'Show', deliverable %></td>
+	    <td><%= link_to 'Edit', edit_deliverable_path(deliverable) %></td>
+	    <td><%= link_to 'Destroy', deliverable, :confirm => 'Are you sure?', :method => :delete %></td>
+	  </tr>
+	  <% end %>
+	</table>
+  </div>
 
-<table>
-  <tr>
-    <th>Number</th>
-    <th>Title</th>
-    <th>Discipline</th>
-  </tr>
+  </div>
 
-<% @deliverables.each do |deliverable| %>
-  <tr>
-    <td><%=h deliverable.number %></td>
-    <td><%=h deliverable.title %></td>
-    <td><%=h deliverable.discipline %></td>
-    <td><%= link_to 'Show', deliverable %></td>
-    <td><%= link_to 'Edit', edit_deliverable_path(deliverable) %></td>
-    <td><%= link_to 'Destroy', deliverable, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+  <div id="right-column-2">
+		<div id="rc2h">	
+        </div>
+  		<div id="rc2c">
+  			
+  		</div>
+</div>
 
-<br />
-
-<%= link_to 'New deliverable', new_deliverable_path %>

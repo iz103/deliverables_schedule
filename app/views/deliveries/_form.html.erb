@@ -10,12 +10,9 @@
   <p>
     <%= collection_select(:delivery, :status_id, Status.all, :id, :name) %>
    </p>
-   <!-- <p>
-    <%#= collection_select(:delivery, :deliverable_id, Deliverable.all, :id, :number) %>
-   </p> -->
   <p>
     <%= f.submit 'Create' %>
   </p>
 <% end %>
 
-<%= link_to 'Back', deliverable_deliveries_path(@deliverable) %>
+<%#= link_to 'Back', deliverable_deliveries_path(@deliverable) %>

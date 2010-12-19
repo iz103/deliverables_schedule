@@ -4,9 +4,11 @@ class DeliveriesController < ApplicationController
   def index
     unless params[:deliverable_id]
       @deliveries = Delivery.all
+      @text = "All deliverables"
     else
     @deliverable = Deliverable.find(params[:deliverable_id])
     @deliveries = @deliverable.deliveries
+    @text = @deliverable.number
     # @delivery = @deliverable.delivery
     end
     # respond_to do |format|
