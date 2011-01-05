@@ -9,19 +9,25 @@ class Delivery < ActiveRecord::Base
     deliveries = Delivery.all(:order => "planned_date")
     dates = []
     counts = Hash.new(0)
-    cumulative = []
+    cumulative = Hash.new(0)
     deliveries.each do |delivery|
       counts[delivery.planned_date] += 1
     end
     # planned_dates_array = counts.keys
     # counts_array = counts.values
     sum = 0
-    counts.values.each do |count|
+    counts.each do |date, count|
       sum += count
-      cumulative << sum
+      cumulative[date] = sum
     end
-    counts.keys
-    cumulative
+    # cumulative
+    cumulative_array = []
+    cumulative.each do |key, value|
+      cumulative_pair = [key.to_date, value]
+      cumulative_array << cumulative_pair
+    end
+    cumulative_array
+                    
   end
       
       
