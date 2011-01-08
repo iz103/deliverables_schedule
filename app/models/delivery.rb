@@ -23,7 +23,7 @@ class Delivery < ActiveRecord::Base
     # cumulative
     cumulative_array = []
     cumulative.each do |key, value|
-      cumulative_pair = [key.to_date, value]
+      cumulative_pair = [key.to_time.to_i*1000, value]
       cumulative_array << cumulative_pair
     end
     cumulative_array

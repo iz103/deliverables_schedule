@@ -1,14 +1,17 @@
 <h1>Deliveries for <%= @text %></h1>
-
+<!-- <h2><%#= Delivery.planned_date_count %></h2> -->
+<!-- [[1288569600000, 2], [1265846400000, 3], [1263168000000, 11], [1268265600000, 12]] -->
 <script type="text/javascript" charset="utf-8">
 $(function (){
-  $.plot($("#placeholder"), [ [[1, 1], [2, 3]] ], { yaxis: { max: 10 } });	
+  $.plot($("#placeholder"), [ { label: "Planned Deliveries", data: <%=array_or_string_for_javascript(Delivery.planned_date_count) %>  } ],
+           { yaxis: { max: 20 }, xaxis: { mode: "time", timeformat: "%y/%m/%d", min:1262304000000,
+		  max:1293840000000} });	
 });
 	
 </script>
 
 	
-<div id="placeholder" style = "width:500px; height:250px"> </div>
+<div id="placeholder" style = "width:700px; height:300px"> </div>
 
 <% if @deliveries.empty?%>
   <p>There are no deliveries for this deliverable</p>
