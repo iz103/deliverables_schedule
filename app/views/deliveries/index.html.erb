@@ -1,5 +1,15 @@
 <h1>Deliveries for <%= @text %></h1>
 
+<script type="text/javascript" charset="utf-8">
+$(function (){
+  $.plot($("#placeholder"), [ [[1, 1], [2, 3]] ], { yaxis: { max: 10 } });	
+});
+	
+</script>
+
+	
+<div id="placeholder" style = "width:500px; height:250px"> </div>
+
 <% if @deliveries.empty?%>
   <p>There are no deliveries for this deliverable</p>
 <% else %>
