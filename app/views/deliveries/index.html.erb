@@ -41,7 +41,7 @@ $(function (){
   <table id ="ddtable">
   	<tr><th>Status</th><th>Planned Date</th><th>Progress</th></tr>
     <% @deliveries.each do |delivery|%>
-  	<tr><td><%=h delivery.status.name %></td><td><%=h delivery.planned_date %>
+  	<tr><td><%=h delivery.status.name %></td><td><%=h delivery.planned_date.to_date %>
 	</td><td>NC /  C</td></tr>
     <% end %>
   </table>
