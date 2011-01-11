@@ -15727,3 +15727,1753 @@ Rendering deliveries/index
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
 Completed in 109ms (View: 54, DB: 4) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-01-09 17:00:54) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.6ms)[0m   [0;1mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 118ms (View: 31, DB: 1) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-01-09 17:00:57) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 62ms (View: 9, DB: 1) | 200 OK [http://localhost/deliverables/4]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-09 17:00:59) [GET]
+  Parameters: {"deliverable_id"=>"4"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDelivery Load (1.6ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mDeliverable Load (0.3ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 4) [0m
+  [4;36;1mDelivery Load (0.4ms)[0m   [0;1mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 4) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+Completed in 112ms (View: 39, DB: 4) | 200 OK [http://localhost/deliverables/4/deliveries]
+
+
+Processing DeliveriesController#new (for 127.0.0.1 at 2011-01-09 17:01:10) [GET]
+  Parameters: {"deliverable_id"=>"4"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 4) [0m
+  [4;35;1mStatus Load (0.5ms)[0m   [0mSELECT * FROM "statuses" [0m
+Rendering template within layouts/application
+Rendering deliveries/new
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" [0m
+Completed in 203ms (View: 20, DB: 1) | 200 OK [http://localhost/deliverables/4/deliveries/new]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-09 17:01:12) [GET]
+  Parameters: {"deliverable_id"=>"4"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mDeliverable Load (0.3ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 4) [0m
+  [4;36;1mDelivery Load (0.4ms)[0m   [0;1mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 4) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+Completed in 102ms (View: 29, DB: 4) | 200 OK [http://localhost/deliverables/4/deliveries]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-01-09 17:01:13) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 61ms (View: 9, DB: 1) | 200 OK [http://localhost/deliverables/4]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-01-09 17:01:15) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.5ms)[0m   [0;1mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 192ms (View: 30, DB: 1) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-01-09 17:01:22) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 62ms (View: 10, DB: 1) | 200 OK [http://localhost/deliverables/4]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-09 17:01:23) [GET]
+  Parameters: {"deliverable_id"=>"4"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mDeliverable Load (0.3ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 4) [0m
+  [4;36;1mDelivery Load (0.4ms)[0m   [0;1mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 4) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+Completed in 101ms (View: 29, DB: 4) | 200 OK [http://localhost/deliverables/4/deliveries]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-01-09 17:01:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 65ms (View: 10, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-09 17:01:30) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mDeliverable Load (0.4ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mDelivery Load (0.9ms)[0m   [0;1mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 110ms (View: 35, DB: 4) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-09 17:01:40) [GET]
+  Parameters: {"deliverable_id"=>"4"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.6ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 4) [0m
+  [4;35;1mDelivery Load (0.4ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 4) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+Completed in 205ms (View: 133, DB: 4) | 200 OK [http://localhost/deliverables/4/deliveries]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-01-09 17:01:42) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.4ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 62ms (View: 9, DB: 1) | 200 OK [http://localhost/deliverables/4]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-01-09 17:01:44) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.5ms)[0m   [0mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 80ms (View: 29, DB: 1) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#new (for 127.0.0.1 at 2011-01-09 17:01:46) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering deliverables/new
+Completed in 93ms (View: 42, DB: 0) | 200 OK [http://localhost/deliverables/new]
+
+
+Processing DeliverablesController#create (for 127.0.0.1 at 2011-01-09 17:02:05) [POST]
+  Parameters: {"deliverable"=>{"number"=>"deliverable4", "title"=>"culverts", "discipline"=>""}, "commit"=>"Create", "authenticity_token"=>"BGHshoCckgT+XUKY/mv9T6j43itMKDP/LXLNwBAj7C0="}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Create (30.1ms)[0m   [0;1mINSERT INTO "deliverables" ("number", "created_at", "title", "updated_at", "discipline") VALUES('deliverable4', '2011-01-09 17:02:05', 'culverts', '2011-01-09 17:02:05', '')[0m
+Redirected to http://localhost:3000/deliverables/5
+Completed in 94ms (DB: 31) | 302 Found [http://localhost/deliverables]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-01-09 17:02:05) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 65ms (View: 10, DB: 1) | 200 OK [http://localhost/deliverables/5]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-09 17:02:07) [GET]
+  Parameters: {"deliverable_id"=>"5"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDelivery Load (3.3ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mDeliverable Load (0.4ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 5) [0m
+Completed in 190ms (View: 12, DB: 4) | 200 OK [http://localhost/deliverables/5/deliveries]
+
+
+Processing DeliveriesController#new (for 127.0.0.1 at 2011-01-09 17:02:10) [GET]
+  Parameters: {"deliverable_id"=>"5"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.3ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 5) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" [0m
+Rendering template within layouts/application
+Rendering deliveries/new
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" [0m
+Completed in 94ms (View: 23, DB: 1) | 200 OK [http://localhost/deliverables/5/deliveries/new]
+
+
+Processing DeliveriesController#create (for 127.0.0.1 at 2011-01-09 17:02:18) [POST]
+  Parameters: {"deliverable_id"=>"5", "commit"=>"Create", "authenticity_token"=>"BGHshoCckgT+XUKY/mv9T6j43itMKDP/LXLNwBAj7C0=", "delivery"=>{"planned_date"=>"01/02/2011", "status_id"=>"1"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.3ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 5) [0m
+  [4;36;1mDelivery Create (0.6ms)[0m   [0;1mINSERT INTO "deliveries" ("planned_date", "actual_date", "deliverable_id", "created_at", "updated_at", "status_id") VALUES('2011-01-02 00:00:00', NULL, 5, '2011-01-09 17:02:18', '2011-01-09 17:02:18', 1)[0m
+Redirected to http://localhost:3000/deliverables/5/deliveries
+Completed in 74ms (DB: 1) | 302 Found [http://localhost/deliverables/5/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-09 17:02:18) [GET]
+  Parameters: {"deliverable_id"=>"5"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mDeliverable Load (0.4ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 5) [0m
+  [4;36;1mDelivery Load (0.3ms)[0m   [0;1mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 5) [0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 215ms (View: 29, DB: 4) | 200 OK [http://localhost/deliverables/5/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 19:42:34) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 230ms (DB: 0) | 302 Found [http://localhost/deliveries]
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-01-11 19:42:34) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 138ms (View: 131, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 19:42:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-01-11 19:42:37) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 112ms (View: 69, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-01-11 19:42:41) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"iziz", "password"=>"iziziz"}, "authenticity_token"=>"WnIrDSAoXJdFPaSBqhCtXyeOBp54BATnrlRdxF3TVB8="}
+  [4;36;1mUser Load (39.3ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'iziz') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 637ms (DB: 39) | 302 Found [http://localhost/user_sessions]
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-01-11 19:42:42) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 109ms (View: 102, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 19:42:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-01-11 19:42:44) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (16.7ms)[0m   [0mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 331ms (View: 71, DB: 17) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 19:42:53) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (15.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.8ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.5ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 713ms (View: 573, DB: 18) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:02:44) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (15.9ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (2.6ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.5ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 289ms (View: 95, DB: 20) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:03:28) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (19.1ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.9ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 330ms (View: 249, DB: 22) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:28:21) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (19.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 187ms (View: 77, DB: 22) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:28:47) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (19.3ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 281ms (View: 77, DB: 22) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:29:16) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.8ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 120ms (View: 59, DB: 5) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:29:30) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (4.4ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 116ms (View: 56, DB: 7) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:30:06) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.6ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 222ms (View: 169, DB: 4) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:31:23) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.6ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 108ms (View: 54, DB: 4) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:31:56) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.8ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.8ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 236ms (View: 59, DB: 5) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:32:05) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (2.2ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 108ms (View: 54, DB: 5) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:33:34) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (13.5ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 157ms (View: 74, DB: 16) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:36:51) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (10.5ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 117ms (View: 54, DB: 13) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:37:02) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 185ms (View: 131, DB: 5) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:37:15) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 224ms (View: 169, DB: 5) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:37:27) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.8ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 108ms (View: 54, DB: 4) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:37:57) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 110ms (View: 56, DB: 5) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:38:38) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (16.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 162ms (View: 55, DB: 19) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:39:04) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 112ms (View: 57, DB: 5) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 20:40:01) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (11.2ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 258ms (View: 194, DB: 14) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:05:33) [GET]
+  [4;36;1mUser Load (1.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (3.6ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (2.5ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.6ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 405ms (View: 164, DB: 9) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:06:12) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 336ms (View: 55, DB: 5) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:06:54) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.8ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 124ms (View: 56, DB: 5) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:14:03) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 109ms (View: 54, DB: 5) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:14:11) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.6ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 214ms (View: 159, DB: 4) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:15:32) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.8ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 110ms (View: 55, DB: 5) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:15:50) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.9ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.5ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 252ms (View: 83, DB: 5) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:16:00) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (1.7ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 126ms (View: 46, DB: 5) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:25:08) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (30.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (2.0ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 235ms (View: 83, DB: 33) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:32:41) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 120ms (View: 47, DB: 3) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:32:48) [GET]
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDelivery Load (1.6ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (1.8ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 137ms (View: 82, DB: 5) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-01-11 21:34:30) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (19.5ms)[0m   [0;1mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 119ms (View: 37, DB: 20) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-01-11 21:34:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 96ms (View: 44, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:34:34) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (1.8ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mSQL (115.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.9ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 304ms (View: 42, DB: 119) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#new (for 127.0.0.1 at 2011-01-11 21:34:37) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" [0m
+Rendering template within layouts/application
+Rendering deliveries/new
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" [0m
+Completed in 122ms (View: 49, DB: 1) | 200 OK [http://localhost/deliverables/1/deliveries/new]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:35:28) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (1.8ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.9ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 228ms (View: 41, DB: 4) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:38:59) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (1.8ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.8ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 134ms (View: 53, DB: 4) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:39:44) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (1.9ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.8ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 139ms (View: 73, DB: 5) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:39:55) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.5ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (1.8ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.9ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 237ms (View: 54, DB: 5) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:40:22) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.8ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 118ms (View: 51, DB: 4) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:44:54) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (1.8ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.8ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 512ms (View: 53, DB: 4) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:45:19) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (1.8ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.8ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 232ms (View: 167, DB: 4) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:46:25) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (2.0ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.9ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 128ms (View: 58, DB: 5) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:46:27) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.8ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 108ms (View: 42, DB: 4) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:46:31) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (1.8ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.8ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 241ms (View: 175, DB: 4) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:47:08) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.8ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 120ms (View: 55, DB: 4) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:47:43) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+ERROR: compiling _run_erb_app47views47deliveries47index46html46erb RAISED compile error
+/Users/Iz/Apps/deliverables_schedule/app/views/deliveries/index.html.erb:58: syntax error, unexpected kENSURE, expecting kEND
+/Users/Iz/Apps/deliverables_schedule/app/views/deliveries/index.html.erb:60: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47deliveries47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Deliveries for "; @output_buffer.concat(( @text ).to_s); @output_buffer.concat "</h1>\n\n<script type=\"text/javascript\" charset=\"utf-8\">\n\nvar array = "
+
+
+
+; @output_buffer.concat((array_or_string_for_javascript(Delivery.planned_date_count) ).to_s); @output_buffer.concat ";\nvar cumulativeArray =  toMultiDimensionalArray(array, 2);\nvar options = {\n\tseries: {\n\t\tlines: { show: true },\n\t\tpoints: { show: true }\n\t},\n\t\n\txaxis: {\n\t\tmode: \"time\",\n\t\ttimeformat: \"%d/%m/%y\",\n\t\tmin:1262304000000,\n\t\tmax:1333238400000,\n\t\tticks: 14,\t\n\t},\n\t\n\tyaxis: {\n\t\tmin: 0,\n\t\tmax: 500,\n\t\tticks: 10,\n\t}\n};\n\n$(function (){\n  $.plot($(\"#placeholder\"), [ { label: \"Planned Deliveries\", data: cumulativeArray  } ], options);\t\n});\n\n\t\n</script>\n\t\n<div id=\"placeholder\" style = \"width:950px; height:600px\"> </div>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;  if @deliveries.empty?; @output_buffer.concat "\n  <p>There are no deliveries for this deliverable</p>\n"
+
+;  else ; @output_buffer.concat "\n\n  <table id =\"ddtable\">\n  \t<tr><th>Status</th><th>Planned Date</th><th>Progress</th></tr>\n    "
+
+
+
+;  @deliveries.each do |delivery|; @output_buffer.concat "\n  \t<tr><td>"
+; @output_buffer.concat((h delivery.status.name ).to_s); @output_buffer.concat "</td><td>"; @output_buffer.concat((h delivery.planned_date.to_date ).to_s); @output_buffer.concat "</td><td>NC / C</td></tr>\n   "
+;  end ; @output_buffer.concat "\n  </table>\n\n\n\n\n\n"
+
+
+
+
+
+
+; @output_buffer.concat(( if params[:deliverable_id]
+	  link_to 'back', deliverable_path(@deliverable)
+	end ).to_s); @output_buffer.concat "\n"
+; @output_buffer.concat(( if params[:deliverable_id]
+	  link_to 'New delivery', new_deliverable_delivery_path(:deliverable_id => @deliverable)
+	end ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/Iz/Apps/deliverables_schedule/app/views/deliveries/index.html.erb:60:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render_without_haml'
+/Users/Iz/.gem/ruby/1.8/gems/haml-3.0.24/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render_without_haml'
+/Users/Iz/.gem/ruby/1.8/gems/haml-3.0.24/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/Iz/.gem/ruby/1.8/gems/haml-3.0.24/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/Iz/Apps/deliverables_schedule/app/views/deliveries/index.html.erb:58: syntax error, unexpected kENSURE, expecting kEND
+/Users/Iz/Apps/deliverables_schedule/app/views/deliveries/index.html.erb:60: syntax error, unexpected $end, expecting kEND) on line #58 of app/views/deliveries/index.html.erb:
+55: <%= if params[:deliverable_id]
+56: 	  link_to 'New delivery', new_deliverable_delivery_path(:deliverable_id => @deliverable)
+57: 	end %>
+
+    app/views/deliveries/index.html.erb:60:in `compile!'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (91.9ms)
+Rendered rescues/_request_and_response (26.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:48:02) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+ERROR: compiling _run_erb_app47views47deliveries47index46html46erb RAISED compile error
+/Users/Iz/Apps/deliverables_schedule/app/views/deliveries/index.html.erb:58: syntax error, unexpected kENSURE, expecting kEND
+/Users/Iz/Apps/deliverables_schedule/app/views/deliveries/index.html.erb:60: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47deliveries47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Deliveries for "; @output_buffer.concat(( @text ).to_s); @output_buffer.concat "</h1>\n\n<script type=\"text/javascript\" charset=\"utf-8\">\n\nvar array = "
+
+
+
+; @output_buffer.concat((array_or_string_for_javascript(Delivery.planned_date_count) ).to_s); @output_buffer.concat ";\nvar cumulativeArray =  toMultiDimensionalArray(array, 2);\nvar options = {\n\tseries: {\n\t\tlines: { show: true },\n\t\tpoints: { show: true }\n\t},\n\t\n\txaxis: {\n\t\tmode: \"time\",\n\t\ttimeformat: \"%d/%m/%y\",\n\t\tmin:1262304000000,\n\t\tmax:1333238400000,\n\t\tticks: 14,\t\n\t},\n\t\n\tyaxis: {\n\t\tmin: 0,\n\t\tmax: 500,\n\t\tticks: 10,\n\t}\n};\n\n$(function (){\n  $.plot($(\"#placeholder\"), [ { label: \"Planned Deliveries\", data: cumulativeArray  } ], options);\t\n});\n\n\t\n</script>\n\t\n<div id=\"placeholder\" style = \"width:950px; height:600px\"> </div>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;  if @deliveries.empty?; @output_buffer.concat "\n  <p>There are no deliveries for this deliverable</p>\n"
+
+;  else ; @output_buffer.concat "\n\n  <table id =\"ddtable\">\n  \t<tr><th>Status</th><th>Planned Date</th><th>Progress</th></tr>\n    "
+
+
+
+;  @deliveries.each do |delivery|; @output_buffer.concat "\n  \t<tr><td>"
+; @output_buffer.concat((h delivery.status.name ).to_s); @output_buffer.concat "</td><td>"; @output_buffer.concat((h delivery.planned_date.to_date ).to_s); @output_buffer.concat "</td><td>NC / C</td></tr>\n   "
+;  end ; @output_buffer.concat "\n  </table>\n\n\n\n\n\n"
+
+
+
+
+
+
+; @output_buffer.concat(( if params[:deliverable_id]
+	  link_to 'back', deliverable_path(@deliverable)
+	end ).to_s); @output_buffer.concat "\n"
+; @output_buffer.concat(( if params[:deliverable_id]
+	  link_to 'New delivery', new_deliverable_delivery_path(:deliverable_id => @deliverable)
+	end ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/Iz/Apps/deliverables_schedule/app/views/deliveries/index.html.erb:60:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render_without_haml'
+/Users/Iz/.gem/ruby/1.8/gems/haml-3.0.24/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render_without_haml'
+/Users/Iz/.gem/ruby/1.8/gems/haml-3.0.24/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/Iz/.gem/ruby/1.8/gems/haml-3.0.24/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/Iz/Apps/deliverables_schedule/app/views/deliveries/index.html.erb:58: syntax error, unexpected kENSURE, expecting kEND
+/Users/Iz/Apps/deliverables_schedule/app/views/deliveries/index.html.erb:60: syntax error, unexpected $end, expecting kEND) on line #58 of app/views/deliveries/index.html.erb:
+55: <%= if params[:deliverable_id]
+56: 	  link_to 'New delivery', new_deliverable_delivery_path(:deliverable_id => @deliverable)
+57: 	end %>
+
+    app/views/deliveries/index.html.erb:60:in `compile!'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (89.7ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:48:35) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.5ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.8ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 119ms (View: 53, DB: 4) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:48:54) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.8ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 120ms (View: 54, DB: 4) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:49:14) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (1.8ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.9ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 235ms (View: 53, DB: 4) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:49:54) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (1.7ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.8ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 116ms (View: 51, DB: 4) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-11 21:52:08) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (1.8ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (0.9ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 172ms (View: 52, DB: 4) | 200 OK [http://localhost/deliverables/1/deliveries]

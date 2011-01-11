@@ -20,22 +20,31 @@ class Delivery < ActiveRecord::Base
         cumulative_pair = [y[0].to_time.to_i*1000, sum]
         cumulative_array << cumulative_pair
         end
-    
-    
-    
-    # sum = 0
-    #     counts.each do |date, count|
-    #       sum += count
-    #       cumulative[date] = sum
-    #     end
-    #     cumulative_array = []
-    #     cumulative.each do |key, value|
-    #       cumulative_pair = [key.to_time.to_i*1000, value]
-    #       cumulative_array << cumulative_pair
-    #     end
+        
     cumulative_array
                     
   end
+  
+ # def self.actual_date_count
+ #   
+ #   deliveries = Delivery.all(:order => "actual_date")
+ #   dates = []
+ #   counts = Hash.new(0)
+ #   # cumulative = Hash.new(0)
+ #   deliveries.each do |delivery|
+ #     counts[delivery.actual_date] += 1
+ #   end
+ #   counts_array = counts.sort  
+ #     sum = 0
+ #     cumulative_array = []
+ #     counts_array.each do |y| sum += y[1]
+ #       cumulative_pair = [y[0].to_time.to_i*1000, sum]
+ #       cumulative_array << cumulative_pair
+ #       end
+ #       
+ #   cumulative_array
+ #   
+ # end
   
 
        
@@ -57,6 +66,17 @@ end
 
 
 
+
+# sum = 0
+#     counts.each do |date, count|
+#       sum += count
+#       cumulative[date] = sum
+#     end
+#     cumulative_array = []
+#     cumulative.each do |key, value|
+#       cumulative_pair = [key.to_time.to_i*1000, value]
+#       cumulative_array << cumulative_pair
+#     end
 
 
 

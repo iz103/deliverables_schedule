@@ -6,7 +6,7 @@ class DeliveriesController < ApplicationController
       @deliveries = Delivery.all
       @text = "All deliverables"
     else
-    @cumulative = Delivery.planned_date_count
+    # @cumulative = Delivery.planned_date_count
     @deliverable = Deliverable.find(params[:deliverable_id])
     @deliveries = @deliverable.deliveries
     @text = @deliverable.number
