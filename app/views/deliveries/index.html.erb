@@ -34,18 +34,30 @@ $(function (){
 	
 <div id="placeholder" style = "width:950px; height:600px"> </div>
 
+
+
 <% if @deliveries.empty?%>
   <p>There are no deliveries for this deliverable</p>
 <% else %>
+  <% if params[:deliverable_id] %>
+    <table id ="ddtable">
+    <tr><th>Status</th><th>Planned Date</th><th>Progress</th></tr>
+   
+   <% form_tag complete_deliverable_deliveries_path, :method => :put do %>
 
-  <table id ="ddtable">
-  	<tr><th>Status</th><th>Planned Date</th><th>Progress</th></tr>
-    <% @deliveries.each do |delivery|%>
-  	<tr><td><%=h delivery.status.name %></td><td><%=h delivery.planned_date.to_date %>
-	</td><td>NC /  C</td></tr>
-    <% end %>
-  </table>
-
+      <% @deliveries.each do |delivery|%>
+  	    <tr><td><%=h delivery.status.name %></td><td><%=h delivery.planned_date.to_date %>
+	    </td><td><% if delivery.actual_date? %> 
+		           Complete 
+		         <% else %> 
+		           Not Complete <%= check_box_tag "deliveries_ids[]", delivery.id %>
+             <% end %>
+             
+             <% end %></td></tr>
+           <%= submit_tag "Mark as Complete" %>
+        <% end %>
+      </table>
+  <% end %>
 <% end %>
 
 

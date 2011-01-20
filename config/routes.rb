@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :deliveries, :only => [:index]
   map.resources :deliverables do |deliverable|    # , :shallow => :true 
-    deliverable.resources :deliveries
+    deliverable.resources :deliveries, :collection => { :complete => :put }
   end
 
   map.resources :statuses

@@ -34,3 +34,19 @@ Scenario: Create deliverable delivery
 
 # Then show me the page
 
+
+# TODO: 
+# 
+# - in deliverables deliveries view, add checkbox to mark deliveries as delivered.
+# - only display the graph in the all deliveries
+# - validations: date validations
+# - delete deliveries, deliverables and edit them
+# - date pick
+# - tags: disciplines
+# - options for chart:
+# - define preferences: project start date, project end date
+# - dashboard:
+# 	upcoming deliverables (today, tomorrow, next week, next 2 weeks)
+# 	late deliverables (edit dates)
+# - email alerts: (late deliverables, deliverables due, dashboard roundup)
+

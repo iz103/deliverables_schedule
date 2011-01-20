@@ -66,6 +66,14 @@ class DeliveriesController < ApplicationController
     # # @delivery.save
     redirect_to deliverable_deliveries_path(@deliverable)
   end
+  # 
+
+  
+def complete
+  Delivery.update_all(["actual_date=?", Time.now], :id => params[:deliveries_ids])
+  redirect_to deliverable_deliveries_path
+  
+end
     
     
     
