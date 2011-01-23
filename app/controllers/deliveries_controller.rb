@@ -70,7 +70,21 @@ class DeliveriesController < ApplicationController
 
   
 def complete
-  Delivery.update_all(["actual_date=?", Time.now], :id => params[:deliveries_ids])
+  # params[:deliveries_ids].each do |delivery_id|
+  #   if Delivery.find(delivery_id).actual_date?
+  #     Delivery.find(delivery_id).actual_date = nil
+  #   else
+  #     Delivery.find(delivery_id).actual_date = DateTime.now
+  #   end
+  # end
+      
+      
+  if params[:commit] == "Complete"
+    Delivery.update_all(["actual_date=?", DateTime.now], :id => params[:deliveries_ids])
+  else
+    Delivery.update_all(["actual_date=?", nil], :id => params[:deliveries_ids])
+  end
+  
   redirect_to deliverable_deliveries_path
   
 end

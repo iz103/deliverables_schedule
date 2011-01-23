@@ -25,26 +25,26 @@ class Delivery < ActiveRecord::Base
                     
   end
   
- # def self.actual_date_count
- #   
- #   deliveries = Delivery.all(:order => "actual_date")
- #   dates = []
- #   counts = Hash.new(0)
- #   # cumulative = Hash.new(0)
- #   deliveries.each do |delivery|
- #     counts[delivery.actual_date] += 1
- #   end
- #   counts_array = counts.sort  
- #     sum = 0
- #     cumulative_array = []
- #     counts_array.each do |y| sum += y[1]
- #       cumulative_pair = [y[0].to_time.to_i*1000, sum]
- #       cumulative_array << cumulative_pair
- #       end
- #       
- #   cumulative_array
- #   
- # end
+ def self.actual_date_count
+   
+   deliveries = Delivery.all(:order => "actual_date")
+   counts = Hash.new(0)
+   deliveries.each do |delivery|
+     unless delivery.actual_date == nil
+       counts[delivery.actual_date] += 1
+     end
+   end
+   counts_array = counts.sort  
+     sum = 0
+     cumulative_array = []
+     counts_array.each do |y| sum += y[1]
+       cumulative_pair = [y[0].to_time.to_i*1000, sum]
+       cumulative_array << cumulative_pair
+       end
+       
+   cumulative_array
+   
+ end
   
 
        
