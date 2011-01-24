@@ -40,7 +40,7 @@ Scenario: Create deliverable delivery
 # - in deliverables deliveries view, add checkbox to mark deliveries as delivered. DONE
 # - only display the graph in the all deliveries  DONE
 # - validations: date validations  DONE AS DATE IS SELECTED
-# - delete deliveries, deliverables and edit them
+# - delete deliveries, deliverables and edit them 
 # - date pick
 # - tags: disciplines
 # - options for chart:

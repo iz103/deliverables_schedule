@@ -1,0 +1,36 @@
+<script type="text/javascript" charset="utf-8">
+
+var array = <%=array_or_string_for_javascript(Delivery.planned_date_count) %>;
+var array2 = <%=array_or_string_for_javascript(Delivery.actual_date_count) %>;
+var cumulativeArray =  toMultiDimensionalArray(array, 2);
+var cumulativeArray2 =  toMultiDimensionalArray(array2, 2);
+var options = {
+	series: {
+		lines: { show: true },
+		points: { show: true }
+	},
+
+	xaxis: {
+		mode: "time",
+		timeformat: "%d/%m/%y",
+		min:1262304000000,
+		max:1333238400000,
+		ticks: 14,	
+	},
+
+	yaxis: {
+		min: 0,
+		max: 500,
+		ticks: 10,
+	}
+};
+
+$(function (){
+  $.plot($("#placeholder"), [ { label: "Planned Deliveries", data: cumulativeArray  },
+                              { label: "Actual Deliveries", data: cumulativeArray2  }  ], options);	
+});
+
+
+</script>
+
+<div id="placeholder" style = "width:950px; height:500px"> </div>

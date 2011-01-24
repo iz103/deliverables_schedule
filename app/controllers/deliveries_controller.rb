@@ -39,6 +39,11 @@ class DeliveriesController < ApplicationController
     # end
   end
   
+  def edit
+    @deliverable = Deliverable.find(params[:deliverable_id])
+    @delivery = Delivery.find(params[:delivery_id])
+  end
+  
   # def create
   #    @deliverable = Deliverable.find(params[:deliverable_id])
   #    @delivery = @deliverable.deliveries.build(params[:delivery])
@@ -68,6 +73,7 @@ class DeliveriesController < ApplicationController
   end
   # 
 
+
   
 def complete
   # params[:deliveries_ids].each do |delivery_id|
@@ -81,13 +87,17 @@ def complete
       
   if params[:commit] == "Complete"
     Delivery.update_all(["actual_date=?", DateTime.now], :id => params[:deliveries_ids])
-  else
+  elsif params[:commit] == "Incomplete"
     Delivery.update_all(["actual_date=?", nil], :id => params[:deliveries_ids])
+  elsif params[:commit] == "Delete"
+    Delivery.destroy_all(:id => params[:deliveries_ids])
   end
   
   redirect_to deliverable_deliveries_path
   
 end
+
+
     
     
     
