@@ -4,7 +4,7 @@
   <%= f.error_messages %>
 
   <p>
-    <!-- <%#= f.label :planned_date %><br /> -->
+
     <%= f.date_select ("planned_date", :start_year => 2009) %>
   </p>
   <p>
@@ -14,7 +14,7 @@
     <%#= collection_select(:delivery, :deliverable_id, Deliverable.all, :id, :number) %>
    </p> -->
   <p>
-    <%= f.submit 'Update' %>
+    <%= f.submit 'update' %>
   </p>
 <% end %>
 

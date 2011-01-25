@@ -22,7 +22,7 @@
 			         <% else %> 
 			           Not Complete <%= check_box_tag "deliveries_ids[]", delivery.id %>
 	             <% end %>
-                 <%#= link_to "Edit", edit_deliverable_delivery_path(:deliverable_id => @deliverable.id, :delivery_id => delivery.id) %>
+                 <%= link_to "Edit", edit_deliverable_delivery_path(:id => delivery.id, :deliverable_id => @deliverable.id)%>
 	             <% end %></td></tr>
 	           <%= submit_tag "Complete" %><%= submit_tag "Incomplete" %><%= submit_tag "Delete" %>
 	        <% end %>

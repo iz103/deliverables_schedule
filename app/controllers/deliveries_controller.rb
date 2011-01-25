@@ -41,9 +41,44 @@ class DeliveriesController < ApplicationController
   
   def edit
     @deliverable = Deliverable.find(params[:deliverable_id])
-    @delivery = Delivery.find(params[:delivery_id])
+    @delivery = Delivery.find(params[:id])
+    @statuses = Status.all
   end
   
+
+  def create
+    @deliverable = Deliverable.find(params[:deliverable_id])
+    @delivery = @deliverable.deliveries.build(params[:delivery_id])
+    @delivery.save
+    # @delivery = Delivery.new(params[:delivery])
+    # @status = @deliverable.status.build
+    # @status.deliveries.build(params[:delivery])
+    # @status.save
+    # # @delivery.status.build(:deliverable_id => params[:deliverable_id])
+    # # @delivery.save
+    redirect_to deliverable_deliveries_path(@deliverable)
+  end
+  
+  
+  def update
+     @deliverable = Deliverable.find(params[:deliverable_id])
+     @delivery = @deliverable.deliveries.find(params[:id])
+     @delivery.update_attributes(params[:delivery])
+     redirect_to deliverable_deliveries_path(@deliverable)
+  end
+     # respond_to do |format|
+     #        if @deliverable.update_attributes(params[:deliverable])
+     #          format.html { redirect_to(@deliverable, :notice => 'Deliverable was successfully updated.') }
+     #          format.xml  { head :ok }
+     #        else
+     #          format.html { render :action => "edit" }
+     #          format.xml  { render :xml => @deliverable.errors, :status => :unprocessable_entity }
+     #        end
+     #   end
+  
+  
+  # 
+
   # def create
   #    @deliverable = Deliverable.find(params[:deliverable_id])
   #    @delivery = @deliverable.deliveries.build(params[:delivery])
@@ -58,21 +93,6 @@ class DeliveriesController < ApplicationController
   #      end
   #    end
     # end
-  
-  def create
-    @deliverable = Deliverable.find(params[:deliverable_id])
-    @delivery = @deliverable.deliveries.build(params[:delivery])
-    @delivery.save
-    # @delivery = Delivery.new(params[:delivery])
-    # @status = @deliverable.status.build
-    # @status.deliveries.build(params[:delivery])
-    # @status.save
-    # # @delivery.status.build(:deliverable_id => params[:deliverable_id])
-    # # @delivery.save
-    redirect_to deliverable_deliveries_path(@deliverable)
-  end
-  # 
-
 
   
 def complete
