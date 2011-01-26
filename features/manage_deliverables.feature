@@ -44,6 +44,7 @@ Scenario: Create deliverable delivery
 # - flag late deliveries, early deliveries, deliveries due in the next 2 weeks, 1 week in deliveries dashboard
 # - delete deliveries, deliverables and edit them DONE
 # - date pick DONE
+# - deliveries index: No. of overdue deliverables, next day, 1 week due deliverables, next 2 weeks
 # - tags: disciplines
 # - options for chart:
 # - define preferences: project start date, project end date
