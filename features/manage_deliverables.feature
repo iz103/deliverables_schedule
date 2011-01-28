@@ -45,7 +45,7 @@ Scenario: Create deliverable delivery
 # - delete deliveries, deliverables and edit them DONE
 # - date pick DONE
 # - deliveries index: No. of overdue deliverables, next day, 1 week due deliverables, next 2 weeks
-# - tags: disciplines
+# - tags: disciplines, document types (drawing, document, etc.)
 # - options for chart:
 # - define preferences: project start date, project end date
 # - dashboard:
