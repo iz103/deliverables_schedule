@@ -27129,3 +27129,542 @@ ActionController::RoutingError (No route matches "/excanvas.min.js" with {:metho
   /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+  [4;36;1mDelivery Load (3.5ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;36;1mDelivery Load (21.2ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mDelivery Load (2.5ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mDelivery Load (2.5ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mDelivery Load (5.1ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mDelivery Load (3.1ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mDelivery Load (3.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mDelivery Load (2.8ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mDelivery Load (2.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mDelivery Load (2.5ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mDelivery Load (68.9ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mDelivery Load (2.5ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mDelivery Load (2.4ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mDelivery Load (2.6ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mDelivery Load (2.5ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mDelivery Load (2.6ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mDelivery Load (2.5ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mDelivery Load (330.0ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY actual_date[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mDelivery Load (2.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mDelivery Load (2.6ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mDelivery Load (2.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mDelivery Load (3.1ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mDelivery Load (91.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mDelivery Load (2.7ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-01-29 13:44:32) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 479ms (View: 472, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-29 13:44:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-01-29 13:44:35) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 95ms (View: 65, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-29 13:44:35) [GET]
+
+ActionController::RoutingError (No route matches "/excanvas.min.js" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-01-29 13:44:40) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"iziz", "password"=>"iziziz"}, "authenticity_token"=>"OkNvVyd2ElXsyDAh0tx6Wvtqgpy8hXEb5TnHUJcH63Y="}
+  [4;36;1mUser Load (30.4ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'iziz') LIMIT 1[0m
+Redirected to http://localhost:3000/deliverables
+Completed in 385ms (DB: 30) | 302 Found [http://localhost/user_sessions]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-01-29 13:44:41) [GET]
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (18.2ms)[0m   [0;1mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 328ms (View: 68, DB: 19) | 200 OK [http://localhost/deliverables]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-29 13:44:41) [GET]
+
+ActionController::RoutingError (No route matches "/excanvas.min.js" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-01-29 13:44:44) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.6ms)[0m   [0;1mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 89ms (View: 36, DB: 1) | 200 OK [http://localhost/deliverables]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-29 13:44:44) [GET]
+
+ActionController::RoutingError (No route matches "/excanvas.min.js" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-29 13:44:49) [GET]
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDelivery Load (18.3ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (2.1ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mDelivery Load (2.1ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY actual_date[0m
+Rendered deliveries/_graph (61.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Completed in 227ms (View: 108, DB: 23) | 200 OK [http://localhost/deliveries]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-29 13:44:49) [GET]
+
+ActionController::RoutingError (No route matches "/excanvas.min.js" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-29 13:48:49) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.9ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (2.1ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mDelivery Load (2.2ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY actual_date[0m
+Rendered deliveries/_graph (19.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+Completed in 145ms (View: 88, DB: 7) | 200 OK [http://localhost/deliveries]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-29 13:48:49) [GET]
+
+ActionController::RoutingError (No route matches "/excanvas.min.js" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-29 13:49:05) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDelivery Load (23.3ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (2.1ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mDelivery Load (2.1ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY actual_date[0m
+Rendered deliveries/_graph (19.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Completed in 296ms (View: 91, DB: 28) | 200 OK [http://localhost/deliveries]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-29 13:49:06) [GET]
+
+ActionController::RoutingError (No route matches "/excanvas.min.js" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-29 13:49:15) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (1.9ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (2.0ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mDelivery Load (2.0ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY actual_date[0m
+Rendered deliveries/_graph (20.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+Completed in 149ms (View: 92, DB: 6) | 200 OK [http://localhost/deliveries]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-29 13:49:15) [GET]
+
+ActionController::RoutingError (No route matches "/excanvas.min.js" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-29 13:50:26) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDelivery Load (91.5ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (2.1ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mDelivery Load (2.0ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY actual_date[0m
+Rendered deliveries/_graph (19.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+Completed in 289ms (View: 93, DB: 96) | 200 OK [http://localhost/deliveries]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-29 13:50:26) [GET]
+
+ActionController::RoutingError (No route matches "/excanvas.min.js" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-29 13:50:46) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDelivery Load (2.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mDelivery Load (2.1ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mDelivery Load (2.1ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY actual_date[0m
+Rendered deliveries/_graph (22.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Completed in 153ms (View: 93, DB: 7) | 200 OK [http://localhost/deliveries]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-29 13:50:47) [GET]
+
+ActionController::RoutingError (No route matches "/excanvas.min.js" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mDelivery Load (2.6ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;36;1mDelivery Load (2.7ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-29 13:51:51) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (2.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (2.1ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mDelivery Load (2.1ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY actual_date[0m
+Rendered deliveries/_graph (21.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Completed in 273ms (View: 215, DB: 7) | 200 OK [http://localhost/deliveries]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-29 13:51:52) [GET]
+
+ActionController::RoutingError (No route matches "/excanvas.min.js" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-29 13:57:19) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (19.6ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (2.6ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mDelivery Load (1.9ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY actual_date[0m
+Rendered deliveries/_graph (20.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Completed in 213ms (View: 109, DB: 25) | 200 OK [http://localhost/deliveries]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-29 13:57:19) [GET]
+
+ActionController::RoutingError (No route matches "/excanvas.min.js" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-29 14:00:05) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (21.1ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (2.4ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mDelivery Load (2.0ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY actual_date[0m
+Rendered deliveries/_graph (19.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Completed in 187ms (View: 97, DB: 26) | 200 OK [http://localhost/deliveries]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-29 14:00:06) [GET]
+
+ActionController::RoutingError (No route matches "/excanvas.min.js" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-01-29 14:01:55) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (29.8ms)[0m   [0mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 238ms (View: 38, DB: 30) | 200 OK [http://localhost/deliverables]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-29 14:01:55) [GET]
+
+ActionController::RoutingError (No route matches "/excanvas.min.js" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-01-29 14:01:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.4ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 88ms (View: 35, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-29 14:01:57) [GET]
+
+ActionController::RoutingError (No route matches "/deliverables/excanvas.min.js" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-01-29 14:01:58) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.4ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;35;1mDelivery Load (1.2ms)[0m   [0mSELECT * FROM "deliveries" WHERE ("deliveries".deliverable_id = 1) [0m
+  [4;36;1mStatus Load (0.5ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 331ms (View: 83, DB: 3) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-29 14:01:59) [GET]
+
+ActionController::RoutingError (No route matches "/deliverables/1/excanvas.min.js" with {:method=>:get}):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)

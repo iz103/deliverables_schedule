@@ -46,14 +46,79 @@ class Delivery < ActiveRecord::Base
    
  end
   
+def self.overdue
+  deliveries = Delivery.all
+  overdue =[]
+  deliveries.each do |delivery|
+    if delivery.actual_date == nil and delivery.planned_date < Date.today
+      overdue << delivery
+    end
+  end
+    overdue  
+end
 
-       
-      
-    
-    
+
+
+def self.late
+  deliveries = Delivery.all
+  late =[]
+  deliveries.each do |delivery|
+    if delivery.actual_date != nil and delivery.actual_date > delivery.planned_date
+      late << delivery
+    end
+  end
+    late
+end
+
+def self.due_today
+  deliveries = Delivery.all
+  due =[]
+  deliveries.each do |delivery|
+    if delivery.planned_date == Date.today
+      due << delivery
+    end
+  end
+    due    
+end
+
+def self.due_in_next_week
+  deliveries = Delivery.all
+  due =[]
+  deliveries.each do |delivery|
+    if delivery.planned_date <= Date.today+1.week and delivery.planned_date > Date.today
+      due << delivery
+    end
+  end
+    due  
   
- 
-  
+end
+
+def self.due_in_next_two_weeks
+  deliveries = Delivery.all
+  due =[]
+  deliveries.each do |delivery|
+    if delivery.planned_date <= Date.today+2.weeks and delivery.planned_date > Date.today
+      due << delivery
+    end
+  end
+    due 
+end
+
+def self.due_tomorrow
+  deliveries = Delivery.all
+  due =[]
+  deliveries.each do |delivery|
+    if delivery.planned_date == Date.tomorrow
+      due << delivery
+    end
+  end
+    due
+end
+         
+def percentage_complete
+end
+
+
   
 end
 
