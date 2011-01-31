@@ -48,7 +48,7 @@ class DeliveriesController < ApplicationController
 
   def create
     @deliverable = Deliverable.find(params[:deliverable_id])
-    @delivery = @deliverable.deliveries.build(params[:delivery_id])
+    @delivery = @deliverable.deliveries.build(params[:delivery]) #was :delivery_id before
     @delivery.save
     # @delivery = Delivery.new(params[:delivery])
     # @status = @deliverable.status.build

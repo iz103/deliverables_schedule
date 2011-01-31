@@ -4,8 +4,9 @@
   <%= f.error_messages %>
 
   <p>
-    <!-- <%#= f.label :planned_date %><br /> -->
+    <%= f.label :planned_date %><br />
     <%= f.date_select ("planned_date", :start_year => 2009) %>
+    <%#= f.text_field :planned_date %>
   </p>
   <p>
     <%= collection_select(:delivery, :status_id, Status.all, :id, :name) %>
