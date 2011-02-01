@@ -115,7 +115,16 @@ def self.due_tomorrow
     due
 end
          
-def percentage_complete
+def self.percentage_complete
+  deliveries = Delivery.all
+  complete_deliveries = []
+  deliveries.each do |delivery|
+    if delivery.actual_date?
+      complete_deliveries << delivery
+    end
+  end
+  complete = (complete_deliveries.count.to_f/deliveries.count.to_f)*100
+  complete
 end
 
 
