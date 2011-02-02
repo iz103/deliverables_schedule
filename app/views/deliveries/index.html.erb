@@ -5,6 +5,7 @@
   <%= render :partial => "graph" %>
   <div id="name">
 	Total number of deliveries: <%= Delivery.all.count %> <br>
+    Number of complete deliveries <%= Delivery.complete.to_i %><br>
 	Percentage Complete: <%= Delivery.percentage_complete.round(1) %>%<br>
     Number of overdue Deliveries: <%= Delivery.overdue.count %><br>
     Number of late deliveries: <%= Delivery.late.count %><br>
