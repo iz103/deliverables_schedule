@@ -35,7 +35,15 @@ Scenario: Create deliverable delivery
 # Then show me the page
 
 
-# TODO: 
+# TODO:
+
+
+
+# upload csv
+# 
+
+
+
 # 
 # - in deliverables deliveries view, add checkbox to mark deliveries as delivered. DONE
 # - only display the graph in the all deliveries  DONE

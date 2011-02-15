@@ -70,6 +70,17 @@ def self.late
     late
 end
 
+def self.early
+  deliveries = Delivery.all
+  early = []
+  deliveries.each do |delivery|
+    if delivery.actual_date != nil and delivery.actual_date < delivery.planned_date
+      early << delivery
+    end
+  end
+  early
+end
+
 def self.due_today
   deliveries = Delivery.all
   due =[]

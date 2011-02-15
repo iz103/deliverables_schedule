@@ -12,6 +12,7 @@
     Number of deliveries due today: <%= Delivery.due_today.count %><br>
     Number of deliveries due in the next week: <%= Delivery.due_in_next_week.count %><br>
     Number of deliveries due in the next two weeks: <%= Delivery.due_in_next_two_weeks.count %><br>
+    Number of deliveries delivered early: <%= Delivery.early.count %><br>
     Total number of deliverables: <%= Deliverable.all.count %>
   </div>
 
