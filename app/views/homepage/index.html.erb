@@ -1,17 +1,18 @@
-<div id="container">
-	<% if current_user %>
-	  <%= link_to "Edit Profile", edit_user_path (:current)%>
-	  <%= link_to "Logout", logout_path %>
-	  <%= link_to "Deliverables Schedule", deliverables_path %>
-	  <%= link_to "Deliveries Cumulative Graph", deliveries_path %>
-	<% else %>
-	  <%#= link_to "Register", new_user_path %>  
-    <%= link_to "login", login_path %>
-  <% end %>
-	<div id="login-form">
-		
-		<%= render :patial => "users/new"%>
-		
-	</div>
+
+      <h1 id="title">Welcome to Deliverables Schedule for the A46 Newark to Widmerpool Scheme</h1>
+
 	
-</div>
+	<%# if current_user %>
+	  <%#= link_to "Edit Profile", edit_user_path (:current)%>
+	  <%#= link_to "Logout", logout_path %>
+	  <%#= link_to "Deliverables Schedule", deliverables_path %>
+	  <%#= link_to "Deliveries Cumulative Graph", deliveries_path %>
+	<%# else %>
+	  <%#= link_to "Register", new_user_path %>  
+    <%#= link_to "login", login_path %>
+  
+	<!-- <div id="login-form">	
+		<%#= render :patial => "user_sessions/_new" %>
+	</div> -->
+	<%# end %>
+	
