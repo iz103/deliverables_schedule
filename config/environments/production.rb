@@ -8,7 +8,7 @@ config.cache_classes = true
 config.action_controller.consider_all_requests_local = false
 config.action_controller.perform_caching             = true
 config.action_view.cache_template_loading            = true
-config.gem "acts-as-taggable-on", :source => "http://gemcutter.org", :version => '2.0.0.rc1'
+config.gem "acts-as-taggable-on", :version => '2.0.0.rc1'
 
 # See everything in the log (default is :info)
 # config.log_level = :debug
