@@ -1,0 +1,7 @@
+<% @deliverables.each do |deliverable| %>
+  <tr>
+    <td><%=h deliverable.number %></td>
+    <td><%=h deliverable.title %></td>
+    <td><%= link_to 'Show', deliverable %></td>
+  </tr>
+<%end %>

@@ -81,4 +81,17 @@ class DeliverablesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def tag_cloud
+    @tags = Deliverable.tag_counts_on(:tags)
+  end
+  
+  def list_for_tag
+    @tag = Tag.find(params[:id])
+    @deliverables = Deliverable.tagged_with(@tag)
+    respond_to do |format|
+      format.html
+      format.xml  # { render :xml => @deliverables }
+    end
+  end
 end
