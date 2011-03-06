@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
-  before_filter :require_user
+  # before_filter :require_user
   def index
     @users = User.all
 
