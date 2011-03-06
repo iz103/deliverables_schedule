@@ -35,10 +35,10 @@
 		    <%#= render :partial => "tag_cloud" %>
 		
 		    <ul>
-		            <!-- <%# Tag.all.each do |tag|  %>
-		  			  <li><%#=h link_to tag.name, :controller => "deliverables", :action => "list_for_tag", :id => tag.id %></li>
+		            <% Tag.all.each do |tag|  %>
+		  			  <li><%=h link_to tag.name, :controller => "deliverables", :action => "list_for_tag", :id => tag.id %></li>
 		              <!-- TODO figure out how to link to this through the restful path -->
-		            <%# end  %> -->
+		            <% end  %>
 		    </ul>
 	      </div>
   	  </div>

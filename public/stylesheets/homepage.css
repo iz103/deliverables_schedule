@@ -18,9 +18,9 @@ pre {
   font-size: 11px;
 }
 
-a { color: #000; }
-a:visited { color: #666; }
-a:hover { color: #fff; background-color:#000; }
+a { color: #fff; }
+a:visited { color: #fff; }
+a:hover { color: #fff; }
 
 .fieldWithErrors {
   padding: 2px;
@@ -65,6 +65,11 @@ a:hover { color: #fff; background-color:#000; }
 	clear: both;
 }
 
+#header a { color: #fff; }
+#header a:visited { color: #fff; }
+#header a:hover { color: #fff; }
+
+
 #title {
 	
 	font-size: 200%;
@@ -82,7 +87,7 @@ a:hover { color: #fff; background-color:#000; }
 #content {
 	background-color: #fefdfa;
     width: 80%;
-    min-width: 500px;
+    min-width: 900px;
 	left: 12%;
 	right: 12%;
 	position: relative;
@@ -91,4 +96,16 @@ a:hover { color: #fff; background-color:#000; }
 
 #bullet-points {
 	margin-left: 10px;
+}
+
+/*-------------------Login Form-------------------*/
+
+#login-form {
+	left: 20px;
+	position: relative;
+}
+
+#login-header {
+	left: 20px;
+	position: relative;
 }

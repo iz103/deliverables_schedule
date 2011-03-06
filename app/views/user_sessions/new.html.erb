@@ -1,14 +1,19 @@
 <%# title "Login"%>
-<h1>Login</h1>
+<div id="login-header">
+  <h2>Login</h2>	
+</div>
 
-<% form_for @user_session do |f| -%>
- <%= f.error_messages%>
- <p>
-	<%= f.label :username %>
-	<%= f.text_field :username %>
- </p>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
- </p>
- <p><%= f.submit "Log in" %></p>
-<% end -%>
+<div id="login-form">
+  <% form_for @user_session do |f| -%>
+    <%= f.error_messages%>
+	<p>
+	  <%= f.label :username %>
+	  <%= f.text_field :username %>
+	 </p>
+	   <%= f.label :password %>
+	   <%= f.password_field :password %>
+	 </p>
+	 <p><%= f.submit "Log in" %></p>
+	<% end -%>	
+</div>
+
