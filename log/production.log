@@ -1,0 +1,72 @@
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-06 14:44:28) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 22ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-06 14:44:30) [GET]
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined method `username' for #<UserSession: no credentials provided>) on line #8 of app/views/user_sessions/new.html.erb:
+5:  <%= f.error_messages%>
+6:  <p>
+7: 	<%= f.label :username %>
+8: 	<%= f.text_field :username %>
+9:  </p>
+10:   <%= f.label :password %>
+11:   <%= f.password_field :password %>
+
+    app/views/user_sessions/new.html.erb:8
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/user_sessions/new.html.erb:4
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-06 14:44:52) [GET]
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined method `username' for #<UserSession: no credentials provided>) on line #8 of app/views/user_sessions/new.html.erb:
+5:  <%= f.error_messages%>
+6:  <p>
+7: 	<%= f.label :username %>
+8: 	<%= f.text_field :username %>
+9:  </p>
+10:   <%= f.label :password %>
+11:   <%= f.password_field :password %>
+
+    app/views/user_sessions/new.html.erb:8
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/user_sessions/new.html.erb:4
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
