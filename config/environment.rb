@@ -22,6 +22,8 @@ Rails::Initializer.run do |config|
 
   config.gem "haml"
   config.gem "authlogic"
+  config.gem "acts-as-taggable-on"
+  config.gem "fastercsv"
   
 
 
