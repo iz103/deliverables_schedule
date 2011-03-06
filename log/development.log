@@ -35247,3 +35247,118 @@ Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-06 14:32:12) [GE
 Rendering template within layouts/homepage
 Rendering user_sessions/new
 Completed in 55ms (View: 24, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-06 14:35:49) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 36ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-06 14:36:17) [GET]
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 125ms (View: 13, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-06 14:36:21) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"iziz", "password"=>"iziziz"}, "authenticity_token"=>"Lg66q+jM9WeQjK+CEHuo3GjNpXl90YcRlSXmZgdMHd8="}
+  [4;36;1mUser Load (21.3ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'iziz') LIMIT 1[0m
+Redirected to http://localhost:3000/deliverables
+Completed in 543ms (DB: 21) | 302 Found [http://localhost/user_sessions]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-06 14:36:21) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (2.1ms)[0m   [0;1mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+  [4;35;1mTag Load (12.9ms)[0m   [0mSELECT * FROM "tags" [0m
+Completed in 350ms (View: 111, DB: 15) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#new (for 127.0.0.1 at 2011-03-06 14:36:25) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering deliverables/new
+  [4;35;1mTag Load (21.5ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = NULL) AND ("taggings".taggable_type = 'Deliverable') AND ((taggings.tagger_id IS NULL AND taggings.context = 'disciplines'))) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+Completed in 145ms (View: 60, DB: 22) | 200 OK [http://localhost/deliverables/new]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-06 14:36:27) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.8ms)[0m   [0;1mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+Completed in 244ms (View: 59, DB: 2) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-06 14:36:29) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (17.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (3.2ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mDelivery Load (2.6ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY actual_date[0m
+Rendered deliveries/_graph (84.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mDeliverable Load (0.8ms)[0m   [0;1mSELECT * FROM "deliverables" [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" [0m
+Completed in 322ms (View: 231, DB: 25) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliverablesController#list_for_tag (for 127.0.0.1 at 2011-03-06 14:36:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE (name LIKE 'drainage') [0m
+Rendering template within layouts/application
+Rendering deliverables/list_for_tag
+  [4;35;1mDeliverable Load (21.3ms)[0m   [0mSELECT "deliverables".* FROM "deliverables" JOIN taggings deliverables_taggings_drainage_891 ON deliverables_taggings_drainage_891.taggable_id = deliverables.id AND deliverables_taggings_drainage_891.taggable_type = 'Deliverable' AND deliverables_taggings_drainage_891.tag_id = 1 [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+Completed in 135ms (View: 49, DB: 23) | 200 OK [http://localhost/deliverables/list_for_tag?id=1]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-06 14:36:38) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 9) [0m
+Rendering template within layouts/application
+Rendering deliverables/show
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 9) AND ("taggings".taggable_type = 'Deliverable') AND ((taggings.tagger_id IS NULL AND taggings.context = 'disciplines'))) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" [0m
+Completed in 105ms (View: 41, DB: 2) | 200 OK [http://localhost/deliverables/9]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-06 14:36:41) [GET]
+  Parameters: {"deliverable_id"=>"9"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.4ms)[0m   [0;1mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 9) [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;35;1mSQL (19.3ms)[0m   [0mSELECT count(*) AS count_all FROM "deliveries" WHERE ("deliveries".deliverable_id = 9) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" [0m
+Completed in 131ms (View: 13, DB: 20) | 200 OK [http://localhost/deliverables/9/deliveries]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-03-06 14:36:48) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 40ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-06 14:36:48) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 37ms (View: 30, DB: 0) | 200 OK [http://localhost/]
