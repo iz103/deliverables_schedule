@@ -70,3 +70,257 @@ ActionView::TemplateError (undefined method `username' for #<UserSession: no cre
     /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (internal_server_error)
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-06 22:03:09) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+
+ActionView::TemplateError (Could not find table 'users') on line #13 of app/views/layouts/homepage.html.erb:
+10: <body>
+11:   <div id="header">
+12: 	<%= link_to "Home", root_path %>
+13:   	<% if current_user %>
+14: 	  <%= link_to "Edit Profile", edit_user_path (:current)%>
+15: 	  <%= link_to "Logout", logout_path %>
+16: 	  <%= link_to "Deliverables Schedule", deliverables_path %>
+
+    authlogic (2.1.6) lib/authlogic/session/scopes.rb:95:in `send'
+    authlogic (2.1.6) lib/authlogic/session/scopes.rb:95:in `search_for_record'
+    authlogic (2.1.6) lib/authlogic/session/scopes.rb:94:in `send'
+    authlogic (2.1.6) lib/authlogic/session/scopes.rb:94:in `search_for_record'
+    authlogic (2.1.6) lib/authlogic/session/cookies.rb:108:in `persist_by_cookie'
+    authlogic (2.1.6) lib/authlogic/session/callbacks.rb:90:in `persist'
+    authlogic (2.1.6) lib/authlogic/session/persistence.rb:55:in `persisting?'
+    authlogic (2.1.6) lib/authlogic/session/persistence.rb:39:in `find'
+    app/controllers/application_controller.rb:15:in `current_user_session'
+    app/controllers/application_controller.rb:20:in `current_user'
+    (eval):2:in `send'
+    (eval):2:in `current_user'
+    app/views/layouts/homepage.html.erb:13
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-06 22:05:22) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+
+ActionView::TemplateError (Could not find table 'users') on line #13 of app/views/layouts/homepage.html.erb:
+10: <body>
+11:   <div id="header">
+12: 	<%= link_to "Home", root_path %>
+13:   	<% if current_user %>
+14: 	  <%= link_to "Edit Profile", edit_user_path (:current)%>
+15: 	  <%= link_to "Logout", logout_path %>
+16: 	  <%= link_to "Deliverables Schedule", deliverables_path %>
+
+    authlogic (2.1.6) lib/authlogic/session/scopes.rb:95:in `send'
+    authlogic (2.1.6) lib/authlogic/session/scopes.rb:95:in `search_for_record'
+    authlogic (2.1.6) lib/authlogic/session/scopes.rb:94:in `send'
+    authlogic (2.1.6) lib/authlogic/session/scopes.rb:94:in `search_for_record'
+    authlogic (2.1.6) lib/authlogic/session/cookies.rb:108:in `persist_by_cookie'
+    authlogic (2.1.6) lib/authlogic/session/callbacks.rb:90:in `persist'
+    authlogic (2.1.6) lib/authlogic/session/persistence.rb:55:in `persisting?'
+    authlogic (2.1.6) lib/authlogic/session/persistence.rb:39:in `find'
+    app/controllers/application_controller.rb:15:in `current_user_session'
+    app/controllers/application_controller.rb:20:in `current_user'
+    (eval):2:in `send'
+    (eval):2:in `current_user'
+    app/views/layouts/homepage.html.erb:13
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-06 22:05:24) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+
+ActionView::TemplateError (Could not find table 'users') on line #13 of app/views/layouts/homepage.html.erb:
+10: <body>
+11:   <div id="header">
+12: 	<%= link_to "Home", root_path %>
+13:   	<% if current_user %>
+14: 	  <%= link_to "Edit Profile", edit_user_path (:current)%>
+15: 	  <%= link_to "Logout", logout_path %>
+16: 	  <%= link_to "Deliverables Schedule", deliverables_path %>
+
+    authlogic (2.1.6) lib/authlogic/session/scopes.rb:95:in `send'
+    authlogic (2.1.6) lib/authlogic/session/scopes.rb:95:in `search_for_record'
+    authlogic (2.1.6) lib/authlogic/session/scopes.rb:94:in `send'
+    authlogic (2.1.6) lib/authlogic/session/scopes.rb:94:in `search_for_record'
+    authlogic (2.1.6) lib/authlogic/session/cookies.rb:108:in `persist_by_cookie'
+    authlogic (2.1.6) lib/authlogic/session/callbacks.rb:90:in `persist'
+    authlogic (2.1.6) lib/authlogic/session/persistence.rb:55:in `persisting?'
+    authlogic (2.1.6) lib/authlogic/session/persistence.rb:39:in `find'
+    app/controllers/application_controller.rb:15:in `current_user_session'
+    app/controllers/application_controller.rb:20:in `current_user'
+    (eval):2:in `send'
+    (eval):2:in `current_user'
+    app/views/layouts/homepage.html.erb:13
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-06 22:05:46) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-06 22:05:48) [GET]
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 26ms (View: 19, DB: 1) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-06 22:05:56) [GET]
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 18ms (View: 17, DB: 1) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-06 22:06:01) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"admin", "password"=>"admin"}, "authenticity_token"=>"Lg66q+jM9WeQjK+CEHuo3GjNpXl90YcRlSXmZgdMHd8="}
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 347ms (View: 19, DB: 1) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-03-06 22:06:36) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/users/new]
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-06 22:06:36) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 12ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-06 22:06:38) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 10ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-06 22:06:39) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 11ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-03-06 22:06:42) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-06 22:06:42) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 121ms (View: 120, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-03-06 22:07:04) [GET]
+Rendering template within layouts/application
+Rendering users/index
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::Tag) on line #38 of app/views/layouts/application.html.erb:
+35: 		    <%#= render :partial => "tag_cloud" %>
+36: 		
+37: 		    <ul>
+38: 		            <% Tag.all.each do |tag|  %>
+39: 		  			  <li><%=h link_to tag.name, :controller => "deliverables", :action => "list_for_tag", :id => tag.id %></li>
+40: 		              <!-- TODO figure out how to link to this through the restful path -->
+41: 		            <% end  %>
+
+    app/views/layouts/application.html.erb:38
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/users_controller.rb:8:in `index'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-03-06 22:07:07) [GET]
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::Tag) on line #38 of app/views/layouts/application.html.erb:
+35: 		    <%#= render :partial => "tag_cloud" %>
+36: 		
+37: 		    <ul>
+38: 		            <% Tag.all.each do |tag|  %>
+39: 		  			  <li><%=h link_to tag.name, :controller => "deliverables", :action => "list_for_tag", :id => tag.id %></li>
+40: 		              <!-- TODO figure out how to link to this through the restful path -->
+41: 		            <% end  %>
+
+    app/views/layouts/application.html.erb:38
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/users_controller.rb:30:in `new'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
