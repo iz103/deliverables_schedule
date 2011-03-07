@@ -324,3 +324,1260 @@ ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemp
     /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-03-06 22:10:20) [GET]
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::Tag) on line #38 of app/views/layouts/application.html.erb:
+35: 		    <%#= render :partial => "tag_cloud" %>
+36: 		
+37: 		    <ul>
+38: 		            <% Tag.all.each do |tag|  %>
+39: 		  			  <li><%=h link_to tag.name, :controller => "deliverables", :action => "list_for_tag", :id => tag.id %></li>
+40: 		              <!-- TODO figure out how to link to this through the restful path -->
+41: 		            <% end  %>
+
+    app/views/layouts/application.html.erb:38
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/users_controller.rb:30:in `new'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-06 22:10:24) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 23ms (View: 15, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-03-06 22:10:27) [GET]
+Rendering template within layouts/application
+Rendering users/index
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::Tag) on line #38 of app/views/layouts/application.html.erb:
+35: 		    <%#= render :partial => "tag_cloud" %>
+36: 		
+37: 		    <ul>
+38: 		            <% Tag.all.each do |tag|  %>
+39: 		  			  <li><%=h link_to tag.name, :controller => "deliverables", :action => "list_for_tag", :id => tag.id %></li>
+40: 		              <!-- TODO figure out how to link to this through the restful path -->
+41: 		            <% end  %>
+
+    app/views/layouts/application.html.erb:38
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/users_controller.rb:8:in `index'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-07 19:47:56) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 120ms (View: 112, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-07 19:47:58) [GET]
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 43ms (View: 16, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-07 19:48:04) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"iziz", "password"=>"iziziz"}, "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c="}
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 489ms (View: 16, DB: 18) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-07 19:48:11) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"iz", "password"=>"iziz"}, "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c="}
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 20ms (View: 15, DB: 0) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-07 19:48:14) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"iz", "password"=>"iziziz"}, "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c="}
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 20ms (View: 15, DB: 0) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-07 19:48:18) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"iziz", "password"=>"iziziz"}, "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c="}
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-07 19:48:23) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"admin", "password"=>"admin"}, "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c="}
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-07 19:48:26) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"admin", "password"=>"admin"}, "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c="}
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 20ms (View: 14, DB: 0) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#show (for 127.0.0.1 at 2011-03-07 19:49:16) [GET]
+  Parameters: {"id"=>"users"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserSessionsController#users (for 127.0.0.1 at 2011-03-07 19:49:20) [GET]
+  Parameters: {"id"=>"new"}
+
+ActionController::UnknownAction (No action responded to users. Actions: create, destroy, and new):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-03-07 19:49:26) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/users/new]
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-07 19:49:26) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-07 19:49:28) [GET]
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-07 19:49:34) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"iziz", "password"=>"iziziz"}, "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c="}
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 135ms (View: 130, DB: 0) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-07 19:49:46) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"admin", "password"=>"adminadmin"}, "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c="}
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-07 19:52:23) [GET]
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 24ms (View: 16, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-03-07 19:52:29) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 34ms (View: 26, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-07 19:52:43) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c=", "user"=>{"password_confirmation"=>"iziz", "username"=>"iz", "password"=>"iziz", "email"=>"iziziz@iziziz.com"}}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 482ms (View: 23, DB: 36) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-03-07 19:52:52) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c=", "user"=>{"password_confirmation"=>"iziziz", "username"=>"iziz", "password"=>"iziziz", "email"=>"iziziz@iziziz.com"}}
+Redirected to http://localhost:3000/users/1
+Completed in 77ms (DB: 55) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-03-07 19:52:52) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/users/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 19:52:58) [GET]
+Rendering template within layouts/application
+Rendering deliveries/index
+
+ActionView::TemplateError (NaN) on line #9 of app/views/deliveries/index.html.erb:
+6:   <div id="name">
+7: 	Total number of deliveries: <%= Delivery.all.count %> <br>
+8:     Number of complete deliveries <%= Delivery.complete.to_i %><br>
+9: 	Percentage Complete: <%= Delivery.percentage_complete.round(1) %>%<br>
+10:     Number of overdue Deliveries: <%= Delivery.overdue.count %><br>
+11:     Number of late deliveries: <%= Delivery.late.count %><br>
+12:     Number of deliveries due today: <%= Delivery.due_today.count %><br>
+
+    app/views/deliveries/index.html.erb:9
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 19:53:13) [GET]
+Rendering template within layouts/application
+Rendering deliveries/index
+
+ActionView::TemplateError (NaN) on line #9 of app/views/deliveries/index.html.erb:
+6:   <div id="name">
+7: 	Total number of deliveries: <%= Delivery.all.count %> <br>
+8:     Number of complete deliveries <%= Delivery.complete.to_i %><br>
+9: 	Percentage Complete: <%= Delivery.percentage_complete.round(1) %>%<br>
+10:     Number of overdue Deliveries: <%= Delivery.overdue.count %><br>
+11:     Number of late deliveries: <%= Delivery.late.count %><br>
+12:     Number of deliveries due today: <%= Delivery.due_today.count %><br>
+
+    app/views/deliveries/index.html.erb:9
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-07 19:53:16) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 36ms (View: 7, DB: 15) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#new (for 127.0.0.1 at 2011-03-07 19:53:18) [GET]
+Rendering template within layouts/application
+Rendering deliverables/new
+Completed in 168ms (View: 159, DB: 2) | 200 OK [http://localhost/deliverables/new]
+
+
+Processing DeliverablesController#create (for 127.0.0.1 at 2011-03-07 19:53:40) [POST]
+  Parameters: {"deliverable"=>{"number"=>"1234", "title"=>"Drainage", "discipline_list"=>"Drainage"}, "commit"=>"Create", "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c="}
+Redirected to http://localhost:3000/deliverables/1
+Completed in 246ms (DB: 3) | 302 Found [http://localhost/deliverables]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-07 19:53:40) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 19:53:43) [GET]
+Rendering template within layouts/application
+Rendering deliveries/index
+
+ActionView::TemplateError (NaN) on line #9 of app/views/deliveries/index.html.erb:
+6:   <div id="name">
+7: 	Total number of deliveries: <%= Delivery.all.count %> <br>
+8:     Number of complete deliveries <%= Delivery.complete.to_i %><br>
+9: 	Percentage Complete: <%= Delivery.percentage_complete.round(1) %>%<br>
+10:     Number of overdue Deliveries: <%= Delivery.overdue.count %><br>
+11:     Number of late deliveries: <%= Delivery.late.count %><br>
+12:     Number of deliveries due today: <%= Delivery.due_today.count %><br>
+
+    app/views/deliveries/index.html.erb:9
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 19:54:20) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#new (for 127.0.0.1 at 2011-03-07 19:54:22) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/new
+Completed in 166ms (View: 157, DB: 1) | 200 OK [http://localhost/deliverables/1/deliveries/new]
+
+
+Processing DeliveriesController#create (for 127.0.0.1 at 2011-03-07 19:54:27) [POST]
+  Parameters: {"deliverable_id"=>"1", "commit"=>"Create", "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c=", "delivery"=>{"planned_date(1i)"=>"2011", "planned_date(2i)"=>"3", "planned_date(3i)"=>"7"}}
+Redirected to http://localhost:3000/deliverables/1/deliveries
+Completed in 38ms (DB: 23) | 302 Found [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 19:54:27) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #31 of app/views/deliveries/index.html.erb:
+28: 	   <% form_tag complete_deliverable_deliveries_path, :method => :put do %>
+29: 
+30: 	      <% @deliveries.each do |delivery|%>
+31: 	  	    <tr><td><%=h delivery.status.name %></td><td><%=h delivery.planned_date.to_date %>
+32: 		    </td><td><% if delivery.actual_date? %> 
+33: 			           Complete <%= check_box_tag "deliveries_ids[]", delivery.id %>
+34: 			         <% else %> 
+
+    app/views/deliveries/index.html.erb:31
+    app/views/deliveries/index.html.erb:30
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:92:in `capture'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:215:in `form_tag'
+    app/views/deliveries/index.html.erb:28
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-07 19:58:14) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 28ms (View: 20, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 19:58:16) [GET]
+Rendering template within layouts/application
+Rendering deliveries/index
+Completed in 81ms (View: 65, DB: 2) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-07 19:58:22) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 32ms (View: 17, DB: 1) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#new (for 127.0.0.1 at 2011-03-07 19:58:28) [GET]
+Rendering template within layouts/application
+Rendering deliverables/new
+Completed in 31ms (View: 23, DB: 1) | 200 OK [http://localhost/deliverables/new]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-07 19:58:30) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-07 19:58:47) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 19:58:48) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #31 of app/views/deliveries/index.html.erb:
+28: 	   <% form_tag complete_deliverable_deliveries_path, :method => :put do %>
+29: 
+30: 	      <% @deliveries.each do |delivery|%>
+31: 	  	    <tr><td><%=h delivery.status.name %></td><td><%=h delivery.planned_date.to_date %>
+32: 		    </td><td><% if delivery.actual_date? %> 
+33: 			           Complete <%= check_box_tag "deliveries_ids[]", delivery.id %>
+34: 			         <% else %> 
+
+    app/views/deliveries/index.html.erb:31
+    app/views/deliveries/index.html.erb:30
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:92:in `capture'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:215:in `form_tag'
+    app/views/deliveries/index.html.erb:28
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 19:58:53) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #31 of app/views/deliveries/index.html.erb:
+28: 	   <% form_tag complete_deliverable_deliveries_path, :method => :put do %>
+29: 
+30: 	      <% @deliveries.each do |delivery|%>
+31: 	  	    <tr><td><%=h delivery.status.name %></td><td><%=h delivery.planned_date.to_date %>
+32: 		    </td><td><% if delivery.actual_date? %> 
+33: 			           Complete <%= check_box_tag "deliveries_ids[]", delivery.id %>
+34: 			         <% else %> 
+
+    app/views/deliveries/index.html.erb:31
+    app/views/deliveries/index.html.erb:30
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:92:in `capture'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:215:in `form_tag'
+    app/views/deliveries/index.html.erb:28
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-07 19:58:57) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 144ms (View: 134, DB: 2) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 19:59:00) [GET]
+Rendering template within layouts/application
+Rendering deliveries/index
+Completed in 26ms (View: 17, DB: 2) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-07 19:59:03) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#new (for 127.0.0.1 at 2011-03-07 19:59:05) [GET]
+Rendering template within layouts/application
+Rendering deliverables/new
+Completed in 27ms (View: 19, DB: 1) | 200 OK [http://localhost/deliverables/new]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-07 19:59:07) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-07 19:59:09) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 21ms (View: 13, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 19:59:10) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #31 of app/views/deliveries/index.html.erb:
+28: 	   <% form_tag complete_deliverable_deliveries_path, :method => :put do %>
+29: 
+30: 	      <% @deliveries.each do |delivery|%>
+31: 	  	    <tr><td><%=h delivery.status.name %></td><td><%=h delivery.planned_date.to_date %>
+32: 		    </td><td><% if delivery.actual_date? %> 
+33: 			           Complete <%= check_box_tag "deliveries_ids[]", delivery.id %>
+34: 			         <% else %> 
+
+    app/views/deliveries/index.html.erb:31
+    app/views/deliveries/index.html.erb:30
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:92:in `capture'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:215:in `form_tag'
+    app/views/deliveries/index.html.erb:28
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 20:06:19) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #31 of app/views/deliveries/index.html.erb:
+28: 	   <% form_tag complete_deliverable_deliveries_path, :method => :put do %>
+29: 
+30: 	      <% @deliveries.each do |delivery|%>
+31: 	  	    <tr><td><%=h delivery.status.name %></td><td><%=h delivery.planned_date.to_date %>
+32: 		    </td><td><% if delivery.actual_date? %> 
+33: 			           Complete <%= check_box_tag "deliveries_ids[]", delivery.id %>
+34: 			         <% else %> 
+
+    app/views/deliveries/index.html.erb:31
+    app/views/deliveries/index.html.erb:30
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:92:in `capture'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:215:in `form_tag'
+    app/views/deliveries/index.html.erb:28
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-07 20:06:22) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 20:06:24) [GET]
+Rendering template within layouts/application
+Rendering deliveries/index
+Completed in 64ms (View: 55, DB: 2) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-07 20:06:27) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 141ms (View: 15, DB: 1) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-07 20:06:29) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 27ms (View: 18, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 20:06:30) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #31 of app/views/deliveries/index.html.erb:
+28: 	   <% form_tag complete_deliverable_deliveries_path, :method => :put do %>
+29: 
+30: 	      <% @deliveries.each do |delivery|%>
+31: 	  	    <tr><td><%=h delivery.status.name %></td><td><%=h delivery.planned_date.to_date %>
+32: 		    </td><td><% if delivery.actual_date? %> 
+33: 			           Complete <%= check_box_tag "deliveries_ids[]", delivery.id %>
+34: 			         <% else %> 
+
+    app/views/deliveries/index.html.erb:31
+    app/views/deliveries/index.html.erb:30
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:92:in `capture'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:215:in `form_tag'
+    app/views/deliveries/index.html.erb:28
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliverablesController#statuses (for 127.0.0.1 at 2011-03-07 20:06:52) [GET]
+  Parameters: {"id"=>"new"}
+
+ActionController::UnknownAction (No action responded to statuses. Actions: create, destroy, edit, index, list_for_tag, new, show, tag_cloud, and update):
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StatusesController#new (for 127.0.0.1 at 2011-03-07 20:07:04) [GET]
+Rendering template within layouts/application
+Rendering statuses/new
+Completed in 27ms (View: 18, DB: 0) | 200 OK [http://localhost/statuses/new]
+
+
+Processing StatusesController#create (for 127.0.0.1 at 2011-03-07 20:07:12) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c=", "status"=>{"position"=>"1", "name"=>"AB", "description"=>""}}
+Redirected to http://localhost:3000/statuses/1
+Completed in 24ms (DB: 1) | 302 Found [http://localhost/statuses]
+
+
+Processing StatusesController#show (for 127.0.0.1 at 2011-03-07 20:07:12) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering statuses/show
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/statuses/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 20:07:15) [GET]
+Rendering template within layouts/application
+Rendering deliveries/index
+Completed in 26ms (View: 17, DB: 2) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-07 20:07:16) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-07 20:07:17) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 20:07:19) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #31 of app/views/deliveries/index.html.erb:
+28: 	   <% form_tag complete_deliverable_deliveries_path, :method => :put do %>
+29: 
+30: 	      <% @deliveries.each do |delivery|%>
+31: 	  	    <tr><td><%=h delivery.status.name %></td><td><%=h delivery.planned_date.to_date %>
+32: 		    </td><td><% if delivery.actual_date? %> 
+33: 			           Complete <%= check_box_tag "deliveries_ids[]", delivery.id %>
+34: 			         <% else %> 
+
+    app/views/deliveries/index.html.erb:31
+    app/views/deliveries/index.html.erb:30
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:92:in `capture'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:215:in `form_tag'
+    app/views/deliveries/index.html.erb:28
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StatusesController#index (for 127.0.0.1 at 2011-03-07 20:07:42) [GET]
+Rendering template within layouts/application
+Rendering statuses/index
+Completed in 10ms (View: 8, DB: 1) | 200 OK [http://localhost/statuses]
+
+
+Processing StatusesController#new (for 127.0.0.1 at 2011-03-07 20:07:51) [GET]
+Rendering template within layouts/application
+Rendering statuses/new
+Completed in 14ms (View: 13, DB: 0) | 200 OK [http://localhost/statuses/new]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-07 20:08:35) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 64ms (View: 21, DB: 19) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-07 20:08:36) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 30ms (View: 21, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 20:08:37) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #31 of app/views/deliveries/index.html.erb:
+28: 	   <% form_tag complete_deliverable_deliveries_path, :method => :put do %>
+29: 
+30: 	      <% @deliveries.each do |delivery|%>
+31: 	  	    <tr><td><%=h delivery.status.name %></td><td><%=h delivery.planned_date.to_date %>
+32: 		    </td><td><% if delivery.actual_date? %> 
+33: 			           Complete <%= check_box_tag "deliveries_ids[]", delivery.id %>
+34: 			         <% else %> 
+
+    app/views/deliveries/index.html.erb:31
+    app/views/deliveries/index.html.erb:30
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:92:in `capture'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:215:in `form_tag'
+    app/views/deliveries/index.html.erb:28
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-07 20:31:08) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/deliverables/]
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-07 20:31:08) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-07 20:31:10) [GET]
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 27ms (View: 20, DB: 1) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-07 20:31:16) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"iziz", "password"=>"iziziz"}, "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c="}
+Redirected to http://localhost:3000/deliverables
+Completed in 386ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-07 20:31:17) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 53ms (View: 23, DB: 14) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-07 20:31:20) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-07 20:31:21) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 27ms (View: 17, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 20:31:23) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #31 of app/views/deliveries/index.html.erb:
+28: 	   <% form_tag complete_deliverable_deliveries_path, :method => :put do %>
+29: 
+30: 	      <% @deliveries.each do |delivery|%>
+31: 	  	    <tr><td><%=h delivery.status.name %></td><td><%=h delivery.planned_date.to_date %>
+32: 		    </td><td><% if delivery.actual_date? %> 
+33: 			           Complete <%= check_box_tag "deliveries_ids[]", delivery.id %>
+34: 			         <% else %> 
+
+    app/views/deliveries/index.html.erb:31
+    app/views/deliveries/index.html.erb:30
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:92:in `capture'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:215:in `form_tag'
+    app/views/deliveries/index.html.erb:28
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StatusesController#show (for 127.0.0.1 at 2011-03-07 20:31:31) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering statuses/show
+Completed in 21ms (View: 9, DB: 13) | 200 OK [http://localhost/statuses/1]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-07 20:31:37) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 20:31:38) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #31 of app/views/deliveries/index.html.erb:
+28: 	   <% form_tag complete_deliverable_deliveries_path, :method => :put do %>
+29: 
+30: 	      <% @deliveries.each do |delivery|%>
+31: 	  	    <tr><td><%=h delivery.status.name %></td><td><%=h delivery.planned_date.to_date %>
+32: 		    </td><td><% if delivery.actual_date? %> 
+33: 			           Complete <%= check_box_tag "deliveries_ids[]", delivery.id %>
+34: 			         <% else %> 
+
+    app/views/deliveries/index.html.erb:31
+    app/views/deliveries/index.html.erb:30
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:92:in `capture'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:215:in `form_tag'
+    app/views/deliveries/index.html.erb:28
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 20:32:30) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #31 of app/views/deliveries/index.html.erb:
+28: 	   <% form_tag complete_deliverable_deliveries_path, :method => :put do %>
+29: 
+30: 	      <% @deliveries.each do |delivery|%>
+31: 	  	    <tr><td><%=h delivery.status.name %></td><td><%=h delivery.planned_date.to_date %>
+32: 		    </td><td><% if delivery.actual_date? %> 
+33: 			           Complete <%= check_box_tag "deliveries_ids[]", delivery.id %>
+34: 			         <% else %> 
+
+    app/views/deliveries/index.html.erb:31
+    app/views/deliveries/index.html.erb:30
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:92:in `capture'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:215:in `form_tag'
+    app/views/deliveries/index.html.erb:28
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-07 20:32:34) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 33ms (View: 18, DB: 2) | 200 OK [http://localhost/deliverables/]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-07 20:32:35) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 27ms (View: 18, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 20:32:36) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #31 of app/views/deliveries/index.html.erb:
+28: 	   <% form_tag complete_deliverable_deliveries_path, :method => :put do %>
+29: 
+30: 	      <% @deliveries.each do |delivery|%>
+31: 	  	    <tr><td><%=h delivery.status.name %></td><td><%=h delivery.planned_date.to_date %>
+32: 		    </td><td><% if delivery.actual_date? %> 
+33: 			           Complete <%= check_box_tag "deliveries_ids[]", delivery.id %>
+34: 			         <% else %> 
+
+    app/views/deliveries/index.html.erb:31
+    app/views/deliveries/index.html.erb:30
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:92:in `capture'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:215:in `form_tag'
+    app/views/deliveries/index.html.erb:28
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-07 20:53:28) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 29ms (View: 21, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-07 20:53:31) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-07 20:53:35) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 36ms (View: 21, DB: 1) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-07 20:53:37) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 26ms (View: 18, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 20:53:39) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+Completed in 29ms (View: 14, DB: 1) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#new (for 127.0.0.1 at 2011-03-07 20:53:41) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/new
+Completed in 67ms (View: 57, DB: 1) | 200 OK [http://localhost/deliverables/1/deliveries/new]
+
+
+Processing DeliveriesController#create (for 127.0.0.1 at 2011-03-07 20:53:44) [POST]
+  Parameters: {"deliverable_id"=>"1", "commit"=>"Create", "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c=", "delivery"=>{"planned_date(1i)"=>"2011", "status_id"=>"1", "planned_date(2i)"=>"3", "planned_date(3i)"=>"7"}}
+Redirected to http://localhost:3000/deliverables/1/deliveries
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 20:53:44) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+Completed in 25ms (View: 17, DB: 2) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 20:53:49) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+Completed in 132ms (View: 17, DB: 2) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-07 20:53:50) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 20:53:51) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+Completed in 27ms (View: 18, DB: 2) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#complete (for 127.0.0.1 at 2011-03-07 20:59:29) [PUT]
+  Parameters: {"deliverable_id"=>"1", "commit"=>"Complete", "deliveries_ids"=>["2"], "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c="}
+Redirected to http://localhost:3000/deliverables/1/deliveries
+Completed in 13ms (DB: 4) | 302 Found [http://localhost/deliverables/1/deliveries/complete]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 20:59:29) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+Completed in 28ms (View: 17, DB: 3) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliveriesController#complete (for 127.0.0.1 at 2011-03-07 20:59:31) [PUT]
+  Parameters: {"deliverable_id"=>"1", "commit"=>"Incomplete", "deliveries_ids"=>["2"], "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c="}
+Redirected to http://localhost:3000/deliverables/1/deliveries
+Completed in 11ms (DB: 3) | 302 Found [http://localhost/deliverables/1/deliveries/complete]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-07 20:59:32) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+Completed in 29ms (View: 20, DB: 2) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-07 21:03:42) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 76ms (View: 55, DB: 11) | 200 OK [http://localhost/]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-07 21:03:52) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::Tag) on line #38 of app/views/layouts/application.html.erb:
+35: 		    <%#= render :partial => "tag_cloud" %>
+36: 		
+37: 		    <ul>
+38: 		            <% Tag.all.each do |tag|  %>
+39: 		  			  <li><%=h link_to tag.name, :controller => "deliverables", :action => "list_for_tag", :id => tag.id %></li>
+40: 		              <!-- TODO figure out how to link to this through the restful path -->
+41: 		            <% end  %>
+
+    app/views/layouts/application.html.erb:38
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/deliverables_controller.rb:8:in `index'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-07 21:32:24) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 28ms (View: 20, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-07 21:32:30) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 62ms (View: 29, DB: 19) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#list_for_tag (for 127.0.0.1 at 2011-03-07 21:32:36) [GET]
+  Parameters: {"id"=>"2"}
+
+NameError (uninitialized constant DeliverablesController::Tag):
+  app/controllers/deliverables_controller.rb:90:in `list_for_tag'
+  haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-07 21:34:38) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 76ms (View: 31, DB: 23) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#list_for_tag (for 127.0.0.1 at 2011-03-07 21:34:40) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering deliverables/list_for_tag
+Completed in 33ms (View: 10, DB: 12) | 200 OK [http://localhost/deliverables/list_for_tag?id=1]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-07 21:34:43) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 27ms (View: 18, DB: 2) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliverablesController#list_for_tag (for 127.0.0.1 at 2011-03-07 21:34:46) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/application
+Rendering deliverables/list_for_tag
+Completed in 22ms (View: 10, DB: 2) | 200 OK [http://localhost/deliverables/list_for_tag?id=2]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-07 21:34:48) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-07 21:34:50) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://localhost/deliverables]
