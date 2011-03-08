@@ -87,8 +87,8 @@ class DeliverablesController < ApplicationController
   end
   
   def list_for_tag
-    @tags = ActsAsTaggableOn::Tag.all
-    @tag = ActsAsTaggableOn::Tag.find(params[:id])
+    @tags = Tag.all
+    @tag = Tag.find(params[:id])
     @deliverables = Deliverable.tagged_with(@tag)
     respond_to do |format|
       format.html

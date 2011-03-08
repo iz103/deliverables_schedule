@@ -36212,3 +36212,244 @@ Completed in 366ms (View: 124, DB: 33) | 200 OK [http://localhost/deliverables/1
   [4;36;1mTagging Load (0.2ms)[0m   [0;1mSELECT "taggings".id FROM "taggings" WHERE ("taggings"."tag_id" = 3 AND "taggings".taggable_type = 'Deliverable' AND "taggings".taggable_id = 1 AND "taggings".context = 'disciplines' AND "taggings".tagger_id IS NULL AND "taggings".tagger_type IS NULL) LIMIT 1[0m
   [4;35;1mTagging Create (0.3ms)[0m   [0mINSERT INTO "taggings" ("tagger_id", "created_at", "tag_id", "taggable_id", "context", "tagger_type", "taggable_type") VALUES(NULL, '2011-03-07 21:29:20', 3, 1, 'disciplines', NULL, 'Deliverable')[0m
   [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;36;1mDeliverable Load (0.3ms)[0m   [0;1mSELECT * FROM "deliverables" LIMIT 1[0m
+  [4;35;1mTag Load (73.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 1) AND ("taggings".taggable_type = 'Deliverable') AND ((taggings.tagger_id IS NULL AND taggings.context = 'disciplines'))) [0m
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-07 22:10:01) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 149ms (View: 141, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-07 22:10:03) [GET]
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 75ms (View: 44, DB: 1) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-07 22:10:08) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"iziz", "password"=>"iziziz"}, "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c="}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'iziz') LIMIT 1[0m
+Redirected to http://localhost:3000/deliverables
+Completed in 379ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-07 22:10:08) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.8ms)[0m   [0;1mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+
+ActionView::TemplateError (uninitialized constant ActsAsTaggableOn::Tag) on line #38 of app/views/layouts/application.html.erb:
+35: 		    <%#= render :partial => "tag_cloud" %>
+36: 		
+37: 		    <ul>
+38: 		            <% ActsAsTaggableOn::Tag.all.each do |tag|  %>
+39: 		  			  <li><%=h link_to tag.name, :controller => "deliverables", :action => "list_for_tag", :id => tag.id %></li>
+40: 		              <!-- TODO figure out how to link to this through the restful path -->
+41: 		            <% end  %>
+
+    app/views/layouts/application.html.erb:38
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/deliverables_controller.rb:8:in `index'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.9ms)
+Rendered rescues/_request_and_response (2.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-08 21:10:54) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+  [4;36;1mUser Load (12.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 236ms (View: 215, DB: 12) | 200 OK [http://localhost/]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-08 21:10:59) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (11.6ms)[0m   [0;1mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+
+ActionView::TemplateError (uninitialized constant ActsAsTaggableOn::Tag) on line #38 of app/views/layouts/application.html.erb:
+35: 		    <%#= render :partial => "tag_cloud" %>
+36: 		
+37: 		    <ul>
+38: 		            <% ActsAsTaggableOn::Tag.all.each do |tag|  %>
+39: 		  			  <li><%=h link_to tag.name, :controller => "deliverables", :action => "list_for_tag", :id => tag.id %></li>
+40: 		              <!-- TODO figure out how to link to this through the restful path -->
+41: 		            <% end  %>
+
+    app/views/layouts/application.html.erb:38
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/deliverables_controller.rb:8:in `index'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (111.5ms)
+Rendered rescues/_request_and_response (36.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-08 21:14:35) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (16.0ms)[0m   [0;1mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+
+ActionView::TemplateError (uninitialized constant ActsAsTaggableOn::Tag) on line #38 of app/views/layouts/application.html.erb:
+35: 		    <%#= render :partial => "tag_cloud" %>
+36: 		
+37: 		    <ul>
+38: 		            <% ActsAsTaggableOn::Tag.all.each do |tag|  %>
+39: 		  			  <li><%=h link_to tag.name, :controller => "deliverables", :action => "list_for_tag", :id => tag.id %></li>
+40: 		              <!-- TODO figure out how to link to this through the restful path -->
+41: 		            <% end  %>
+
+    app/views/layouts/application.html.erb:38
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/deliverables_controller.rb:8:in `index'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (102.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-08 21:14:38) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.8ms)[0m   [0;1mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+
+ActionView::TemplateError (uninitialized constant ActsAsTaggableOn::Tag) on line #38 of app/views/layouts/application.html.erb:
+35: 		    <%#= render :partial => "tag_cloud" %>
+36: 		
+37: 		    <ul>
+38: 		            <% ActsAsTaggableOn::Tag.all.each do |tag|  %>
+39: 		  			  <li><%=h link_to tag.name, :controller => "deliverables", :action => "list_for_tag", :id => tag.id %></li>
+40: 		              <!-- TODO figure out how to link to this through the restful path -->
+41: 		            <% end  %>
+
+    app/views/layouts/application.html.erb:38
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.24) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/deliverables_controller.rb:8:in `index'
+    haml (3.0.24) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (103.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-08 21:15:18) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (0.9ms)[0m   [0;1mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+  [4;35;1mTag Load (23.8ms)[0m   [0mSELECT * FROM "tags" [0m
+Completed in 169ms (View: 73, DB: 25) | 200 OK [http://localhost/deliverables]
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-08 21:24:07) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 73ms (View: 65, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-08 21:24:08) [GET]
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 63ms (View: 32, DB: 1) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-08 21:24:12) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"iziz", "password"=>"iziziz"}, "authenticity_token"=>"arWtC/O3IwtjYK/vYdJ4wjhigKSyHjJxeognviBEJ+c="}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'iziz') LIMIT 1[0m
+Redirected to http://localhost:3000/deliverables
+Completed in 327ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-08 21:24:12) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (15.0ms)[0m   [0;1mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+  [4;35;1mTag Load (12.6ms)[0m   [0mSELECT * FROM "tags" [0m
+Completed in 218ms (View: 86, DB: 28) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#list_for_tag (for 127.0.0.1 at 2011-03-08 21:24:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE (name LIKE 'drainage') [0m
+Rendering template within layouts/application
+Rendering deliverables/list_for_tag
+  [4;36;1mDeliverable Load (31.7ms)[0m   [0;1mSELECT "deliverables".* FROM "deliverables" JOIN taggings deliverables_taggings_drainage_934 ON deliverables_taggings_drainage_934.taggable_id = deliverables.id AND deliverables_taggings_drainage_934.taggable_type = 'Deliverable' AND deliverables_taggings_drainage_934.tag_id = 1 [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tags" [0m
+Completed in 139ms (View: 31, DB: 33) | 200 OK [http://localhost/deliverables/list_for_tag?id=1]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-08 21:24:18) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeliverable Load (0.4ms)[0m   [0mSELECT * FROM "deliverables" WHERE ("deliverables"."id" = 9) [0m
+Rendering template within layouts/application
+Rendering deliverables/show
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 9) AND ("taggings".taggable_type = 'Deliverable') AND ((taggings.tagger_id IS NULL AND taggings.context = 'disciplines'))) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" [0m
+Completed in 213ms (View: 28, DB: 2) | 200 OK [http://localhost/deliverables/9]
