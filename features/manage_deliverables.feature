@@ -61,3 +61,16 @@ Scenario: Create deliverable delivery
 # 	late deliverables (edit dates)
 # - email alerts: (late deliverables, deliverables due, dashboard roundup)
 
+
+
+
+
+
+# Before 1st of April
+# - graph bug on ie7
+# - link late deliveries to the list
+# - percentage planned complete
+# - user dashboard and message sent, activity feeds
+# - table view for deliverables, etc.
+# - sorting columns
+# - 

@@ -36483,3 +36483,54 @@ Rendered deliveries/_graph (52.5ms)
   [4;35;1mDeliverable Load (1.4ms)[0m   [0mSELECT * FROM "deliverables" [0m
   [4;36;1mTag Load (15.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
 Completed in 485ms (View: 364, DB: 42) | 200 OK [http://localhost/deliveries]
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-09 20:22:36) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 269ms (View: 259, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-09 20:22:38) [GET]
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 68ms (View: 37, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-09 20:22:43) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"iziz", "password"=>"iziziz"}, "authenticity_token"=>"/8VNh4KRCNq6w5a0LjwwbDwirYj+WM6T7SlwzIMdbWM="}
+  [4;36;1mUser Load (25.5ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'iziz') LIMIT 1[0m
+Redirected to http://localhost:3000/deliverables
+Completed in 462ms (DB: 25) | 302 Found [http://localhost/user_sessions]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-09 20:22:44) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeliverable Load (8.7ms)[0m   [0;1mSELECT * FROM "deliverables" [0m
+Rendering template within layouts/application
+Rendering deliverables/index
+  [4;35;1mTag Load (18.5ms)[0m   [0mSELECT * FROM "tags" [0m
+Completed in 306ms (View: 127, DB: 28) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-09 20:22:49) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDelivery Load (18.7ms)[0m   [0mSELECT * FROM "deliveries" [0m
+Rendering template within layouts/application
+Rendering deliveries/index
+  [4;36;1mDelivery Load (3.2ms)[0m   [0;1mSELECT * FROM "deliveries" ORDER BY planned_date[0m
+  [4;35;1mDelivery Load (2.4ms)[0m   [0mSELECT * FROM "deliveries" ORDER BY actual_date[0m
+Rendered deliveries/_graph (71.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "deliveries" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "deliveries" [0m
+  [4;36;1mDeliverable Load (0.8ms)[0m   [0;1mSELECT * FROM "deliverables" [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+Completed in 340ms (View: 224, DB: 26) | 200 OK [http://localhost/deliveries]
