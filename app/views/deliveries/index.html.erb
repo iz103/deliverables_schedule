@@ -4,10 +4,12 @@
 
   <%= render :partial => "graph" %>
   <div id="name">
-	Total number of deliveries: <%= Delivery.all.count %> <br>
+	
     Number of complete deliveries <%= Delivery.complete.to_i %><br>
-	Percentage Complete: <%= Delivery.percentage_complete.round(1) %>%<br>
-    Number of overdue Deliveries: <%= Delivery.overdue.count %><br>
+	Percentage Complete: <%= Delivery.percentage_complete.round(1) %>%<br><br>
+	To be on schedule, <%=h Delivery.bsb %> Deliveries will have to be made<br>
+    Number of overdue Deliveries <%= link_to Delivery.overdue.count %><br>
+    Total number of deliveries: <%= Delivery.all.count %> <br><br>
     Number of late deliveries: <%= Delivery.late.count %><br>
     Number of deliveries due today: <%= Delivery.due_today.count %><br>
     Number of deliveries due in the next week: <%= Delivery.due_in_next_week.count %><br>

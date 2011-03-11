@@ -139,6 +139,14 @@ def self.complete
   
 end
 
+def self.bsb
+  if Delivery.overdue.count > 0 or Delivery.due_today.count > 0 
+     bsb = Delivery.overdue.count + Delivery.due_today.count
+  else
+    puts 0
+  end
+  bsb
+end
 
 def self.percentage_complete
 
