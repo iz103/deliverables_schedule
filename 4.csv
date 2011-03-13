@@ -1,0 +1,100 @@
+number,title,tag1,tag2,tag3,tag4
+PD0285/BD/26/11,Deck Reinforcement Sheet 2,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/26/12,Steelwork Sheet 1,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/26/13,Steelwork Sheet 2,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/26/14,Steelwork Sheet 3,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/26/15,Bearing Schedule & Misc. Details,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/28/01,General Arrangement,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/02,Setting Out,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/03,Piling Details & Reinforcement,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/04,Abutment Dimensions,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/05,Abutment Reinforcement Sheet 1,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/06,Abutment Reinforcement Sheet 2,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/07,Pier Dimensions,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/08,Pier Reinforcement,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/09,Deck Dimensions,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/10,Deck Reinforcement,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/11,Steelwork Sheet 1,STR,Drawing,Hawton Lane Overbridge
+PD0285/BD/28/12,Steelwork Sheet 2,STR,Drawing,Hawton Lane Overbridge
+PD0285/BD/28/13,Steelwork Sheet 3,STR,Drawing,Hawton Lane Overbridge
+PD0285/BD/28/14,Misc Details,STR,Drawing,Hawton Lane Overbridge
+PD0285/BD/28/15,Bearing Schedule,STR,Drawing,Hawton Lane Overbridge
+PD0285/BD/29/01,General Arrangement,STR,Drawing,Farndon Underpass
+PD0285/BD/29/02,Setting Out,STR,Drawing,Farndon Underpass
+PD0285/BD/29/03,Waterproofing Details,STR,Drawing,Farndon Underpass
+PD0285/BD/29/04,Geometry and Formwork,STR,Drawing,Farndon Underpass
+PD0285/BD/29/05,Assembly,STR,Drawing,Farndon Underpass
+PD0285/BD/29/06,R1 RC Details,STR,Drawing,Farndon Underpass
+PD0285/BD/29/07,R2 RC Details,STR,Drawing,Farndon Underpass
+PD0285/BD/29/08,W1 RC Details,STR,Drawing,Farndon Underpass
+PD0285/BD/29/09,Insitue RC Details,STR,Drawing,Farndon Underpass
+PD0285/BD/29/10,Edge Beam Geometry,STR,Drawing,Farndon Underpass
+PD0285/BD/29/11,Edge Beam RC Details,STR,Drawing,Farndon Underpass
+PD0285/BD/29/12,Wing Wall Geometry,STR,Drawing,Farndon Underpass
+PD0285/BD/29/13,S1 RC Details,STR,Drawing,Farndon Underpass
+PD0285/BD/29/14,S2 RC Details,STR,Drawing,Farndon Underpass
+PD0285/BD/29/15,S3 RC Details,STR,Drawing,Farndon Underpass
+PD0285/BD/30/01,General Arrangement Sheet 1,STR,Drawing,Minor Culverts
+PD0285/BD/30/02,General Arrangement Sheet 2,STR,Drawing,Minor Culverts
+PD0285/BD/30/03,General Arrangement Sheet 3,STR,Drawing,Minor Culverts
+PD0285/BD/30/04,Misc. Details Sheet 1,STR,Drawing,Minor Culverts
+PD0285/BD/30/05,Misc. Details Sheet 2,STR,Drawing,Minor Culverts
+PD0285/BD/32/01,Bingham Railway Bridge - Bridleway Retaining Wall - General Arrangement,STR,Drawing,Retaining Walls
+PD0285/BD/33/01,MS3 Gantry Foundations - Dimensions,STR,Drawing,MS3
+PD0285/BD/33/02,MS3 Gantry Foundations - Reinforcement,STR,Drawing,MS3
+PD0285/BD/33/04,CCTV Camera Foundation,STR,Drawing,MS3
+PD0285/BD/30A/01,Flood Relief Culvert A General Arrangement,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30A/02,Outlet structure & insitu headwall reinforcement details,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30A/03,Inlet strcuture reinforcement details,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30A/04,Setting Out,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30A/05,Precast units reinforcement sheet 1 of 2,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30A/06,Precast units reinforcement sheet 2 of 2,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30A/07,Misc. Details,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30B/01,Flood Relief Culvert B General Arrangement,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30B/02,Outlet structure & insitu headwall reinforcement details,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30B/03,Inlet strcuture reinforcement details,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30B/04,Setting Out,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30B/05,Precast units reinforcement details sheet 1 of 2,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30B/06,Precast units reinforcement details sheet 2 of 2,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30B/07,Misc. Details,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30C/01,Flood Relief Culvert C General Arrangement 1,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30C/02,Flood Relief Culvert C General Arrangement 2,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30C/03,Outlet Structure RC Sheet 1,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30C/04,Outlet Structure RC Sheet 2,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30C/05,Inlet Structure RC Sheet 1,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30C/06,Inlet Structure RC Sheet 2,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30C/07,Setting Out,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30C/08,Precast Units RC Details Sheet 1,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30C/09,Precast Units RC Details Sheet 2,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30D/01,Flood Relief Culvert D General Arrangement Sheet 1,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30D/02,Flood Relief Culvert D General Arrangement Sheet 2,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30D/03,Outlet Structure RC sheet 1,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30D/04,Outlet Structure RC sheet 2,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30D/05,Setting Out,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30D/06,Inlet Structure RC Sheet 1,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30D/07,Inlet Structure RC Sheet 2,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30D/08,Precast Units RC Details Sheet 1,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30D/09,Precast Units RC Details Sheet 2,STR,Drawing,Flood Relief Culverts
+PD0285/7/30D/AIP/01,FRC D AIP,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30E/01,Flood Relief Culvert E General Arrangement,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30E/02,Box Dimensions,STR,Drawing,Flood Relief Culverts
+PD0285/BD/30E/03,Box Reinforcement Sheet 1,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30E/04,Box Reinforcement Sheet 2,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30E/05,Box Reinforcement Sheet 3,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30E/06,Wingwall Dimensions,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30E/07,Wingwall Reinforcement,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30E/08,Misc. Details,STR,Drawing,Flood Relief Culverts,
+PD0285/DR/500/000,Detailed Design Pre Earthworks Drains Key Sheet,DR,Drawing,Pre Earthworks Drains,
+PD0285/DR/500/001,Detailed Design Pre Earthworks Drains Sheet 1 Ch 400 - 700,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/002,Detailed Design Pre Earthworks Drains Sheet 2 Ch  700 - 1000,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/003,Detailed Design Pre Earthworks Drains Sheet 3 Ch 1000 - 1300,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/004,Detailed Design Pre Earthworks Drains Sheet 4 Ch 1300 - 1600,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/005,Detailed Design Pre Earthworks Drains Sheet 5 Ch 1600 - 1900,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/006,Detailed Design Pre Earthworks Drains Sheet 6 Ch 1900 - 2200,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/007,Detailed Design Pre Earthworks Drains Sheet 7 Ch 2200 - 2500,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/008,Detailed Design Pre Earthworks Drains Sheet 8 Ch 2500 - 2800,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/009,Detailed Design Pre Earthworks Drains Sheet 9 Ch 2800 - 3100,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/010,Detailed Design Pre Earthworks Drains Sheet 10 Ch 3100 - 3400,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/011,Detailed Design Pre Earthworks Drains Sheet 11 Ch 3400 - 3700,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/012,Detailed Design Pre Earthworks Drains Sheet 12 Ch 3700 - 4000,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/013,Detailed Design Pre Earthworks Drains Sheet 13 Ch 4000 - 4300,DR,Drawing,Pre Earthworks Drains,Section 1A

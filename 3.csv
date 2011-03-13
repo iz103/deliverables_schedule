@@ -1,0 +1,99 @@
+number,title,tag1,tag2,tag3,tag4
+PD0285/BD/20/02,Setting Out,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/03,Abutment Dimensions,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/04,Abutment Reinforcement Sheet 1,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/05,Abutment Reinforcement Sheet 2,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/06,Pier Dimensions,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/07,Pier Reinforcement,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/08,Deck Dimensions,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/09,Deck Reinforcement,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/10,Steelwork Sheet 1,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/11,Steelwork Sheet 2,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/12,Steelwork Sheet 3,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/13,Not Used,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/14,Misc. Details,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/15,Bearing Schedule,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/21/01,General Arrangement,STR,Drawing,Red Lodge Junction Overbridge,
+PD0285/BD/21/02,Setting Out,STR,Drawing,Red Lodge Junction Overbridge
+PD0285/BD/21/03,Abutment & Wingwall Dimensions,STR,Drawing,Red Lodge Junction Overbridge
+PD0285/BD/21/04,Abutment Reinforcement Sheet 1,STR,Drawing,Red Lodge Junction Overbridge
+PD0285/BD/21/05,Abutment Reinforcement Sheet 2,STR,Drawing,Red Lodge Junction Overbridge
+PD0285/BD/21/06,Pier Dimensions & Reinforcement,STR,Drawing,Red Lodge Junction Overbridge
+PD0285/BD/21/07,Deck Dimensions,STR,Drawing,Red Lodge Junction Overbridge
+PD0285/BD/21/08,Deck Reinforcement Sheet 1,STR,Drawing,Red Lodge Junction Overbridge
+PD0285/BD/21/09,Deck Reinforcement Sheet 2,STR,Drawing,Red Lodge Junction Overbridge
+PD0285/BD/21/10,Steelwork Sheet 1,STR,Drawing,Red Lodge Junction Overbridge
+PD0285/BD/21/11,Steelwork Sheet 2,STR,Drawing,Red Lodge Junction Overbridge
+PD0285/BD/21/12,Steelwork Sheet 3,STR,Drawing,Red Lodge Junction Overbridge
+PD0285/BD/21/14,Bearing Schedule & Misc. Details,STR,Drawing,Red Lodge Junction Overbridge
+PD0285/BD/21/15,Bearing Schedule,STR,Drawing,Red Lodge Junction Overbridge
+PD0285/BD/22/01,General Arrangement Sheet 1 of 2,STR,Drawing,Flintham Bridleway Bridge
+PD0285/BD/22/02,General Arrangement Sheet 2 of 2,STR,Drawing,Flintham Bridleway Bridge
+PD0285/BD/22/03,Setting Out,STR,Drawing,Flintham Bridleway Bridge
+PD0285/BD/22/04,Piling Details & Reinforcement,STR,Drawing,Flintham Bridleway Bridge
+PD0285/BD/22/05,West Abutment Dimensions,STR,Drawing,Flintham Bridleway Bridge
+PD0285/BD/22/06,West Abutment Reinforcement,STR,Drawing,Flintham Bridleway Bridge
+PD0285/BD/22/07,East Abutment Dimensions,STR,Drawing,Flintham Bridleway Bridge
+PD0285/BD/22/08,East Abutment Reinforcement,STR,Drawing,Flintham Bridleway Bridge
+PD0285/BD/22/09,East Ramp & Stair Dimensions,STR,Drawing,Flintham Bridleway Bridge
+PD0285/BD/22/10,East Ramp & Stair Reinforcement,STR,Drawing,Flintham Bridleway Bridge
+PD0285/BD/22/11,Steelwork Sheet 1,STR,Drawing,Flintham Bridleway Bridge
+PD0285/BD/22/12,Steelwork Sheet 2,STR,Drawing,Flintham Bridleway Bridge
+PD0285/BD/22/13,Steelwork Sheet 3,STR,Drawing,Flintham Bridleway Bridge
+PD0285/BD/22/14,Parapet Details,STR,Drawing,Flintham Bridleway Bridge
+PD0285/BD/22/15,Misc Details,STR,Drawing,Flintham Bridleway Bridge
+PD0285/BD/22/17,East Ramp Reinforcement W3 & W4,STR,Drawing,Flintham Bridleway Bridge
+PD0285/BD/23/01,General Arrangement,STR,Drawing,Flintham Junction Overbridge
+PD0285/BD/23/02,Setting Out,STR,Drawing,Flintham Junction Overbridge
+PD0285/BD/23/03,Abutment Dimensions,STR,Drawing,Flintham Junction Overbridge
+PD0285/BD/23/04,Abutment Reinforcement Sheet 1,STR,Drawing,Flintham Junction Overbridge
+PD0285/BD/23/05,Abutment Reinforcement Sheet 2,STR,Drawing,Flintham Junction Overbridge
+PD0285/BD/23/06,Pier Dimensions,STR,Drawing,Flintham Junction Overbridge
+PD0285/BD/23/07,Pier Reinforcement,STR,Drawing,Flintham Junction Overbridge
+PD0285/BD/23/08,Deck Dimensions,STR,Drawing,Flintham Junction Overbridge
+PD0285/BD/23/09,Deck Reinforcement Sheet 1,STR,Drawing,Flintham Junction Overbridge
+PD0285/BD/23/10,Deck Reinforcement Sheet 2,STR,Drawing,Flintham Junction Overbridge
+PD0285/BD/23/11,Steelwork Sheet 1,STR,Drawing,Flintham Junction Overbridge
+PD0285/BD/23/12,Steelwork Sheet 2,STR,Drawing,Flintham Junction Overbridge
+PD0285/BD/23/13,Steelwork Sheet 3,STR,Drawing,Flintham Junction Overbridge
+PD0285/BD/23/14,Misc Details,STR,Drawing,Flintham Junction Overbridge
+PD0285/BD/23/15,Bearing Schedule,STR,Drawing,Flintham Junction Overbridge
+PD0285/BD/24/01,General Arrangement,STR,Drawing,Syerston Overbridge
+PD0285/BD/24/02,Setting Out,STR,Drawing,Syerston Overbridge
+PD0285/BD/24/03,Abutment & Wingwall Dimensions,STR,Drawing,Syerston Overbridge
+PD0285/BD/24/04,Abutment Reinforcement,STR,Drawing,Syerston Overbridge
+PD0285/BD/24/05,Pier Dimensions,STR,Drawing,Syerston Overbridge
+PD0285/BD/24/06,Pier Reinforcement,STR,Drawing,Syerston Overbridge
+PD0285/BD/24/07,Deck Dimensions,STR,Drawing,Syerston Overbridge
+PD0285/BD/24/08,Deck Reinforcement Sheet 1,STR,Drawing,Syerston Overbridge
+PD0285/BD/24/09,Deck Reinforcement Sheet 2,STR,Drawing,Syerston Overbridge
+PD0285/BD/24/10,Steelwork Sheet 1,STR,Drawing,Syerston Overbridge
+PD0285/BD/24/11,Steelwork Sheet 2,STR,Drawing,Syerston Overbridge
+PD0285/BD/24/12,Steelwork Sheet 3,STR,Drawing,Syerston Overbridge
+PD0285/BD/24/14,Misc. Details,STR,Drawing,Syerston Overbridge
+PD0285/BD/24/15,Bearing Schedule,STR,Drawing,Syerston Overbridge
+PD0285/BD/25/01,General Arrangement,STR,Drawing,Lodge Lane Junction Overbridge
+PD0285/BD/25/02,Setting Out,STR,Drawing,Lodge Lane Junction Overbridge
+PD0285/BD/25/03,Bankseat Dimensions,STR,Drawing,Lodge Lane Junction Overbridge
+PD0285/BD/25/04,Bankseat Reinforcement,STR,Drawing,Lodge Lane Junction Overbridge
+PD0285/BD/25/05,Pier Dimensions,STR,Drawing,Lodge Lane Junction Overbridge
+PD0285/BD/25/06,Pier Reinforcement,STR,Drawing,Lodge Lane Junction Overbridge
+PD0285/BD/25/07,Deck Dimensions,STR,Drawing,Lodge Lane Junction Overbridge
+PD0285/BD/25/08,Deck Reinforcement Sheet 1,STR,Drawing,Lodge Lane Junction Overbridge
+PD0285/BD/25/09,Deck Reinforcement Sheet 2,STR,Drawing,Lodge Lane Junction Overbridge
+PD0285/BD/25/10,Steelwork Sheet 1,STR,Drawing,Lodge Lane Junction Overbridge
+PD0285/BD/25/11,Steelwork Sheet 2,STR,Drawing,Lodge Lane Junction Overbridge
+PD0285/BD/25/12,Steelwork Sheet 3,STR,Drawing,Lodge Lane Junction Overbridge
+PD0285/BD/25/13,Steelwork Sheet 4,STR,Drawing,Lodge Lane Junction Overbridge
+PD0285/BD/25/14,Misc Details,STR,Drawing,Lodge Lane Junction Overbridge
+PD0285/BD/25/15,Bearing Schedule,STR,Drawing,Lodge Lane Junction Overbridge
+PD0285/BD/26/01,General Arrangement,STR,Drawing,Moor Lane Overbridge
+PD0285/BD/26/02,Setting Out,STR,Drawing,Moor Lane Overbridge
+PD0285/BD/26/03,Piling Details & Reinforcement,STR,Drawing,Moor Lane Overbridge
+PD0285/BD/26/04,Abutment Dimensions,STR,Drawing,Moor Lane Overbridge
+PD0285/BD/26/05,Abutment Reinforcement Sheet 1,STR,Drawing,Moor Lane Overbridge
+PD0285/BD/26/06,Abutment Reinforcement Sheet 2,STR,Drawing,Moor Lane Overbridge
+PD0285/BD/26/07,Pier Dimensions,STR,Drawing,Moor Lane Overbridge
+PD0285/BD/26/08,Pier Reinforcement,STR,Drawing,Moor Lane Overbridge
+PD0285/BD/26/09,Deck Dimensions,STR,Drawing,Moor Lane Overbridge
+PD0285/BD/26/10,Deck Reinforcement Sheet 1,STR,Drawing,Moor Lane Overbridge
