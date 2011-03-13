@@ -1,0 +1,2029 @@
+number,title,tag1,tag2,tag3,tag4
+PD0285/BD/02/01,General Arrangement,STR,Drawing,Roehoe Junction Overbridge,
+PD0285/BD/02/02,Setting Out,STR,Drawing,Roehoe Junction Overbridge,
+PD0285/BD/02/03,Abutment Dimensions,STR,Drawing,Roehoe Junction Overbridge,
+PD0285/BD/02/04,Abutment Reinforcement Sheet 1,STR,Drawing,Roehoe Junction Overbridge,
+PD0285/BD/02/05,Abutment Reinforcement Sheet 2,STR,Drawing,Roehoe Junction Overbridge,
+PD0285/BD/02/06,Pier Dimensions,STR,Drawing,Roehoe Junction Overbridge,
+PD0285/BD/02/07,Pier Reinforcement,STR,Drawing,Roehoe Junction Overbridge,
+PD0285/BD/02/08,Deck Dimensions,STR,Drawing,Roehoe Junction Overbridge,
+PD0285/BD/02/09,Deck Reinforcement Sheet 1,STR,Drawing,Roehoe Junction Overbridge,
+PD0285/BD/02/10,Deck Reinforcement Sheet 2,STR,Drawing,Roehoe Junction Overbridge,
+PD0285/BD/02/11,Steelwork Sheet 1,STR,Drawing,Roehoe Junction Overbridge,
+PD0285/BD/02/12,Steelwork Sheet 2,STR,Drawing,Roehoe Junction Overbridge,
+PD0285/BD/02/13,Steelwork Sheet 3,STR,Drawing,Roehoe Junction Overbridge,
+PD0285/BD/02/14,Bearing Schedule & Misc. Details,STR,Drawing,Roehoe Junction Overbridge,
+PD0285/BD/02/15,Bearing Schedule,STR,Drawing,Roehoe Junction Overbridge,
+PD0285/BD/05/01,General Arrangement,STR,Drawing,Owthorpe Junction Overbridge,
+PD0285/BD/05/02,Setting Out,STR,Drawing,Owthorpe Junction Overbridge,
+PD0285/BD/05/03,Abutment Dimensions,STR,Drawing,Owthorpe Junction Overbridge,
+PD0285/BD/05/04,Abutment Reinforcement Sheet 1,STR,Drawing,Owthorpe Junction Overbridge,
+PD0285/BD/05/05,Abutment Reinforcement Sheet 2,STR,Drawing,Owthorpe Junction Overbridge,
+PD0285/BD/05/06,Pier Dimensions,STR,Drawing,Owthorpe Junction Overbridge,
+PD0285/BD/05/07,Pier Reinforcement,STR,Drawing,Owthorpe Junction Overbridge,
+PD0285/BD/05/08,Deck Dimensions,STR,Drawing,Owthorpe Junction Overbridge,
+PD0285/BD/05/09,Deck Reinforcement Sheet 1,STR,Drawing,Owthorpe Junction Overbridge,
+PD0285/BD/05/10,Deck Reinforcement Sheet 2,STR,Drawing,Owthorpe Junction Overbridge,
+PD0285/BD/05/11,Steelwork Sheet 1,STR,Drawing,Owthorpe Junction Overbridge,
+PD0285/BD/05/12,Steelwork Sheet 2,STR,Drawing,Owthorpe Junction Overbridge,
+PD0285/BD/05/13,Steelwork Sheet 3,STR,Drawing,Owthorpe Junction Overbridge,
+PD0285/BD/05/14,Bearing Schedule & Misc. Details,STR,Drawing,Owthorpe Junction Overbridge,
+PD0285/BD/05/15,Bearing Schedule,STR,Drawing,Owthorpe Junction Overbridge,
+PD0285/BD/06/01,General Arrangement,STR,Drawing,Cotgrave Overbridge,
+PD0285/BD/06/02,Setting Out,STR,Drawing,Cotgrave Overbridge,
+PD0285/BD/06/03,Bankseat Dimensions,STR,Drawing,Cotgrave Overbridge,
+PD0285/BD/06/04,Banseat Reinvforcement,STR,Drawing,Cotgrave Overbridge,
+PD0285/BD/06/05,Pier Dimensions,STR,Drawing,Cotgrave Overbridge,
+PD0285/BD/06/06,Pier Reinforcement,STR,Drawing,Cotgrave Overbridge,
+PD0285/BD/06/07,Deck Dimensions,STR,Drawing,Cotgrave Overbridge,
+PD0285/BD/06/08,Deck Reinforcement Sheet 1,STR,Drawing,Cotgrave Overbridge,
+PD0285/BD/06/09,Deck Reinforcement Sheet 2,STR,Drawing,Cotgrave Overbridge,
+PD0285/BD/06/10,Steelwork Sheet 1,STR,Drawing,Cotgrave Overbridge,
+PD0285/BD/06/11,Steelwork Sheet 2,STR,Drawing,Cotgrave Overbridge,
+PD0285/BD/06/12,Steelwork Sheet 3,STR,Drawing,Cotgrave Overbridge,
+PD0285/BD/06/13,Steelwork Sheet 5,STR,Drawing,Cotgrave Overbridge,
+PD0285/BD/06/14,Misc. Details,STR,Drawing,Cotgrave Overbridge,
+PD0285/BD/06/15,Bearing Schedule,STR,Drawing,Cotgrave Overbridge,
+PD0285/BD/07/01,General Arrangement,STR,Drawing,Stragglethorpe Junction Underbridge,
+PD0285/BD/07/02,Setting Out,STR,Drawing,Stragglethorpe Junction Underbridge,
+PD0285/BD/07/04,Abutment Dimensions,STR,Drawing,Stragglethorpe Junction Underbridge,
+PD0285/BD/07/05,Wingwall Dimensions,STR,Drawing,Stragglethorpe Junction Underbridge,
+PD0285/BD/07/06,Abutment Reinforcement Sheet 1,STR,Drawing,Stragglethorpe Junction Underbridge,
+PD0285/BD/07/07,Abutment Reinforcement Sheet 2,STR,Drawing,Stragglethorpe Junction Underbridge,
+PD0285/BD/07/08,Wingwall Reinforcement Sheet 1,STR,Drawing,Stragglethorpe Junction Underbridge,
+PD0285/BD/07/09,Wingwall Reinforcement Sheet 2,STR,Drawing,Stragglethorpe Junction Underbridge,
+PD0285/BD/07/10,Wingwall Reinforcement Sheet 3,STR,Drawing,Stragglethorpe Junction Underbridge,
+PD0285/BD/07/11,Wingwall Reinforcement Sheet 4,STR,Drawing,Stragglethorpe Junction Underbridge,
+PD0285/BD/07/12,Deck Dimensions,STR,Drawing,Stragglethorpe Junction Underbridge,
+PD0285/BD/07/13,Deck Reinforcement,STR,Drawing,Stragglethorpe Junction Underbridge,
+PD0285/BD/07/14,Precast Beams Details Internal Beams,STR,Drawing,Stragglethorpe Junction Underbridge,
+PD0285/BD/07/15,Bearing Schedule & Misc. Details,STR,Drawing,Stragglethorpe Junction Underbridge,
+PD0285/BD/07/16,Precast Edge Beam,STR,Drawing,Stragglethorpe Junction Underbridge,
+PD0285/BD/08/01,General Arrangement,STR,Drawing,Grantham Canal Underbridge,
+PD0285/BD/08/02,Setting Out,STR,Drawing,Grantham Canal Underbridge,
+PD0285/BD/08/03,Piling Layout,STR,Drawing,Grantham Canal Underbridge,
+PD0285/BD/08/04,Reinforcement Details,STR,Drawing,Grantham Canal Underbridge,
+PD0285/BD/08/05,Abutment Dimensions,STR,Drawing,Grantham Canal Underbridge,
+PD0285/BD/08/06,Wingwall Dimensions,STR,Drawing,Grantham Canal Underbridge,
+PD0285/BD/08/07,North East Wingwall Reinforcement,STR,Drawing,Grantham Canal Underbridge,
+PD0285/BD/08/08,South West Wingwall Reinforcement,STR,Drawing,Grantham Canal Underbridge,
+PD0285/BD/08/09,South East Wingwall Reinforcement,STR,Drawing,Grantham Canal Underbridge,
+PD0285/BD/08/10,North West Wingwall Reinforcement,STR,Drawing,Grantham Canal Underbridge,
+PD0285/BD/08/11,Deck Reinforcement,STR,Drawing,Grantham Canal Underbridge,
+PD0285/BD/08/12,Deck Reinforcement,STR,Drawing,Grantham Canal Underbridge,
+PD0285/BD/08/13,Precast Beams Details,STR,Drawing,Grantham Canal Underbridge,
+PD0285/BD/08/14,Misc Details,STR,Drawing,Grantham Canal Underbridge,
+PD0285/BD/08/15,North Abutment  Reinforcement,STR,Drawing,Grantham Canal Underbridge,
+PD0285/BD/08/16,South Abutment Reinforcement,STR,Drawing,Grantham Canal Underbridge,
+PD0285/BD/08/17,Sheet Pile Retaining Walls - Sheet 1,STR,Drawing,Grantham Canal Underbridge,
+PD0285/BD/08/18,Sheet Pile Retaining Walls - Sheet 2,STR,Drawing,Grantham Canal Underbridge,
+PD0285/BD/09/01,General Arrangement,STR,Drawing,Cropwell Butler Underbridge,
+PD0285/BD/09/02,Setting Out,STR,Drawing,Cropwell Butler Underbridge,
+PD0285/BD/09/03,Piling Details & Reinforcement,STR,Drawing,Cropwell Butler Underbridge,
+PD0285/BD/09/04,Abutment Dimensions,STR,Drawing,Cropwell Butler Underbridge,
+PD0285/BD/09/05,Wingwall Dimensions,STR,Drawing,Cropwell Butler Underbridge,
+PD0285/BD/09/06,Abutment Reinforcement,STR,Drawing,Cropwell Butler Underbridge,
+PD0285/BD/09/07,Wingwall Reinforcement Sheet 1,STR,Drawing,Cropwell Butler Underbridge,
+PD0285/BD/09/08,Wingwall Reinforcement Sheet 2,STR,Drawing,Cropwell Butler Underbridge,
+PD0285/BD/09/09,PC Panel Details & Reinforcement,STR,Drawing,Cropwell Butler Underbridge,
+PD0285/BD/09/10,Deck Dimensions,STR,Drawing,Cropwell Butler Underbridge,
+PD0285/BD/09/11,Deck Reinforcement Sheet 1,STR,Drawing,Cropwell Butler Underbridge,
+PD0285/BD/09/12,Deck Reinforcement Sheet 2,STR,Drawing,Cropwell Butler Underbridge,
+PD0285/BD/09/13,Misc. Details,STR,Drawing,Cropwell Butler Underbridge,
+PD0285/BD/10/01,General Arrangement,STR,Drawing,Henson Lane Overbridge,
+PD0285/BD/10/02,Setting Out,STR,Drawing,Henson Lane Overbridge,
+PD0285/BD/10/03,Abutment & Wingwall Dimensions,STR,Drawing,Henson Lane Overbridge,
+PD0285/BD/10/04,Abutment Reinforcement Sheet 1,STR,Drawing,Henson Lane Overbridge,
+PD0285/BD/10/05,Abutment Reinforcement Sheet 2,STR,Drawing,Henson Lane Overbridge,
+PD0285/BD/10/06,Pier Dimensions & Reinforcement,STR,Drawing,Henson Lane Overbridge,
+PD0285/BD/10/07,Deck Dimensions,STR,Drawing,Henson Lane Overbridge,
+PD0285/BD/10/08,Deck Reinforcement Sheet 1,STR,Drawing,Henson Lane Overbridge,
+PD0285/BD/10/09,Deck Reinforcement Sheet 2,STR,Drawing,Henson Lane Overbridge,
+PD0285/BD/10/10,Steelwork Sheet 1,STR,Drawing,Henson Lane Overbridge,
+PD0285/BD/10/11,Steelwork Sheet 2,STR,Drawing,Henson Lane Overbridge,
+PD0285/BD/10/12,Steelwork Sheet 3,STR,Drawing,Henson Lane Overbridge,
+PD0285/BD/10/14,Misc Details,STR,Drawing,Henson Lane Overbridge,
+PD0285/BD/10/15,Bearing Schedule,STR,Drawing,Henson Lane Overbridge,
+PD0285/BD/11/01,General Arrangement,STR,Drawing,Saxondale Junction South Underbridge,
+PD0285/BD/11/02,Setting Out,STR,Drawing,Saxondale Junction South Underbridge,
+PD0285/BD/11/03,Abutment Dimensions,STR,Drawing,Saxondale Junction South Underbridge,
+PD0285/BD/11/04,Wingwall Dimensions,STR,Drawing,Saxondale Junction South Underbridge,
+PD0285/BD/11/05,Abutment Reinforcement Sheet 1,STR,Drawing,Saxondale Junction South Underbridge,
+PD0285/BD/11/06,Abutment Reinforcement Sheet 2,STR,Drawing,Saxondale Junction South Underbridge,
+PD0285/BD/11/07,Wingwall Reinforcement Sheet 1,STR,Drawing,Saxondale Junction South Underbridge,
+PD0285/BD/11/08,Wingwall Reinforcement Sheet 2,STR,Drawing,Saxondale Junction South Underbridge,
+PD0285/BD/11/09,Wingwall Reinforcement Sheet 3,STR,Drawing,Saxondale Junction South Underbridge,
+PD0285/BD/11/10,Wingwall Reinforcement Sheet 4,STR,Drawing,Saxondale Junction South Underbridge,
+PD0285/BD/11/11,Deck Dimensions,STR,Drawing,Saxondale Junction South Underbridge,
+PD0285/BD/11/12,Deck Reinforcement,STR,Drawing,Saxondale Junction South Underbridge,
+PD0285/BD/11/13,Precast Beams Details,STR,Drawing,Saxondale Junction South Underbridge,
+PD0285/BD/11/14,Bearing Schedule & Misc. Details,STR,Drawing,Saxondale Junction South Underbridge,
+PD0285/BD/11/15,Precast Beams Details External Beams,STR,Drawing,Saxondale Junction South Underbridge,
+PD0285/BD/12/01,General Arrangement,STR,Drawing,Saxondale Junction North Underbridge,
+PD0285/BD/12/02,Setting Out,STR,Drawing,Saxondale Junction North Underbridge,
+PD0285/BD/12/03,Abutment Dimensions,STR,Drawing,Saxondale Junction North Underbridge,
+PD0285/BD/12/04,Wingwall Dimensions,STR,Drawing,Saxondale Junction North Underbridge,
+PD0285/BD/12/05,Abutment Reinforcement Sheet 1,STR,Drawing,Saxondale Junction North Underbridge,
+PD0285/BD/12/06,Abutment Reinforcement Sheet 2,STR,Drawing,Saxondale Junction North Underbridge,
+PD0285/BD/12/07,Wingwall Reinforcement Sheet 1,STR,Drawing,Saxondale Junction North Underbridge,
+PD0285/BD/12/08,Wingwall Reinforcement Sheet 2,STR,Drawing,Saxondale Junction North Underbridge,
+PD0285/BD/12/09,Wingwall Reinforcement Sheet 3,STR,Drawing,Saxondale Junction North Underbridge,
+PD0285/BD/12/10,Wingwall Reinforcement Sheet 4,STR,Drawing,Saxondale Junction North Underbridge,
+PD0285/BD/12/11,Deck Dimensions,STR,Drawing,Saxondale Junction North Underbridge,
+PD0285/BD/12/12,Deck Reinforcement,STR,Drawing,Saxondale Junction North Underbridge,
+PD0285/BD/12/13,Precast Beams Details,STR,Drawing,Saxondale Junction North Underbridge,
+PD0285/BD/12/14,Bearing Schedule & Misc. Details,STR,Drawing,Saxondale Junction North Underbridge,
+PD0285/BD/12/15,Precast Beams Details External Beams,STR,Drawing,Saxondale Junction North Underbridge,
+PD0285/BD/13/01,General Arrangement,STR,Drawing,Saxondale Bridleway Bridge,
+PD0285/BD/13/02,Setting Out,STR,Drawing,Saxondale Bridleway Bridge,
+PD0285/BD/13/03,Abutment & Wingwall Dimensions,STR,Drawing,Saxondale Bridleway Bridge,
+PD0285/BD/13/04,Abutment & Wingwall Reinforcement ,STR,Drawing,Saxondale Bridleway Bridge,
+PD0285/BD/13/05,Misc Details & Bearing Schedule,STR,Drawing,Saxondale Bridleway Bridge,
+PD0285/BD/13/06,Steelwork - Arrangement,STR,Drawing,Saxondale Bridleway Bridge,
+PD0285/BD/13/07,Steelwork - Splice & Joint Details,STR,Drawing,Saxondale Bridleway Bridge,
+PD0285/BD/14/01,General Arrangement,STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/02,"Piling Details, RC & Setting Out - Sheet 1",STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/03,"Piling Details, RC & Setting Out - Sheet 2",STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/04,Abutment - Dimensions,STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/05,Abutment - Reinforcement,STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/06,Central Reserve Plinth - Dimensions,STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/07,Central Reserve Plinth - Reinforcement,STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/08,Steelwork Sheet 1,STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/09,Steelwork Sheet 2,STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/10,Steelwork Sheet 3,STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/11,Steelwork Sheet 4,STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/12,Steelwork Sheet 5,STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/13,Protective Treatment Details,STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/14,Deck Dimensions - Sheet 1,STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/15,Deck Dimensions - Sheet 2,STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/16,Deck Reinforcement - Sheet 1,STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/17,Deck Reinforcement - Sheet 2,STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/18,Miscellaneous Details - Sheet 1,STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/19,Miscellaneous Details - Sheet 2,STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/14/20,Bearing Schedule,STR,Drawing,Bingham Railway Overbridge,
+PD0285/BD/16/01,General Arrangement,STR,Drawing,Margidunum Junction Overbridge,
+PD0285/BD/16/02,Setting Out,STR,Drawing,Margidunum Junction Overbridge,
+PD0285/BD/16/03,Abutment Dimensions,STR,Drawing,Margidunum Junction Overbridge,
+PD0285/BD/16/04,East Abutment Reinforcement Sheet 1,STR,Drawing,Margidunum Junction Overbridge,
+PD0285/BD/16/05,East Abutment Reinforcement Sheet 2,STR,Drawing,Margidunum Junction Overbridge,
+PD0285/BD/16/06,Pier Dimensions,STR,Drawing,Margidunum Junction Overbridge,
+PD0285/BD/16/07,Pier Reinforcement,STR,Drawing,Margidunum Junction Overbridge,
+PD0285/BD/16/08,Deck Dimensions,STR,Drawing,Margidunum Junction Overbridge,
+PD0285/BD/16/09,Deck Reinforcement,STR,Drawing,Margidunum Junction Overbridge,
+PD0285/BD/16/10,West Abutment Reinforcement Sheet 1,STR,Drawing,Margidunum Junction Overbridge,
+PD0285/BD/16/11,West Abutment Reinforcement Sheet 2,STR,Drawing,Margidunum Junction Overbridge,
+PD0285/BD/16/12,Steelwork Sheet 1,STR,Drawing,Margidunum Junction Overbridge,
+PD0285/BD/16/13,Steelwork Sheet 2,STR,Drawing,Margidunum Junction Overbridge,
+PD0285/BD/16/14,Steelwork Sheet 3,STR,Drawing,Margidunum Junction Overbridge,
+PD0285/BD/16/15,Steelwork Sheet 4,STR,Drawing,Margidunum Junction Overbridge,
+PD0285/BD/16/16,Miscellaneous Details,STR,Drawing,Margidunum Junction Overbridge,
+PD0285/BD/16/17,Bearing Schedule,STR,Drawing,Margidunum Junction Overbridge,
+PD0285/BD/19/01,General Arrangement,STR,Drawing,Butt Lane Overbridge,
+PD0285/BD/19/02,Setting Out,STR,Drawing,Butt Lane Overbridge,
+PD0285/BD/19/03,Not Used,STR,Drawing,Butt Lane Overbridge,
+PD0285/BD/19/04,Abutment Dimensions,STR,Drawing,Butt Lane Overbridge,
+PD0285/BD/19/05,Abutment Reinforcement Sheet 1,STR,Drawing,Butt Lane Overbridge,
+PD0285/BD/19/06,Abutment Reinforcement Sheet 2,STR,Drawing,Butt Lane Overbridge,
+PD0285/BD/19/07,Pier Dimensions,STR,Drawing,Butt Lane Overbridge,
+PD0285/BD/19/08,Pier Reinforcement,STR,Drawing,Butt Lane Overbridge,
+PD0285/BD/19/09,Deck Dimensions,STR,Drawing,Butt Lane Overbridge,
+PD0285/BD/19/10,Deck Reinforcement,STR,Drawing,Butt Lane Overbridge,
+PD0285/BD/19/11,Bearing Schedule,STR,Drawing,Butt Lane Overbridge,
+PD0285/BD/19/12,Steelwork Sheet 1,STR,Drawing,Butt Lane Overbridge,
+PD0285/BD/19/13,Steelwork Sheet 2,STR,Drawing,Butt Lane Overbridge,
+PD0285/BD/19/14,Steelwork Sheet 3,STR,Drawing,Butt Lane Overbridge,
+PD0285/BD/19/15,Steelwork Sheet 4,STR,Drawing,Butt Lane Overbridge,
+PD0285/BD/19/16,Misc Details,STR,Drawing,Butt Lane Overbridge,
+PD0285/BD/20/01,General Arrangement,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/02,Setting Out,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/03,Abutment Dimensions,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/04,Abutment Reinforcement Sheet 1,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/05,Abutment Reinforcement Sheet 2,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/06,Pier Dimensions,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/07,Pier Reinforcement,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/08,Deck Dimensions,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/09,Deck Reinforcement,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/10,Steelwork Sheet 1,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/11,Steelwork Sheet 2,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/12,Steelwork Sheet 3,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/13,Not Used,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/14,Misc. Details,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/20/15,Bearing Schedule,STR,Drawing,Car Colston Overbridge,
+PD0285/BD/21/01,General Arrangement,STR,Drawing,Red Lodge Junction Overbridge,
+PD0285/BD/21/02,Setting Out,STR,Drawing,Red Lodge Junction Overbridge,
+PD0285/BD/21/03,Abutment & Wingwall Dimensions,STR,Drawing,Red Lodge Junction Overbridge,
+PD0285/BD/21/04,Abutment Reinforcement Sheet 1,STR,Drawing,Red Lodge Junction Overbridge,
+PD0285/BD/21/05,Abutment Reinforcement Sheet 2,STR,Drawing,Red Lodge Junction Overbridge,
+PD0285/BD/21/06,Pier Dimensions & Reinforcement,STR,Drawing,Red Lodge Junction Overbridge,
+PD0285/BD/21/07,Deck Dimensions,STR,Drawing,Red Lodge Junction Overbridge,
+PD0285/BD/21/08,Deck Reinforcement Sheet 1,STR,Drawing,Red Lodge Junction Overbridge,
+PD0285/BD/21/09,Deck Reinforcement Sheet 2,STR,Drawing,Red Lodge Junction Overbridge,
+PD0285/BD/21/10,Steelwork Sheet 1,STR,Drawing,Red Lodge Junction Overbridge,
+PD0285/BD/21/11,Steelwork Sheet 2,STR,Drawing,Red Lodge Junction Overbridge,
+PD0285/BD/21/12,Steelwork Sheet 3,STR,Drawing,Red Lodge Junction Overbridge,
+PD0285/BD/21/14,Bearing Schedule & Misc. Details,STR,Drawing,Red Lodge Junction Overbridge,
+PD0285/BD/21/15,Bearing Schedule,STR,Drawing,Red Lodge Junction Overbridge,
+PD0285/BD/22/01,General Arrangement Sheet 1 of 2,STR,Drawing,Flintham Bridleway Bridge,
+PD0285/BD/22/02,General Arrangement Sheet 2 of 2,STR,Drawing,Flintham Bridleway Bridge,
+PD0285/BD/22/03,Setting Out,STR,Drawing,Flintham Bridleway Bridge,
+PD0285/BD/22/04,Piling Details & Reinforcement,STR,Drawing,Flintham Bridleway Bridge,
+PD0285/BD/22/05,West Abutment Dimensions,STR,Drawing,Flintham Bridleway Bridge,
+PD0285/BD/22/06,West Abutment Reinforcement,STR,Drawing,Flintham Bridleway Bridge,
+PD0285/BD/22/07,East Abutment Dimensions,STR,Drawing,Flintham Bridleway Bridge,
+PD0285/BD/22/08,East Abutment Reinforcement,STR,Drawing,Flintham Bridleway Bridge,
+PD0285/BD/22/09,East Ramp & Stair Dimensions,STR,Drawing,Flintham Bridleway Bridge,
+PD0285/BD/22/10,East Ramp & Stair Reinforcement,STR,Drawing,Flintham Bridleway Bridge,
+PD0285/BD/22/11,Steelwork Sheet 1,STR,Drawing,Flintham Bridleway Bridge,
+PD0285/BD/22/12,Steelwork Sheet 2,STR,Drawing,Flintham Bridleway Bridge,
+PD0285/BD/22/13,Steelwork Sheet 3,STR,Drawing,Flintham Bridleway Bridge,
+PD0285/BD/22/14,Parapet Details,STR,Drawing,Flintham Bridleway Bridge,
+PD0285/BD/22/15,Misc Details,STR,Drawing,Flintham Bridleway Bridge,
+PD0285/BD/22/17,East Ramp Reinforcement W3 & W4,STR,Drawing,Flintham Bridleway Bridge,
+PD0285/BD/23/01,General Arrangement,STR,Drawing,Flintham Junction Overbridge,
+PD0285/BD/23/02,Setting Out,STR,Drawing,Flintham Junction Overbridge,
+PD0285/BD/23/03,Abutment Dimensions,STR,Drawing,Flintham Junction Overbridge,
+PD0285/BD/23/04,Abutment Reinforcement Sheet 1,STR,Drawing,Flintham Junction Overbridge,
+PD0285/BD/23/05,Abutment Reinforcement Sheet 2,STR,Drawing,Flintham Junction Overbridge,
+PD0285/BD/23/06,Pier Dimensions,STR,Drawing,Flintham Junction Overbridge,
+PD0285/BD/23/07,Pier Reinforcement,STR,Drawing,Flintham Junction Overbridge,
+PD0285/BD/23/08,Deck Dimensions,STR,Drawing,Flintham Junction Overbridge,
+PD0285/BD/23/09,Deck Reinforcement Sheet 1,STR,Drawing,Flintham Junction Overbridge,
+PD0285/BD/23/10,Deck Reinforcement Sheet 2,STR,Drawing,Flintham Junction Overbridge,
+PD0285/BD/23/11,Steelwork Sheet 1,STR,Drawing,Flintham Junction Overbridge,
+PD0285/BD/23/12,Steelwork Sheet 2,STR,Drawing,Flintham Junction Overbridge,
+PD0285/BD/23/13,Steelwork Sheet 3,STR,Drawing,Flintham Junction Overbridge,
+PD0285/BD/23/14,Misc Details,STR,Drawing,Flintham Junction Overbridge,
+PD0285/BD/23/15,Bearing Schedule,STR,Drawing,Flintham Junction Overbridge,
+PD0285/BD/24/01,General Arrangement,STR,Drawing,Syerston Overbridge,
+PD0285/BD/24/02,Setting Out,STR,Drawing,Syerston Overbridge,
+PD0285/BD/24/03,Abutment & Wingwall Dimensions,STR,Drawing,Syerston Overbridge,
+PD0285/BD/24/04,Abutment Reinforcement,STR,Drawing,Syerston Overbridge,
+PD0285/BD/24/05,Pier Dimensions,STR,Drawing,Syerston Overbridge,
+PD0285/BD/24/06,Pier Reinforcement,STR,Drawing,Syerston Overbridge,
+PD0285/BD/24/07,Deck Dimensions,STR,Drawing,Syerston Overbridge,
+PD0285/BD/24/08,Deck Reinforcement Sheet 1,STR,Drawing,Syerston Overbridge,
+PD0285/BD/24/09,Deck Reinforcement Sheet 2,STR,Drawing,Syerston Overbridge,
+PD0285/BD/24/10,Steelwork Sheet 1,STR,Drawing,Syerston Overbridge,
+PD0285/BD/24/11,Steelwork Sheet 2,STR,Drawing,Syerston Overbridge,
+PD0285/BD/24/12,Steelwork Sheet 3,STR,Drawing,Syerston Overbridge,
+PD0285/BD/24/14,Misc. Details,STR,Drawing,Syerston Overbridge,
+PD0285/BD/24/15,Bearing Schedule,STR,Drawing,Syerston Overbridge,
+PD0285/BD/25/01,General Arrangement,STR,Drawing,Lodge Lane Junction Overbridge,
+PD0285/BD/25/02,Setting Out,STR,Drawing,Lodge Lane Junction Overbridge,
+PD0285/BD/25/03,Bankseat Dimensions,STR,Drawing,Lodge Lane Junction Overbridge,
+PD0285/BD/25/04,Bankseat Reinforcement,STR,Drawing,Lodge Lane Junction Overbridge,
+PD0285/BD/25/05,Pier Dimensions,STR,Drawing,Lodge Lane Junction Overbridge,
+PD0285/BD/25/06,Pier Reinforcement,STR,Drawing,Lodge Lane Junction Overbridge,
+PD0285/BD/25/07,Deck Dimensions,STR,Drawing,Lodge Lane Junction Overbridge,
+PD0285/BD/25/08,Deck Reinforcement Sheet 1,STR,Drawing,Lodge Lane Junction Overbridge,
+PD0285/BD/25/09,Deck Reinforcement Sheet 2,STR,Drawing,Lodge Lane Junction Overbridge,
+PD0285/BD/25/10,Steelwork Sheet 1,STR,Drawing,Lodge Lane Junction Overbridge,
+PD0285/BD/25/11,Steelwork Sheet 2,STR,Drawing,Lodge Lane Junction Overbridge,
+PD0285/BD/25/12,Steelwork Sheet 3,STR,Drawing,Lodge Lane Junction Overbridge,
+PD0285/BD/25/13,Steelwork Sheet 4,STR,Drawing,Lodge Lane Junction Overbridge,
+PD0285/BD/25/14,Misc Details,STR,Drawing,Lodge Lane Junction Overbridge,
+PD0285/BD/25/15,Bearing Schedule,STR,Drawing,Lodge Lane Junction Overbridge,
+PD0285/BD/26/01,General Arrangement,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/26/02,Setting Out,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/26/03,Piling Details & Reinforcement,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/26/04,Abutment Dimensions,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/26/05,Abutment Reinforcement Sheet 1,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/26/06,Abutment Reinforcement Sheet 2,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/26/07,Pier Dimensions,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/26/08,Pier Reinforcement,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/26/09,Deck Dimensions,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/26/10,Deck Reinforcement Sheet 1,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/26/11,Deck Reinforcement Sheet 2,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/26/12,Steelwork Sheet 1,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/26/13,Steelwork Sheet 2,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/26/14,Steelwork Sheet 3,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/26/15,Bearing Schedule & Misc. Details,STR,Drawing,Moor Lane Overbridge,
+PD0285/BD/28/01,General Arrangement,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/02,Setting Out,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/03,Piling Details & Reinforcement,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/04,Abutment Dimensions,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/05,Abutment Reinforcement Sheet 1,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/06,Abutment Reinforcement Sheet 2,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/07,Pier Dimensions,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/08,Pier Reinforcement,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/09,Deck Dimensions,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/10,Deck Reinforcement,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/11,Steelwork Sheet 1,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/12,Steelwork Sheet 2,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/13,Steelwork Sheet 3,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/14,Misc Details,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/28/15,Bearing Schedule,STR,Drawing,Hawton Lane Overbridge,
+PD0285/BD/29/01,General Arrangement,STR,Drawing,Farndon Underpass,
+PD0285/BD/29/02,Setting Out,STR,Drawing,Farndon Underpass,
+PD0285/BD/29/03,Waterproofing Details,STR,Drawing,Farndon Underpass,
+PD0285/BD/29/04,Geometry and Formwork,STR,Drawing,Farndon Underpass,
+PD0285/BD/29/05,Assembly,STR,Drawing,Farndon Underpass,
+PD0285/BD/29/06,R1 RC Details,STR,Drawing,Farndon Underpass,
+PD0285/BD/29/07,R2 RC Details,STR,Drawing,Farndon Underpass,
+PD0285/BD/29/08,W1 RC Details,STR,Drawing,Farndon Underpass,
+PD0285/BD/29/09,Insitue RC Details,STR,Drawing,Farndon Underpass,
+PD0285/BD/29/10,Edge Beam Geometry,STR,Drawing,Farndon Underpass,
+PD0285/BD/29/11,Edge Beam RC Details,STR,Drawing,Farndon Underpass,
+PD0285/BD/29/12,Wing Wall Geometry,STR,Drawing,Farndon Underpass,
+PD0285/BD/29/13,S1 RC Details,STR,Drawing,Farndon Underpass,
+PD0285/BD/29/14,S2 RC Details,STR,Drawing,Farndon Underpass,
+PD0285/BD/29/15,S3 RC Details,STR,Drawing,Farndon Underpass,
+PD0285/BD/30/01,General Arrangement Sheet 1,STR,Drawing,Minor Culverts,
+PD0285/BD/30/02,General Arrangement Sheet 2,STR,Drawing,Minor Culverts,
+PD0285/BD/30/03,General Arrangement Sheet 3,STR,Drawing,Minor Culverts,
+PD0285/BD/30/04,Misc. Details Sheet 1,STR,Drawing,Minor Culverts,
+PD0285/BD/30/05,Misc. Details Sheet 2,STR,Drawing,Minor Culverts,
+PD0285/BD/32/01,Bingham Railway Bridge - Bridleway Retaining Wall - General Arrangement,STR,Drawing,Retaining Walls,
+PD0285/BD/33/01,MS3 Gantry Foundations - Dimensions,STR,Drawing,MS3,
+PD0285/BD/33/02,MS3 Gantry Foundations - Reinforcement,STR,Drawing,MS3,
+PD0285/BD/33/04,CCTV Camera Foundation,STR,Drawing,MS3,
+PD0285/BD/30A/01,Flood Relief Culvert A General Arrangement,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30A/02,Outlet structure & insitu headwall reinforcement details,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30A/03,Inlet strcuture reinforcement details,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30A/04,Setting Out,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30A/05,Precast units reinforcement sheet 1 of 2,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30A/06,Precast units reinforcement sheet 2 of 2,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30A/07,Misc. Details,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30B/01,Flood Relief Culvert B General Arrangement,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30B/02,Outlet structure & insitu headwall reinforcement details,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30B/03,Inlet strcuture reinforcement details,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30B/04,Setting Out,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30B/05,Precast units reinforcement details sheet 1 of 2,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30B/06,Precast units reinforcement details sheet 2 of 2,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30B/07,Misc. Details,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30C/01,Flood Relief Culvert C General Arrangement 1,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30C/02,Flood Relief Culvert C General Arrangement 2,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30C/03,Outlet Structure RC Sheet 1,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30C/04,Outlet Structure RC Sheet 2,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30C/05,Inlet Structure RC Sheet 1,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30C/06,Inlet Structure RC Sheet 2,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30C/07,Setting Out,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30C/08,Precast Units RC Details Sheet 1,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30C/09,Precast Units RC Details Sheet 2,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30D/01,Flood Relief Culvert D General Arrangement Sheet 1,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30D/02,Flood Relief Culvert D General Arrangement Sheet 2,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30D/03,Outlet Structure RC sheet 1,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30D/04,Outlet Structure RC sheet 2,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30D/05,Setting Out,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30D/06,Inlet Structure RC Sheet 1,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30D/07,Inlet Structure RC Sheet 2,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30D/08,Precast Units RC Details Sheet 1,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30D/09,Precast Units RC Details Sheet 2,STR,Drawing,Flood Relief Culverts,
+PD0285/7/30D/AIP/01,FRC D AIP,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30E/01,Flood Relief Culvert E General Arrangement,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30E/02,Box Dimensions,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30E/03,Box Reinforcement Sheet 1,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30E/04,Box Reinforcement Sheet 2,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30E/05,Box Reinforcement Sheet 3,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30E/06,Wingwall Dimensions,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30E/07,Wingwall Reinforcement,STR,Drawing,Flood Relief Culverts,
+PD0285/BD/30E/08,Misc. Details,STR,Drawing,Flood Relief Culverts,
+PD0285/DR/500/000,Detailed Design Pre Earthworks Drains Key Sheet,DR,Drawing,Pre Earthworks Drains,
+PD0285/DR/500/001,Detailed Design Pre Earthworks Drains Sheet 1 Ch 400 - 700,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/002,Detailed Design Pre Earthworks Drains Sheet 2 Ch  700 - 1000,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/003,Detailed Design Pre Earthworks Drains Sheet 3 Ch 1000 - 1300,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/004,Detailed Design Pre Earthworks Drains Sheet 4 Ch 1300 - 1600,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/005,Detailed Design Pre Earthworks Drains Sheet 5 Ch 1600 - 1900,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/006,Detailed Design Pre Earthworks Drains Sheet 6 Ch 1900 - 2200,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/007,Detailed Design Pre Earthworks Drains Sheet 7 Ch 2200 - 2500,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/008,Detailed Design Pre Earthworks Drains Sheet 8 Ch 2500 - 2800,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/009,Detailed Design Pre Earthworks Drains Sheet 9 Ch 2800 - 3100,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/010,Detailed Design Pre Earthworks Drains Sheet 10 Ch 3100 - 3400,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/011,Detailed Design Pre Earthworks Drains Sheet 11 Ch 3400 - 3700,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/012,Detailed Design Pre Earthworks Drains Sheet 12 Ch 3700 - 4000,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/013,Detailed Design Pre Earthworks Drains Sheet 13 Ch 4000 - 4300,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/014,Detailed Design Pre Earthworks Drains Sheet 14 Ch 4300 - 4600,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/015,Detailed Design Pre Earthworks Drains Sheet 15 Ch 4600 - 4900,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/016,Detailed Design Pre Earthworks Drains Sheet 16 Ch 4900 - 5200,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/017,Detailed Design Pre Earthworks Drains Sheet 17 Ch 5200 - 5500,DR,Drawing,Pre Earthworks Drains,Section 1A
+PD0285/DR/500/018,Detailed Design Pre Earthworks Drains Sheet 18 Ch 5500 - 5800,DR,Drawing,Pre Earthworks Drains,Section 1B
+PD0285/DR/500/019,Detailed Design Pre Earthworks Drains Sheet 19 Ch 5800 - 6100,DR,Drawing,Pre Earthworks Drains,Section 1B
+PD0285/DR/500/020,Detailed Design Pre Earthworks Drains Sheet 20 Ch 6100 - 6400,DR,Drawing,Pre Earthworks Drains,Section 1B
+PD0285/DR/500/021,Detailed Design Pre Earthworks Drains Sheet 21 Ch 6400 - 6740,DR,Drawing,Pre Earthworks Drains,Section 1B
+PD0285/DR/500/022,Detailed Design Pre Earthworks Drains Sheet 22 Ch 6740 - 7060,DR,Drawing,Pre Earthworks Drains,Section 1B
+PD0285/DR/500/023,Detailed Design Pre Earthworks Drains Sheet 23 Ch 7060 - 7380,DR,Drawing,Pre Earthworks Drains,Section 1B
+PD0285/DR/500/093,Detailed Design Pre Earthworks Drains Sheet 93 Owthorpe Junction,DR,Drawing,Pre Earthworks Drains,Section 1B
+PD0285/DR/500/094,Detailed Design Pre Earthworks Drains Sheet 94 Owthorpe Junction,DR,Drawing,Pre Earthworks Drains,Section 1B
+PD0285/DR/500/095,Detailed Design Pre Earthworks Drains Sheet 95 Owthorpe Junction,DR,Drawing,Pre Earthworks Drains,Section 1B
+PD0285/DR/500/096,Detailed Design Pre Earthworks Drains Sheet 96 Herrywell Lane,DR,Drawing,Pre Earthworks Drains,Section 1B
+PD0285/DR/500/097,Detailed Design Pre Earthworks Drains Sheet 97 Cotgrave Overbridge,DR,Drawing,Pre Earthworks Drains,Section 1B
+PD0285/DR/500/098,Detailed Design Pre Earthworks Drains Sheet 98 Cotgrave Overbridge,DR,Drawing,Pre Earthworks Drains,Section 1B
+PD0285/DR/500/099,Detailed Design Pre Earthworks Drains Sheet 99 Cotgrave Overbridge,DR,Drawing,Pre Earthworks Drains,Section 1B
+PD0285/DR/500/024,Detailed Design Pre Earthworks Drains Sheet 24 Ch 7380 - 7700,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/025,Detailed Design Pre Earthworks Drains Sheet 25 Ch 7700 - 8000,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/026,Detailed Design Pre Earthworks Drains Sheet 26 Ch 8000 - 8300,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/027,Detailed Design Pre Earthworks Drains Sheet 27 Ch 8300 - 8600,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/028,Detailed Design Pre Earthworks Drains Sheet 28 Ch 8600 - 8880,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/029,Detailed Design Pre Earthworks Drains Sheet 29 Ch 8880 - 9200,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/030,Detailed Design Pre Earthworks Drains Sheet 30 Ch 9200 - 9500,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/031,Detailed Design Pre Earthworks Drains Sheet 31 Ch 9500 - 9800,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/032,Detailed Design Pre Earthworks Drains Sheet 32 Ch 9800 - 10100,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/033,Detailed Design Pre Earthworks Drains Sheet 33 Ch 10100 - 10400,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/034,Detailed Design Pre Earthworks Drains Sheet 34 Ch 10400 - 10700,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/035,Detailed Design Pre Earthworks Drains Sheet 35 Ch 10700 - 11000,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/036,Detailed Design Pre Earthworks Drains Sheet 36 Ch 11000 - 11300,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/037,Detailed Design Pre Earthworks Drains Sheet 37 Ch 11300 - 11620,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/038,Detailed Design Pre Earthworks Drains Sheet 38 Ch 11620 - 11940,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/039,Detailed Design Pre Earthworks Drains Sheet 39 Ch 11940 - 12260,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/040,Detailed Design Pre Earthworks Drains Sheet 40 Ch 12260 - 12580,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/041,Detailed Design Pre Earthworks Drains Sheet 41 Ch 12580 - 12860,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/100,Detailed Design Pre Earthworks Drains Sheet 100 Stragglethorpe Road,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/101,Detailed Design Pre Earthworks Drains Sheet 101 Nottingham Road,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/102,Detailed Design Pre Earthworks Drains Sheet 102 Cropwell Road,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/103,Detailed Design Pre Earthworks Drains Sheet 103 Cropwell Road,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/104,Detailed Design Pre Earthworks Drains Sheet 104 Cropwell Road,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/105,Detailed Design Pre Earthworks Drains Sheet 105 Cropwell Road,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/106,Detailed Design Pre Earthworks Drains Sheet 106 Henson Lane,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/107,Detailed Design Pre Earthworks Drains Sheet 107 Henson Lane,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/108,Detailed Design Pre Earthworks Drains Sheet 108 Henson Lane,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/109,Detailed Design Pre Earthworks Drains Sheet 109 Grantham Road,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/110,Detailed Design Pre Earthworks Drains Sheet 110 Telecom Mast Access Track/Saxondale Roundabout,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/111,Detailed Design Pre Earthworks Drains Sheet 111 Saxondale Roundabout,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/112,Detailed Design Pre Earthworks Drains Sheet 112 Existing A46 Access Track,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/113,Detailed Design Pre Earthworks Drains Sheet 113 Saxondale Roundabout,DR,Drawing,Pre Earthworks Drains,Section 1C
+PD0285/DR/500/042,Detailed Design Pre Earthworks Drains Sheet 42 Ch 12860 - 13180,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/043,Detailed Design Pre Earthworks Drains Sheet 43 Ch 13180 - 13500,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/044,Detailed Design Pre Earthworks Drains Sheet 44 Ch 13500 - 13800,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/045,Detailed Design Pre Earthworks Drains Sheet 45 Ch 13800 - 14120,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/046,Detailed Design Pre Earthworks Drains Sheet 46 Ch 14120 - 14440,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/047,Detailed Design Pre Earthworks Drains Sheet 47 Ch 14440 - 14740,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/048,Detailed Design Pre Earthworks Drains Sheet 48 Ch 14740 - 15060,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/049,Detailed Design Pre Earthworks Drains Sheet 49 Ch 15060- 15380,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/050,Detailed Design Pre Earthworks Drains Sheet 50 Ch  15380 - 15700,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/051,Detailed Design Pre Earthworks Drains Sheet 51 Ch 15700 - 16000,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/052,Detailed Design Pre Earthworks Drains Sheet 52 Ch 16000 - 16300,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/053,Detailed Design Pre Earthworks Drains Sheet 53 Ch 16300 - 16600,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/054,Detailed Design Pre Earthworks Drains Sheet 54 Ch 16600 - 16920,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/055,Detailed Design Pre Earthworks Drains Sheet 55 Ch 16920 - 17240,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/056,Detailed Design Pre Earthworks Drains Sheet 56 Ch 17240 - 17560,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/057,Detailed Design Pre Earthworks Drains Sheet 57 Ch 17560 - 17880,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/058,Detailed Design Pre Earthworks Drains Sheet 58 Ch 17880 - 18200,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/059,Detailed Design Pre Earthworks Drains Sheet 59 Ch 18200 - 18520,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/060,Detailed Design Pre Earthworks Drains Sheet 60 ch 18520 - 18840,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/061,Detailed Design Pre Earthworks Drains Sheet 61 ch 18840 - 19120,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/062,Detailed Design Pre Earthworks Drains Sheet 62 ch 19120 - 19400,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/063,Detailed Design Pre Earthworks Drains Sheet 63 Ch 19400 - 19700,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/064,Detailed Design Pre Earthworks Drains Sheet 64 Ch 19700 - 20000,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/065,Detailed Design Pre Earthworks Drains Sheet 65 Ch 20000 - 20300,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/066,Detailed Design Pre Earthworks Drains Sheet 66 Ch 20300 - 20600,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/067,Detailed Design Pre Earthworks Drains Sheet 67 Ch 20600 - 20920,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/068,Detailed Design Pre Earthworks Drains Sheet 68 Ch 20920 - 21220,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/069,Detailed Design Pre Earthworks Drains Sheet 69 Ch 21220 - 21520,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/114,Detailed Design Pre Earthworks Drains Sheet 114 Drainage Easement Ch 13500,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/115,Detailed Design Pre Earthworks Drains Sheet 115  Balancing Pond Ch 13500,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/116,Detailed Design Pre Earthworks Drains Sheet 116  Drainage Easement Ch 13500,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/117,Detailed Design Pre Earthworks Drains Sheet 117 Margidunum SBM Slip Road,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/118,Detailed Design Pre Earthworks Drains Sheet 118 Margidunum Junction,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/119,Detailed Design Pre Earthworks Drains Sheet 119 Margidunum Junction,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/120,Detailed Design Pre Earthworks Drains Sheet 120 Margidunum Junction,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/121,Detailed Design Pre Earthworks Drains Sheet 121 Margidunum Junction,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/122,Detailed Design Pre Earthworks Drains Sheet 122 Springdale Lane,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/123,Detailed Design Pre Earthworks Drains Sheet 123 Butt Lane,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/124,Detailed Design Pre Earthworks Drains Sheet 124 Butt Lane,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/125,Detailed Design Pre Earthworks Drains Sheet 125 Tenman Lane,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/126,Detailed Design Pre Earthworks Drains Sheet 126 Car Colston,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/127,Detailed Design Pre Earthworks Drains Sheet 127 Red Lodge Lane,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/128,Detailed Design Pre Earthworks Drains Sheet 128 Coney Grey Spinney,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/129,Detailed Design Pre Earthworks Drains Sheet 129 Flintham Junction,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/130,Detailed Design Pre Earthworks Drains Sheet 130 Flintham Junction,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/131,Detailed Design Pre Earthworks Drains Sheet 131 Flintham Junction,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/132,Detailed Design Pre Earthworks Drains Sheet 132 Flintham Junction,DR,Drawing,Pre Earthworks Drains,Section 2
+PD0285/DR/500/070,Detailed Design Pre Earthworks Drains Sheet 70 Ch 21520 - 21820,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/071,Detailed Design Pre Earthworks Drains Sheet 71 Ch 21820 - 22120,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/072,Detailed Design Pre Earthworks Drains Sheet 72 Ch 22120 - 22420,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/073,Detailed Design Pre Earthworks Drains Sheet 73 Ch 22420 - 22720,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/074,Detailed Design Pre Earthworks Drains Sheet 74 Ch 22720 - 23020,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/075,Detailed Design Pre Earthworks Drains Sheet 75 Ch 23020 - 23320,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/076,Detailed Design Pre Earthworks Drains Sheet 76 Ch 23320 - 23620,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/077,Detailed Design Pre Earthworks Drains Sheet 77 Ch 23620 - 23920,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/078,Detailed Design Pre Earthworks Drains Sheet 78 Ch 23920 - 24220,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/079,Detailed Design Pre Earthworks Drains Sheet 79 Ch 24220 - 24520,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/080,Detailed Design Pre Earthworks Drains Sheet 80 Ch 24520 - 24820,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/081,Detailed Design Pre Earthworks Drains Sheet 81 Ch 24820 - 25120,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/082,Detailed Design Pre Earthworks Drains Sheet 82 Ch 25120 - 25420,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/083,Detailed Design Pre Earthworks Drains Sheet 83 Ch 25420 - 25720,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/084,Detailed Design Pre Earthworks Drains Sheet 84 Ch 25720 - 26020,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/085,Detailed Design Pre Earthworks Drains Sheet 85 Ch 26020 - 26320,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/086,Detailed Design Pre Earthworks Drains Sheet 86 Ch 26320 - 26620,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/087,Detailed Design Pre Earthworks Drains Sheet 87 Ch 26620 - 26920,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/088,Detailed Design Pre Earthworks Drains Sheet 88 Ch 26920 - 27220,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/089,Detailed Design Pre Earthworks Drains Sheet 89 Ch 27220 - 27520,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/090,Detailed Design Pre Earthworks Drains Sheet 90 Ch 27520 - 27820,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/091,Detailed Design Pre Earthworks Drains Sheet 91 Ch 27820 - 28120,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/092,Detailed Design Pre Earthworks Drains Sheet 92 Ch 28120 - END,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/133,Detailed Design Pre Earthworks Drains Sheet 133 Syerston Overbridge,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/134,Detailed Design Pre Earthworks Drains Sheet 134 Lodge Lane Junction,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/135,Detailed Design Pre Earthworks Drains Sheet 135 Lodge Lane Junction,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/136,Detailed Design Pre Earthworks Drains Sheet 136 Lodge Lane Junction,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/137,Detailed Design Pre Earthworks Drains Sheet 137 Elston Lane,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/138,Detailed Design Pre Earthworks Drains Sheet 138 Moor Lane Overbridge,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/139,Detailed Design Pre Earthworks Drains Sheet 139 Moor Lane Overbridge,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/140,Detailed Design Pre Earthworks Drains Sheet 140 Hawton Lane Overbridge,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/141,Detailed Design Pre Earthworks Drains Sheet 141 Hawton Lane Overbridge,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/142,Detailed Design Pre Earthworks Drains Sheet 142 Hawton Lane Overbridge,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/143,Detailed Design Pre Earthworks Drains Sheet 143 Farndon Roundabout,DR,Drawing,Pre Earthworks Drains,Section 3
+PD0285/DR/500/199,Detailed Design Carrier & Filter Drains General Notes and Key,DR,Drawing,,Carrier & Filter Drains
+PD0285/DR/500/200,Detailed Design Carrier & Filter Drains Key Sheet,DR,,,Carrier & Filter Drains
+PD0285/DR/500/201,Detailed Design Carrier & Filter Drains Sheet 1 Ch 400 - 700,DR,Drawing,Carrier & Filter Drains,Section 1A
+PD0285/DR/500/202,Detailed Design Carrier & Filter Drains Sheet 2 Ch  700 - 1000,DR,Drawing,Carrier & Filter Drains,Section 1A
+PD0285/DR/500/203,Detailed Design Carrier & Filter Drains Sheet 3 Ch 1000 - 1300,DR,Drawing,Carrier & Filter Drains,Section 1A
+PD0285/DR/500/204,Detailed Design Carrier & Filter Drains Sheet 4 Ch 1300 - 1600,DR,Drawing,Carrier & Filter Drains,Section 1A
+PD0285/DR/500/205,Detailed Design Carrier & Filter Drains Sheet 5 Ch 1600 - 1900,DR,Drawing,Carrier & Filter Drains,Section 1A
+PD0285/DR/500/206,Detailed Design Carrier & Filter Drains Sheet 6 Ch 1900 - 2200,DR,Drawing,Carrier & Filter Drains,Section 1A
+PD0285/DR/500/207,Detailed Design Carrier & Filter Drains Sheet 7 Ch 2200 - 2500,DR,Drawing,Carrier & Filter Drains,Section 1A
+PD0285/DR/500/208,Detailed Design Carrier & Filter Drains Sheet 8 Ch 2500 - 2800,DR,Drawing,Carrier & Filter Drains,Section 1A
+PD0285/DR/500/209,Detailed Design Carrier & Filter Drains Sheet 9 Ch 2800 - 3100,DR,Drawing,Carrier & Filter Drains,Section 1A
+PD0285/DR/500/210,Detailed Design Carrier & Filter Drains Sheet 10 Ch 3100 - 3400,DR,Drawing,Carrier & Filter Drains,Section 1A
+PD0285/DR/500/211,Detailed Design Carrier & Filter Drains Sheet 11 Ch 3400 - 3700,DR,Drawing,Carrier & Filter Drains,Section 1A
+PD0285/DR/500/212,Detailed Design Carrier & Filter Drains Sheet 12 Ch 3700 - 4000,DR,Drawing,Carrier & Filter Drains,Section 1A
+PD0285/DR/500/213,Detailed Design Carrier & Filter Drains Sheet 13 Ch 4000 - 4300,DR,Drawing,Carrier & Filter Drains,Section 1A
+PD0285/DR/500/214,Detailed Design Carrier & Filter Drains Sheet 14 Ch 4300 - 4600,DR,Drawing,Carrier & Filter Drains,Section 1A
+PD0285/DR/500/215,Detailed Design Carrier & Filter Drains Sheet 15 Ch 4600 - 4900,DR,Drawing,Carrier & Filter Drains,Section 1A
+PD0285/DR/500/216,Detailed Design Carrier & Filter Drains Sheet 16 Ch 4900 - 5200,DR,Drawing,Carrier & Filter Drains,Section 1A
+PD0285/DR/500/217,Detailed Design Carrier & Filter Drains Sheet 17 Ch 5200 - 5500,DR,Drawing,Carrier & Filter Drains,Section 1A
+PD0285/DR/500/218,Detailed Design Carrier & Filter Drains Sheet 18 Ch 5500 - 5800,DR,Drawing,Carrier & Filter Drains,Section 1B
+PD0285/DR/500/219,Detailed Design Carrier & Filter Drains Sheet 19 Ch 5800 - 6100,DR,Drawing,Carrier & Filter Drains,Section 1B
+PD0285/DR/500/220,Detailed Design Carrier & Filter Drains Sheet 20 Ch 6100 - 6400,DR,Drawing,Carrier & Filter Drains,Section 1B
+PD0285/DR/500/221,Detailed Design Carrier & Filter Drains Sheet 21 Ch 6400 - 6740,DR,Drawing,Carrier & Filter Drains,Section 1B
+PD0285/DR/500/222,Detailed Design Carrier & Filter Drains Sheet 22 Ch 6740 - 7060,DR,Drawing,Carrier & Filter Drains,Section 1B
+PD0285/DR/500/223,Detailed Design Carrier & Filter Drains Sheet 23 Ch 7060 - 7380,DR,Drawing,Carrier & Filter Drains,Section 1B
+PD0285/DR/500/293,Detailed Design Carrier & Filter Drains Sheet 93 Owthorpe Junction,DR,Drawing,Carrier & Filter Drains,Section 1B
+PD0285/DR/500/294,Detailed Design Carrier & Filter Drains Sheet 94 Owthorpe Junction,DR,Drawing,Carrier & Filter Drains,Section 1B
+PD0285/DR/500/295,Detailed Design Carrier & Filter Drains Sheet 95 Owthorpe Junction,DR,Drawing,Carrier & Filter Drains,Section 1B
+PD0285/DR/500/296,Detailed Design Carrier & Filter Drains Sheet 96 Herrywell Lane,DR,Drawing,Carrier & Filter Drains,Section 1B
+PD0285/DR/500/297,Detailed Design Carrier & Filter Drains Sheet 97 Cotgrave Overbridge,DR,Drawing,Carrier & Filter Drains,Section 1B
+PD0285/DR/500/298,Detailed Design Carrier & Filter Drains Sheet 98 Cotgrave Overbridge,DR,Drawing,Carrier & Filter Drains,Section 1B
+PD0285/DR/500/299,Detailed Design Carrier & Filter Drains Sheet 99 Cotgrave Overbridge,DR,Drawing,Carrier & Filter Drains,Section 1B
+PD0285/DR/500/224,Detailed Design Carrier & Filter Drains Sheet 24 Ch 7380 - 7700,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/225,Detailed Design Carrier & Filter Drains Sheet 25 Ch 7700 - 8000,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/226,Detailed Design Carrier & Filter Drains Sheet 26 Ch 8000 - 8300,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/227,Detailed Design Carrier & Filter Drains Sheet 27 Ch 8300 - 8600,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/228,Detailed Design Carrier & Filter Drains Sheet 28 Ch 8600 - 8880,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/229,Detailed Design Carrier & Filter Drains Sheet 29 Ch 8880 - 9200,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/230,Detailed Design Carrier & Filter Drains Sheet 30 Ch 9200 - 9500,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/231,Detailed Design Carrier & Filter Drains Sheet 31 Ch 9500 - 9800,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/232,Detailed Design Carrier & Filter Drains Sheet 32 Ch 9800 - 10100,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/233,Detailed Design Carrier & Filter Drains Sheet 33 Ch 10100 - 10400,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/234,Detailed Design Carrier & Filter Drains Sheet 34 Ch 10400 - 10700,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/235,Detailed Design Carrier & Filter Drains Sheet 35 Ch 10700 - 11000,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/236,Detailed Design Carrier & Filter Drains Sheet 36 Ch 11000 - 11300,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/237,Detailed Design Carrier & Filter Drains Sheet 37 Ch 11300 - 11620,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/238,Detailed Design Carrier & Filter Drains Sheet 38 Ch 11620 - 11940,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/239,Detailed Design Carrier & Filter Drains Sheet 39 Ch 11940 - 12260,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/240,Detailed Design Carrier & Filter Drains Sheet 40 Ch 12260 - 12580,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/241,Detailed Design Carrier & Filter Drains Sheet 41 Ch 12580 - 12860,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/300,Detailed Design Carrier & Filter Drains Sheet 100 Stragglethorpe Road,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/301,Detailed Design Carrier & Filter Drains Sheet 101 Nottingham Road,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/302,Detailed Design Carrier & Filter Drains Sheet 102 Cropwell Road,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/303,Detailed Design Carrier & Filter Drains Sheet 103 Cropwell Road,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/304,Detailed Design Carrier & Filter Drains Sheet 104 Cropwell Road,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/305,Detailed Design Carrier & Filter Drains Sheet 105 Cropwell Road,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/306,Detailed Design Carrier & Filter Drains Sheet 106 Henson Lane,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/307,Detailed Design Carrier & Filter Drains Sheet 107 Henson Lane,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/308,Detailed Design Carrier & Filter Drains Sheet 108 Henson Lane,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/309,Detailed Design Carrier & Filter Drains Sheet 109 Grantham Road,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/310,Detailed Design Carrier & Filter Drains Sheet 110 Telecom Mast Access Track/Saxondale Roundabout,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/311,Detailed Design Carrier & Filter Drains Sheet 111 Saxondale Roundabout,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/312,Detailed Design Carrier & Filter Drains Sheet 112 Existing A46 Access Track,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/313,Detailed Design Carrier & Filter Drains Sheet 113 Saxondale Roundabout,DR,Drawing,Carrier & Filter Drains,Section 1C
+PD0285/DR/500/242,Detailed Design Carrier & Filter Drains Sheet 42 Ch 12860 - 13180,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/243,Detailed Design Carrier & Filter Drains Sheet 43 Ch 13180 - 13500,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/244,Detailed Design Carrier & Filter Drains Sheet 44 Ch 13500 - 13800,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/245,Detailed Design Carrier & Filter Drains Sheet 45 Ch 13800 - 14120,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/246,Detailed Design Carrier & Filter Drains Sheet 46 Ch 14120 - 14440,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/247,Detailed Design Carrier & Filter Drains Sheet 47 Ch 14440 - 14740,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/248,Detailed Design Carrier & Filter Drains Sheet 48 Ch 14740 - 15060,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/249,Detailed Design Carrier & Filter Drains Sheet 49 Ch 15060- 15380,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/250,Detailed Design Carrier & Filter Drains Sheet 50 Ch  15380 - 15700,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/251,Detailed Design Carrier & Filter Drains Sheet 51 Ch 15700 - 16000,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/252,Detailed Design Carrier & Filter Drains Sheet 52 Ch 16000 - 16300,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/253,Detailed Design Carrier & Filter Drains Sheet 53 Ch 16300 - 16600,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/254,Detailed Design Carrier & Filter Drains Sheet 54 Ch 16600 - 16920,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/255,Detailed Design Carrier & Filter Drains Sheet 55 Ch 16920 - 17240,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/256,Detailed Design Carrier & Filter Drains Sheet 56 Ch 17240 - 17560,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/257,Detailed Design Carrier & Filter Drains Sheet 57 Ch 17560 - 17880,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/258,Detailed Design Carrier & Filter Drains Sheet 58 Ch 17880 - 18200,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/259,Detailed Design Carrier & Filter Drains Sheet 59 Ch 18200 - 18520,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/260,Detailed Design Carrier & Filter Drains Sheet 60 ch 18520 - 18840,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/261,Detailed Design Carrier & Filter Drains Sheet 61 ch 18840 - 19120,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/262,Detailed Design Carrier & Filter Drains Sheet 62 ch 19120 - 19400,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/263,Detailed Design Carrier & Filter Drains Sheet 63 Ch 19400 - 19700,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/264,Detailed Design Carrier & Filter Drains Sheet 64 Ch 19700 - 20000,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/265,Detailed Design Carrier & Filter Drains Sheet 65 Ch 20000 - 20300,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/266,Detailed Design Carrier & Filter Drains Sheet 66 Ch 20300 - 20600,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/267,Detailed Design Carrier & Filter Drains Sheet 67 Ch 20600 - 20920,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/268,Detailed Design Carrier & Filter Drains Sheet 68 Ch 20920 - 21220,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/269,Detailed Design Carrier & Filter Drains Sheet 69 Ch 21220 - 21520,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/314,Detailed Design Carrier & Filter Drains Sheet 114 Drainage Easement Ch 13500,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/315,Detailed Design Carrier & Filter Drains Sheet 115  Balancing Pond Ch 13500,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/316,Detailed Design Carrier & Filter Drains Sheet 116  Drainage Easement Ch 13500,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/317,Detailed Design Carrier & Filter Drains Sheet 117 Margidunum SBM Slip Road,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/318,Detailed Design Carrier & Filter Drains Sheet 118 Margidunum Junction,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/319,Detailed Design Carrier & Filter Drains Sheet 119 Margidunum Junction,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/320,Detailed Design Carrier & Filter Drains Sheet 120 Margidunum Junction,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/321,Detailed Design Carrier & Filter Drains Sheet 121 Margidunum Junction,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/322,Detailed Design Carrier & Filter Drains Sheet 122 Springdale Lane,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/323,Detailed Design Carrier & Filter Drains Sheet 123 Butt Lane,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/324,Detailed Design Carrier & Filter Drains Sheet 124 Butt Lane,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/325,Detailed Design Carrier & Filter Drains Sheet 125 Tenman Lane,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/326,Detailed Design Carrier & Filter Drains Sheet 126 Car Colston,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/327,Detailed Design Carrier & Filter Drains Sheet 127 Red Lodge Lane,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/328,Detailed Design Carrier & Filter Drains Sheet 128 Coney Grey Spinney,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/329,Detailed Design Carrier & Filter Drains Sheet 129 Flintham Junction,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/330,Detailed Design Carrier & Filter Drains Sheet 130 Flintham Junction,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/331,Detailed Design Carrier & Filter Drains Sheet 131 Flintham Junction,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/332,Detailed Design Carrier & Filter Drains Sheet 132 Flintham Junction,DR,Drawing,Carrier & Filter Drains,Section 2
+PD0285/DR/500/270,Detailed Design Carrier & Filter Drains Sheet 70 Ch 21520 - 21820,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/271,Detailed Design Carrier & Filter Drains Sheet 71 Ch 21820 - 22120,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/272,Detailed Design Carrier & Filter Drains Sheet 72 Ch 22120 - 22420,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/273,Detailed Design Carrier & Filter Drains Sheet 73 Ch 22420 - 22720,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/274,Detailed Design Carrier & Filter Drains Sheet 74 Ch 22720 - 23020,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/275,Detailed Design Carrier & Filter Drains Sheet 75 Ch 23020 - 23320,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/276,Detailed Design Carrier & Filter Drains Sheet 76 Ch 23320 - 23620,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/277,Detailed Design Carrier & Filter Drains Sheet 77 Ch 23620 - 23920,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/278,Detailed Design Carrier & Filter Drains Sheet 78 Ch 23920 - 24220,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/279,Detailed Design Carrier & Filter Drains Sheet 79 Ch 24220 - 24520,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/280,Detailed Design Carrier & Filter Drains Sheet 80 Ch 24520 - 24820,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/281,Detailed Design Carrier & Filter Drains Sheet 81 Ch 24820 - 25120,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/282,Detailed Design Carrier & Filter Drains Sheet 82 Ch 25120 - 25420,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/283,Detailed Design Carrier & Filter Drains Sheet 83 Ch 25420 - 25720,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/284,Detailed Design Carrier & Filter Drains Sheet 84 Ch 25720 - 26020,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/285,Detailed Design Carrier & Filter Drains Sheet 85 Ch 26020 - 26320,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/286,Detailed Design Carrier & Filter Drains Sheet 86 Ch 26320 - 26620,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/287,Detailed Design Carrier & Filter Drains Sheet 87 Ch 26620 - 26920,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/288,Detailed Design Carrier & Filter Drains Sheet 88 Ch 26920 - 27220,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/289,Detailed Design Carrier & Filter Drains Sheet 89 Ch 27220 - 27520,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/290,Detailed Design Carrier & Filter Drains Sheet 90 Ch 27520 - 27820,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/291,Detailed Design Carrier & Filter Drains Sheet 91 Ch 27820 - 28120,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/292,Detailed Design Carrier & Filter Drains Sheet 92 Ch 28120 - END,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/333,Detailed Design Carrier & Filter Drains Sheet 133 Syerston Overbridge,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/334,Detailed Design Carrier & Filter Drains Sheet 134 Lodge Lane Junction,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/335,Detailed Design Carrier & Filter Drains Sheet 135 Lodge Lane Junction,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/336,Detailed Design Carrier & Filter Drains Sheet 136 Lodge Lane Junction,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/337,Detailed Design Carrier & Filter Drains Sheet 137 Elston Lane,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/338,Detailed Design Carrier & Filter Drains Sheet 138 Moor Lane Overbridge,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/339,Detailed Design Carrier & Filter Drains Sheet 139 Moor Lane Overbridge,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/340,Detailed Design Carrier & Filter Drains Sheet 140 Hawton Lane Overbridge,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/341,Detailed Design Carrier & Filter Drains Sheet 141 Hawton Lane Overbridge,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/342,Detailed Design Carrier & Filter Drains Sheet 142 Hawton Lane Overbridge,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/343,Detailed Design Carrier & Filter Drains Sheet 143 Farndon Roundabout,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/344,Detailed Design Carrier & Filter Drains Sheet 144 Cropwell Road,DR,Drawing,Carrier & Filter Drains,Section 3
+PD0285/DR/500/501,Detailed Design Culvert 1 & 1A,DR,Drawing,Culverts,
+PD0285/DR/500/502,Detailed Design Culvert 2,DR,Drawing,Culverts,
+PD0285/DR/500/503,Detailed Design Culvert 3 Sheet 1,DR,Drawing,Culverts,
+PD0285/DR/500/504,"Detailed Design Culvert 4, 4A & 4B",DR,Drawing,Culverts,
+PD0285/DR/500/505,Detailed Design Culvert 5,DR,Drawing,Culverts,
+PD0285/DR/500/506,Detailed Design Culvert 6,DR,Drawing,Culverts,
+PD0285/DR/500/507,Detailed Design Culvert 7,DR,Drawing,Culverts,
+PD0285/DR/500/508,Detailed Design Culvert 8,DR,Drawing,Culverts,
+PD0285/DR/500/509,Detailed Design Culvert 9,DR,Drawing,Culverts,
+PD0285/DR/500/510,Detailed Design Culvert 10,DR,Drawing,Culverts,
+PD0285/DR/500/511,Detailed Design Culvert 11,DR,Drawing,Culverts,
+PD0285/DR/500/512,Detailed Design Culvert 12 & 12A,DR,Drawing,Culverts,
+PD0285/DR/500/513,Detailed Design Culvert 13 & 13A,DR,Drawing,Culverts,
+PD0285/DR/500/514,Detailed Design Culvert 14 & 14A,DR,Drawing,Culverts,
+PD0285/DR/500/515,Detailed Design Culvert 15,DR,Drawing,Culverts,
+PD0285/DR/500/516,Detailed Design Culvert 16,DR,Drawing,Culverts,
+PD0285/DR/500/517,Detailed Design Culvert 17,DR,Drawing,Culverts,
+PD0285/DR/500/518,Detailed Design Culvert 18 sheet 1 of 2,DR,Drawing,Culverts,
+PD0285/DR/500/519,Detailed Design Culvert 19 Sheet 1,DR,Drawing,Culverts,
+PD0285/DR/500/520,Detailed Design Culvert 20,DR,Drawing,Culverts,
+PD0285/DR/500/521,Detailed Design Culvert 21,DR,Drawing,Culverts,
+PD0285/DR/500/522,Detailed Design Culvert 18 sheet 2 of 2,DR,Drawing,Culverts,
+PD0285/DR/500/523,Detailed Design Culvert 12 & 12A Sheet 2,DR,Drawing,Culverts,
+PD0285/DR/500/524,Detailed Design Culvert 3 Sheet 2,DR,Drawing,Culverts,
+PD0285/DR/500/526,Detailed Design Culvert 19 Sheet 2,DR,Drawing,Culverts,
+PD0285/DR/'500/551,Detailed Design MC 81,DR,Drawing,Minor Culverts,
+PD0285/DR/'500/552,Detailed Design MC 82,DR,Drawing,Minor Culverts,
+PD0285/DR/500/553,Detailed Design MC 76,DR,Drawing,Minor Culverts,
+PD0285/DR/500/554,Detailed Design MC 118,DR,Drawing,Minor Culverts,
+PD0285/DR/500/556,Detailed Design MC 39 & MC40 & 126,DR,Drawing,Minor Culverts,
+PD0285/DR/500/557,Detailed Design MC 75,DR,Drawing,Minor Culverts,
+PD0285/DR/500/559,Detailed Design MC 116,DR,Drawing,Minor Culverts,
+PD0285/DR/500/562,Detailed Design MC 48 & 49,DR,Drawing,Minor Culverts,
+PD0285/DR/500/563,Detailed Design MC 157,DR,Drawing,Minor Culverts,
+PD0285/DR/500/601,Detailed Design Balancing Pond No 1,DR,Drawing,Balancing Ponds,
+PD0285/DR/500/602,Detailed Design Balancing Pond No 2,DR,Drawing,Balancing Ponds,
+PD0285/DR/500/603,Detailed Design Balancing Pond No 3,DR,Drawing,Balancing Ponds,
+PD0285/DR/500/604,Detailed Design Balancing Pond No 4,DR,Drawing,Balancing Ponds,
+PD0285/DR/500/605,Detailed Design Balancing Pond No 5,DR,Drawing,Balancing Ponds,
+PD0285/DR/500/606,Detailed Design Balancing Pond No 6,DR,Drawing,Balancing Ponds,
+PD0285/DR/500/607,Detailed Design Balancing Pond No 6A,DR,Drawing,Balancing Ponds,
+PD0285/DR/500/608,Detailed Design Balancing Pond No 6B,DR,Drawing,Balancing Ponds,
+PD0285/DR/500/609,Detailed Design Balancing Pond No 7,DR,Drawing,Balancing Ponds,
+PD0285/DR/500/610,Detailed Design Balancing Pond No 8 & 9,DR,Drawing,Balancing Ponds,
+PD0285/DR/500/611,Detailed Design Balancing Pond No 10,DR,Drawing,Balancing Ponds,
+PD0285/DR/500/612,Detailed Design Balancing Pond No 11,DR,Drawing,Balancing Ponds,
+PD0285/DR/500/613,Detailed Design Balancing Pond No 12,DR,Drawing,Balancing Ponds,
+PD0285/DR/500/614,Detailed Design Balancing Pond No 13,DR,Drawing,Balancing Ponds,
+PD0285/DR/500/615,Detailed Design Balancing Pond No 14,DR,Drawing,Balancing Ponds,
+PD0285/DR/500/616,Detailed Design Balancing Pond No 4A,DR,Drawing,Balancing Ponds,
+PD0285/DR/SD/001,Manhole Type 12,DR,Drawing,Balancing Ponds,
+PD0285/DR/SD/002,Manhole Type 13,DR,Drawing,Balancing Ponds,
+PD0285/DR/SD/003,Surface Water Drains - Bedding Details Type A&A',DR,Drawing,Balancing Ponds,
+PD0285/DR/500/701CDK,Detailed Design Charcon Kerb Drainage Sheet 1 Ch 400 - 700,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/702CDK,Detailed Design Charcon Kerb Drainage Sheet 2 Ch 700 - 1000,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/703CDK,Detailed Design Charcon Kerb Drainage Sheet 3 Ch 1000 - 1300,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/706CDK,Detailed Design Charcon Kerb Drainage Sheet 6 Ch 1900 - 2200,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/707CDK,Detailed Design Charcon Kerb Drainage Sheet 7 Ch 2200 - 2500,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/711CDK,Detailed Design Charcon Kerb Drainage Sheet 11 Ch 3400 - 3700,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/712CDK,Detailed Design Charcon Kerb Drainage Sheet 12 Ch 3700 - 4000,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/713CDK,Detailed Design Charcon Kerb Drainage Sheet 13 Ch 4000 - 4300,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/714CDK,Detailed Design Charcon Kerb Drainage Sheet 14 Ch 4300 - 4600,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/718CDK,Detailed Design Charcon Kerb Drainage Sheet 18 Ch 5500 - 5800,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/719CDK,Detailed Design Charcon Kerb Drainage Sheet 19 Ch 5800 - 6100,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/722CDK,Detailed Design Charcon Kerb Drainage Sheet 22 Ch 6740 - 7060,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/726CDK,Detailed Design Charcon Kerb Drainage Sheet 26 Ch 8000 - 8300,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/731CDK,Detailed Design Charcon Kerb Drainage Sheet 31 Ch 9500 - 9800,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/738CDK,Detailed Design Charcon Kerb Drainage Sheet 38 Ch 11620 - 11940,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/739CDK,Detailed Design Charcon Kerb Drainage Sheet 39 Ch 11940 - 12260,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/740CDK,Detailed Design Charcon Kerb Drainage Sheet 40 Hawton Lane,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/747CDK,Detailed Design Charcon Kerb Drainage Sheet 47 Ch 14440 - 14740,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/752CDK,Detailed Design Charcon Kerb Drainage Sheet 52 Ch 16000 - 16300,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/755CDK,Detailed Design Charcon Kerb Drainage Sheet 55 Ch 16920 - 17240,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/756CDK,Detailed Design Charcon Kerb Drainage Sheet 56 Ch 17240 - 17560,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/757CDK,Detailed Design Charcon Kerb Drainage Sheet 57 Ch 17560 - 17880,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/758CDK,Detailed Design Charcon Kerb Drainage Sheet 58 Ch 17880 - 18200,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/760CDK,Detailed Design Charcon Kerb Drainage Sheet 60 Ch 18520 - 18840,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/761CDK,Detailed Design Charcon Kerb Drainage Sheet 61 Ch 18840 - 19120,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/764CDK,Detailed Design Charcon Kerb Drainage Sheet 64 Ch 19700 - 20000,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/767CDK,Detailed Design Charcon Kerb Drainage Sheet 67 Ch 20600 - 20920,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/768CDK,Detailed Design Charcon Kerb Drainage Sheet 68 Ch 20920 - 21220,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/769CDK,Detailed Design Charcon Kerb Drainage Sheet 69 Ch 21220 - 21520,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/771CDK,Detailed Design Charcon Kerb Drainage Sheet 71 Ch 21820 - 22120,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/772CDK,Detailed Design Charcon Kerb Drainage Sheet 72 Ch 22120 - 22420,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/773CDK,Detailed Design Charcon Kerb Drainage Sheet 73 Ch 22420 - 22720,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/775CDK,Detailed Design Charcon Kerb Drainage Sheet 75 Ch 23020 - 23320,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/776CDK,Detailed Design Charcon Kerb Drainage Sheet 76 Ch 23320 - 23620,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/779CDK,Detailed Design Charcon Kerb Drainage Sheet 79 Ch 24220 - 24520,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/780CDK,Detailed Design Charcon Kerb Drainage Sheet 80 Ch 24520 - 24820,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/781CDK,Detailed Design Charcon Kerb Drainage Sheet 81 Ch 24820 - 25120,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/784CDK,Detailed Design Charcon Kerb Drainage Sheet 84 Ch 25720 - 26020,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/785CDK,Detailed Design Charcon Kerb Drainage Sheet 85 Ch 26020 - 26320,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/788CDK,Detailed Design Charcon Kerb Drainage Sheet 88 Ch 26920 - 27220,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/800CDK,Detailed Design Charcon Kerb Drainage Sheet 100 Stragglethorpe Road,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/801CDK,Detailed Design Charcon Kerb Drainage Sheet 101 Nottingham Road,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/805CDK,Detailed Design Charcon Kerb Drainage Sheet 105 Cropwell Road,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/809CDK,Detailed Design Charcon Kerb Drainage Sheet 109 Grantham Road,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/810CDK,Detailed Design Charcon Kerb Drainage Sheet 110 Telecom Mast Access Track/Saxondale Roundabout,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/813CDK,Detailed Design Charcon Kerb Drainage Sheet 113 Saxondale Roundabout,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/817CDK,Detailed Design Charcon Kerb Drainage Sheet 117 Margidunum Junction ,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/825CDK,Detailed Design Charcon Kerb Drainage Sheet 125 Tenman Lane,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/830CDK,Detailed Design Charcon Kerb Drainage Sheet 130 Flintham Junction,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/836CDK,Detailed Design Charcon Kerb Drainage Sheet 136 Lodge Lane Junction,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/839CDK,Detailed Design Charcon Kerb Drainage Sheet 139 Moor Lane Overbridge ,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/841CDK,Detailed Design Charcon Kerb Drainage Sheet 141 Hawton Lane Overbridge,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/842CDK,Detailed Design Charcon Kerb Drainage Sheet 142 Hawton Lane Overbridge,DR,Drawing,Charcon Kerb Drainage,
+PD0285/DR/500/843CDK,Detailed Design Charcon Kerb Drainage Sheet 143 Farndon R'about,DR,Drawing,Charcon Kerb Drainage,
+PD0285/GD/2500/100,Scheme Layout Key sheet,HWY GD,Drawing,,
+PD0285/GD/2500/101,Scheme Layout CH 00 - CH 1.600 Sheet 1 of 53,HWY GD,Drawing,,
+PD0285/GD/2500/102,"Scheme Layout CH1,600 - CH 3,150 Sheet 2 of 53",HWY GD,Drawing,,
+PD0285/GD/2500/103,"Scheme Layout CH 3,150 - CH 4,700 Sheet 3 of 53",HWY GD,Drawing,,
+PD0285/GD/2500/104,"Scheme Layout CH 4,700 - CH 6,200 Sheet 4 of 53",HWY GD,Drawing,,
+PD0285/GD/2500/105,"Scheme Layout CH 6,200 - CH 7,500 Sheet 5 of 53",HWY GD,Drawing,,
+PD0285/GD/2500/106,"Scheme Layout CH 7,500 - CH 8,650 Shet 6 of 53",HWY GD,Drawing,,
+PD0285/GD/2500/107,"Scheme Layout CH 8,650 - CH 10,050 Sheet 7 of 53",HWY GD,Drawing
+PD0285/GD/2500/108,"Scheme Layout CH 10,050 - CH 11,300 Sheet 8 of 53",HWY GD,Drawing
+PD0285/GD/2500/109,"Scheme Layout CH 11,300 - CH 12,800 Sheet 9 of 53",HWY GD,Drawing
+PD0285/GD/2500/110,"Scheme Layout CH 12,800 - CH 13,900 Sheet 10 of 53",HWY GD,Drawing
+PD0285/GD/2500/111,"Scheme Layout CH 13,900 - CH 15,350 Sheet 11 of 53",HWY GD,Drawing
+PD0285/GD/2500/112,"Scheme Layout CH 15,350 - CH 16,700 Sheet 12 of 53",HWY GD,Drawing
+PD0285/GD/2500/113,"Scheme Layout CH 16,700 - CH 17,750 Sheet 13 of 53",HWY GD,Drawing
+PD0285/GD/2500/114,"Scheme Layout CH 17,750 - CH 19,200 Sheet 14 of 53",HWY GD,Drawing
+PD0285/GD/2500/115,"Scheme Layout CH 19,200 - CH 20,450 Sheet 15 of 53",HWY GD,Drawing
+PD0285/GD/2500/116,"Scheme Layout CH 20,450 - CH 21,950 Sheet 16 of 53",HWY GD,Drawing
+PD0285/GD/2500/117,"Scheme Layout CH 21,950 - CH 23,500 Sheet 17 of 53",HWY GD,Drawing
+PD0285/GD/2500/118,"Scheme Layout CH 23,500 - CH 25,000 Sheet 18 of 53",HWY GD,Drawing
+PD0285/GD/2500/119,"Scheme Layout CH 24,500 - CH 26,250 Sheet 19 of 53",HWY GD,Drawing
+PD0285/GD/2500/120,"Scheme Layout CH 26,250 - CH 27,450 Sheet 20 of 53",HWY GD,Drawing
+PD0285/GD/2500/121,"Scheme Layout CH 27,450 - CH 28,335.8 Sheet 21 of 53",HWY GD,Drawing
+PD0285/GD/2500/122,Scheme Layout Widmerpool Junction 1 of 2 Plan & Sections Shet 22 of 53,HWY GD,Drawing
+PD0285/GD/2500/123,Scheme Layout Widmerpool Junction 2 of 2 Sections Sheet 23 of 53,HWY GD,Drawing
+PD0285/GD/2500/124,Scheme Layout Roehoe Junction 1 of 2 Plan & Sections Sheet 24 of 53,HWY GD,Drawing
+PD0285/GD/2500/125,Scheme Layout Roehoe 2 of 2 Sections Sheet 25 of 53,HWY GD,Drawing
+PD0285/GD/2500/126,Scheme Layout Owthorpe Junction 1 of 2 Plan & Sections Sheet 26 of 53,HWY GD,Drawing
+PD0285/GD/2500/127,Scheme Layout Owthorpe Junction 2 of 2 Sections Sheet 27 of 53,HWY GD,Drawing
+PD0285/GD/2500/128,Scheme Layout Cotgrave Overbridge Plan & Sections Sheet 28 of 53,HWY GD,Drawing
+PD0285/GD/2500/129,Scheme Layout Stragglethorpe Junction 1 of 3 Plan Sheet 29 of 53,HWY GD,Drawing
+PD0285/GD/2500/130,Scheme Layout Stragglethorpe Junction 2 of 3 Plan Sheet 30 of 53,HWY GD,Drawing
+PD0285/GD/2500/131,Scheme Layout Stragglethorpe Junction 3 of 3 Plan Sheet 31 of 53,HWY GD,Drawing
+PD0285/GD/2500/132,Scheme Layout Grantham Canal Underbridge Plan & Sections Sheet 32 of 53,HWY GD,Drawing
+PD0285/GD/2500/133,Scheme Layout Cropwell Butler Underbridge Plan & Sections Sheet 33 of 53,HWY GD,Drawing
+PD0285/GD/2500/134,Scheme Layout Henson Lane Overbridge Plan & Sections Sheet 34 of 53,HWY GD,Drawing
+PD0285/GD/2500/135,Scheme Layout Saxondale Junction 1 of 3 Plan Sheet 35 of 53,HWY GD,Drawing
+PD0285/GD/2500/136,Scheme Layout Saxondale Junction 2 of 3 Plan Sheet 36 of 53,HWY GD,Drawing
+PD0285/GD/2500/137,Scheme Layout Saxondale Junction 3 of 3 Plan Sheet 37 of 53,HWY GD,Drawing
+PD0285/GD/2500/138,Scheme Layout Saxondale Bridleway Overbridge Sheet 38 of 53,HWY GD,Drawing
+PD0285/GD/2500/139,Scheme Layout Margidunum Junction 1 of 3 Plan Sheet 39 of 53,HWY GD,Drawing
+PD0285/GD/2500/140,Scheme Layout Margidunum Junction 2 of 3 Plan Sheet 40 of 53,HWY GD,Drawing
+PD0285/GD/2500/141,Scheme Layout Margidunum Junction 3 of 3 Plan Sheet 41 of 53,HWY GD,Drawing
+PD0285/GD/2500/142,Scheme Layout Butt Lane Overbridge Plan & Sections Sheet 42 of 53,HWY GD,Drawing
+PD0285/GD/2500/143,Scheme Layout Car Colston Overbridge Plan & Sections Sheet 43 of 53,HWY GD,Drawing
+PD0285/GD/2500/144,Scheme Layout Red Lodge Junction 1 of 2 Plan & Sections Sheet 44 of 53,HWY GD,Drawing
+PD0285/GD/2500/145,Scheme Layout Red Lodge Junction 2 of 2 Plan & Sections Sheet 45 of 53,HWY GD,Drawing
+PD0285/GD/2500/146,Scheme Layout Flintham Junction 1 of 2 Plan & Sections Sheet 46 of 53,HWY GD,Drawing
+PD0285/GD/2500/147,Scheme Layout Flintham Junction 2 of 2 Plan & Sections Sheet 47 of 53,HWY GD,Drawing
+PD0285/GD/2500/148,Scheme Layout Syerston Overbridge Plan & Sections Sheet 48 of 53,HWY GD,Drawing
+PD0285/GD/2500/149,Scheme Layout Lodge Lane Junction 1 of 2 Plan & Sections Sheet 49 of 53,HWY GD,Drawing
+PD0285/GD/2500/150,Scheme Layout Lodge Lane Junction 2 of 2 Plan & Sections Sheet 50 of 53,HWY GD,Drawing
+PD0285/GD/2500/151,Scheme Layout Moor Lane Overbridge Plan & Sections Sheet 51 of 53,HWY GD,Drawing
+PD0285/GD/2500/152,Scheme Layout Hawton Lane Overbridge Plan & Sections Sheet 52 of 53,HWY GD,Drawing
+PD0285/GD/2500/153,Scheme Layout Farndon Underpass Plan & Sections Sheet 53 of 53,HWY GD,Drawing
+PD0285/GD/2000/178,"Typical Cross Sections, Section 3, Ch 28050, 26750, 26000",HWY GD,Drawing
+PD0285/GD/2000/179,"Typical Cross Sections, Section 3, Ch 24350, 22700, 22300",HWY GD,Drawing
+PD0285/GD/2000/180,"Typical Cross Sections, Section 3, Ch 21900, 21600",HWY GD,Drawing
+PD0285/GD/2000/181,"Typical Cross Sections, Section 2, Ch 21230, 20830",HWY GD,Drawing
+PD0285/GD/2000/182,"Typical Cross Sections, Section 2, Ch 19900, 18580",HWY GD,Drawing
+PD0285/GD/2000/183,"Typical Cross Sections, Section 2, Ch 16550, 14900",HWY GD,Drawing
+PD0285/GD/2000/184,"Typical Cross Sections, Section 2, Ch 14560, 13800",HWY GD,Drawing
+PD0285/GD/2000/185,"Typical Cross Sections, Section 1, Ch 12890, 11600",HWY GD,Drawing
+PD0285/GD/2000/186,"Typical Cross Sections, Section 1, Ch 12000",HWY GD,Drawing
+PD0285/GD/2000/187,"Typical Cross Sections, Section 1, Ch 10150, 9500",HWY GD,Drawing
+PD0285/GD/2000/188,"Typical Cross Sections, Section 1, Ch 8240",HWY GD,Drawing
+PD0285/GD/2000/189,"Typical Cross Sections, Section 1, Ch 7870",HWY GD,Drawing
+PD0285/GD/2000/190,"Typical Cross Sections, Section 1, Ch 6700, 6100",HWY GD,Drawing
+PD0285/GD/2000/191,"Typical Cross Sections, Section 1, Ch 5680",HWY GD,Drawing
+PD0285/GD/2000/192,"Typical Cross Sections, Section 1, Ch 4400, 2300",HWY GD,Drawing
+PD0285/GD/2000/193,"Typical Cross Sections, Section 1, Ch 2050, 1500",HWY GD,Drawing
+PD0285/GD/000/034,Central Reserve Asphalt Channel Standard Detail,HWY GD,Drawing
+PD0285/GD/000/036,Central Reserve 1050 Chamber Standard Detail,HWY GD,Drawing
+PD0285/GD/000/037,Central Reserve 600 Chamber Standard Detail,HWY GD,Drawing
+PD0285/GD/SK/309,,HWY GD,Drawing
+PD0285/GD/SK/310,,HWY GD,Drawing
+PD0285/GD/SK/272,Maintenance Access Area Standard Detail,HWG GD,Drawing
+PD0285/GD/SK/318,Technology Access Area Standard Detail,HWG GD,Drawing
+PD0285/GD/SK/320,Emergency Telephone Detail,HWG GD,Drawing
+PD0285/PV/1000/000,Pavement Key Plan,PAV,Drawing
+PD0285/PV/1000/001,Pavement Sheet 01,PAV,Drawing
+PD0285/PV/1000/002,Pavement Sheet 02,PAV,Drawing
+PD0285/PV/1000/003,Pavement Sheet 03,PAV,Drawing
+PD0285/PV/1000/004,Pavement Sheet 04,PAV,Drawing
+PD0285/PV/1000/005,Pavement Sheet 05,PAV,Drawing
+PD0285/PV/1000/006,Pavement Sheet 06,PAV,Drawing
+PD0285/PV/1000/007,Pavement Sheet 07,PAV,Drawing
+PD0285/PV/1000/008,Pavement Sheet 08,PAV,Drawing
+PD0285/PV/1000/009,Pavement Sheet 09,PAV,Drawing
+PD0285/PV/1000/010,Pavement Sheet 10,PAV,Drawing
+PD0285/PV/1000/011,Pavement Sheet 11,PAV,Drawing
+PD0285/PV/1000/012,Pavement Sheet 12,PAV,Drawing
+PD0285/PV/1000/013,Pavement Sheet 13,PAV,Drawing
+PD0285/PV/1000/014,Pavement Sheet 14,PAV,Drawing
+PD0285/PV/1000/015,Pavement Sheet 15,PAV,Drawing
+PD0285/PV/1000/016,Pavement Sheet 16,PAV,Drawing
+PD0285/PV/1000/017,Pavement Sheet 17,PAV,Drawing
+PD0285/PV/1000/018,Pavement Sheet 18,PAV,Drawing
+PD0285/PV/1000/019,Pavement Sheet 19,PAV,Drawing
+PD0285/PV/1000/020,Pavement Sheet 20,PAV,Drawing
+PD0285/PV/1000/021,Pavement Sheet 21,PAV,Drawing
+PD0285/PV/1000/022,Pavement Sheet 22,PAV,Drawing
+PD0285/PV/1000/023,Pavement Sheet 23,PAV,Drawing
+PD0285/PV/1000/024,Pavement Sheet 24,PAV,Drawing
+PD0285/PV/1000/025,Pavement Sheet 25,PAV,Drawing
+PD0285/PV/1000/026,Pavement Sheet 26,PAV,Drawing
+PD0285/PV/1000/027,Pavement Sheet 27,PAV,Drawing
+PD0285/PV/1000/028,Pavement Sheet 28,PAV,Drawing
+PD0285/PV/1000/029,Pavement Sheet 29,PAV,Drawing
+PD0285/PV/1000/030,Pavement Sheet 30,PAV,Drawing
+PD0285/PV/1000/031,Pavement Sheet 31,PAV,Drawing
+PD0285/PV/1000/032,Pavement Sheet 32,PAV,Drawing
+PD0285/PV/1000/033,Pavement Sheet 33,PAV,Drawing
+PD0285/PV/1000/034,Pavement Sheet 34,PAV,Drawing
+PD0285/PV/1000/035,Pavement Sheet 35,PAV,Drawing
+PD0285/PV/1000/036,Pavement Sheet 36,PAV,Drawing
+PD0285/PV/1000/037,Pavement Sheet 37,PAV,Drawing
+PD0285/PV/1000/038,Pavement Sheet 38,PAV,Drawing
+PD0285/PV/1000/039,Pavement Sheet 39,PAV,Drawing
+PD0285/PV/1000/040,Pavement Sheet 40,PAV,Drawing
+PD0285/PV/1000/041,Pavement Sheet 41,PAV,Drawing
+PD0285/PV/1000/042,Pavement Sheet 42,PAV,Drawing
+PD0285/PV/1000/043,Pavement Sheet 43,PAV,Drawing
+PD0285/PV/1000/044,Pavement Sheet 44,PAV,Drawing
+PD0285/PV/1000/045,Pavement Sheet 45,PAV,Drawing
+PD0285/PV/1000/046,Pavement Sheet 46,PAV,Drawing
+PD0285/PV/1000/047,Pavement Sheet 47,PAV,Drawing
+PD0285/PV/1000/048,Pavement Sheet 48,PAV,Drawing
+PD0285/PV/1000/049,Pavement Sheet 49,PAV,Drawing
+PD0285/PV/1000/050,Pavement Sheet 50,PAV,Drawing
+PD0285/PV/1000/051,Pavement Sheet 51,PAV,Drawing
+PD0285/PV/1000/052,Pavement Sheet 52,PAV,Drawing
+PD0285/PV/1000/053,Pavement Sheet 53,PAV,Drawing
+PD0285/PV/1000/054,Pavement Sheet 54,PAV,Drawing
+PD0285/PV/1000/055,Pavement Sheet 55,PAV,Drawing
+PD0285/PV/1000/056,Pavement Sheet 56,PAV,Drawing
+PD0285/PV/1000/057,Pavement Sheet 57,PAV,Drawing
+PD0285/PV/1000/058,Pavement Sheet 58,PAV,Drawing
+PD0285/PV/1000/059,Pavement Sheet 59,PAV,Drawing
+PD0285/PV/1000/060,Pavement Sheet 60,PAV,Drawing
+PD0285/PV/1000/061,Pavement Sheet 61,PAV,Drawing
+PD0285/PV/1000/062,Pavement Sheet 62,PAV,Drawing
+PD0285/PV/1000/063,Pavement Sheet 63,PAV,Drawing
+PD0285/PV/1000/064,Pavement Sheet 64,PAV,Drawing
+PD0285/PV/1000/065,Pavement Sheet 65,PAV,Drawing
+PD0285/PV/1000/066,Pavement Sheet 66,PAV,Drawing
+PD0285/PV/1000/067,Pavement Sheet 67,PAV,Drawing
+PD0285/PV/1000/068,Pavement Sheet 68,PAV,Drawing
+PD0285/PV/1000/069,Pavement Sheet 69,PAV,Drawing
+PD0285/PV/1000/070,Pavement Sheet 70,PAV,Drawing
+PD0285/PV/1000/101,Pavement Tie-in Isopachytes A46 Mainline Ch 850 - 1100,PAV,Drawing
+PD0285/PV/1000/102,Pavement Tie-in Isopachytes Owthorpe Road West of A46 Ch 140 - 250,PAV,Drawing
+PD0285/PV/1000/103,Pavement Tie-in Isopachytes Owthorpe Road Eastof A46 Ch 1070 - 1190,PAV,Drawing
+PD0285/PV/1000/104,Pavement Tie-in Isopachytes A46 Mainline Ch 8000 - 8290,PAV,Drawing
+PD0285/PV/1000/105,Pavement Tie-in Isopachytes Stragglethorpe Road West of A46 Ch 180 - 310,PAV,Drawing
+PD0285/PV/1000/106,Pavement Tie-in Isopachytes Nottingham Road East of A46 Ch 210 - 347,PAV,Drawing
+PD0285/PV/1000/107,Pavement Tie-in Isopachytes A52 West of A46 Ch 100 - 320,PAV,Drawing
+PD0285/PV/1000/108,Pavement Tie-in Isopachytes A46 South of Roundabout Junction with A52 Ch 100 - 200,PAV,Drawing
+PD0285/PV/1000/109,Pavement Tie-in Isopachytes A46 Mainline Ch 100 - 280,PAV,Drawing
+PD0285/PV/1000/110,Pavement Tie-in Isopachytes A6097 Doncaster Road West of A46 Ch 100 - 380,PAV,Drawing
+PD0285/PV/1000/111,Pavement Tie-in Isopachytes Butt Lane West of A46 - Ch 100 - 220,PAV,Drawing
+PD0285/PV/1000/112,Pavement Tie-in Isopachytes A46 Mainline Ch 0 - 320,PAV,Drawing
+PD0285/PV/1000/113,Pavement Tie-in Isopachytes Lodge Lane West of A46 Ch 1025 - 1160,PAV,Drawing
+PD0285/PV/1000/114,Pavement Tie-in Isopachytes Lodge Lane East of A46 Ch 1620 - 1750,PAV,Drawing
+PD0285/PV/1000/115,Pavement Tie-in Isopachytes Hawton Lane East of A46 Ch 1750 - 1844,PAV,Drawing
+PD0285/PV/1000/116,Pavement Tie-in Isopachytes A46 Mainline Ch 27 - 151,PAV,Drawing
+PD0285/PV/1000/117,Pavement Tie-in Isopachytes A46 NB at Farndon Roundabout Ch 0 - 50,PAV,Drawing
+PD0285/PV/1000/118,Pavement Tie-in Isopachytes B6166 at Farndon Roundabout Ch 24 - 110,PAV,Drawing
+PD0285/PK/500/000,Kerbs & Footways Key Plan,KFPA,Drawing
+PD0285/PK/500/001,Kerbs & Footways Sheet 01,KFPA,Drawing
+PD0285/PK/500/002,Kerbs & Footways Sheet 02,KFPA,Drawing
+PD0285/PK/500/003,Kerbs & Footways Sheet 03,KFPA,Drawing
+PD0285/PK/500/004,Kerbs & Footways Sheet 04,KFPA,Drawing
+PD0285/PK/500/005,Kerbs & Footways Sheet 05,KFPA,Drawing
+PD0285/PK/500/006,Kerbs & Footways Sheet 06,KFPA,Drawing
+PD0285/PK/500/007,Kerbs & Footways Sheet 07,KFPA,Drawing
+PD0285/PK/500/008,Kerbs & Footways Sheet 08,KFPA,Drawing
+PD0285/PK/500/009,Kerbs & Footways Sheet 09,KFPA,Drawing
+PD0285/PK/500/010,Kerbs & Footways Sheet 10,KFPA,Drawing
+PD0285/PK/500/011,Kerbs & Footways Sheet 11,KFPA,Drawing
+PD0285/PK/500/012,Kerbs & Footways Sheet 12,KFPA,Drawing
+PD0285/PK/500/013,Kerbs & Footways Sheet 13,KFPA,Drawing
+PD0285/PK/500/014,Kerbs & Footways Sheet 14,KFPA,Drawing
+PD0285/PK/500/015,Kerbs & Footways Sheet 15,KFPA,Drawing
+PD0285/PK/500/016,Kerbs & Footways Sheet 16,KFPA,Drawing
+PD0285/PK/500/017,Kerbs & Footways Sheet 17,KFPA,Drawing
+PD0285/PK/500/018,Kerbs & Footways Sheet 18,KFPA,Drawing
+PD0285/PK/500/019,Kerbs & Footways Sheet 19,KFPA,Drawing
+PD0285/PK/500/020,Kerbs & Footways Sheet 20,KFPA,Drawing
+PD0285/PK/500/021,Kerbs & Footways Sheet 21,KFPA,Drawing
+PD0285/PK/500/022,Kerbs & Footways Sheet 22,KFPA,Drawing
+PD0285/PK/500/023,Kerbs & Footways Sheet 23,KFPA,Drawing
+PD0285/PK/500/024,Kerbs & Footways Sheet 24,KFPA,Drawing
+PD0285/PK/500/025,Kerbs & Footways Sheet 25,KFPA,Drawing
+PD0285/PK/500/026,Kerbs & Footways Sheet 26,KFPA,Drawing
+PD0285/PK/500/027,Kerbs & Footways Sheet 27,KFPA,Drawing
+PD0285/PK/500/028,Kerbs & Footways Sheet 28,KFPA,Drawing
+PD0285/PK/500/029,Kerbs & Footways Sheet 29,KFPA,Drawing
+PD0285/PK/500/030,Kerbs & Footways Sheet 30,KFPA,Drawing
+PD0285/PK/500/031,Kerbs & Footways Sheet 31,KFPA,Drawing
+PD0285/PK/500/032,Kerbs & Footways Sheet 32,KFPA,Drawing
+PD0285/PK/500/033,Kerbs & Footways Sheet 33,KFPA,Drawing
+PD0285/PK/500/034,Kerbs & Footways Sheet 34,KFPA,Drawing
+PD0285/PK/500/035,Kerbs & Footways Sheet 35,KFPA,Drawing
+PD0285/PK/500/036,Kerbs & Footways Sheet 36,KFPA,Drawing
+PD0285/PK/500/037,Kerbs & Footways Sheet 37,KFPA,Drawing
+PD0285/PK/500/038,Kerbs & Footways Sheet 38,KFPA,Drawing
+PD0285/PK/500/039,Kerbs & Footways Sheet 39,KFPA,Drawing
+PD0285/PK/500/040,Kerbs & Footways Sheet 40,KFPA,Drawing
+PD0285/PK/500/041,Kerbs & Footways Sheet 41,KFPA,Drawing
+PD0285/PK/500/042,Kerbs & Footways Sheet 42,KFPA,Drawing
+PD0285/PK/500/043,Kerbs & Footways Sheet 43,KFPA,Drawing
+PD0285/PK/500/044,Kerbs & Footways Sheet 44,KFPA,Drawing
+PD0285/PK/500/045,Kerbs & Footways Sheet 45,KFPA,Drawing
+PD0285/PK/500/046,Kerbs & Footways Sheet 46,KFPA,Drawing
+PD0285/PK/500/047,Kerbs & Footways Sheet 47,KFPA,Drawing
+PD0285/PK/500/048,Kerbs & Footways Sheet 48,KFPA,Drawing
+PD0285/PK/500/049,Kerbs & Footways Sheet 49,KFPA,Drawing
+PD0285/PK/500/050,Kerbs & Footways Sheet 50,KFPA,Drawing
+PD0285/PK/500/051,Kerbs & Footways Sheet 51,KFPA,Drawing
+PD0285/PK/500/052,Kerbs & Footways Sheet 52,KFPA,Drawing
+PD0285/PK/500/053,Kerbs & Footways Sheet 53,KFPA,Drawing
+PD0285/PK/500/054,Kerbs & Footways Sheet 54,KFPA,Drawing
+PD0285/PK/500/055,Kerbs & Footways Sheet 55,KFPA,Drawing
+PD0285/PK/500/056,Kerbs & Footways Sheet 56,KFPA,Drawing
+PD0285/PK/500/057,Kerbs & Footways Sheet 57,KFPA,Drawing
+PD0285/PK/500/058,Kerbs & Footways Sheet 58,KFPA,Drawing
+PD0285/PK/500/059,Kerbs & Footways Sheet 59,KFPA,Drawing
+PD0285/PK/500/060,Kerbs & Footways Sheet 60,KFPA,Drawing
+PD0285/PK/500/061,Kerbs & Footways Sheet 61,KFPA,Drawing
+PD0285/PK/500/062,Kerbs & Footways Sheet 62,KFPA,Drawing
+PD0285/PK/500/063,Kerbs & Footways Sheet 63,KFPA,Drawing
+PD0285/PK/500/064,Kerbs & Footways Sheet 64,KFPA,Drawing
+PD0285/PK/500/065,Kerbs & Footways Sheet 65,KFPA,Drawing
+PD0285/PK/500/066,Kerbs & Footways Sheet 66,KFPA,Drawing
+PD0285/PK/500/067,Kerbs & Footways Sheet 67,KFPA,Drawing
+PD0285/PK/500/068,Kerbs & Footways Sheet 68,KFPA,Drawing
+PD0285/PK/500/069,Kerbs & Footways Sheet 69,KFPA,Drawing
+PD0285/PK/500/070,Kerbs & Footways Sheet 70,KFPA,Drawing
+PD0285/PK/500/071,Kerbs & Footways Sheet 71,KFPA,Drawing
+PD0285/PK/500/072,Kerbs & Footways Sheet 72,KFPA,Drawing
+PD0285/PK/500/073,Kerbs & Footways Sheet 73,KFPA,Drawing
+PD0285/PK/500/074,Kerbs & Footways Sheet 74,KFPA,Drawing
+PD0285/PK/500/075,Kerbs & Footways Sheet 75,KFPA,Drawing
+PD0285/PK/500/076,Kerbs & Footways Sheet 76,KFPA,Drawing
+PD0285/PK/500/077,Kerbs & Footways Sheet 77,KFPA,Drawing
+PD0285/PK/500/078,Kerbs & Footways Sheet 78,KFPA,Drawing
+PD0285/PK/500/079,Kerbs & Footways Sheet 79,KFPA,Drawing
+PD0285/PK/500/080,Kerbs & Footways Sheet 80,KFPA,Drawing
+PD0285/PK/500/081,Kerbs & Footways Sheet 81,KFPA,Drawing
+PD0285/PK/500/082,Kerbs & Footways Sheet 82,KFPA,Drawing
+PD0285/PK/500/083,Kerbs & Footways Sheet 83,KFPA,Drawing
+PD0285/PK/500/084,Kerbs & Footways Sheet 84,KFPA,Drawing
+PD0285/PK/500/085,Kerbs & Footways Sheet 85,KFPA,Drawing
+PD0285/PK/500/086,Kerbs & Footways Sheet 86,KFPA,Drawing
+PD0285/PK/500/087,Kerbs & Footways Sheet 87,KFPA,Drawing
+PD0285/PK/500/088,Kerbs & Footways Sheet 88,KFPA,Drawing
+PD0285/PK/500/089,Kerbs & Footways Sheet 89,KFPA,Drawing
+PD0285/PK/500/090,Kerbs & Footways Sheet 90,KFPA,Drawing
+PD0285/PK/500/091,Kerbs & Footways Sheet 91,KFPA,Drawing
+PD0285/PK/500/092,Kerbs & Footways Sheet 92,KFPA,Drawing
+PD0285/PK/500/093,Kerbs & Footways Sheet 93,KFPA,Drawing
+PD0285/PK/500/094,Kerbs & Footways Sheet 94,KFPA,Drawing
+PD0285/PK/500/095,Kerbs & Footways Sheet 95,KFPA,Drawing
+PD0285/PK/500/096,Kerbs & Footways Sheet 96,KFPA,Drawing
+PD0285/PK/500/097,Kerbs & Footways Sheet 97,KFPA,Drawing
+PD0285/PK/500/098,Kerbs & Footways Sheet 98,KFPA,Drawing
+PD0285/PK/500/099,Kerbs & Footways Sheet 99,KFPA,Drawing
+PD0285/PK/500/100,Kerbs & Footways Sheet 100,KFPA,Drawing
+PD0285/PK/500/101,Kerbs & Footways Sheet 101,KFPA,Drawing
+PD0285/PK/500/102,Kerbs & Footways Sheet 102,KFPA,Drawing
+PD0285/PK/500/103,Kerbs & Footways Sheet 103,KFPA,Drawing
+PD0285/PK/500/104,Kerbs & Footways Sheet 104,KFPA,Drawing
+PD0285/PK/500/105,Kerbs & Footways Sheet 105,KFPA,Drawing
+PD0285/PK/500/106,Kerbs & Footways Sheet 106,KFPA,Drawing
+PD0285/PK/500/107,Kerbs & Footways Sheet 107,KFPA,Drawing
+PD0285/PK/500/108,Kerbs & Footways Sheet 108,KFPA,Drawing
+PD0285/PK/500/109,Kerbs & Footways Sheet 109,KFPA,Drawing
+PD0285/PK/500/110,Kerbs & Footways Sheet 110,KFPA,Drawing
+PD0285/PK/500/111,Kerbs & Footways Sheet 111,KFPA,Drawing
+PD0285/PK/500/112,Kerbs & Footways Sheet 112,KFPA,Drawing
+PD0285/PK/500/113,Kerbs & Footways Sheet 113,KFPA,Drawing
+PD0285/PK/500/114,Kerbs & Footways Sheet 114,KFPA,Drawing
+PD0285/PK/500/115,Kerbs & Footways Sheet 115,KFPA,Drawing
+PD0285/PK/500/116,Kerbs & Footways Sheet 116,KFPA,Drawing
+PD0285/PK/500/117,Kerbs & Footways Sheet 117,KFPA,Drawing
+PD0285/PK/500/118,Kerbs & Footways Sheet 118,KFPA,Drawing
+PD0285/PK/500/119,Kerbs & Footways Sheet 119,KFPA,Drawing
+PD0285/PK/500/120,Kerbs & Footways Sheet 120,KFPA,Drawing
+PD0285/PK/500/121,Kerbs & Footways Sheet 121,KFPA,Drawing
+PD0285/PK/500/122,Kerbs & Footways Sheet 122,KFPA,Drawing
+PD0285/PK/500/123,Kerbs & Footways Sheet 123,KFPA,Drawing
+PD0285/PK/500/124,Kerbs & Footways Sheet 124,KFPA,Drawing
+PD0285/PK/500/125,Kerbs & Footways Sheet 125,KFPA,Drawing
+PD0285/PK/500/126,Kerbs & Footways Sheet 126,KFPA,Drawing
+PD0285/PK/500/127,Kerbs & Footways Sheet 127,KFPA,Drawing
+PD0285/PK/500/128,Kerbs & Footways Sheet 128,KFPA,Drawing
+PD0285/PK/500/129,Kerbs & Footways Sheet 129,KFPA,Drawing
+PD0285/PK/500/130,Kerbs & Footways Sheet 130,KFPA,Drawing
+PD0285/PK/500/131,Kerbs & Footways Sheet 131,KFPA,Drawing
+PD0285/PK/500/132,Kerbs & Footways Sheet 132,KFPA,Drawing
+PD0285/PK/500/133,Kerbs & Footways Sheet 133,KFPA,Drawing
+PD0285/PK/500/134,Kerbs & Footways Sheet 134,KFPA,Drawing
+PD0285/PK/500/135,Kerbs & Footways Sheet 135,KFPA,Drawing
+PD0285/PK/500/136,Kerbs & Footways Sheet 136,KFPA,Drawing
+PD0285/PK/500/137,Kerbs & Footways Sheet 137,KFPA,Drawing
+PD0285/PK/500/138,Kerbs & Footways Sheet 138,KFPA,Drawing
+PD0285/PK/500/139,Kerbs & Footways Sheet 139,KFPA,Drawing
+PD0285/PK/500/140,Kerbs & Footways Sheet 140,KFPA,Drawing
+PD0285/PK/500/141,Kerbs & Footways Sheet 141,KFPA,Drawing
+PD0285/PK/500/142,Kerbs & Footways Sheet 142,KFPA,Drawing
+PD0285/PK/500/143,Kerbs & Footways Sheet 143,KFPA,Drawing
+PD025/PD/500/199,Maintenance Layby Key Sheet,KFPA,Drawing
+PD025/PD/500/200,Maintenance Layby Location Layout Ch 1300-1600 ,KFPA,Drawing
+PD025/PD/500/201,Maintenance Layby Location Layout Ch 3100-3400 ,KFPA,Drawing
+PD025/PD/500/202,Maintenance Layby Location Layout Ch 3400-3700 ,KFPA,Drawing
+PD025/PD/500/203,Maintenance Layby Location Layout Ch 4000-4300,KFPA,Drawing
+PD025/PD/500/204,Maintenance Layby Location Layout Ch 6400-6740,KFPA,Drawing
+PD025/PD/500/205,Maintenance Layby Location Layout Ch 7060-7380,KFPA,Drawing
+PD025/PD/500/206,Maintenance Layby Location Layout Ch 8880-9200,KFPA,Drawing
+PD025/PD/500/207,Maintenance Layby Location Layout Ch 9200-9500,KFPA,Drawing
+PD025/PD/500/208,Maintenance Layby Location Layout Ch 9800-10100,KFPA,Drawing
+PD025/PD/500/209,Maintenance Layby Location Layout Ch 10400-10700,KFPA,Drawing
+PD025/PD/500/210,Maintenance Layby Location Layout Ch 12580-12860,KFPA,Drawing
+PD025/PD/500/211,Maintenance Layby Location Layout Ch 13180-13500,KFPA,Drawing
+PD025/PD/500/212,Maintenance Layby Location Layout Ch 13500-13800,KFPA,Drawing
+PD025/PD/500/213,Maintenance Layby Location Layout Ch 15700-16000,KFPA,Drawing
+PD025/PD/500/214,Maintenance Layby Location Layout Ch 17240-17560,KFPA,Drawing
+PD025/PD/500/215,Maintenance Layby Location Layout Ch 17880-18200,KFPA,Drawing
+PD025/PD/500/216,Maintenance Layby Location Layout Ch 19700-20000,KFPA,Drawing
+PD025/PD/500/217,Maintenance Layby Location Layout Ch 20000-20300,KFPA,Drawing
+PD025/PD/500/218,Maintenance Layby Location Layout Ch 21820-22120,KFPA,Drawing
+PD025/PD/500/219,Maintenance Layby Location Layout Ch 23920-24220,KFPA,Drawing
+PD025/PD/500/220,Maintenance Layby Location Layout Ch 24520-24820,KFPA,Drawing
+PD025/PD/500/221,Maintenance Layby Location Layout Ch 26020-26320,KFPA,Drawing
+PD025/PD/500/222,Maintenance Layby Location Layout Ch 26920-27220,KFPA,Drawing
+PD025/PD/500/223,Maintenance Layby Location Layout Lodge Lane Junction,KFPA,Drawing
+PD025/PD/500/224,Maintenance Layby Location Layout Syerston Overbridge,KFPA,Drawing
+PD025/PD/500/225,Maintenance Layby Location Layout Flintham Junction,KFPA,Drawing
+PD025/PD/500/226,Maintenance Layby Location Layout Car Colston ,KFPA,Drawing
+PD025/PD/500/227,Maintenance Layby Location Layout Margidunum Junction,KFPA,Drawing
+PD025/PD/500/228,Maintenance Layby Location Layout Red Lodge,KFPA,Drawing
+PD025/PD/500/229,Maintenance Layby Location Layout Margidunum NB Diverge,KFPA,Drawing
+PD025/PD/500/230,Maintenance Layby Location Layout Saxondale Roundabout,KFPA,Drawing
+PD025/PD/500/231,Maintenance Layby Location Layout Saxondale Roundabout,KFPA,Drawing
+PD025/PD/500/232,Maintenance Layby Location Layout Saxondale Roundabout,KFPA,Drawing
+PD025/PD/500/233,Maintenance Layby Location Layout A52 Grantham Road,KFPA,Drawing
+PD025/PD/500/234,Maintenance Layby Location Layout Henson Lane Overbridge,KFPA,Drawing
+PD025/PD/500/235,Maintenance Layby Location Layout Cropwell Butler Overbridge ,KFPA,Drawing
+PD025/PD/500/236,Maintenance Layby Location Layout Stragglethorpe Junction,KFPA,Drawing
+PD025/PD/500/237,Maintenance Layby Location Layout Cotgrave Overbridge,KFPA,Drawing
+PD025/PD/500/238,Maintenance Layby Location Layout Stragglethorpe NB Diverge,KFPA,Drawing
+PD025/PD/500/239,Maintenance Layby Location Layout Saxondale Roundabout,KFPA,Drawing
+PD025/PD/500/240,Maintenance Layby Location Layout Saxondale Roundabout,KFPA,Drawing
+PD025/PD/500/241,Maintenance Layby Location Layout Farndon Roundabout,KFPA,Drawing
+PD025/PD/500/242,Maintenance Layby Location Layout Ch 2200-2600,KFPA,Drawing
+PD025/PD/500/243,Maintenance Layby Location Layout Ch 14400-14720,KFPA,Drawing
+PD025/PD/500/244,Maintenance Layby Location Layout Moor Lane Overbridge,KFPA,Drawing
+PD025/PD/500/245,Maintenance Layby Location Layout Ch 5500-5800,KFPA,Drawing
+PD025/PD/500/246,Maintenance Layby Location Layout Ch 20600-20920 ,KFPA,Drawing
+PD0285/RS/500/000,Traffic Signs Key Plan,RS,Drawing,,
+PD0285/RS/500/001,Traffic Signs Sheet 01,RS,Drawing,,Section 1A
+PD0285/RS/500/002,Traffic Signs Sheet 02,RS,Drawing,,Section 1A
+PD0285/RS/500/003,Traffic Signs Sheet 03,RS,Drawing,,Section 1A
+PD0285/RS/500/004,Traffic Signs Sheet 04,RS,Drawing,,Section 1A
+PD0285/RS/500/005,Traffic Signs Sheet 05,RS,Drawing,,Section 1A
+PD0285/RS/500/006,Traffic Signs Sheet 06,RS,Drawing,,Section 1A
+PD0285/RS/500/007,Traffic Signs Sheet 07,RS,Drawing,,Section 1A
+PD0285/RS/500/008,Traffic Signs Sheet 08,RS,Drawing,,Section 1A
+PD0285/RS/500/009,Traffic Signs Sheet 09,RS,Drawing,,Section 1A
+PD0285/RS/500/010,Traffic Signs Sheet 10,RS,Drawing,,Section 1A
+PD0285/RS/500/011,Traffic Signs Sheet 11,RS,Drawing,,Section 1A
+PD0285/RS/500/012,Traffic Signs Sheet 12,RS,Drawing,,Section 1A
+PD0285/RS/500/013,Traffic Signs Sheet 13,RS,Drawing,,Section 1A
+PD0285/RS/500/014,Traffic Signs Sheet 14,RS,Drawing,,Section 1A
+PD0285/RS/500/015,Traffic Signs Sheet 15,RS,Drawing,,Section 1A
+PD0285/RS/500/016,Traffic Signs Sheet 16,RS,Drawing,,Section 1A
+PD0285/RS/500/017,Traffic Signs Sheet 17,RS,Drawing,,Section 1A
+PD0285/RS/500/018,Traffic Signs Sheet 18,RS,Drawing,,Section 1B
+PD0285/RS/500/019,Traffic Signs Sheet 19,RS,Drawing,,Section 1B
+PD0285/RS/500/020,Traffic Signs Sheet 20,RS,Drawing,,Section 1B
+PD0285/RS/500/021,Traffic Signs Sheet 21,RS,Drawing,,Section 1B
+PD0285/RS/500/022,Traffic Signs Sheet 22,RS,Drawing,,Section 1B
+PD0285/RS/500/023,Traffic Signs Sheet 23,RS,Drawing,,Section 1B
+PD0285/RS/500/093,Traffic Signs Sheet 93,RS,Drawing,,Section 1B
+PD0285/RS/500/094,Traffic Signs Sheet 94,RS,Drawing,,Section 1B
+PD0285/RS/500/095,Traffic Signs Sheet 95,RS,Drawing,,Section 1B
+PD0285/RS/500/096,Traffic Signs Sheet 96,RS,Drawing,,Section 1B
+PD0285/RS/500/097,Traffic Signs Sheet 97,RS,Drawing,,Section 1B
+PD0285/RS/500/098,Traffic Signs Sheet 98,RS,Drawing,,Section 1B
+PD0285/RS/500/099,Traffic Signs Sheet 99,RS,Drawing,,Section 1B
+PD0285/RS/500/024,Traffic Signs Sheet 24,RS,Drawing,,Section 1C
+PD0285/RS/500/025,Traffic Signs Sheet 25,RS,Drawing,,Section 1C
+PD0285/RS/500/026,Traffic Signs Sheet 26,RS,Drawing,,Section 1C
+PD0285/RS/500/027,Traffic Signs Sheet 27,RS,Drawing,,Section 1C
+PD0285/RS/500/028,Traffic Signs Sheet 28,RS,Drawing,,Section 1C
+PD0285/RS/500/029,Traffic Signs Sheet 29,RS,Drawing,,Section 1C
+PD0285/RS/500/030,Traffic Signs Sheet 30,RS,Drawing,,Section 1C
+PD0285/RS/500/031,Traffic Signs Sheet 31,RS,Drawing,,Section 1C
+PD0285/RS/500/032,Traffic Signs Sheet 32,RS,Drawing,,Section 1C
+PD0285/RS/500/033,Traffic Signs Sheet 33,RS,Drawing,,Section 1C
+PD0285/RS/500/034,Traffic Signs Sheet 34,RS,Drawing,,Section 1C
+PD0285/RS/500/035,Traffic Signs Sheet 35,RS,Drawing,,Section 1C
+PD0285/RS/500/036,Traffic Signs Sheet 36,RS,Drawing,,Section 1C
+PD0285/RS/500/037,Traffic Signs Sheet 37,RS,Drawing,,Section 1C
+PD0285/RS/500/038,Traffic Signs Sheet 38,RS,Drawing,,Section 1C
+PD0285/RS/500/039,Traffic Signs Sheet 39,RS,Drawing,,Section 1C
+PD0285/RS/500/040,Traffic Signs Sheet 40,RS,Drawing,,Section 1C
+PD0285/RS/500/041,Traffic Signs Sheet 41,RS,Drawing,,Section 1C
+PD0285/RS/500/100,Traffic Signs Sheet 100,RS,Drawing,,Section 1C
+PD0285/RS/500/101,Traffic Signs Sheet 101,RS,Drawing,,Section 1C
+PD0285/RS/500/102,Traffic Signs Sheet 102,RS,Drawing,,Section 1C
+PD0285/RS/500/103,Traffic Signs Sheet 103,RS,Drawing,,Section 1C
+PD0285/RS/500/104,Traffic Signs Sheet 104,RS,Drawing,,Section 1C
+PD0285/RS/500/105,Traffic Signs Sheet 105,RS,Drawing,,Section 1C
+PD0285/RS/500/106,Traffic Signs Sheet 106,RS,Drawing,,Section 1C
+PD0285/RS/500/107,Traffic Signs Sheet 107,RS,Drawing,,Section 1C
+PD0285/RS/500/108,Traffic Signs Sheet 108,RS,Drawing,,Section 1C
+PD0285/RS/500/109,Traffic Signs Sheet 109,RS,Drawing,,Section 1C
+PD0285/RS/500/110,Traffic Signs Sheet 110,RS,Drawing,,Section 1C
+PD0285/RS/500/111,Traffic Signs Sheet 111,RS,Drawing,,Section 1C
+PD0285/RS/500/112,Traffic Signs Sheet 112,RS,Drawing,,Section 1C
+PD0285/RS/500/113,Traffic Signs Sheet 113,RS,Drawing,,Section 1C
+PD0285/RS/500/042,Traffic Signs Sheet 42,RS,Drawing,,Section 2
+PD0285/RS/500/043,Traffic Signs Sheet 43,RS,Drawing,,Section 3
+PD0285/RS/500/044,Traffic Signs Sheet 44,RS,Drawing,,Section 4
+PD0285/RS/500/045,Traffic Signs Sheet 45,RS,Drawing,,Section 5
+PD0285/RS/500/046,Traffic Signs Sheet 46,RS,Drawing,,Section 6
+PD0285/RS/500/047,Traffic Signs Sheet 47,RS,Drawing,,Section 7
+PD0285/RS/500/048,Traffic Signs Sheet 48,RS,Drawing,,Section 8
+PD0285/RS/500/049,Traffic Signs Sheet 49,RS,Drawing,,Section 9
+PD0285/RS/500/050,Traffic Signs Sheet 50,RS,Drawing,,Section 10
+PD0285/RS/500/051,Traffic Signs Sheet 51,RS,Drawing,,Section 11
+PD0285/RS/500/052,Traffic Signs Sheet 52,RS,Drawing,,Section 12
+PD0285/RS/500/053,Traffic Signs Sheet 53,RS,Drawing,,Section 13
+PD0285/RS/500/054,Traffic Signs Sheet 54,RS,Drawing,,Section 14
+PD0285/RS/500/055,Traffic Signs Sheet 55,RS,Drawing,,Section 15
+PD0285/RS/500/056,Traffic Signs Sheet 56,RS,Drawing,,Section 16
+PD0285/RS/500/057,Traffic Signs Sheet 57,RS,Drawing,,Section 17
+PD0285/RS/500/058,Traffic Signs Sheet 58,RS,Drawing,,Section 18
+PD0285/RS/500/059,Traffic Signs Sheet 59,RS,Drawing,,Section 19
+PD0285/RS/500/060,Traffic Signs Sheet 60,RS,Drawing,,Section 20
+PD0285/RS/500/061,Traffic Signs Sheet 61,RS,Drawing,,Section 21
+PD0285/RS/500/062,Traffic Signs Sheet 62,RS,Drawing,,Section 22
+PD0285/RS/500/063,Traffic Signs Sheet 63,RS,Drawing,,Section 23
+PD0285/RS/500/064,Traffic Signs Sheet 64,RS,Drawing,,Section 24
+PD0285/RS/500/065,Traffic Signs Sheet 65,RS,Drawing,,Section 25
+PD0285/RS/500/066,Traffic Signs Sheet 66,RS,Drawing,,Section 26
+PD0285/RS/500/067,Traffic Signs Sheet 67,RS,Drawing,,Section 27
+PD0285/RS/500/068,Traffic Signs Sheet 68,RS,Drawing,,Section 28
+PD0285/RS/500/069,Traffic Signs Sheet 69,RS,Drawing,,Section 29
+PD0285/RS/500/114,Traffic Signs Sheet 114,RS,Drawing,,Section 30
+PD0285/RS/500/115,Traffic Signs Sheet 115,RS,Drawing,,Section 31
+PD0285/RS/500/116,Traffic Signs Sheet 116,RS,Drawing,,Section 32
+PD0285/RS/500/117,Traffic Signs Sheet 117,RS,Drawing,,Section 33
+PD0285/RS/500/118,Traffic Signs Sheet 118,RS,Drawing,,Section 34
+PD0285/RS/500/119,Traffic Signs Sheet 119,RS,Drawing,,Section 35
+PD0285/RS/500/120,Traffic Signs Sheet 120,RS,Drawing,,Section 36
+PD0285/RS/500/121,Traffic Signs Sheet 121,RS,Drawing,,Section 37
+PD0285/RS/500/122,Traffic Signs Sheet 122,RS,Drawing,,Section 38
+PD0285/RS/500/123,Traffic Signs Sheet 123,RS,Drawing,,Section 39
+PD0285/RS/500/124,Traffic Signs Sheet 124,RS,Drawing,,Section 40
+PD0285/RS/500/125,Traffic Signs Sheet 125,RS,Drawing,,Section 41
+PD0285/RS/500/126,Traffic Signs Sheet 126,RS,Drawing,,Section 42
+PD0285/RS/500/127,Traffic Signs Sheet 127,RS,Drawing,,Section 43
+PD0285/RS/500/128,Traffic Signs Sheet 128,RS,Drawing,,Section 44
+PD0285/RS/500/129,Traffic Signs Sheet 129,RS,Drawing,,Section 45
+PD0285/RS/500/130,Traffic Signs Sheet 130,RS,Drawing,,Section 46
+PD0285/RS/500/131,Traffic Signs Sheet 131,RS,Drawing,,Section 47
+PD0285/RS/500/132,Traffic Signs Sheet 132,RS,Drawing,,Section 48
+PD0285/RS/500/070,Traffic Signs Sheet 70,RS,Drawing,,Section 3
+PD0285/RS/500/071,Traffic Signs Sheet 71,RS,Drawing,,Section 4
+PD0285/RS/500/072,Traffic Signs Sheet 72,RS,Drawing,,Section 5
+PD0285/RS/500/073,Traffic Signs Sheet 73,RS,Drawing,,Section 6
+PD0285/RS/500/074,Traffic Signs Sheet 74,RS,Drawing,,Section 7
+PD0285/RS/500/075,Traffic Signs Sheet 75,RS,Drawing,,Section 8
+PD0285/RS/500/076,Traffic Signs Sheet 76,RS,Drawing,,Section 9
+PD0285/RS/500/077,Traffic Signs Sheet 77,RS,Drawing,,Section 10
+PD0285/RS/500/078,Traffic Signs Sheet 78,RS,Drawing,,Section 11
+PD0285/RS/500/079,Traffic Signs Sheet 79,RS,Drawing,,Section 12
+PD0285/RS/500/080,Traffic Signs Sheet 80,RS,Drawing,,Section 13
+PD0285/RS/500/081,Traffic Signs Sheet 81,RS,Drawing,,Section 14
+PD0285/RS/500/082,Traffic Signs Sheet 82,RS,Drawing,,Section 15
+PD0285/RS/500/083,Traffic Signs Sheet 83,RS,Drawing,,Section 16
+PD0285/RS/500/084,Traffic Signs Sheet 84,RS,Drawing,,Section 17
+PD0285/RS/500/085,Traffic Signs Sheet 85,RS,Drawing,,Section 18
+PD0285/RS/500/086,Traffic Signs Sheet 86,RS,Drawing,,Section 19
+PD0285/RS/500/087,Traffic Signs Sheet 87,RS,Drawing,,Section 20
+PD0285/RS/500/088,Traffic Signs Sheet 88,RS,Drawing,,Section 21
+PD0285/RS/500/089,Traffic Signs Sheet 89,RS,Drawing,,Section 22
+PD0285/RS/500/090,Traffic Signs Sheet 90,RS,Drawing,,Section 23
+PD0285/RS/500/091,Traffic Signs Sheet 91,RS,Drawing,,Section 24
+PD0285/RS/500/092,Traffic Signs Sheet 92,RS,Drawing,,Section 25
+PD0285/RS/500/133,Traffic Signs Sheet 133,RS,Drawing,,Section 26
+PD0285/RS/500/134,Traffic Signs Sheet 134,RS,Drawing,,Section 27
+PD0285/RS/500/135,Traffic Signs Sheet 135,RS,Drawing,,Section 28
+PD0285/RS/500/136,Traffic Signs Sheet 136,RS,Drawing,,Section 29
+PD0285/RS/500/137,Traffic Signs Sheet 137,RS,Drawing,,Section 30
+PD0285/RS/500/138,Traffic Signs Sheet 138,RS,Drawing,,Section 31
+PD0285/RS/500/139,Traffic Signs Sheet 139,RS,Drawing,,Section 32
+PD0285/RS/500/140,Traffic Signs Sheet 140,RS,Drawing,,Section 33
+PD0285/RS/500/141,Traffic Signs Sheet 141,RS,Drawing,,Section 34
+PD0285/RS/500/142,Traffic Signs Sheet 142,RS,Drawing,,Section 35
+PD0285/RS/500/143,Traffic Signs Sheet 143,RS,Drawing,,Section 36
+PD0285/RS/500/201,Traffic Signs - A46 Mainline Direction Sign Details Sheet 1,RS,Drawing,,ADS Details
+PD0285/RS/500/202,Traffic Signs - A46 Mainline Direction Sign Details Sheet 2,RS,Drawing,,ADS Details
+PD0285/RS/500/203,Traffic Signs - A46 Mainline Direction Sign Details Sheet 3,RS,Drawing,,ADS Details
+PD0285/RS/500/204,Traffic Signs - A46 Mainline Direction Sign Details Sheet 4,RS,Drawing,,ADS Details
+PD0285/RS/500/205,Traffic Signs - A46 Mainline Direction Sign Details Sheet 5,RS,Drawing,,ADS Details
+PD0285/RS/500/206,Traffic Signs - A46 Mainline Direction Sign Details Sheet 6,RS,Drawing,,ADS Details
+PD0285/RS/500/207,Traffic Signs - A46 Mainline Direction Sign Details Sheet 7,RS,Drawing,,ADS Details
+PD0285/RS/500/208,Traffic Signs - A46 Mainline Direction Sign Details Sheet 8,RS,Drawing,,ADS Details
+PD0285/RS/500/209,Traffic Signs - A46 Mainline Direction Sign Details Sheet 9,RS,Drawing,,ADS Details
+PD0285/RS/500/210,Traffic Signs - A46 Mainline Direction Sign Details Sheet 10,RS,Drawing,,ADS Details
+PD0285/RS/500/211,Traffic Signs - A46 Mainline Direction Sign Details Sheet 11,RS,Drawing,,ADS Details
+PD0285/RS/500/212,Traffic Signs - A46 Mainline Direction Sign Details Sheet 12,RS,Drawing,,ADS Details
+PD0285/RS/500/213,Traffic Signs - A46 Mainline Direction Sign Details Sheet 13,RS,Drawing,,ADS Details
+PD0285/RS/500/214,Traffic Signs - A46 Mainline Direction Sign Details Sheet 14,RS,Drawing,,ADS Details
+PD0285/RS/500/215,Traffic Signs - A46 Mainline Direction Sign Details Sheet 15,RS,Drawing,,ADS Details
+PD0285/RS/500/301,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 1,RS,Drawing,,ADS Details
+PD0285/RS/500/302,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 2,RS,Drawing,,ADS Details
+PD0285/RS/500/303,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 3,RS,Drawing,,ADS Details
+PD0285/RS/500/304,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 4,RS,Drawing,,ADS Details
+PD0285/RS/500/305,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 5,RS,Drawing,,ADS Details
+PD0285/RS/500/306,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 6,RS,Drawing,,ADS Details
+PD0285/RS/500/307,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 7,RS,Drawing,,ADS Details
+PD0285/RS/500/308,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 8,RS,Drawing,,ADS Details
+PD0285/RS/500/309,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 9,RS,Drawing,,ADS Details
+PD0285/RS/500/310,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 10,RS,Drawing,,ADS Details
+PD0285/RS/500/311,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 11,RS,Drawing,,ADS Details
+PD0285/RS/500/312,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 12,RS,Drawing,,ADS Details
+PD0285/RS/500/313,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 13,RS,Drawing,,ADS Details
+PD0285/RS/500/314,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 14,RS,Drawing,,ADS Details
+PD0285/RS/500/315,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 15,RS,Drawing,,ADS Details
+PD0285/RS/500/316,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 16,RS,Drawing,,ADS Details
+PD0285/RS/500/317,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 17,RS,Drawing,,ADS Details
+PD0285/RS/500/318,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 18,RS,Drawing,,ADS Details
+PD0285/RS/500/319,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 19,RS,Drawing,,ADS Details
+PD0285/RS/500/320,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 20,RS,Drawing,,ADS Details
+PD0285/RS/500/321,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 21,RS,Drawing,,ADS Details
+PD0285/RS/500/322,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 22,RS,Drawing,,ADS Details
+PD0285/RS/500/323,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 23,RS,Drawing,,ADS Details
+PD0285/RS/500/324,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 24,RS,Drawing,,ADS Details
+PD0285/RS/500/325,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 25,RS,Drawing,,ADS Details
+PD0285/RS/500/326,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 26,RS,Drawing,,ADS Details
+PD0285/RS/500/327,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 27,RS,Drawing,,ADS Details
+PD0285/RS/500/328,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 28,RS,Drawing,,ADS Details
+PD0285/RS/500/329,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 29,RS,Drawing,,ADS Details
+PD0285/RS/500/330,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 30,RS,Drawing,,ADS Details
+PD0285/RS/500/331,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 31,RS,Drawing,,ADS Details
+PD0285/RS/500/332,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 32,RS,Drawing,,ADS Details
+PD0285/RS/500/333,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 33,RS,Drawing,,ADS Details
+PD0285/RS/500/334,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 34,RS,Drawing,,ADS Details
+PD0285/RS/500/335,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 35,RS,Drawing,,ADS Details
+PD0285/RS/500/336,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 36,RS,Drawing,,ADS Details
+PD0285/RS/500/337,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 37,RS,Drawing,,ADS Details
+PD0285/RS/500/338,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 38,RS,Drawing,,ADS Details
+PD0285/RS/500/339,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 39,RS,Drawing,,ADS Details
+PD0285/RS/500/340,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 40,RS,Drawing,,ADS Details
+PD0285/RS/500/341,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 41,RS,Drawing,,ADS Details
+PD0285/RS/500/342,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 42,RS,Drawing,,ADS Details
+PD0285/RS/500/343,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 43,RS,Drawing,,ADS Details
+PD0285/RS/500/344,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 44,RS,Drawing,,ADS Details
+PD0285/RS/500/345,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 45,RS,Drawing,,ADS Details
+PD0285/RS/500/346,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 46,RS,Drawing,,ADS Details
+PD0285/RS/500/347,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 47,RS,Drawing,,ADS Details
+PD0285/RS/500/348,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 48,RS,Drawing,,ADS Details
+PD0285/RS/500/349,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 49,RS,Drawing,,ADS Details
+PD0285/RS/500/350,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 50,RS,Drawing,,ADS Details
+PD0285/RS/500/351,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 51,RS,Drawing,,ADS Details
+PD0285/RS/500/352,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 52,RS,Drawing,,ADS Details
+PD0285/RS/500/353,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 53,RS,Drawing,,ADS Details
+PD0285/RS/500/354,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 54,RS,Drawing,,ADS Details
+PD0285/RS/500/355,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 55,RS,Drawing,,ADS Details
+PD0285/RS/500/356,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 56,RS,Drawing,,ADS Details
+PD0285/RS/500/357,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 57,RS,Drawing,,ADS Details
+PD0285/RS/500/358,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 58,RS,Drawing,,ADS Details
+PD0285/RS/500/359,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 59,RS,Drawing,,ADS Details
+PD0285/RS/500/360,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 60,RS,Drawing,,ADS Details
+PD0285/RS/500/361,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 61,RS,Drawing,,ADS Details
+PD0285/RS/500/362,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 62,RS,Drawing,,ADS Details
+PD0285/RS/500/363,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 63,RS,Drawing,,ADS Details
+PD0285/RS/500/364,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 64,RS,Drawing,,ADS Details
+PD0285/RS/500/365,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 65,RS,Drawing,,ADS Details
+PD0285/RS/500/366,Traffic Signs - A46 Side Roads Direction Sign Details Sheet 66,RS,Drawing,,ADS Details
+PD0285/RS/500/401,"Traffric Signs - Informatory, Warning & Regulatory Sign Details Sheet 1",RS,Drawing,,ADS Details
+PD0285/RS/500/402,"Traffric Signs - Informatory, Warning & Regulatory Sign Details Sheet 2",RS,Drawing,,ADS Details
+PD0285/RS/500/403,"Traffric Signs - Informatory, Warning & Regulatory Sign Details Sheet 3",RS,Drawing,,ADS Details
+PD0285/RS/500/404,"Traffric Signs - Informatory, Warning & Regulatory Sign Details Sheet 4",RS,Drawing,,ADS Details
+PD0285/RS/500/405,"Traffric Signs - Informatory, Warning & Regulatory Sign Details Sheet 5",RS,Drawing,,ADS Details
+PD0285/RS/500/406,"Traffic Signs - Informatory, Warning & Regulatory Sign Mounting Details Sheet 1",RS,Drawing,,ADS Details
+PD0285/RS/500/407,"Traffic Signs - Informatory, Warning & Regulatory Sign Mounting Details Sheet 2",RS,Drawing,,ADS Details
+PD0285/RS/500/501,Traffic Signs - Typical Post and Foundation Details Signs (Steel Posts),RS,Drawing,,ADS Details
+PD0285/RS/500/502,Traffic Signs - Typical Post and Foundation Details Signs (Lattix Posts or Similar),RS,Drawing,,ADS Details
+PD0285/RS/500/503,"Traffic Signs - Typical Post and Foundation Details Informatory, Warning & Regulatory Signs Sheet 1",RS,Drawing,,ADS Details
+PD0285/RS/500/504,"Traffic Signs - Typical Post and Foundation Details Informatory, Warning & Regulatory Signs Sheet 2",RS,Drawing,,ADS Details
+PD0285/RM/500/000,Road Markings Key Plan,RM,Drawing,,
+PD0285/RM/500/001,Road Markings Sheet 01,RM,Drawing,,
+PD0285/RM/500/002,Road Markings Sheet 02,RM,Drawing,,
+PD0285/RM/500/003,Road Markings Sheet 03,RM,Drawing,,
+PD0285/RM/500/004,Road Markings Sheet 04,RM,Drawing
+PD0285/RM/500/005,Road Markings Sheet 05,RM,Drawing
+PD0285/RM/500/006,Road Markings Sheet 06,RM,Drawing
+PD0285/RM/500/007,Road Markings Sheet 07,RM,Drawing
+PD0285/RM/500/008,Road Markings Sheet 08,RM,Drawing
+PD0285/RM/500/009,Road Markings Sheet 09,RM,Drawing
+PD0285/RM/500/010,Road Markings Sheet 10,RM,Drawing
+PD0285/RM/500/011,Road Markings Sheet 11,RM,Drawing
+PD0285/RM/500/012,Road Markings Sheet 12,RM,Drawing
+PD0285/RM/500/013,Road Markings Sheet 13,RM,Drawing
+PD0285/RM/500/014,Road Markings Sheet 14,RM,Drawing
+PD0285/RM/500/015,Road Markings Sheet 15,RM,Drawing
+PD0285/RM/500/016,Road Markings Sheet 16,RM,Drawing
+PD0285/RM/500/017,Road Markings Sheet 17,RM,Drawing
+PD0285/RM/500/018,Road Markings Sheet 18,RM,Drawing
+PD0285/RM/500/019,Road Markings Sheet 19,RM,Drawing
+PD0285/RM/500/020,Road Markings Sheet 20,RM,Drawing
+PD0285/RM/500/021,Road Markings Sheet 21,RM,Drawing
+PD0285/RM/500/022,Road Markings Sheet 22,RM,Drawing
+PD0285/RM/500/023,Road Markings Sheet 23,RM,Drawing
+PD0285/RM/500/024,Road Markings Sheet 24,RM,Drawing
+PD0285/RM/500/025,Road Markings Sheet 25,RM,Drawing
+PD0285/RM/500/026,Road Markings Sheet 26,RM,Drawing
+PD0285/RM/500/027,Road Markings Sheet 27,RM,Drawing
+PD0285/RM/500/028,Road Markings Sheet 28,RM,Drawing
+PD0285/RM/500/029,Road Markings Sheet 29,RM,Drawing
+PD0285/RM/500/030,Road Markings Sheet 30,RM,Drawing
+PD0285/RM/500/031,Road Markings Sheet 31,RM,Drawing
+PD0285/RM/500/032,Road Markings Sheet 32,RM,Drawing
+PD0285/RM/500/033,Road Markings Sheet 33,RM,Drawing
+PD0285/RM/500/034,Road Markings Sheet 34,RM,Drawing
+PD0285/RM/500/035,Road Markings Sheet 35,RM,Drawing
+PD0285/RM/500/036,Road Markings Sheet 36,RM,Drawing
+PD0285/RM/500/037,Road Markings Sheet 37,RM,Drawing
+PD0285/RM/500/038,Road Markings Sheet 38,RM,Drawing
+PD0285/RM/500/039,Road Markings Sheet 39,RM,Drawing
+PD0285/RM/500/040,Road Markings Sheet 40,RM,Drawing
+PD0285/RM/500/041,Road Markings Sheet 41,RM,Drawing
+PD0285/RM/500/042,Road Markings Sheet 42,RM,Drawing
+PD0285/RM/500/043,Road Markings Sheet 43,RM,Drawing
+PD0285/RM/500/044,Road Markings Sheet 44,RM,Drawing
+PD0285/RM/500/045,Road Markings Sheet 45,RM,Drawing
+PD0285/RM/500/046,Road Markings Sheet 46,RM,Drawing
+PD0285/RM/500/047,Road Markings Sheet 47,RM,Drawing
+PD0285/RM/500/048,Road Markings Sheet 48,RM,Drawing
+PD0285/RM/500/049,Road Markings Sheet 49,RM,Drawing
+PD0285/RM/500/050,Road Markings Sheet 50,RM,Drawing
+PD0285/RM/500/051,Road Markings Sheet 51,RM,Drawing
+PD0285/RM/500/052,Road Markings Sheet 52,RM,Drawing
+PD0285/RM/500/053,Road Markings Sheet 53,RM,Drawing
+PD0285/RM/500/054,Road Markings Sheet 54,RM,Drawing
+PD0285/RM/500/055,Road Markings Sheet 55,RM,Drawing
+PD0285/RM/500/056,Road Markings Sheet 56,RM,Drawing
+PD0285/RM/500/057,Road Markings Sheet 57,RM,Drawing
+PD0285/RM/500/058,Road Markings Sheet 58,RM,Drawing
+PD0285/RM/500/059,Road Markings Sheet 59,RM,Drawing
+PD0285/RM/500/060,Road Markings Sheet 60,RM,Drawing
+PD0285/RM/500/061,Road Markings Sheet 61,RM,Drawing
+PD0285/RM/500/062,Road Markings Sheet 62,RM,Drawing
+PD0285/RM/500/063,Road Markings Sheet 63,RM,Drawing
+PD0285/RM/500/064,Road Markings Sheet 64,RM,Drawing
+PD0285/RM/500/065,Road Markings Sheet 65,RM,Drawing
+PD0285/RM/500/066,Road Markings Sheet 66,RM,Drawing
+PD0285/RM/500/067,Road Markings Sheet 67,RM,Drawing
+PD0285/RM/500/068,Road Markings Sheet 68,RM,Drawing
+PD0285/RM/500/069,Road Markings Sheet 69,RM,Drawing
+PD0285/RM/500/070,Road Markings Sheet 70,RM,Drawing
+PD0285/RM/500/071,Road Markings Sheet 71,RM,Drawing
+PD0285/RM/500/072,Road Markings Sheet 72,RM,Drawing
+PD0285/RM/500/073,Road Markings Sheet 73,RM,Drawing
+PD0285/RM/500/074,Road Markings Sheet 74,RM,Drawing
+PD0285/RM/500/075,Road Markings Sheet 75,RM,Drawing
+PD0285/RM/500/076,Road Markings Sheet 76,RM,Drawing
+PD0285/RM/500/077,Road Markings Sheet 77,RM,Drawing
+PD0285/RM/500/078,Road Markings Sheet 78,RM,Drawing
+PD0285/RM/500/079,Road Markings Sheet 79,RM,Drawing
+PD0285/RM/500/080,Road Markings Sheet 80,RM,Drawing
+PD0285/RM/500/081,Road Markings Sheet 81,RM,Drawing
+PD0285/RM/500/082,Road Markings Sheet 82,RM,Drawing
+PD0285/RM/500/083,Road Markings Sheet 83,RM,Drawing
+PD0285/RM/500/084,Road Markings Sheet 84,RM,Drawing
+PD0285/RM/500/085,Road Markings Sheet 85,RM,Drawing
+PD0285/RM/500/086,Road Markings Sheet 86,RM,Drawing
+PD0285/RM/500/087,Road Markings Sheet 87,RM,Drawing
+PD0285/RM/500/088,Road Markings Sheet 88,RM,Drawing
+PD0285/RM/500/089,Road Markings Sheet 89,RM,Drawing
+PD0285/RM/500/090,Road Markings Sheet 90,RM,Drawing
+PD0285/RM/500/091,Road Markings Sheet 91,RM,Drawing
+PD0285/RM/500/092,Road Markings Sheet 92,RM,Drawing
+PD0285/RM/500/093,Road Markings Sheet 93,RM,Drawing
+PD0285/RM/500/094,Road Markings Sheet 94,RM,Drawing
+PD0285/RM/500/095,Road Markings Sheet 95,RM,Drawing
+PD0285/RM/500/096,Road Markings Sheet 96,RM,Drawing
+PD0285/RM/500/097,Road Markings Sheet 97,RM,Drawing
+PD0285/RM/500/098,Road Markings Sheet 98,RM,Drawing
+PD0285/RM/500/099,Road Markings Sheet 99,RM,Drawing
+PD0285/RM/500/100,Road Markings Sheet 100,RM,Drawing
+PD0285/RM/500/101,Road Markings Sheet 101,RM,Drawing
+PD0285/RM/500/102,Road Markings Sheet 102,RM,Drawing
+PD0285/RM/500/103,Road Markings Sheet 103,RM,Drawing
+PD0285/RM/500/104,Road Markings Sheet 104,RM,Drawing
+PD0285/RM/500/105,Road Markings Sheet 105,RM,Drawing
+PD0285/RM/500/106,Road Markings Sheet 106,RM,Drawing
+PD0285/RM/500/107,Road Markings Sheet 107,RM,Drawing
+PD0285/RM/500/108,Road Markings Sheet 108,RM,Drawing
+PD0285/RM/500/109,Road Markings Sheet 109,RM,Drawing
+PD0285/RM/500/110,Road Markings Sheet 110,RM,Drawing
+PD0285/RM/500/111,Road Markings Sheet 111,RM,Drawing
+PD0285/RM/500/112,Road Markings Sheet 112,RM,Drawing
+PD0285/RM/500/113,Road Markings Sheet 113,RM,Drawing
+PD0285/RM/500/114,Road Markings Sheet 114,RM,Drawing
+PD0285/RM/500/115,Road Markings Sheet 115,RM,Drawing
+PD0285/RM/500/116,Road Markings Sheet 116,RM,Drawing
+PD0285/RM/500/117,Road Markings Sheet 117,RM,Drawing
+PD0285/RM/500/118,Road Markings Sheet 118,RM,Drawing
+PD0285/RM/500/119,Road Markings Sheet 119,RM,Drawing
+PD0285/RM/500/120,Road Markings Sheet 120,RM,Drawing
+PD0285/RM/500/121,Road Markings Sheet 121,RM,Drawing
+PD0285/RM/500/122,Road Markings Sheet 122,RM,Drawing
+PD0285/RM/500/123,Road Markings Sheet 123,RM,Drawing
+PD0285/RM/500/124,Road Markings Sheet 124,RM,Drawing
+PD0285/RM/500/125,Road Markings Sheet 125,RM,Drawing
+PD0285/RM/500/126,Road Markings Sheet 126,RM,Drawing
+PD0285/RM/500/127,Road Markings Sheet 127,RM,Drawing
+PD0285/RM/500/128,Road Markings Sheet 128,RM,Drawing
+PD0285/RM/500/129,Road Markings Sheet 129,RM,Drawing
+PD0285/RM/500/130,Road Markings Sheet 130,RM,Drawing
+PD0285/RM/500/131,Road Markings Sheet 131,RM,Drawing
+PD0285/RM/500/132,Road Markings Sheet 132,RM,Drawing,,
+PD0285/RM/500/133,Road Markings Sheet 133,RM,Drawing,,
+PD0285/RM/500/134,Road Markings Sheet 134,RM,Drawing,,
+PD0285/RM/500/135,Road Markings Sheet 135,RM,Drawing,,
+PD0285/RM/500/136,Road Markings Sheet 136,RM,Drawing,,
+PD0285/RM/500/137,Road Markings Sheet 137,RM,Drawing,,
+PD0285/RM/500/138,Road Markings Sheet 138,RM,Drawing,,
+PD0285/RM/500/139,Road Markings Sheet 139,RM,Drawing,,
+PD0285/RM/500/140,Road Markings Sheet 140,RM,Drawing,,
+PD0285/RM/500/141,Road Markings Sheet 141,RM,Drawing,,
+PD0285/RM/500/142,Road Markings Sheet 142,RM,Drawing,,
+PD0285/RM/500/143,Road Markings Sheet 143,RM,Drawing,,
+PD0285/FE/2500/000,Fencing & Accommodation Works Key Plan,FE,Drawing,,
+PD0285/FE/2500/001,Fencing and Accommodation Works Plan Sheet 1 of 24,FE,Drawing,,
+PD0285/FE/2500/002,Fencing and Accommodation Works Plan Sheet 2 of 24,FE,Drawing,,
+PD0285/FE/2500/003,Fencing and Accommodation Works Plan Sheet 3 of 24,FE,Drawing,,
+PD0285/FE/2500/004,Fencing and Accommodation Works Plan Sheet 4 of 24,FE,Drawing,,
+PD0285/FE/2500/005,Fencing and Accommodation Works Plan Sheet 5 of 24,FE,Drawing,,
+PD0285/FE/2500/006,Fencing and Accommodation Works Plan Sheet 6 of 24,FE,Drawing,,
+PD0285/FE/2500/007,Fencing and Accommodation Works Plan Sheet 7 of 24,FE,Drawing,,
+PD0285/FE/2500/008,Fencing and Accommodation Works Plan Sheet 8 of 24,FE,Drawing,,
+PD0285/FE/2500/009,Fencing and Accommodation Works Plan Sheet 9 of 24,FE,Drawing,,
+PD0285/FE/2500/010,Fencing and Accommodation Works Plan Sheet 10 of 24,FE,Drawing,,
+PD0285/FE/2500/011,Fencing and Accommodation Works Plan Sheet 11 of 24,FE,Drawing,,
+PD0285/FE/2500/012,Fencing and Accommodation Works Plan Sheet 12 of 24,FE,Drawing,,
+PD0285/FE/2500/013,Fencing and Accommodation Works Plan Sheet 13 of 24,FE,Drawing,,
+PD0285/FE/2500/014,Fencing and Accommodation Works Plan Sheet 14 of 24,FE,Drawing,,
+PD0285/FE/2500/015,Fencing and Accommodation Works Plan Sheet 15 of 24,FE,Drawing,,
+PD0285/FE/2500/016,Fencing and Accommodation Works Plan Sheet 16 of 24,FE,Drawing,,
+PD0285/FE/2500/017,Fencing and Accommodation Works Plan Sheet 17 of 24,FE,Drawing,,
+PD0285/FE/2500/018,Fencing and Accommodation Works Plan Sheet 18 of 24,FE,Drawing,,
+PD0285/FE/2500/019,Fencing and Accommodation Works Plan Sheet 19 of 24,FE,Drawing,,
+PD0285/FE/2500/020,Fencing and Accommodation Works Plan Sheet 20 of 24,FE,Drawing,,
+PD0285/FE/2500/021,Fencing and Accommodation Works Plan Sheet 21 of 24,FE,Drawing,,
+PD0285/FE/2500/022,Fencing and Accommodation Works Plan Sheet 22 of 24,FE,Drawing,,
+PD0285/FE/2500/023,Fencing and Accommodation Works Plan Sheet 23 of 24,FE,Drawing,,
+PD0285/FE/2500/024,Fencing and Accommodation Works Plan Sheet 24 of 24,FE,Drawing,,
+PD0285/SE/2500/000,Site Extent - Key Plan and Notes,SE,Drawing,,
+PD0285/SE/2500/001,Site Extent - Sheet 1  of 21,SE,Drawing,,
+PD0285/SE/2500/002,Site Extent - Sheet 2 of 21,SE,Drawing,,
+PD0285/SE/2500/003,Site Extent - Sheet 3 of 21,SE,Drawing,,
+PD0285/SE/2500/004,Site Extent - Sheet 4 of 21,SE,Drawing,,
+PD0285/SE/2500/005,Site Extent - Sheet 5 of 21,SE,Drawing,,
+PD0285/SE/2500/006,Site Extent - Sheet 6 of 21,SE,Drawing,,
+PD0285/SE/2500/007,Site Extent - Sheet 7 of 21,SE,Drawing,,
+PD0285/SE/2500/008,Site Extent - Sheet 8 of 21,SE,Drawing,,
+PD0285/SE/2500/009,Site Extent - Sheet 9 of 21,SE,Drawing,,
+PD0285/SE/2500/010,Site Extent - Sheet 10 of 21,SE,Drawing,,
+PD0285/SE/2500/011,Site Extent - Sheet 11 of 21,SE,Drawing
+PD0285/SE/2500/012,Site Extent - Sheet 12 of 21,SE,Drawing
+PD0285/SE/2500/013,Site Extent - Sheet 13 of 21,SE,Drawing
+PD0285/SE/2500/014,Site Extent - Sheet 14 of 21,SE,Drawing
+PD0285/SE/2500/015,Site Extent - Sheet 15 of 21,SE,Drawing
+PD0285/SE/2500/016,Site Extent - Sheet 16 of 21,SE,Drawing
+PD0285/SE/2500/017,Site Extent - Sheet 17 of 21,SE,Drawing
+PD0285/SE/2500/018,Site Extent - Sheet 18 of 21,SE,Drawing
+PD0285/SE/2500/019,Site Extent - Sheet 19 of 21,SE,Drawing
+PD0285/SE/2500/020,Site Extent - Sheet 20 of 21,SE,Drawing
+PD0285/SE/2500/021,Site Extent - Sheet 21 of 21,SE,Drawing
+PD0285/ENV/2500/014,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2500/015,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2500/016,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2500/017,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2500/018,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2500/019,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2500/020,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2500/021,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2500/022,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2500/023,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2500/024,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2500/025,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2500/026,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2500/027,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2500/028,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2500/029,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2500/030,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2500/031,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2500/032,Environmental Masterplan,ENV,Drawing
+PD0285/ENV/2000/033,Figure 1.1.2 Proposed MS3 Photomontage,ENV,Drawing
+PD0285/ENV/NTS/034,Figure 1.1.3 Proposed MS3 Photomontage,ENV,Drawing
+PD0285/ENV/NTS/035,Figure 1.1.4 Proposed MS3 Photomontage,ENV,Drawing,
+PD0285/ENV/NTS/036,Figure 1.1.5 Proposed MS3 Photomontage,ENV,Drawing,
+PD0285/ENV/NTS/037,Figure 1.1.6 Proposed MS3 Photomontage,ENV,Drawing,
+PD0285/ENV/NTS/038,Figure 1.1.7 Proposed MS3 Photomontage,ENV,Drawing,
+PD0285/ENV/NTS/039,Figure 1.1.8 Proposed MS3 Photomontage,ENV,Drawing,
+PD0285/ENV/NTS/040,Figure 1.1.9 Proposed MS3 Photomontage,ENV,Drawing,
+PD0285/ENV/NTS/041,Figure 1.1.10 Proposed MS3 Photomontage,ENV,Drawing,
+PD0285/ENV/NTS/042,Figure 1.1.10 Proposed MS3 Photomontage,ENV,Drawing,
+PD0285/ENV/NTS/043,Figure 1.1.11 Proposed MS3 Photomontage,ENV,Drawing,
+PD0285/ENV/NTS/044,Figure 1.1.12 Proposed MS3 Photomontage,ENV,Drawing,
+PD0285/ENV/NTS/045,Figure 1.1.13 Proposed MS3 Photomontage,ENV,Drawing,
+PD0285/ENV/NTS/046,Figure 1.1.14 Proposed MS3 Photomontage,ENV,Drawing,
+PD0285/ENV/NTS/047,Figure 1.1.15 Proposed MS3 Photomontage,ENV,Drawing,
+PD0285/LSC/500/001,Landscape Site Clearance (TPO Works Approval) Roundhill Spinney Trees Survey,LSPE,Drawing,
+PD0285/LSC/2500/000,Landscape Site Clearacne Key Plan and Notes,LSPE,Drawing,
+PD0285/LSC/2500/001,Landscape Site Clearance Sheet 1 of 21,LSPE,Drawing,
+PD0285/LSC/2500/002,Landscape Site Clearance Sheet 2 of 21,LSPE,Drawing,
+PD0285/LSC/2500/003,Landscape Site Clearance Sheet 3 of 21,LSPE,Drawing,
+PD0285/LSC/2500/004,Landscape Site Clearance Sheet 4 of 21,LSPE,Drawing,
+PD0285/LSC/2500/005,Landscape Site Clearance Sheet 5 of 21,LSPE,Drawing,
+PD0285/LSC/2500/006,Landscape Site Clearance Sheet 6 of 21,LSPE,Drawing,
+PD0285/LSC/2500/007,Landscape Site Clearance Sheet 7 of 21,LSPE,Drawing,
+PD0285/LSC/2500/008,Landscape Site Clearance Sheet 8 of 21,LSPE,Drawing,
+PD0285/LSC/2500/009,Landscape Site Clearance Sheet 9 of 21,LSPE,Drawing,
+PD0285/LSC/2500/010,Landscape Site Clearance Sheet 10 of 21,LSPE,Drawing,
+PD0285/LSC/2500/011,Landscape Site Clearance Sheet 11 of 21,LSPE,Drawing,
+PD0285/LSC/2500/012,Landscape Site Clearance Sheet 12 of 21,LSPE,Drawing,
+PD0285/LSC/2500/013,Landscape Site Clearance Sheet 13 of 21,LSPE,Drawing,
+PD0285/LSC/2500/014,Landscape Site Clearance Sheet 14 of 21,LSPE,Drawing,
+PD0285/LSC/2500/015,Landscape Site Clearance Sheet 15 of 21,LSPE,Drawing,
+PD0285/LSC/2500/016,Landscape Site Clearance Sheet 16 of 21,LSPE,Drawing,
+PD0285/LSC/2500/017,Landscape Site Clearance Sheet 17 of 21,LSPE,Drawing,
+PD0285/LSC/2500/018,Landscape Site Clearance Sheet 18 of 21,LSPE,Drawing,,
+PD0285/LSC/2500/019,Landscape Site Clearance Sheet 19 of 21,LSPE,Drawing,,
+PD0285/LSC/2500/020,Landscape Site Clearance Sheet 20 of 21,LSPE,Drawing,,
+PD0285/LSC/2500/021,Landscape Site Clearance Sheet 21 of 21,LSPE,Drawing,,
+PD0285/LD/1000/000,Planting Key Plan,LSPE,Drawing,,
+PD0285/LD/1000/001,Planting Plan Sheet 1 of 70: Ch 400 - 1000,LSPE,Drawing,,Section 1a
+PD0285/LD/1000/002,Planting Plan Sheet 2 of 70: Ch 1000 - 1600,LSPE,Drawing,,Section 1a
+PD0285/LD/1000/003,Planting Plan Sheet 3 of 70: Ch 1600 - 2200,LSPE,Drawing,,Section 1a
+PD0285/LD/1000/004,Planting Plan Sheet 4 of 70: Ch 2200 - Ch 2800,LSPE,Drawing,,Section 1a
+PD0285/LD/1000/005,Planting Plan Sheet 5 of 70: Ch 2800 - 3400,LSPE,Drawing,,Section 1a
+PD0285/LD/1000/006,Planting Plan Sheet 6 of 70: Ch 3400 - 4000,LSPE,Drawing,,Section 1a
+PD0285/LD/1000/007,Planting Plan Sheet 7 of 70: Ch 4000 - 4600,LSPE,Drawing,,Section 1a
+PD0285/LD/1000/008,Planting Plan Sheet 8 of 70: Ch 4600 - 5200,LSPE,Drawing,,Section 1a
+PD0285/LD/1000/009,Planting Plan Sheet 9 of 70: Ch 5200 - 5800,LSPE,Drawing,,Section 1a
+PD0285/LD/1000/010,Planting Plan Sheet 10 of 70: Ch 5800 - Ch 6400,LSPE,Drawing,,Section 1b
+PD0285/LD/1000/011,Planting Plan Sheet 11 of 70: Ch 6400 - 7060,LSPE,Drawing,,Section 1b
+PD0285/LD/1000/012,Planting Plan Sheet 12 of 70: Ch 7060 - 7700,LSPE,Drawing,,Section 1b
+PD0285/LD/1000/013,Planting Plan Sheet 13 of 70: Ch 7700 - 8300,LSPE,Drawing,,Section 1c
+PD0285/LD/1000/014,Planting Plan Sheet 14 of 70: Ch 8300 - 8800,LSPE,Drawing,,Section 1c
+PD0285/LD/1000/015,Planting Plan Sheet 15 of 70: Ch 8800 - 9400,LSPE,Drawing,,Section 1c
+PD0285/LD/1000/016,Planting Plan Sheet 16 of 70: Ch 9400 - 10100,LSPE,Drawing,,Section 1c
+PD0285/LD/1000/017,Planting Plan Sheet 17 of 70: Ch 10100 - 10700,LSPE,Drawing,,Section 1c
+PD0285/LD/1000/018,Planting Plan Sheet 18 of 70: Ch 10700 - 11300,LSPE,Drawing,,Section 1c
+PD0285/LD/1000/019,Planting Plan Sheet 19 of 70: Ch 11300 - 11900,LSPE,Drawing,,Section 1c
+PD0285/LD/1000/020,Planting Plan Sheet 20 of 70: Ch 11900 - 12580,LSPE,Drawing,,Section 1c
+PD0285/LD/1000/021,Planting Plan Sheet 21 of 70: Ch 12580 - 13180,LSPE,Drawing,,Section 1c
+PD0285/LD/1000/022,Planting Plan Sheet 22 of 70: Ch 13180 - 13800,LSPE,Drawing,,Section 2
+PD0285/LD/1000/023,Planting Plan Sheet 23 of 70: Ch 13800 - 14440,LSPE,Drawing,,Section 2
+PD0285/LD/1000/024,Planting Plan Sheet 24 of 70: Ch 14440 - 15000,LSPE,Drawing,,Section 2
+PD0285/LD/1000/025,Planting Plan Sheet 25 of 70: Ch 15000 - 15700,LSPE,Drawing,,Section 2
+PD0285/LD/1000/026,Planting Plan Sheet 26 of 70: Ch 15700 - 16300,LSPE,Drawing,,Section 2
+PD0285/LD/1000/027,Planting Plan Sheet 27 of 70: Ch 16300 - 16900,LSPE,Drawing,,Section 2
+PD0285/LD/1000/028,Planting Plan Sheet 28 of 70: Ch 16920 - 17500,LSPE,Drawing,,Section 2
+PD0285/LD/1000/029,Planting Plan Sheet 29 of 70: Ch 17500 - 18100,LSPE,Drawing,,Section 2
+PD0285/LD/1000/030,Planting Plan Sheet 30 of 70: Ch 18100 - 18700,LSPE,Drawing,,Section 2
+PD0285/LD/1000/031,Planting Plan Sheet 31 of 70: Ch 18700 - 19300,LSPE,Drawing,,Section 2
+PD0285/LD/1000/032,Planting Plan Sheet 32 of 70: Ch 19300 - 19900,LSPE,Drawing,,Section 2
+PD0285/LD/1000/033,Planting Plan Sheet 33 of 70: Ch 19900 - 20600,LSPE,Drawing,,Section 2
+PD0285/LD/1000/034,Planting Plan Sheet 34 of 70: Ch 20600 - 21200,LSPE,Drawing,,Section 2
+PD0285/LD/1000/035,Planting Plan Sheet 35 of 70: Ch 21200 - 21800,LSPE,Drawing,,Section 2
+PD0285/LD/1000/036,Planting Plan Sheet 36 of 70: Ch 21800 - 22400,LSPE,Drawing,,Section 3
+PD0285/LD/1000/037,Planting Plan Sheet 37 of 70: Ch 22400 - 23000,LSPE,Drawing,,Section 3
+PD0285/LD/1000/038,Planting Plan Sheet 38 of 70: Ch 23000 - 23620,LSPE,Drawing,,Section 3
+PD0285/LD/1000/039,Planting Plan Sheet 39 of 70: Ch 23620 - 24220,LSPE,Drawing,,Section 3
+PD0285/LD/1000/040,Planting Plan Sheet 40 of 70: Ch 24220 - 24820,LSPE,Drawing,,Section 3
+PD0285/LD/1000/041,Planting Plan Sheet 41 of 70: Ch 24820 - 25420,LSPE,Drawing,,Section 3
+PD0285/LD/1000/042,Planting Plan Sheet 42 of 70: Ch 25420 - 26020,LSPE,Drawing,,Section 3
+PD0285/LD/1000/043,Planting Plan Sheet 43 of 70: Ch 26020 - 26620,LSPE,Drawing,,Section 3
+PD0285/LD/1000/044,Planting Plan Sheet 44 of 70: Ch 26620 - 27220,LSPE,Drawing,,Section 3
+PD0285/LD/1000/045,Planting Plan Sheet 45 of 70: Ch 27220 - 27820,LSPE,Drawing,,Section 3
+PD0285/LD/1000/046,Planting Plan Sheet 46 of 70: Ch 27820 - 28420,LSPE,Drawing,,Section 3
+PD0285/LD/1000/047,Planting Plan Sheet 47 of 70: Owthorpe Junction,LSPE,Drawing,,Section 1b
+PD0285/LD/1000/048,Planting Plan Sheet 48 of 70: Owthorpe Junction,LSPE,Drawing,,Section 1b
+PD0285/LD/1000/049,Planting Plan Sheet 49 of 70: Cotgrave Overbridge,LSPE,Drawing,,Section 1b
+PD0285/LD/1000/050,Planting Plan Sheet 50 of 70: Cotgrave Overbridge,LSPE,Drawing,,Section 1b
+PD0285/LD/1000/051,Planting Plan Sheet 51 of 70: Stragglethorpe Junction,LSPE,Drawing,,Section 1c
+PD0285/LD/1000/052,Planting Plan Sheet 52 of 70: Cropwell Butler,LSPE,Drawing,,Section 1c
+PD0285/LD/1000/053,Planting Plan Sheet 53 of 70: Cropwell Butler,LSPE,Drawing,,Section 1c
+PD0285/LD/1000/054,Planting Plan Sheet 54 of 70: Cropwell Butler,LSPE,Drawing,,Section 1c
+PD0285/LD/1000/055,Planting Plan Sheet 55 of 70: Henson Lane,LSPE,Drawing,,Section 1c
+PD0285/LD/1000/056,Planting Plan Sheet 56 of 70: Henson Lane,LSPE,Drawing,,Section 1c
+PD0285/LD/1000/057,Planting Plan Sheet 57 of 70: Saxondale Roundabout,LSPE,Drawing,,Section 1c
+PD0285/LD/1000/058,Planting Plan Sheet 58 of 70: Saxondale Roundabout,LSPE,Drawing,,Section 1c
+PD0285/LD/1000/059,Planting Plan Sheet 59 of 70: Ch 13500 East,LSPE,Drawing,,Section 2
+PD0285/LD/1000/060,Planting Plan Sheet 60 of 70: Margidunum Junction,LSPE,Drawing,,Section 2
+PD0285/LD/1000/061,Planting Plan Sheet 61 of 70: Margidunum Junction,LSPE,Drawing,,Section 2
+PD0285/LD/1000/062,Planting Plan Sheet 62 of 70: Butt Lane Overbridge,LSPE,Drawing,,Section 2
+PD0285/LD/1000/063,Planting Plan Sheet 63 of 70: Tenman Lane,LSPE,Drawing,,Section 2
+PD0285/LD/1000/064,Planting Plan Sheet 64 of 70: Flintham Junction,LSPE,Drawing,,Section 2
+PD0285/LD/1000/065,Planting Plan Sheet 65 of 70: Flintham junction,LSPE,Drawing,,Section 2
+PD0285/LD/1000/066,Planting Plan Sheet 66 of 70: Flintham junction,LSPE,Drawing,,Section 2
+PD0285/LD/1000/067,Planting Plan Sheet 67 of 70: Lodge Lane junction,LSPE,Drawing,,Section 3
+PD0285/LD/1000/069,Planting Plan Sheet 69 of 70: Moor Lane,LSPE,Drawing,,Section 3
+PD0285/LD/1000/070,Planting Plan Sheet 70 of 70: Hawton Lane,LSPE,Drawing,,Section 3
+PD0285/LD/1000/071,Detailed Landscape Design Flintham Estate Off-Site Planting,LSPE,Drawing,,
+PD0285/LD/1000/072,Detailed Landscape Design Ch 2575-2850 Roundhill Spinney (Lodge on the Wolds TPO Mitigation Works),LSPE,Drawing,,
+PD0285/LD/1000/073,Off-site Planting - Lodge Lane,LSPE,Drawing,,
+PD0285/LD/1000/074,Off-site Planting - Moor Lane,LSPE,Drawing,,
+PD0285/LD/2500/001,Off-site Planting - Flood Compensation Area,LSPE,Drawing,,
+PD0285/EC/200/027,"Squash Court, Bat Licence ",ECOL,Drawing,,
+PD0285/EC/200/028,Newt pond design,ECOL,Drawing
+PD0285/EC/200/029,Newt pond design,ECOL,Drawing
+PD0285/EC/200/030,Newt pond design,ECOL,Drawing
+PD0285/EC/1250/031,"Temporary Amphibian Fencing (TAF) Layout Stages 1, 2 & 3",ECOL,Drawing
+PD0285/EC/2500/032,Phase 1 and Roehoe ,ECOL,Drawing
+PD0285/EC/2500/033,Env masterplan at Roehoe,ECOL,Drawing
+PD0285/EC/2500/034,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/2500/035,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/2500/036,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/2500/037,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/2500/038,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/2500/039,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/2500/040,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/2500/041,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/2500/042,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/2500/043,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/2500/044,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/2500/045,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/2500/046,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/2500/047,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/2500/048,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/2500/049,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/2500/050,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/2500/051,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/2500/052,Tree Survey for Bat Roost Potential,ECOL,Drawing
+PD0285/EC/1250/053,Japanese knotweed,ECOL,Drawing
+PD0285/EC/1250/054,Japanese knotweed,ECOL,Drawing
+PD0285/EC/1250/055,Japanese knotweed,ECOL,Drawing
+PD0285/EC/2500/077,GCN Licence Application GCN Figure D,ECOL,Drawing
+PD0285/EC/2500/078,GCN Licence Application GCN Figure 1,ECOL,Drawing
+PD0285/EC/000/079,Deadwood mitigation,ECOL,Drawing
+PD0285/EC/2500/080,GCN Licence Application Phase 1 2009,ECOL,Drawing
+PD0285/EC/2500/081,GCN Licence Application Phase 1 2009,ECOL,Drawing
+PD0285/EC/2500/082,GCN Licence Application Aerial Photo,ECOL,Drawing
+PD0285/EC/2500/083,GCN Licence Application Receptor sites,ECOL,Drawing
+PD0285/EC/2500/084,Temporary Amphibian Fencing ,ECOL,Drawing
+PD0285/EC/2500/085,Location of sampling sites (aquatic),ECOL,Drawing
+PD0285/EC/5000/086,Location of sampling sites (aquatic),ECOL,Drawing
+PD0285/EC/5000/087,Location of sampling sites (aquatic),ECOL,Drawing
+PD0285/EC/5000/088,Location of sampling sites (aquatic),ECOL,Drawing
+PD0285/EC/5000/089,Location of sampling sites (aquatic),ECOL,Drawing
+PD0285/EC/2500/112,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/113,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/114,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/115,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/116,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/117,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/118,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/119,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/120,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/121,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/122,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/123,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/124,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/125,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/126,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/127,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/128,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/129,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/130,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/131,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/132,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/2500/133,Updated Badger Surveys Drawings,ECOL,Drawing
+PD0285/EC/5000/155,Figure 1.3 Location of Sampling Sites,ECOL,Drawing
+PD0285/EC/5000/156,Badger Clan Territories (determined by bait marking surveys) ,ECOL,Drawing
+PD0285/EC/5000/157,Badger Clan Territories (determined by bait marking surveys) ,ECOL,Drawing
+PD0285/EC/5000/158,Badger Clan Territories (determined by bait marking surveys) ,ECOL,Drawing
+PD0285/EC/5000/159,Badger Clan Territories (determined by bait marking surveys) ,ECOL,Drawing
+PD0285/EC/5000/160,Badger Clan Territories (determined by bait marking surveys) ,ECOL,Drawing
+PD0285/EC/5000/161,Badger Clan Territories (determined by bait marking surveys) ,ECOL,Drawing
+PD0285/EC/5000/162,Badger Clan Territories (determined by bait marking surveys) ,ECOL,Drawing
+PD0285/EC/5000/163,Badger Clan Territories (determined by bait marking surveys) ,ECOL,Drawing
+PD0285/EC/5000/164,Badger Clan Territories (determined by bait marking surveys) ,ECOL,Drawing
+PD0285/EC/5000/165,Badger Tunnel and Fence Design,ECOL,Drawing
+PD0285/EC/000/166,Updated Badger Surveys Drawings Index Sheet,ECOL,Drawing
+PD0285/EC/5000/178,Drawing List,ECOL,Drawing
+PD0285/EC/000/203,Badger Tunnel and Fend Design,ECOL,Drawing
+PD0285/EC/2500/203,Indicative Badger Tunnel and Fence Design and Preliminary Locations,ECOL,Drawing
+PD0285/EC/2500/204,Temporary Amphibian Fencing (TAF) and Pitfall Trap Details,ECOL,Drawing
+PD0285/EC/000/205,Temporarly Flight Line Mitigation,ECOL,Drawing
+PD0285/EC/500/206,Bat Box Placement Detail and Schedule,ECOL,Drawing
+PD0285/EC/50000/208,Figure 1 Bat Roost Potential Survey - Newton Gardens,ECOL,Drawing
+PD0285/EC/50000/209,Figure 1 Bat Roost Potential Survey - Glebe Cottages,ECOL,Drawing
+PD0285/EC/50000/210,Figure 1 Bat Roost Potential Survey - Squash Courts,ECOL,Drawing
+PD0285/EC/000/211,Indicative one-way badger gate for sett closure,ECOL,Drawing
+PD0285/EC/2500/212,Temporary Amphibian Fencing (TAF) Layout and Installation Priority,ECOL,Drawing
+PD0285/EC/NTS/213,Badger Setts to be Closed Index List,ECOL,Drawing
+PD0285/EC/NTS/214,Badger Setts to be Closed Key Plan,ECOL,Drawing
+PD0285/EC/2500/215,Badger Setts to be Closed,ECOL,Drawing
+PD0285/EC/2500/216,Badger Setts to be Closed,ECOL,Drawing
+PD0285/EC/2500/217,Badger Setts to be Closed,ECOL,Drawing
+PD0285/EC/2500/218,Badger Setts to be Closed,ECOL,Drawing
+PD0285/EC/2500/219,Badger Setts to be Closed,ECOL,Drawing
+PD0285/EC/2500/220,Badger Setts to be Closed,ECOL,Drawing
+PD0285/EC/1000/225,Areas of Roehoe Wood for Translocation and Location of Receptor Sites,ECOL,Drawing
+PD0285/EC/250/226,Proposed Badger Tunnell Locations,ECOL,Drawing
+PD0285/EC/250/227,Proposed Badger Tunnell Locations,ECOL,Drawing
+PD0285/EC/250/228,Proposed Badger Tunnell Locations,ECOL,Drawing
+PD0285/EC/250/229,Proposed Badger Tunnell Locations,ECOL,Drawing
+PD0285/EC/250/230,Proposed Badger Tunnell Locations,ECOL,Drawing
+PD0285/EC/250/231,Proposed Badger Tunnell Locations,ECOL,Drawing
+PD0285/EC/250/232,Proposed Badger Tunnell Locations,ECOL,Drawing
+PD0285/EC/250/233,Proposed Badger Tunnell Locations,ECOL,Drawing
+PD0285/EC/250/234,Proposed Badger Tunnell Locations,ECOL,Drawing
+PD0285/EC/250/235,Proposed Badger Tunnell Locations,ECOL,Drawing
+PD0285/EC/250/236,Proposed Badger Tunnell Locations,ECOL,Drawing
+PD0285/EC/250/237,Proposed Badger Tunnell Locations,ECOL,Drawing
+PD0285/EC/250/238,Proposed Badger Tunnell Locations,ECOL,Drawing
+PD0285/EC/250/239,Proposed Badger Tunnell Locations,ECOL,Drawing
+PD0285/EC/250/240,Proposed Badger Tunnell Locations,ECOL,Drawing
+PD0285/EC/250/241,Proposed Badger Tunnell Locations,ECOL,Drawing
+PD0285/EC/250/244,Glebe Cottages Bat Survey Results,ECOL,Drawing
+PD0825/EC/250/246,Squash Courts Bat Activity Survey Visit 1 - Dusk 9 June 2009,ECOL,Drawing
+PD0825/EC/250/247,Squash Courts Bat Activity Survey Visit 2 - Dusk 9 July 2009,ECOL,Drawing
+PD0825/EC/250/248,Squash Courts Bat Activity Survey Visit 3 - Dusk 10 July 2009,ECOL,Drawing
+PD0825/EC/250/250,Newton Gardens Bat Activity Survey Bulding 1,ECOL,Drawing
+PD0825/EC/250/251,Newton Gardens Bat Activity Survey Bulding 3 & 4,ECOL,Drawing
+PD0285/EC/2500/274,Temporary Bat Flight Locations Sheet 1 of 5,ECOL,Drawing
+PD0285/EC/2500/275,Temporary Bat Flight Locations Sheet 2 of 5,ECOL,Drawing
+PD0285/EC/2500/276,Temporary Bat Flight Locations Sheet 3 of 5,ECOL,Drawing
+PD0285/EC/2500/277,Temporary Bat Flight Locations Sheet 4 of 5,ECOL,Drawing
+PD0285/EC/2500/278,Temporary Bat Flight Locations Sheet 4 of 5,ECOL,Drawing
+PD0285/EC/1000/281,Squash Courts Location of Bat Mitigation,ECOL,Drawing
+PD0285/EC/100/290,NP Ecology Pond 4 Layout,ECOL,Drawing
+PD0285/EC/100/291,NP Ecology Pond 5,ECOL,Drawing
+PD0285/EC/125/292,Pond 7 Layout,ECOL,Drawing
+PD0285/EC/125/293,Pond 8 Layout,ECOL,Drawing
+PD0285/EC/100/294,NP Ecology Pond 6 Layout,ECOL,Drawing
+PD0285/EC/100/295,NP Ecology Pond 9,ECOL,Drawing
+PD0285/EC/250/296,Pond 10,ECOL,Drawing
+PD0285/EC/250/299,Pond 13,ECOL,Drawing
+PD0285/EC/250/300,NP Ecology Pond 12,ECOL,Drawing
+PD0285/EC/50000/306,Figure 1 Bat Roost Potential Survey - Fosse Farm,ECOL,Drawing
+PD0285/EC/500/307,NP Ecology Moor Lane Special Balancing Area,ECOL,Drawing
+PD2085/EC/500/308,Ponds 7 & 8 Layout,ECOL,Drawing
+PD0285/EC/000/312,Moisture Barrier  for NP Ecology Ponds 6-13,ECOL,Drawing
+PD0285/EC/2500/337,Figure 1 Location of Pond 11,ECOL,Drawing
+PD0285/EC/2500/338,Figure 2 Habitat Loss Associated with Roehoe Cluster,ECOL,Drawing
+PD0285/EC/200/339,"Figure 3 Initial Temporary Amphibian Layout (Stages 1, 2 & 3)",ECOL,Drawing
+PD0285/EC/1250/340,Figure 4 Final Temporary Amphbian Layout as submitted for EPSL,ECOL,Drawing
+PD0285/EC/00/341,Figure 5 Total Number of Amphibians Captured per day,ECOL,Drawing
+PD0285/EC/00/342,Figure 6 Cumulative Amphibian Captures,ECOL,Drawing
+PD0285/EC/1500/343,Bat Box Locations Borders Wood,ECOL,Drawing
+PD0285/EC/1000/344,Location of Sett #50 and Location of Entrances to be Closed,ECOL,Drawing
+PD0285/AR/001,Areas to be Surveyed,ARCH,Drawing
+PD0285/AR/002,Areas to be Surveyed,ARCH,Drawing
+PD0285/AR/003,Areas to be Surveyed,ARCH,Drawing
+PD0285/AR/004,Areas to be Surveyed,ARCH,Drawing
+PD0285/AR/2500/001,Areas 1 to 3 for Metal Detecting Survey,ARCH,Drawing
+PD0285/AR/2500/002,Areas 1 to 3 for Metal Detecting Survey,ARCH,Drawing
+PD0285/AR/2500/003,Areas 1 to 3 for Metal Detecting Survey,ARCH,Drawing
+PD0285/AR/5000/006,Location of Geophysical Survey - Alternative Pond Site,ARCH,Drawing
+PD0285/AR/5000/007,Location of Farndon Fields (Site 25) and Hawton Lane (Site 28) FCA-E Surface Artefact Collection Areas,ARCH,Drawing
+PD0285/AR/2500/012,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/013,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/014,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/015,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/016,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/017,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/018,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/019,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/020,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/021,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/022,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/023,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/024,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/025,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/026,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/027,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/028,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/029,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/030,Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/5000/035,"Figure 1 B7 Grantham Canal Bridge, Locks and Milestone",ARCH,Drawing
+PD0285/AR/5000/036,"Figure 1 B12 Outbuildings, High Thorpe Farm",ARCH,Drawing
+PD0285/AR/1000/037,"Figure 1 B16 Auxiliary Building and Cold War Pillbox, Newton Airfield",ARCH,Drawing
+PD0285/AR/1000/038,"Figure 1 B26 Wind Pump, Foss Farm",ARCH,Drawing
+PD0285/AR/1000/039,"Figure 1 B32 Squash Court, Syerston Airfield",ARCH,Drawing
+PD0285/AR/1000/040,"B7 Grantham Canal Bridge, Locks and Milestone",ARCH,Drawing
+PD0285/AR/125/041,"B12 Outbuildings, High Thorpe Farm Photo Locations",ARCH,Drawing
+PD0285/AR/200/042,"Figure 1 B16 Auxiliary Building and Cold War Pillbox, Newton Airfield Photo Locations",ARCH,Drawing
+PD0285/AR/200/043,"Figure 1 B26 Wind Pump, Foss Farm Photo Locations",ARCH,Drawing
+PD0285/AR/400/044,"Figure 1 B32 Squash Court, Syerston Airfield Photo Locations",ARCH,Drawing
+PD0285/AR/2500/051,Figure 1.1 Location of Geophysical Survey Site 6,ARCH,Drawing
+PD0285/AR/2500/052,Figure 1.2 Location of Geophysical Survey Site 28,ARCH,Drawing
+PD0285/AR/2500/077,,ARCH,Drawing
+PD0285/AR/2500/083,General Archaeological Watching Brief (RAF Newton Site Compound),ARCH,Drawing
+PD0285/AR/1000/084,Locations of Buildings to be Recorded,ARCH,Drawing
+PD0285/AR/1000/085,Locations of Buildings to be Recorded,ARCH,Drawing
+PD0285/AR/1000/086,Locations of Buildings to be Recorded,ARCH,Drawing
+PD0285/AR/2500/087,Figure 1.1 Location of Metal Detector Survey,ARCH,Drawing
+PD0285/AR/2500/100,Site Compound,ARCH,Drawing
+PD0285/AR/750/102,Archaeological Mitigation Works and Existing Utilities,ARCH,Drawing
+PD0285/AR/1000/120,Figure 1.1 Further Arcaheological Works,ARCH,Drawing
+PD0285/AR/1250/121,Figure 5 Phase 2 - Proposed Trial Trenching and Strip Map and Sample Areas,ARCH,Drawing
+PD0285/AR/5000/121,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/123,Figure 1.1 Areas of Completed Archarological Works,ARCH,Drawing
+PD0285/AR/1000/124,Figure 1.1 Further Arcaheological Works,ARCH,Drawing
+PD0285/AR/1000/125,Figure 1. Areas of completed archaeological works,ARCH,Drawing
+PD0285/AR/1000/126,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/1000/127,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/1000/128,Figure 1. Areas of completed archaeological works,ARCH,Drawing
+PD0285/AR/1000/129,Figure 1.1 Areas to be Surveyed,ARCH,Drawing
+PD0285/AR/1000/130,Figure 1.2 Areas to be Surveyed,ARCH,Drawing
+PD0285/AR/1000/131,Figure 1.3 Areas to be Surveyed,ARCH,Drawing
+PD0285/AR/1000/132,Figure 1.4 Areas to be Surveyed,ARCH,Drawing
+PD0285/AR/5000/133,Figure 1.1 Archaeological Trial Trenching and Detailed Excavation (Stragglehtorpe west),ARCH,Drawing
+PD0285/AR/2500/134,Figure 1.1 Further Archaelogical Works,ARCH,Drawing
+PD0285/AR/1250/135,Figure 3 Phase 1A - Test Pit Locations,ARCH,Drawing
+PD0285/AR/1250/136,Figure 4 Phase 1B - Proposed Targeted Test Pit and Trial Trenching Locations,ARCH,Drawing
+PD0285/AR/1000/138,Figure 1.1 Further Arcaheological Works,ARCH,Drawing
+PD0285/AR/1000/139,Figure 1.1 Further Arcaheological Works,ARCH,Drawing
+PD0285/AR/1000/140,Figure 1.1 Further Arcaheological Works,ARCH,Drawing
+PD0285/AR/1000/141,Figure 1.1 Further Arcaheological Works,ARCH,Drawing
+PD0285/AR/1000/142,Figure 1.1 Further Arcaheological Works,ARCH,Drawing
+PD0285/AR/1000/143,Figure 1.1 Further Arcaheological Works,ARCH,Drawing
+PD0285/AR/2500/144,Figure 1 Farndon Fields Location Plan,ARCH,Drawing
+PD0285/AR/2500/145,Figure 2 Previous Archaeological Investigations,ARCH,Drawing
+PD0285/AR/2500/146,Figure 1.1 Areas of Completed Archarological Works,ARCH,Drawing
+PD0285/AR/2500/148,Figure 1.1 Targeted Archaeological Watching Brief Area,ARCH,Drawing
+PD0285/AR/2000/149,Figure 1.1 Area to be subject to targeted archaeological watching brief during topsoil strip,ARCH,Drawing
+PD0285/AR/2500/150,Figure 1.1 Targeted Archaeological Watching Brief Area,ARCH,Drawing
+PD0825/AR/1000/151,Figure 1.1 Further Arcaheological Works,ARCH,Drawing
+PD0285/AR/5000/144,Figure 1.1 Areas of Completed Archarological Works,ARCH,Drawing
+PD0285/AR/5000/152,Figure 1.1 Areas of Completed Archarological Works,ARCH,Drawing
+PD0285/AR/5000/153,Figure 1.1 Areas of Completed Archarological Works,ARCH,Drawing
+PD0285/AR/1000/154,Figure 1.1 Further Arcaheological Works,ARCH,Drawing
+PD0285/AR/1000/155,Figure 1.1 Further Arcaheological Works,ARCH,Drawing
+PD0285/AR/5000/156,Figure 1.1 Areas of Completed Archarological Works,ARCH,Drawing
+PD0285/AR/5000/157,Figure 1.1 Areas of Completed Archarological Works,ARCH,Drawing
+PD0285/AR/2500/168,Figure 1.1 Targeted Archaeological Watching Brief Area,ARCH,Drawing
+PD0285/AR/1000/169,Figure 1.1 Further Arcaheological Works,ARCH,Drawing
+PD0825/AR/5000/171,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0825/AR/5000/172,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0825/AR/5000/173,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0825/AR/5000/174,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0825/AR/5000/175,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/1000/176,Figure 1 Further Archaeological Works,ARCH,Drawing
+PD0285/AR/1000/177,Figure 1 Further Archaeological Works,ARCH,Drawing
+PD0825/AR/5000/178,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0825/AR/1000/179,Figure 1 Location of Archaeological Trial Trenches,ARCH,Drawing
+PD0825/AR/1000/180,Figure 1 Design Change Between Chainage 21150-21300,ARCH,Drawing
+PD0285/AR/1000/182,Figure 1 Further Archaeological Works,ARCH,Drawing
+PD0285/AR/1000/184,Figure 1 Further Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/185,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/2000/188,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/1250/189,Figure 1 Location of Geotechnical Test Pits,ARCH,Drawing
+PD0285/AR/1000/192,Figure 1 Margidunum A Additional Intrusive Archaeological Mitigation,ARCH,Drawing
+PD0285/AR/5000/193,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/194,Figure 1 Further Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/195,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/196,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/197,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/198,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/199,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/200,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/1000/201,Figure 2 Margidunum A Additional Intrusive Archaeological Mitigation,ARCH,Drawing
+PD0285/AR/1250/202,Figure 1 Areas of Preervation in situ and retention of topsoil,ARCH,Drawing
+PD0285/AR/1000/204,Figure 1 Further Archaeological Works,ARCH,Drawing
+PD0285/AR/500/206,Figure 1 Further Archaeological Works,ARCH,Drawing
+PD0285/AR/500/208,Figure 1 Further Archaeological Works,ARCH,Drawing
+PD0285/AR/1250/209,Figure 3 Location of Final Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/1250/210,Figure 2 Location of Geotechnical Test Pits,ARCH,Drawing
+PD0285/AR/1250/211,"Figure 1 Locationof Test Pits (4x3 m), Cross culvert Trench and Areas of Wet-Seiving (1x10m)",ARCH,Drawing
+PD0285/AR/5000/212,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/213,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/214,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/215,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/500/220,Figure 1 Further Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/221,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/222,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/224,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/225,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/226,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/227,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/228,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/229,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/230,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/1000/233,Figure 1 Areas Subject to Archaeological Mitigation,ARCH,Drawing
+PD0285/AR/5000/235,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/1250/236,Figure 1 Location of 10 x 1 metre Trenches,ARCH,Drawing
+PD0285/AR/5000/237,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/1000/239,Figure 1 Design Change Chainage 9000,ARCH,Drawing
+PD0285/AR/1000/240,Figure 1 Design Change Flintham Estate Access and Drainage,ARCH,Drawing
+PD0285/AR/1000/241,Figure 2 Design Change Flintham Estate Access and Drainage,ARCH,Drawing
+PD0285/AR/1000/242,Figure 3 Design Change Flintham Estate Access and Drainage,ARCH,Drawing
+PD0285/AR/1000/243,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/244,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/245,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/247,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/248,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/249,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/2500/250,Figure 1.1 Location of Buildings Requiring Careful Dismantlin.,ARCH,Drawing
+PD0285/AR/5000/251,Figure 1 Archaeological Trial Trenching Stragglethopre East,ARCH,Drawing
+PD0285/AR/5000/252,Figure 1 Archaeological Trial Trenching Stragglethopre East,ARCH,Drawing
+PD0285/AR/5000/253,Figure 1 Archaeological Trial Trenching Stragglethopre East,ARCH,Drawing
+PD0285/AR/5000/254,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/255,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/2500/256,Figure 1 Areas for General Watching Brief (Sheet 1 of 6),ARCH,Drawing
+PD0285/AR/2500/257,Figure 1 Areas for General Watching Brief (Sheet 2 of 6),ARCH,Drawing
+PD0285/AR/2500/258,Figure 1 Areas for General Watching Brief (Sheet 3 of 6),ARCH,Drawing
+PD0285/AR/2500/259,Figure 1 Areas for General Watching Brief (Sheet 4 of 6),ARCH,Drawing
+PD0285/AR/2500/260,Figure 1 Areas for General Watching Brief (Sheet 5 of 6),ARCH,Drawing
+PD0285/AR/2500/261,Figure 1 Areas for General Watching Brief (Sheet 6 of 6),ARCH,Drawing
+PD0285/AR/500/266,Figure 1 Area for Detailed Excavation,ARCH,Drawing
+PD0285/AR/5000/275,Figure 1.1 Location of Topographical Survey Areas Sheet 1 of 4,ARCH,Drawing
+PD0285/AR/5000/276,Figure 1.2 Location of Topographical Survey Areas Sheet 2 of 4,ARCH,Drawing
+PD0285/AR/5000/277,Figure 1.3 Location of Topographical Survey Areas Sheet 3 of 4,ARCH,Drawing
+PD0285/AR/5000/278,Figure 1.4 Location of Topographical Survey Areas Sheet 4 of 4,ARCH,Drawing
+PD0285/AR/200/279,Figure 2 Area H1A,ARCH,Drawing
+PD0285/AR/200/280,Figure 3 Area H1B,ARCH,Drawing
+PD0285/AR/300/281,Figure 4 Area H5,ARCH,Drawing
+PD0285/AR/500/282,Figure 5 Area H6,ARCH,Drawing
+PD0285/AR/300/283,Figure 5.1 Area H6 Sheet 1 of 3,ARCH,Drawing
+PD0285/AR/300/284,Figure 5.2 Area H6 Sheet 2 of 3,ARCH,Drawing
+PD0285/AR/300/285,Figure 5.3 Area H6 Sheet 3 of 3,ARCH,Drawing
+PD0285/AR/250/286,Figure 6 Area H9,ARCH,Drawing
+PD0285/AR/250/287,Figure 8 Area H21,ARCH,Drawing
+PD0285/AR/250/288,Figure 9 Area H33,ARCH,Drawing
+PD0285/AR/300/289,Figure 10 Area H34,ARCH,Drawing
+PD0285/AR/250/290,Figure 11 Area H60,ARCH,Drawing
+PD0285/AR/300/291,Figure 13 Area H53/H62,ARCH,Drawing
+PD0285/AR/500/292,Figure 14 Area H65,ARCH,Drawing
+PD0285/AR/200/293,Figure 16 Area H74,ARCH,Drawing
+PD0285/AR/200/294,Figure 17 Area H106,ARCH,Drawing
+PD0285/AR/250/295,Figure 12 Area H127,ARCH,Drawing
+PD0285/AR/500/296,Figure 15 Area H137,ARCH,Drawing
+PD0285/AR/500/297,Figure 7 Area H140,ARCH,Drawing
+PD0285/AR/5000/298,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/299,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/5000/300,Figure 1 Areas of Completed Archaeological Works,ARCH,Drawing
+PD0285/AR/1250/301,Figure 1 Location of Pressure Sensors,ARCH,Drawing
+PD0285/AR/750/303,Figure 1 Archaeological Mitigation Works,ARCH,Drawing
+PD0285/AR/2500/305,Figure 1 Archaeological Works (Newfield Farm Access Tracks),ARCH,Drawing

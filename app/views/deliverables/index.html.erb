@@ -2,6 +2,15 @@
 	
   <div id="rc1h">
     <h1>Listing deliverables</h1>
+	
+	<% form_tag request.path, :method => 'get' do %>
+	  <% content_tag :label do %>
+	    Search term:
+	    <%= text_field_tag :search, params[:search] %>
+	  <% end %>
+	<%= submit_tag 'Search' %>
+	<% end %>
+
     <div id="rc1l">
       <%= link_to 'New deliverable', new_deliverable_path %>
       <!-- <%#= link_to_remote "New Deliverable", 
@@ -10,7 +19,8 @@
     </div>
   </div>
 	
-  <div id="rc1c">
+  <div id="rc1c"><br>
+	<%= will_paginate @deliverables %><br>
 	<table>
 	  <tr>
 	    <th>Number</th>
@@ -25,7 +35,8 @@
 	    <td><%= link_to 'Destroy', deliverable, :confirm => 'Are you sure?', :method => :delete %></td>
 	  </tr>
 	  <% end %>
-	</table>
+	</table><br>
+	<%= will_paginate @deliverables %><br>
   </div>
 
   </div>

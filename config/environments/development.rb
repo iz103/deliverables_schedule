@@ -14,6 +14,7 @@ config.action_view.debug_rjs                         = true
 config.action_controller.perform_caching             = false
 config.gem "acts-as-taggable-on", :source => "http://gemcutter.org", :version => '2.0.0.rc1'
 config.gem "fastercsv", :version => '1.5.4'
+config.gem 'will_paginate', :version => '~> 2.3.15', :source => 'http://gemcutter.org'
 
 # Don't care if the mailer can't send
 config.action_mailer.raise_delivery_errors = false

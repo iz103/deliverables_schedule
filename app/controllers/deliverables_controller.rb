@@ -4,7 +4,9 @@ class DeliverablesController < ApplicationController
   # GET /deliverables.xml
   def index
     # flash[:notice] = "logged in"  # TODO remove this after fixing cucumber 
-    @deliverables = Deliverable.all
+    # @deliverables = Deliverable.all
+    # @deliverables = Deliverable.paginate :page => params[:page]  # , :order => 'number'
+    @deliverables = Deliverable.search(params[:search], params[:page])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @deliverables }
@@ -95,4 +97,16 @@ class DeliverablesController < ApplicationController
       format.xml  # { render :xml => @deliverables }
     end
   end
+  
+  # require 'FasterCSV'
+  # require 'pp'
+  # csv = FasterCSV.read("deliverables.csv", :headers => true)
+  # pp csv
+  # csv.each do |row|
+    # Deliverable.create(:number => row['number'], :title => row['title'], :discipline_list => row ['tag1'], 
+    #                   :document_type_list => row['tag2'], :tag_list => "#{row['tag3']}, #{row['tag4']}")
+    #                 end
+  
+  
+  
 end
