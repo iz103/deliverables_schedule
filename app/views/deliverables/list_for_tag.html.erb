@@ -1,7 +1,15 @@
-<% @deliverables.each do |deliverable| %>
+<table>
+  <tr>
+    <th>Number</th>
+    <th>Title</th>
+  </tr>
+  <% @deliverables.each do |deliverable| %>
   <tr>
     <td><%=h deliverable.number %></td>
     <td><%=h deliverable.title %></td>
     <td><%= link_to 'Show', deliverable %></td>
+    <td><%= link_to 'Edit', edit_deliverable_path(deliverable) %></td>
+    <td><%= link_to 'Destroy', deliverable, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
-<%end %>
+  <% end %>
+</table><br>

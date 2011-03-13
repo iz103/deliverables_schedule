@@ -98,13 +98,14 @@ class DeliverablesController < ApplicationController
     end
   end
   
+  
+  # this is for uploading and parsing csv file
   # require 'FasterCSV'
   # require 'pp'
   # csv = FasterCSV.read("deliverables.csv", :headers => true)
   # pp csv
-  # csv.each do |row|
-  #   Deliverable.create(:number => row['number'], :title => row['title'], :discipline_list => row ['tag1'], :document_type_list => row['tag2'], :tag_list => "#{row['tag3']}, #{row['tag4']}")
-  #                   end
+  # csv.each {|row| Deliverable.create(:number => row['number'], :title => row['title'], :discipline_list => row ['tag1'], :document_type_list => row['tag2'], :tag_list => "#{row['tag3']}, #{row['tag4']}")}
+  #                   # end
   
   
   
