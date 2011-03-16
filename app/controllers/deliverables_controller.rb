@@ -92,12 +92,27 @@ class DeliverablesController < ApplicationController
     @tags = Tag.all
     @tag = Tag.find(params[:id])
     @deliverables = Deliverable.tagged_with(@tag)
+    
+    @deliveries = []
+    # @deliverables = Deliverable.tagged_with(@tag)
+    @deliverables.each do |deliverable|
+      @deliveries_for_deliverable = deliverable.deliveries(:order => "planned_date")
+      @deliveries_for_deliverable.each do |delivery|
+        @deliveries << delivery
+        end
+      end
+      @deliveries
+                  
     respond_to do |format|
       format.html
       format.xml  # { render :xml => @deliverables }
     end
   end
   
+  # def list_deliveries_for_tag
+  # 
+  # all_deliveries
+  # end
   
   # this is for uploading and parsing csv file
   # require 'FasterCSV'
@@ -109,8 +124,8 @@ class DeliverablesController < ApplicationController
   
   
   # require 'pp'
-  # csv = FasterCSV.read("A.csv", :headers => true)
+  # csv = FasterCSV.read("B.csv", :headers => true)
   # pp csv
-  # csv.each {|row| Delivery.create(:deliverable_id => row['ID'], :planned_date => row['A'], :status_id => "3")}
+  # csv.each {|row| Delivery.create(:deliverable_id => row['ID'], :planned_date => row['B'], :status_id => "3")}
   
 end

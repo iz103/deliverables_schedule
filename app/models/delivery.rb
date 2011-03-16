@@ -5,8 +5,8 @@ class Delivery < ActiveRecord::Base
   # validates_format_of :planned_date, :with => /^[0-9]{2}+$/, :on => :create, :message => "is invalid"
   
 
-  def self.planned_date_count
-    deliveries = Delivery.all(:order => "planned_date")
+  def self.planned_date_count(deliveries)
+    # deliveries = Delivery.all(:order => "planned_date")
     dates = []
     counts = Hash.new(0)
     # cumulative = Hash.new(0)
@@ -25,9 +25,9 @@ class Delivery < ActiveRecord::Base
                     
   end
   
- def self.actual_date_count
+ def self.actual_date_count(deliveries)
    
-   deliveries = Delivery.all(:order => "actual_date")
+   # deliveries = Delivery.all(:order => "actual_date")
    counts = Hash.new(0)
    deliveries.each do |delivery|
      unless delivery.actual_date == nil
@@ -46,8 +46,8 @@ class Delivery < ActiveRecord::Base
    
  end
   
-def self.overdue
-  deliveries = Delivery.all
+def self.overdue(deliveries)
+  # deliveries = Delivery.all
   overdue =[]
   deliveries.each do |delivery|
     if delivery.actual_date == nil and delivery.planned_date < Date.today
@@ -59,8 +59,8 @@ end
 
 
 
-def self.late
-  deliveries = Delivery.all
+def self.late(deliveries)
+  # deliveries = Delivery.all
   late =[]
   deliveries.each do |delivery|
     if delivery.actual_date != nil and delivery.actual_date > delivery.planned_date
@@ -70,8 +70,8 @@ def self.late
     late
 end
 
-def self.early
-  deliveries = Delivery.all
+def self.early(deliveries)
+  # deliveries = Delivery.all
   early = []
   deliveries.each do |delivery|
     if delivery.actual_date != nil and delivery.actual_date < delivery.planned_date
@@ -81,8 +81,8 @@ def self.early
   early
 end
 
-def self.due_today
-  deliveries = Delivery.all
+def self.due_today(deliveries)
+  # deliveries = Delivery.all
   due =[]
   deliveries.each do |delivery|
     if delivery.planned_date == Date.today
@@ -92,8 +92,8 @@ def self.due_today
     due    
 end
 
-def self.due_in_next_week
-  deliveries = Delivery.all
+def self.due_in_next_week(deliveries)
+  # deliveries = Delivery.all
   due =[]
   deliveries.each do |delivery|
     if delivery.planned_date <= Date.today+1.week and delivery.planned_date > Date.today
@@ -104,8 +104,8 @@ def self.due_in_next_week
   
 end
 
-def self.due_in_next_two_weeks
-  deliveries = Delivery.all
+def self.due_in_next_two_weeks(deliveries)
+  # deliveries = Delivery.all
   due =[]
   deliveries.each do |delivery|
     if delivery.planned_date <= Date.today+2.weeks and delivery.planned_date > Date.today
@@ -115,8 +115,8 @@ def self.due_in_next_two_weeks
     due 
 end
 
-def self.due_tomorrow
-  deliveries = Delivery.all
+def self.due_tomorrow(deliveries)
+  # deliveries = Delivery.all
   due =[]
   deliveries.each do |delivery|
     if delivery.planned_date == Date.tomorrow
@@ -126,8 +126,8 @@ def self.due_tomorrow
     due
 end
          
-def self.complete
-  deliveries = Delivery.all
+def self.complete(deliveries)
+  # deliveries = Delivery.all
   complete_deliveries = []
   deliveries.each do |delivery|
     if delivery.actual_date?
@@ -139,18 +139,18 @@ def self.complete
   
 end
 
-def self.bsb
-  if Delivery.overdue.count > 0 or Delivery.due_today.count > 0 
-     bsb = Delivery.overdue.count + Delivery.due_today.count
+def self.bsb(deliveries)
+  if Delivery.overdue(deliveries).count > 0 or Delivery.due_today(deliveries).count > 0 
+     bsb = Delivery.overdue(deliveries).count + Delivery.due_today(deliveries).count
   else
     puts 0
   end
   bsb
 end
 
-def self.percentage_complete
+def self.percentage_complete(deliveries)
 
-  complete_percentage = (Delivery.complete / Delivery.all.count.to_f)*100
+  complete_percentage = (Delivery.complete(deliveries) / Delivery.all.count.to_f)*100
 
 end
 

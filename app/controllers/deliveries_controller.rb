@@ -3,7 +3,7 @@ class DeliveriesController < ApplicationController
   
   def index
     unless params[:deliverable_id]
-      @deliveries = Delivery.all
+      @deliveries = Delivery.all(:order => "planned_date")
       @text = "All deliverables"
     else
     # @cumulative = Delivery.planned_date_count

@@ -1,8 +1,9 @@
 <div id="placeholder" style = "width:950px; height:500px"> </div>
 <script type="text/javascript" charset="utf-8">
 
-var array = <%=h array_or_string_for_javascript(Delivery.planned_date_count) %>;
-var array2 = <%=h array_or_string_for_javascript(Delivery.actual_date_count) %>;
+<% deliveries = @deliveries %>
+var array = <%=h array_or_string_for_javascript(Delivery.planned_date_count(deliveries)) %>;
+var array2 = <%=h array_or_string_for_javascript(Delivery.actual_date_count(deliveries)) %>;
 var cumulativeArray =  toMultiDimensionalArray(array, 2);
 var cumulativeArray2 =  toMultiDimensionalArray(array2, 2);
 var options = {
@@ -16,7 +17,7 @@ var options = {
 		timeformat: "%b%y",
 		min:1291161600000,
 		max:1354320000000,
-		ticks: 12	
+		ticks: 12
 	},
 
 	yaxis: {
