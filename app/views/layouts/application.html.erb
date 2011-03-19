@@ -29,11 +29,12 @@
 	  <div id="left-column">
   	  <div id="left-menu">
 	      <div id="left-menu-header">
-		  Tags
+		  <h3>Dashboards</h3>
 	      </div>
 	      <div id="left-menu-list">
 		    <%#= render :partial => "tag_cloud" %>
-		
+		  <div id="left-menu-list-tags">
+			<h4>Tags</h4>
 		    <ul>
 			  <% Deliverable.discipline_counts.each do |tag| %>
 			    <li><%=h link_to tag.name, :controller => "deliverables", :action => "list_for_tag", :id => tag.id %></li>
@@ -44,8 +45,17 @@
 		      		  	    <li><%#=h link_to tag.name, :controller => "deliverables", :action => "list_for_tag", :id => tag.id %></li>
 		      		              <!-- TODO figure out how to link to this through the restful path -->
 		      		      <%# end %> -->
-		
 		    </ul>
+		  </div>
+		  <div id="left-menu-list-statuses">
+			<h4>Statuses</h4>
+		    <ul>
+			  <% Status.all.each do |status|%>
+			  <li><%= link_to status.name, :controller => "statuses", :action => "list_for_status", :id => status.id %></li>
+			  <% end %>
+			</ul>	
+		  </div>
+
 	      </div>
   	  </div>
     </div>

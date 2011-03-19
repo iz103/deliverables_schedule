@@ -4,7 +4,7 @@ ActionController::Routing::Routes.draw do |map|
     deliverable.resources :deliveries, :collection => { :complete => :put }
   end
 
-  map.resources :statuses
+  map.resources :statuses, :collection => { :list_for_status => :get }
   map.resources :users
   
   

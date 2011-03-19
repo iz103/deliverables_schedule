@@ -128,4 +128,6 @@ class DeliverablesController < ApplicationController
   # pp csv
   # csv.each {|row| Delivery.create(:deliverable_id => row['ID'], :planned_date => row['B'], :status_id => "3")}
   
+  # csv.each {|row| Delivery.update_all(["actual_date=?", row['AB1_Actual']], :id => row['ID'])}
+  
 end

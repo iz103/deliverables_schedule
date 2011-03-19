@@ -26,4 +26,19 @@ class StatusesController < ApplicationController
     end
   end
 
+  def list_for_status
+    @status = Status.find(params[:id])
+    @deliveries = []
+    @deliveries_for_status = @status.deliveries(:order => "planned_date")
+    @deliveries_for_status.each do |delivery|
+      @deliveries << delivery
+    end
+    @deliveries   
+    respond_to do |format|
+      format.html
+      format.xml  # { render :xml => @deliverables }
+    end
+  end
+
+
 end
