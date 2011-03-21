@@ -21,6 +21,7 @@ class DeliverablesController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @deliverable }
+      # format.js
     end
   end
 

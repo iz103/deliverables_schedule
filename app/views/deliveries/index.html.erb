@@ -24,31 +24,10 @@
 	  <p>There are no deliveries for this deliverable</p>
 	<% else %>
 	  <% if params[:deliverable_id] %>
-	    <table id ="ddtable">
-	    <tr><th>Status</th><th>Planned Date</th><th>Progress</th></tr>
-   
-	   <% form_tag complete_deliverable_deliveries_path, :method => :put do %>
-
-	      <% @deliveries.each do |delivery|%>
-	  	    <tr><td><%=h delivery.status.name %></td><td><%=h delivery.planned_date.to_date %>
-		    </td><td><% if delivery.actual_date? %> 
-			           Complete <%= check_box_tag "deliveries_ids[]", delivery.id %>
-			         <% else %> 
-			           Not Complete <%= check_box_tag "deliveries_ids[]", delivery.id %>
-	             <% end %>
-                 <%= link_to "Edit", edit_deliverable_delivery_path(:id => delivery.id, :deliverable_id => @deliverable.id)%>
-	             <% end %></td></tr>
-	           <%= submit_tag "Complete" %><%= submit_tag "Incomplete" %><%= submit_tag "Delete" %>
-	        <% end %>
-	      </table>
+	    <%= render :partial => "deliveries" %>
+	    
 	  <% end %>
 	<% end %>
 <% end %>
 
 
-<%= if params[:deliverable_id]
-	  link_to 'back', deliverable_path(@deliverable)
-	end %>
-<%= if params[:deliverable_id]
-	  link_to 'New delivery', new_deliverable_delivery_path(:deliverable_id => @deliverable)
-	end %>

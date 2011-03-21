@@ -111,10 +111,22 @@ a:hover { color: #fff; background-color:#000; }
 #session-links {
 	color: white;
 	font-weight: bold;
+	float: right;
 	
 }
 
+
 #session-links a:visited {
+	color: white;
+}
+
+#tab-links {
+	color: white;
+	font-weight: bold;
+	
+}
+
+#tab-links a:visited {
 	color: white;
 }
 

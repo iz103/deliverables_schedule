@@ -15,15 +15,16 @@
   <div id="header">
 	Deliverables Schedule - Welcome
 	<p>
-	<div id="tab-links">
-	  
-	</div>
-	<div id="session-links">
-		  <%= link_to "Edit Profile", edit_user_path (:current)%>
+	  <div id="session-links">
+		  <%= link_to "Account", edit_user_path (:current)%>
 		  <%= link_to "Logout", logout_path %>
-		  <%= link_to "Deliverables", deliverables_path %>
-		  <%= link_to "Deliveries Dashboard", deliveries_path %>
-	</div>
+		  <% if can? :create, User  %><%= link_to "users", users_path %><% end %>
+	  </div>
+	  <div id="tab-links">
+	    <%= link_to "Deliverables", deliverables_path %>
+	  	<%= link_to "Deliveries Dashboard", deliveries_path %>	
+	  </div>
+
   </div>
   <div id="container">
 	  <div id="left-column">

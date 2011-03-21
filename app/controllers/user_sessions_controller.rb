@@ -8,7 +8,7 @@ class UserSessionsController < ApplicationController
     @user_session = UserSession.new(params[:user_session])
     if @user_session.save
       flash[:notice] = "logged in"
-      redirect_to deliverables_url
+      redirect_to deliveries_url
     else
       render :action => 'new'
     end

@@ -1,0 +1,34 @@
+<%# if params[:deliverable_id] %>
+<table id ="ddtable">
+<tr><th>Status</th>
+<th>Planned Date</th>
+<% unless [:deliverable_id] %><th>Deliverable</th><%end%>
+<th>Progress</th></tr>
+
+<% form_tag complete_deliverable_deliveries_path, :method => :put do %>
+
+  <% @deliveries.each do |delivery|%>
+    <tr><td><%=h delivery.status.name %></td>
+	<td><%=h delivery.planned_date.to_date %></td>
+	<% unless [:deliverable_id] %><td><%=h Deliverable.find(@delivery.deliverable_id).number
+	%></td><% end %>
+       <td><% if delivery.actual_date? %> 
+	           Complete <% if can? :edit, Delivery  %><%= check_box_tag "deliveries_ids[]", delivery.id %><%end %>
+	       <% else %> 
+	           Not Complete <% if can? :edit, Delivery  %><%= check_box_tag "deliveries_ids[]", delivery.id %><%end %>
+           <% end %>
+           <% if can? :edit, Delivery  %>
+           <%= link_to "Edit", edit_deliverable_delivery_path(:id => delivery.id, :deliverable_id => @deliverable.id)%>
+           <% end %>
+         <% end %></td></tr>
+       <% if can? :edit, Delivery  %><%= submit_tag "Complete" %><%= submit_tag "Incomplete" %><%= submit_tag "Delete" %><% end %>
+    <% end %>
+  </table>
+<%# end %>
+
+<%= if params[:deliverable_id]
+	  link_to 'back', deliverable_path(@deliverable)
+	end %>
+<% if params[:deliverable_id]%>
+	  <% if can? :create, Delivery  %><%= link_to 'New delivery', new_deliverable_delivery_path(:deliverable_id => @deliverable)  %><% end %>
+<% end %>

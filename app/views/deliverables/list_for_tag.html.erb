@@ -62,8 +62,8 @@ $(function (){
     <td><%=h deliverable.number %></td>
     <td><%=h deliverable.title %></td>
     <td><%= link_to 'Show', deliverable %></td>
-    <td><%= link_to 'Edit', edit_deliverable_path(deliverable) %></td>
-    <td><%= link_to 'Destroy', deliverable, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% if can? :edit, Deliverable  %><td><%= link_to 'Edit', edit_deliverable_path(deliverable) %></td><% end %>
+    <% if can? :destroy, Deliverable  %><td><%= link_to 'Destroy', deliverable, :confirm => 'Are you sure?', :method => :delete %></td><% end %>
   </tr>
   <% end %>
 </table><br>

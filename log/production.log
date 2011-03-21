@@ -1717,3 +1717,95 @@ Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-08 21:23:05) [G
 Rendering template within layouts/application
 Rendering deliverables/show
 Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-21 20:54:47) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 38ms (View: 16, DB: 14) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-21 20:54:48) [GET]
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 27ms (View: 19, DB: 1) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-21 20:54:52) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"iziz", "password"=>"iziziz"}, "authenticity_token"=>"xirs8kAUxVymKbQpsSHxBVvz3da799AP3VQYl7YFGeo="}
+Redirected to http://localhost:3000/deliveries
+Completed in 370ms (DB: 1) | 302 Found [http://localhost/user_sessions]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-21 20:54:53) [GET]
+Rendering template within layouts/application
+Rendering deliveries/index
+Completed in 142ms (View: 104, DB: 23) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-21 20:54:59) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 43ms (View: 26, DB: 2) | 200 OK [http://localhost/deliverables]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-21 20:55:03) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 34ms (View: 24, DB: 2) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-21 20:55:04) [GET]
+  Parameters: {"deliverable_id"=>"1"}
+Rendering template within layouts/application
+Rendering deliveries/index
+Completed in 37ms (View: 27, DB: 3) | 200 OK [http://localhost/deliverables/1/deliveries]
+
+
+Processing DeliverablesController#show (for 127.0.0.1 at 2011-03-21 20:55:07) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering deliverables/show
+Completed in 31ms (View: 21, DB: 2) | 200 OK [http://localhost/deliverables/1]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-21 20:55:08) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 26ms (View: 16, DB: 2) | 200 OK [http://localhost/deliverables]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-03-21 21:10:43) [GET]
+Redirected to http://localhost:3000/
+Completed in 299ms (DB: 43) | 302 Found [http://localhost/logout]
+
+
+Processing HomepageController#index (for 127.0.0.1 at 2011-03-21 21:10:44) [GET]
+Rendering template within layouts/homepage
+Rendering homepage/index
+Completed in 57ms (View: 56, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-21 21:10:45) [GET]
+Rendering template within layouts/homepage
+Rendering user_sessions/new
+Completed in 119ms (View: 118, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-21 21:10:48) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"iziz", "password"=>"iziziz"}, "authenticity_token"=>"xirs8kAUxVymKbQpsSHxBVvz3da799AP3VQYl7YFGeo="}
+Redirected to http://localhost:3000/deliveries
+Completed in 43ms (DB: 1) | 302 Found [http://localhost/user_sessions]
+
+
+Processing DeliveriesController#index (for 127.0.0.1 at 2011-03-21 21:10:48) [GET]
+Rendering template within layouts/application
+Rendering deliveries/index
+Completed in 975ms (View: 882, DB: 30) | 200 OK [http://localhost/deliveries]
+
+
+Processing DeliverablesController#index (for 127.0.0.1 at 2011-03-21 21:10:54) [GET]
+Rendering template within layouts/application
+Rendering deliverables/index
+Completed in 33ms (View: 23, DB: 2) | 200 OK [http://localhost/deliverables]

@@ -12,7 +12,7 @@
 	<% end %>
 
     <div id="rc1l">
-      <%= link_to 'New deliverable', new_deliverable_path %>
+      <% if can? :create, Deliverable  %><%= link_to 'New deliverable', new_deliverable_path %><% end %>
       <!-- <%#= link_to_remote "New Deliverable", 
                :url => { :action => "show", :id => Deliverable.id },
                :update => "right-column-2"%> -->
@@ -30,9 +30,13 @@
 	  <tr>
 	    <td><%=h deliverable.number %></td>
 	    <td><%=h deliverable.title %></td>
-	    <td><%= link_to 'Show', deliverable %></td>
-	    <td><%= link_to 'Edit', edit_deliverable_path(deliverable) %></td>
-	    <td><%= link_to 'Destroy', deliverable, :confirm => 'Are you sure?', :method => :delete %></td>
+	    <td id="lt-deliverable"><%= link_to 'Show', deliverable %></td>
+	    <% if can? :edit, Deliverable  %>
+	      <td><%= link_to 'Edit', edit_deliverable_path(deliverable) %></td>
+	    <% end %>
+	    <% if can? :destroy, Deliverable  %>
+	      <td><%= link_to 'Destroy', deliverable, :confirm => 'Are you sure?', :method => :delete %></td>
+	    <% end %>
 	  </tr>
 	  <% end %>
 	</table><br>
