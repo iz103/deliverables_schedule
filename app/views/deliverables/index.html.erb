@@ -26,19 +26,24 @@
 	    <th>Number</th>
 	    <th>Title</th>
 	  </tr>
-	  <% @deliverables.each do |deliverable| %>
-	  <tr>
-	    <td><%=h deliverable.number %></td>
-	    <td><%=h deliverable.title %></td>
-	    <td id="lt-deliverable"><%= link_to 'Show', deliverable %></td>
-	    <% if can? :edit, Deliverable  %>
-	      <td><%= link_to 'Edit', edit_deliverable_path(deliverable) %></td>
+	 <% form_tag manage_deliverables_path, :method => :put do %>
+
+	    <% @deliverables.each do |deliverable| %>
+	    <tr>
+		  <% if can? :destroy, Deliverable  %><td><%= check_box_tag "deliverables_ids[]", deliverable.id %></td><% end %>
+	      <td><%=h deliverable.number %></td>
+	      <td><%=h deliverable.title %></td>
+	      <td id="lt-deliverable"><%= link_to 'Show', deliverable %></td>
+	      <% if can? :edit, Deliverable  %>
+	        <td><%= link_to 'Edit', edit_deliverable_path(deliverable) %></td>
+	      <% end %>
+	      <% if can? :destroy, Deliverable  %>
+	        <td><%= link_to 'Destroy', deliverable, :confirm => 'Are you sure?', :method => :delete %></td>
+	      <% end %>
+	    </tr>
 	    <% end %>
-	    <% if can? :destroy, Deliverable  %>
-	      <td><%= link_to 'Destroy', deliverable, :confirm => 'Are you sure?', :method => :delete %></td>
-	    <% end %>
-	  </tr>
-	  <% end %>
+	    <% if can? :destroy, Deliverable  %><%= submit_tag "Delete" %><% end %>
+	 <% end %>
 	</table><br>
 	<%= will_paginate @deliverables %><br>
   </div>

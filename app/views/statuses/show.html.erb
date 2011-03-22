@@ -6,5 +6,5 @@
 </div>
 
 <%= link_to "back", statuses_path %>
-<%= link_to "edit", edit_status_path(@status) %>
+<% if can? :edit, Status  %><%= link_to "edit", edit_status_path(@status) %><% end %>
 

@@ -110,6 +110,13 @@ class DeliverablesController < ApplicationController
     end
   end
   
+  def manage
+    if params[:commit] == "Delete"
+      Deliverable.destroy_all(:id => params[:deliverables_ids])
+    end
+    redirect_to deliverables_path
+  end
+  
   # def list_deliveries_for_tag
   # 
   # all_deliveries

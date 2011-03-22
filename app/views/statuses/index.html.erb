@@ -5,7 +5,7 @@
 	<tr><td><%=status.position %></td>
 	    <td><%= status.name %></td>
 	    <td><%= link_to "Details", status_path(status) %></td>
-	    <td><%= link_to "edit", edit_status_path(status) %></td>
+	    <% if can? :edit, Status  %><td><%= link_to "edit", edit_status_path(status) %></td><% end %>
 	</tr>
 	<% end %>
 </table>

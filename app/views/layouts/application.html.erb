@@ -49,9 +49,9 @@
 		    </ul>
 		  </div>
 		  <div id="left-menu-list-statuses">
-			<h4>Statuses</h4>
+			<h4>Statuses</h4><%= link_to "details", statuses_path %>
 		    <ul>
-			  <% Status.all.each do |status|%>
+			  <% Status.all(:order => "position").each do |status|%>
 			  <li><%= link_to status.name, :controller => "statuses", :action => "list_for_status", :id => status.id %></li>
 			  <% end %>
 			</ul>	

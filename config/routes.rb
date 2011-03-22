@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :deliveries, :only => [:index]
-  map.resources :deliverables, :collection => { :list_for_tag => :get } do |deliverable|    # , :shallow => :true 
+  map.resources :deliverables, :collection => { :list_for_tag => :get, :manage => :put } do |deliverable|    # , :shallow => :true 
     deliverable.resources :deliveries, :collection => { :complete => :put }
   end
 
