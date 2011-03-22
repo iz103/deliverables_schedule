@@ -1,7 +1,10 @@
 <%= flash[:notice] %>
 
-<h1><%=h(@status.name)%>Status</h1>
+<h2><%=h(@status.name)%>Status</h2>
 <div>
 	<%= @status.description %>
 </div>
+
+<%= link_to "back", statuses_path %>
+<%= link_to "edit", edit_status_path(@status) %>
 

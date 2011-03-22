@@ -25,6 +25,20 @@ class StatusesController < ApplicationController
       end
     end
   end
+  
+  def edit
+    @status = Status.find(params[:id])
+  end
+  
+  def update
+     @status = Status.find(params[:id])
+     if @status.update_attributes(params[:status])
+       redirect_to statuses_path, :notice => 'Status was successfully updated.'
+     else
+       redirect_to status_path(@status), :notice => 'Status could not be updated'
+     end
+     
+  end
 
   def list_for_status
     @status = Status.find(params[:id])

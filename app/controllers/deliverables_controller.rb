@@ -125,9 +125,13 @@ class DeliverablesController < ApplicationController
   
   
   # require 'pp'
-  # csv = FasterCSV.read("B.csv", :headers => true)
+  # csv = FasterCSV.read("AB7.csv", :headers => true)
   # pp csv
-  # csv.each {|row| Delivery.create(:deliverable_id => row['ID'], :planned_date => row['B'], :status_id => "3")}
+  # csv.each {|row| Delivery.create(:deliverable_id => row['ID'], :planned_date => row['AB7'], :status_id => "8")}
+  
+  
+  
+  
   
   # csv.each {|row| Delivery.update_all(["actual_date=?", row['AB1_Actual']], :id => row['ID'])}
   
