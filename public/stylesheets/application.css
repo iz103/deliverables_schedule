@@ -80,6 +80,8 @@ a:hover { color: #fff; background-color:#000; }
 
 /* @end */
 
+
+
 #left-column {
 	float: left;
 	background-color: #F7F5F5;
@@ -129,6 +131,13 @@ a:hover { color: #fff; background-color:#000; }
 #tab-links a:visited {
 	color: white;
 }
+
+
+
+/*--------------Left Menu------------------*/
+/*#left-menu-list-tags {
+	font-size: 1em;
+}*/
 
 
 /*-------------------Login Form-------------------*/
