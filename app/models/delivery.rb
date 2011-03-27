@@ -6,7 +6,7 @@ class Delivery < ActiveRecord::Base
   
   def self.search(search, page)
     paginate :per_page => 100, :page => page,
-             :conditions => ['planned_date like ?', "%#{search}%"]  # , :order => 'number'
+             :conditions => ['deliverable_id like ?', "%#{search}%"]  # , :order => 'number'
   end
   
   #based on http://stackoverflow.com/questions/5434326/a-question-about-will-paginates-with-multiple-conditions
