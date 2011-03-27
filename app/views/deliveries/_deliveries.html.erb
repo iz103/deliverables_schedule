@@ -1,17 +1,17 @@
 </br>
-<% unless params[:deliverable_id] %>
-  <% form_tag request.path, :method => 'get' do %>
-    <% content_tag :label do %>
-      Search term:
-      <%= text_field_tag :search, params[:search] %>
+<%# unless params[:deliverable_id] %>
+  <%# form_tag request.path, :method => 'get' do %>
+    <%# content_tag :label do %>
+      <!-- Search term: -->
+      <%#= text_field_tag :search, params[:search] %>
       <%#= text_field_tag :search, params[:discipline_list] %><%#= text_field_tag :search, params[:tag_list] %>
-    <% end %>
-  <%= submit_tag 'Search' %>
-<% end %>
+    <%#end %>
+  <%#= submit_tag 'Search' %>
+<%# end %>
 
 
   <%= will_paginate @deliveries %><br>
-<% end %>
+<%# end %>
 <fieldset>
 <table id ="ddtable">
 <tr>

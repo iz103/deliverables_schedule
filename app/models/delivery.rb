@@ -5,8 +5,8 @@ class Delivery < ActiveRecord::Base
   # validates_format_of :planned_date, :with => /^[0-9]{2}+$/, :on => :create, :message => "is invalid"
   
   def self.search(search, page)
-    paginate :per_page => 100, :page => page,
-             :conditions => ['planned_date like ?', "%#{search}%"]  # , :order => 'number'
+    paginate :per_page => 100, :page => page # ,
+             # :conditions => ['planned_date like ?', "%#{search}%"]  # , :order => 'number'
   end
   
   #based on http://stackoverflow.com/questions/5434326/a-question-about-will-paginates-with-multiple-conditions
