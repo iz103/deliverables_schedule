@@ -60,7 +60,7 @@ a:hover { color: #fff; background-color:#000; }
 
 
 
-/*------------------*/
+/*--------Layout----------*/
 
 #header {
 	background-color: #35579C;
@@ -72,6 +72,10 @@ a:hover { color: #fff; background-color:#000; }
 #container {
 	background-color: #DCDCE6;
 	
+}
+
+#graph {
+	clear: both;
 }
 
 /* @group My Group */
@@ -105,6 +109,21 @@ a:hover { color: #fff; background-color:#000; }
 	margin-bottom: 1%;
 }
 
+#right-column-1 {
+	float: left;
+	margin-left: 1%;
+}
+
+#right-column-2 {
+	
+	float: left;
+	margin-left:1%;
+	margin-right: 5%;
+	margin-top: 75px;
+	border-style: solid;
+	border-color: silver;
+}
+
 #footer {
 	background-color: #ff7900;
 	clear: both;
@@ -132,6 +151,12 @@ a:hover { color: #fff; background-color:#000; }
 	color: white;
 }
 
+
+/*-----------------Table----------------------*/
+/*.table-data {
+	margin-left: 10px;
+	margin-right: 10px;
+}*/
 
 
 /*--------------Left Menu------------------*/

@@ -3,7 +3,9 @@ class DeliveriesController < ApplicationController
   
   def index
     unless params[:deliverable_id]
-      @deliveries = Delivery.all(:order => "planned_date")
+      @chart_deliveries = Delivery.all(:order => "planned_date")
+      @deliveries = Delivery.search(params[:search], params[:page])
+      # @deliveries = Delivery.search(params[:discipline_list], params[:tag_list], params[:page])
       @text = "All deliverables"
     else
     # @cumulative = Delivery.planned_date_count
@@ -113,7 +115,11 @@ def complete
     Delivery.destroy_all(:id => params[:deliveries_ids])
   end
   
-  redirect_to deliverable_deliveries_path
+  if params[:deliverable_id]
+    redirect_to deliverable_deliveries_path
+  else 
+    redirect_to deliveries_path
+  end
   
 end
 

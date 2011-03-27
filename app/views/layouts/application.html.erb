@@ -38,7 +38,9 @@
 			  <h4>Disciplines</h4>
 		      <ul>
 			    <% Deliverable.discipline_counts.each do |tag| %>
-			      <li><%=h link_to tag.name, :controller => "deliverables", :action => "list_for_tag", :id => tag.id %></li>
+			      <% unless Deliverable.tagged_with(tag).count < 1 %>
+			        <li><%=h link_to tag.name, :controller => "deliverables", :action => "list_for_tag", :id => tag.id %></li>
+			      <% end %>
 			    <% end %>
 			  <!-- TODO do the same for document_type and the rest of the tags -->
 		       
@@ -55,12 +57,12 @@
 			    <% end %>
 			  </ul>   
 		    
-		      <h4>Tags</h4>
-		      <ul>
-		        <% Deliverable.tag_counts.each do |tag| %>
-			      <li><%=h link_to tag.name, :controller => "deliverables", :action => "list_for_tag", :id => tag.id %></li><br>
-			    <% end %>	
-		      </ul>
+		      <!-- <h4>Tags</h4> -->
+		      <!-- <ul>
+			        <%# Deliverable.tag_counts.each do |tag| %>
+				      <li><%#=h link_to tag.name, :controller => "deliverables", :action => "list_for_tag", :id => tag.id %></li><br>
+				    <%# end %>	
+			      </ul> -->
 		    </div>
 				
 	      </div>

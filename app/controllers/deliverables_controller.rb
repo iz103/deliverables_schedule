@@ -115,6 +115,11 @@ class DeliverablesController < ApplicationController
       Deliverable.destroy_all(:id => params[:deliverables_ids])
     end
     redirect_to deliverables_path
+    # elsif params[:commit] == "Show Deliveries"
+    #      deliveries = []
+    #      Deliverable.all.each do |deliverable|
+    #        deliveries << deliverable.deliveries
+    #      end
   end
   
   # def list_deliveries_for_tag
@@ -140,14 +145,14 @@ class DeliverablesController < ApplicationController
   
   
   # require 'pp'
-  # csv = FasterCSV.read("AB1_actual.csv", :headers => true)
+  # csv = FasterCSV.read("AB3_Act.csv", :headers => true)
   # pp csv
-  # csv.each {|row| Delivery.create(:deliverable_id => row['ID'], :planned_date => row['AB1_Actual'], :status_id => "2")}
+  # csv.each {|row| Delivery.create(:deliverable_id => row['ID'], :planned_date => row['AB3_Actual'], :status_id => "2")}
   
   
   
   
   
-  # csv.each {|row| Delivery.update_all(["actual_date=?", row['AB1_Actual']], :id => row['ID'])}
+  # csv.each {|row| Delivery.update_all(["actual_date=?", row['AB3_Actual']], :id => row['ID'])}
   
 end

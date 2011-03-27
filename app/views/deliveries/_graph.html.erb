@@ -1,7 +1,7 @@
 <div id="placeholder" style = "width:950px; height:500px"> </div>
 <script type="text/javascript" charset="utf-8">
 
-<% deliveries = @deliveries %>
+<% deliveries = @chart_deliveries  %>
 var array = <%=h array_or_string_for_javascript(Delivery.planned_date_count(deliveries)) %>;
 var array2 = <%=h array_or_string_for_javascript(Delivery.actual_date_count(deliveries)) %>;
 var cumulativeArray =  toMultiDimensionalArray(array, 2);
@@ -22,7 +22,7 @@ var options = {
 
 	yaxis: {
 		min: 0,
-		max: <%= @deliveries.count + 500 %>,
+		max: <%= deliveries.count + 500 %>,
 		ticks: 10
 	}
 };

@@ -1,9 +1,10 @@
 <h1>Deliveries for <%= @text %></h1>
 
 <% unless params[:deliverable_id] %>
-
-  <%= render :partial => "graph" %>
-  <div id="name">
+  <div id="graph">
+    <%= render :partial => "graph" %>
+  </div>
+  <div id="right-column-2">
 	<% deliveries = @deliveries %>
     Number of complete deliveries <%= Delivery.complete(deliveries).to_i %><br>
 	Percentage Complete: <%= Delivery.percentage_complete(deliveries).round(1) %>%<br><br>
@@ -17,7 +18,9 @@
     Number of deliveries delivered early: <%= Delivery.early(deliveries).count %><br>
     Total number of deliverables: <%= Deliverable.all.count %>
   </div>
-
+  <div id="right-column-1">
+    <%= render :partial => "deliveries" %>
+  </div>
 <% else %>
 
 	<% if @deliveries.empty?%>
@@ -29,5 +32,4 @@
 	  <% end %>
 	<% end %>
 <% end %>
-
 

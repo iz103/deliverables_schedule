@@ -4,6 +4,20 @@ class Delivery < ActiveRecord::Base
   validates_presence_of :planned_date, :message => "can't be blank"
   # validates_format_of :planned_date, :with => /^[0-9]{2}+$/, :on => :create, :message => "is invalid"
   
+  def self.search(search, page)
+    paginate :per_page => 100, :page => page,
+             :conditions => ['planned_date like ?', "%#{search}%"]  # , :order => 'number'
+  end
+  
+  #based on http://stackoverflow.com/questions/5434326/a-question-about-will-paginates-with-multiple-conditions
+  # def self.search(discipline_list, tag_list,  page)
+  #   conditions = []
+  #   conditions << "discipline_list = #{discipline_list}"
+  #   conditions << "tag_list = #{tag_list}"
+  #   paginate :per_page => 100, :page => page,
+  #            :conditions => conditions.join('and')  # , :order => 'number'
+  # end
+  
 
   def self.planned_date_count(deliveries)
     # deliveries = Delivery.all(:order => "planned_date")
