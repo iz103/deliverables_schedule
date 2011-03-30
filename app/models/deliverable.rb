@@ -9,9 +9,11 @@ class Deliverable < ActiveRecord::Base
   # cattr_reader :per_page
   # @@per_page = 100
   
-  def self.search(search, page)
-    paginate :per_page => 100, :page => page,
-             :conditions => ['number like ?', "%#{search}%"] # , :order => 'number'
-  end
+  scope_procedure :tagged_with_disciplines, lambda {|tags| tagged_with(tags, :on => :disciplines )}
+  
+  # def self.search(search, page)
+  #   paginate :per_page => 100, :page => page,
+  #            :conditions => ['number like ?', "%#{search}%"] # , :order => 'number'
+  # end
   
 end

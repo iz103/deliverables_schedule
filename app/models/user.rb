@@ -21,3 +21,8 @@ class User < ActiveRecord::Base
 
   
 end
+
+# role = []
+# role << User::ROLES[1]
+# user.roles = role
+# user.save

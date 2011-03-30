@@ -12,6 +12,7 @@ config.gem "acts-as-taggable-on", :source => "http://gemcutter.org", :version =>
 config.gem "fastercsv", :version => '1.5.4'
 config.gem 'will_paginate', :version => '~> 2.3.15', :source => 'http://gemcutter.org'
 config.gem "cancan", :version => '1.6.2', :source => 'http://gemcutter.org'
+config.gem "searchlogic", :version => '2.5.4', :source => 'http://gemcutter.org'
 # config.gem 'jrails', :version => '0.6.0', :source => 'http://gemcutter.org'
 
 # See everything in the log (default is :info)

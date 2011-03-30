@@ -3,13 +3,39 @@
   <div id="rc1h">
     <h1>Listing deliverables</h1>
 	
-	<% form_tag request.path, :method => 'get' do %>
-	  <% content_tag :label do %>
-	    Search term:
-	    <%= text_field_tag :search, params[:search] %>
-	  <% end %>
-	<%= submit_tag 'Search' %>
+	<%# form_tag request.path, :method => 'get' do %>
+	  <%# content_tag :label do %>
+	    <!-- Search term: -->
+	    <%#= text_field_tag :search, params[:search] %>
+	  <%# end %>
+	<%#= submit_tag 'Search' %>
+	<%# end %>
+	
+	
+	<% form_for @search do |f| %>
+	  <ol class="form-list">
+		<li>
+	      <%= f.label :title_like, "Deliverable Title" %>
+	      <%= f.text_field :title_like %>
+	    </li>
+	    <li>
+		   <%= f.label :number_like, "Deliverable Number" %>
+		   <%= f.text_field :number_like %>
+		</li>
+		<li>
+		  <%= f.label :tagged_with_disciplines, "Disciplines" %>
+		  <%= f.collection_select :tagged_with_disciplines, Deliverable.discipline_counts, :name, :name, :include_blank => true %>
+		</li>
+	    <li>  
+	      <%= f.submit "Search" %>  
+	    </li>
+	  </ol>
+
 	<% end %>
+	
+	
+	
+	
 
     <div id="rc1l">
       <% if can? :create, Deliverable  %><%= link_to 'New deliverable', new_deliverable_path %><% end %>

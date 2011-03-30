@@ -6,7 +6,11 @@ class DeliverablesController < ApplicationController
     # flash[:notice] = "logged in"  # TODO remove this after fixing cucumber 
     # @deliverables = Deliverable.all
     # @deliverables = Deliverable.paginate :page => params[:page]  # , :order => 'number'
-    @deliverables = Deliverable.search(params[:search], params[:page])
+    
+    @search = Deliverable.search(params[:search])
+    @deliverables = @search.all.paginate(:page => params[:page], :per_page => 100)
+    
+    # @deliverables = Deliverable.search(params[:search], params[:page])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @deliverables }

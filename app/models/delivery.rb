@@ -4,10 +4,16 @@ class Delivery < ActiveRecord::Base
   validates_presence_of :planned_date, :message => "can't be blank"
   # validates_format_of :planned_date, :with => /^[0-9]{2}+$/, :on => :create, :message => "is invalid"
   
-  def self.search(search, page)
-    paginate :per_page => 100, :page => page # ,
-             # :conditions => ['planned_date like ?', "%#{search}%"]  # , :order => 'number'
-  end
+  # def self.search(search, page)
+  #   paginate :per_page => 100, :page => page, # ,
+  #            :conditions => ['planned_date like ?', "%#{search}%"], :order => 'planned_date'
+  #            # :conditions => ["planned_date = '%#{search}%'"]
+  # end
+  
+  # searchlogic searches
+  # deliveries = Delivery.status_name_like "B"
+  
+  
   
   #based on http://stackoverflow.com/questions/5434326/a-question-about-will-paginates-with-multiple-conditions
   # def self.search(discipline_list, tag_list,  page)
@@ -17,6 +23,9 @@ class Delivery < ActiveRecord::Base
   #   paginate :per_page => 100, :page => page,
   #            :conditions => conditions.join('and')  # , :order => 'number'
   # end
+  
+  # based on this gist https://gist.github.com/199027
+  # scope_procedure :tagged_with_disciplines, lambda {|tags| tagged_with(tags, :on => :disciplines )}
   
 
   def self.planned_date_count(deliveries)

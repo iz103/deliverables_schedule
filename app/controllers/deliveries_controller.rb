@@ -3,22 +3,90 @@ class DeliveriesController < ApplicationController
   
   def index
     unless params[:deliverable_id]
-      @chart_deliveries = Delivery.all(:order => "planned_date")
-      @deliveries = Delivery.search(params[:search], params[:page])
-      # @deliveries = Delivery.search(params[:discipline_list], params[:tag_list], params[:page])
-      @text = "All deliverables"
+      @all_deliveries = Delivery.all(:order => "planned_date")
+      @search = Delivery.search(params[:search]) #need to git rid of
+      @deliveries = @search.all.paginate(:page => params[:page], :per_page => 100) #need to git rid of
+      
+      # if params[:search]
+      #         if params["search"]["tagged_with_disciplines"].empty?
+      #           params["search"].delete("tagged_with_disciplines")
+      #           deliveries_search_terms = params["search"]
+      #           @search = Delivery.search(deliveries_search_terms)
+      #         else
+      #           deliverables_search_terms = {:tagged_with_disciplines => "#{params["search"]["tagged_with_disciplines"]}"}
+      #           params["search"].delete("tagged_with_disciplines")
+      #           deliveries_search_terms = params["search"]
+      #           deliveries_results = Delivery.search(deliveries_search_terms).all #search for all deliveries of a certain status (thousands)
+      #           deliverables_results = Deliverable.search(deliverables_search_terms).all
+      #           deliverables_results_deliveries = []
+      #           deliverables_results.each {|deliverable| 
+      #             deliverable.deliveries.each {|delivery| 
+      #               deliverables_results_deliveries << delivery} }
+      #           @search = deliveries_results & deliverables_results_deliveries
+      #         end
+      #         @deliveries = @search   # .paginate(:page => params[:page])
+      #       else 
+      #         @search = Delivery.search(params[:search])           
+      #         @deliveries = @search.all.paginate(:page => params[:page])
+      #         @text = "All deliverables"
+      #       end
+    @text = "All deliverables"
     else
-    # @cumulative = Delivery.planned_date_count
+    
     @deliverable = Deliverable.find(params[:deliverable_id])
     @deliveries = @deliverable.deliveries
     @text = @deliverable.number
-    # @delivery = @deliverable.delivery
+    
     end
     # respond_to do |format|
     #   # format.html # index.html.erb
     #   # format.xml  { render :xml => @deliverables }
     # end
   end
+  
+  
+      # @deliveries = Delivery.search(params[:search], params[:page])
+      
+      # unless params[:search].has_key?("tag_equals")
+        # @search = Delivery.search(params[:search])
+  
+  
+  # else 
+    # @search = Deliverable.search(params[:search])
+    
+    
+    # @seacrh = Deliverable.tagged_with(params[:search][:tag_equals]
+    
+    # deliverables = Deliverable.tagged_with(params[:search][:tag_equals])
+    # deliverables.each do |deliverable|
+    # unless deliverable.deliveries.empty?
+    #   deliveries << deliverable.deliveries
+    # end
+    # end
+    # @deliveries
+  # end
+  
+  # @deliverable = Deliverable.find(delivery.deliverable_id)
+  
+  
+  
+    # deliveries = []
+    
+  # deliverables = Deliverable.tagged_with(params[:search][:tag_equals])
+  # deliverables.each do |deliverable|
+  # unless deliverable.deliveries.empty?
+  #   deliveries << deliverable.deliveries
+  # end
+  # end
+  # deliveries
+  
+  # example params
+  # {"commit"=>"Search", "page"=>"36", "search"=>{"status_id_equals"=>"3", "order"=>""}}
+  
+  # @cumulative = Delivery.planned_date_count
+  # @delivery = @deliverable.delivery
+  
+  
   
   def show
     @deliverable = Deliverable.find(params[:deliverable_id])

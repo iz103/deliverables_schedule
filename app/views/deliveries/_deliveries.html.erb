@@ -10,8 +10,28 @@
 <%# end %>
 
 
-  <%= will_paginate @deliveries %><br>
+  <%#= will_paginate @deliveries %><!-- <br> -->
 <%# end %>
+
+<% form_for @search do |f| %>
+  <ol class="form-list">
+	<li>
+      <%= f.label :status_id_equals, "Status" %>
+      <%= f.collection_select :status_id_equals, Status.all, :id, :name, :include_blank => true %>
+    </li>
+    <!-- <li>
+	  
+	  <%#= f.label :tagged_with_disciplines, "Tag" %>
+	  <%#= f.collection_select :tagged_with_disciplines, Tag.all, :id, :name, :include_blank => true %>
+	  
+	</li> -->
+    <li>  
+      <%= f.submit "Search" %>  
+    </li>
+  </ol>
+
+<% end %>
+<%= will_paginate @deliveries %>
 <fieldset>
 <table id ="ddtable">
 <tr>
@@ -63,9 +83,10 @@
 <%# end %>
 
 
-<%= if params[:deliverable_id]
-	  link_to 'back', deliverable_path(@deliverable)
-	end %>
+<% if params[:deliverable_id] %>
+	  <%= link_to 'back', deliverable_path(@deliverable) %>
+<%end %>
 <% if params[:deliverable_id]%>
-	  <% if can? :create, Delivery  %><%= link_to 'New delivery', new_deliverable_delivery_path(:deliverable_id => @deliverable)  %><% end %>
+	  <% if can? :create, Delivery  %><%= link_to 'New delivery', new_deliverable_delivery_path(:deliverable_id => @deliverable)  %>
+<% end %>
 <% end %>
