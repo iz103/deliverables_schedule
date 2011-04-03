@@ -22,6 +22,7 @@ class User < ActiveRecord::Base
   
 end
 
+# to add a role to a user
 # role = []
 # role << User::ROLES[1]
 # user.roles = role

@@ -19,25 +19,27 @@
       <%= f.label :status_id_equals, "Status" %>
       <%= f.collection_select :status_id_equals, Status.all, :id, :name, :include_blank => true %>
     </li>
-    <!-- <li>
+
+		<!-- <li>
+		  <%#= f.label :tagged_with_disciplines, "Disciplines" %>
+		  <%#= f.collection_select :tagged_with_disciplines, Deliverable.discipline_counts, :name, :name, :include_blank => true %>
+		</li> -->
+    <li>
+	
 	  
-	  <%#= f.label :tagged_with_disciplines, "Tag" %>
-	  <%#= f.collection_select :tagged_with_disciplines, Tag.all, :id, :name, :include_blank => true %>
-	  
-	</li> -->
-    <li>  
       <%= f.submit "Search" %>  
     </li>
   </ol>
 
 <% end %>
+
 <%= will_paginate @deliveries %>
 <fieldset>
 <table id ="ddtable">
 <tr>
   <th><%= check_box_tag 'select-all' %></th>
   <th>Status</th>
-  <th>Planned Date</th>
+  <th><%= order @search, :by => :planned_date %></th>
   <% unless params[:deliverable_id] %><th>Deliverable</th><%end%>
   <th>Progress</th>
   <% unless params[:deliverable_id] %><th>Deliverable Tags</th><% end %>

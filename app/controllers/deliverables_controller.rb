@@ -10,6 +10,21 @@ class DeliverablesController < ApplicationController
     @search = Deliverable.search(params[:search])
     @deliverables = @search.all.paginate(:page => params[:page], :per_page => 100)
     
+    # deliveries_status = params[:search][:deliveries_status_id_like]
+    # @deliveries = Delivery.search(:status_id_like => deliveries_status)
+    
+    
+    # {"commit"=>"Search", "search"=>{"tagged_with_disciplines"=>"ECOL", "deliveries_status_id_like"=>"3", "order"=>""}}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     # @deliverables = Deliverable.search(params[:search], params[:page])
     respond_to do |format|
       format.html # index.html.erb
@@ -117,7 +132,12 @@ class DeliverablesController < ApplicationController
   def manage
     if params[:commit] == "Delete"
       Deliverable.destroy_all(:id => params[:deliverables_ids])
+    elsif params[:commit] == "Complete"
+      Delivery.update_all(["actual_date=?", DateTime.now], :id => params[:deliveries_ids])
+    elsif params[:commit] == "Incomplete"
+      Delivery.update_all(["actual_date=?", nil], :id => params[:deliveries_ids])
     end
+
     redirect_to deliverables_path
     # elsif params[:commit] == "Show Deliveries"
     #      deliveries = []

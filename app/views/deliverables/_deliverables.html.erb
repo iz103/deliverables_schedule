@@ -1,0 +1,181 @@
+<%= params[:search] %>
+<h2 id="dd-heading">Deliveries for</h1>
+
+<% form_for @search do |f| %>
+  <ol class="form-list">
+	<li>
+      <%= f.label :deliveries_status_id_like, "Status" %>
+      <%= f.collection_select :deliveries_status_id_like, Status.all, :id, :name, :include_blank => true %>
+    </li>
+
+    <li>
+	  <%= f.label :tagged_with_disciplines, "Disciplines" %>
+	  <%= f.collection_select :tagged_with_disciplines, Deliverable.discipline_counts, :name, :name, :include_blank => true %>
+	</li>
+    <li>
+	
+	  
+      <%= f.submit "Search" %>  
+    </li>
+  </ol>
+
+<% end %>
+
+<%= will_paginate @deliverables %>
+
+
+<fieldset>
+<table id ="ddtable">
+<tr>
+  <th><%= check_box_tag 'select-all' %></th>
+  <th>Status</th>
+  <!-- <th><%#= order @search, :by => :deliveries_planned_date %></th> -->
+  <th>Planned Date</th>
+  <th>Deliverable Number</th></th>
+  <th>Progress</th>
+  <th>Deliverable Tags</th>
+</tr>
+
+<%# path = params[:deliverable_id] ? complete_deliverable_deliveries_path : complete_deliveries_path %>
+
+  <% form_tag manage_deliverables_path, :id => 'management-form', :method => :put do %>
+    <!-- <tr><td></td></tr> -->
+    <% @deliverables.each do |deliverable|%>
+      <% deliverable.deliveries.each do |delivery| %>
+        <% if "#{delivery.status_id}" == params[:search][:deliveries_status_id_like] or params[:search][:deliveries_status_id_like] == "" %>
+        <tr>
+	      <td class="table-data"><%= check_box_tag "deliveries_ids[]", delivery.id, false, :class => 'deliveries-ids' %></td>
+	      <td class="table-data"><%=h delivery.status.name %></td>
+	      <td class="table-data"><%=h delivery.planned_date.to_date %></td>
+	      <td class="table-data"><%=h deliverable.number%></td>
+          <td class="table-data"><% if delivery.actual_date? %> 
+	               Complete
+	           <% else %> 
+	               Not Complete
+               <% end %></td>
+             
+               <td><%=h deliverable.discipline_list %>,<%=h deliverable.tag_list %></td>
+           <td><% if can? :edit, Delivery  %>
+                 <%= link_to "Edit", edit_deliverable_delivery_path(:id => delivery.id, :deliverable_id => deliverable.id)%><%end %></td>
+         
+      <%# end %>
+       </tr> 
+       <% end %>    
+         <% end %>
+           <% end %>
+         
+      
+         <% if can? :edit, Delivery  %><%= submit_tag "Complete" %><%= submit_tag "Incomplete" %><%= submit_tag "Delete", :confirm => 'Are you sure?' %><% end %>  
+      <% end %>
+    
+
+</table>
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <h1>Listing deliverables</h1> -->
+	
+	<%# form_tag request.path, :method => 'get' do %>
+	  <%# content_tag :label do %>
+	    <!-- Search term: -->
+	    <%#= text_field_tag :search, params[:search] %>
+	  <%# end %>
+	<%#= submit_tag 'Search' %>
+	<%# end %>
+	
+	
+	<%# form_for @search do |f| %>
+	  <!-- <ol class="form-list">
+		<li>
+	      <%#= f.label :title_like, "Deliverable Title" %>
+	      <%#= f.text_field :title_like %>
+	    </li>
+	    <li>
+		   <%#= f.label :number_like, "Deliverable Number" %>
+		   <%#= f.text_field :number_like %>
+		</li>
+		<li>
+		  <%#= f.label :tagged_with_disciplines, "Disciplines" %>
+		  <%#= f.collection_select :tagged_with_disciplines, Deliverable.discipline_counts, :name, :name, :include_blank => true %>
+		</li>
+	    <li>  
+	      <%#= f.submit "Search" %>  
+	    </li>
+	  </ol> -->
+
+	<%# end %>
+	
+	
+	
+	
+
+  <!-- <div id="rc1l"> -->
+    <%# if can? :create, Deliverable  %><%#= link_to 'New deliverable', new_deliverable_path %><%# end %>
+    <!-- <%#= link_to_remote "New Deliverable", 
+             :url => { :action => "show", :id => Deliverable.id },
+             :update => "right-column-2"%> -->
+  <!-- </div> -->
+<!-- </div> -->
+	
+<!-- <div id="rc1c"><br> -->
+	<%#= will_paginate @deliverables %><!-- <br> -->
+	<!-- <table> -->
+	  <!-- <tr>
+	  		<th>Select</th>
+	  	    <th>Number</th>
+	  	    <th>Title</th>
+	  	    <th>Deliveries</th>
+	  	    <th></th>
+	  	  </tr> -->
+	 <%# form_tag manage_deliverables_path, :method => :put do %>
+
+	    <%# @deliverables.each do |deliverable| %>
+	    <!-- <tr> -->
+		  <%# if can? :destroy, Deliverable  %><!-- <td><%#= check_box_tag "deliverables_ids[]", deliverable.id %></td> --><%# end %>
+	      <!-- <td><%#=h deliverable.number %></td> -->
+	      <!-- <td><%#=h deliverable.title %></td> -->
+	      <!-- <td> -->
+	          <%# deliverable.deliveries.each do |delivery| %>
+	            <!-- <span><%#= delivery.status.name %></span> -->
+	          <%# end %>
+	      <!-- </td> -->
+	      <!-- <td id="lt-deliverable"><%#= link_to 'Show', deliverable %></td> -->
+	      <%# if can? :edit, Deliverable  %>
+	        <!-- <td><%#= link_to 'Edit', edit_deliverable_path(deliverable) %></td> -->
+	      <%# end %>
+	      <%# if can? :destroy, Deliverable  %>
+	        <!-- <td><%#= link_to 'Destroy', deliverable, :confirm => 'Are you sure?', :method => :delete %></td> -->
+	      <%# end %>
+	    <!-- </tr> -->
+	    <%# end %>
+	    <%# if can? :destroy, Deliverable  %><%#= submit_tag "Delete", :confirm => 'Are you sure?' %><%# end %>
+	 <%# end %>
+	<!-- </table><br> -->
+	<%#= will_paginate @deliverables %><!-- <br> -->
+<!-- </div> -->
+
+<!-- </div> -->

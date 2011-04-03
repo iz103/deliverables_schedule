@@ -25,7 +25,7 @@ class Delivery < ActiveRecord::Base
   # end
   
   # based on this gist https://gist.github.com/199027
-  # scope_procedure :tagged_with_disciplines, lambda {|tags| tagged_with(tags, :on => :disciplines )}
+  scope_procedure :tagged_with_disciplines, lambda {|tags| tagged_with(tags, :on => :disciplines )}
   
 
   def self.planned_date_count(deliveries)
