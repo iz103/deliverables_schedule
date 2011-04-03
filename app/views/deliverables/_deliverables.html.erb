@@ -3,8 +3,8 @@
 <% form_for @search do |f| %>
   <ol class="form-list">
 	<li>
-      <%= f.label :deliveries_status_id_like, "Status" %>
-      <%= f.collection_select :deliveries_status_id_like, Status.all, :id, :name, :include_blank => true %>
+      <%= f.label :deliveries_status_id_equals, "Status" %>
+      <%= f.collection_select :deliveries_status_id_equals, Status.all, :id, :name, :include_blank => true %>
     </li>
 
     <li>
@@ -42,7 +42,7 @@
     <% @deliverables.each do |deliverable|%>
       <% deliverable.deliveries.each do |delivery| %>
           <% if params[:search] %>
-            <% if "#{delivery.status_id}" == params[:search][:deliveries_status_id_like] or params[:search][:deliveries_status_id_like] == "" or params[:search] == nil %>
+            <% if "#{delivery.status_id}" == params[:search][:deliveries_status_id_equals] or params[:search][:deliveries_status_id_equals] == "" or params[:search] == nil %>
           <tr>
 	        <td class="table-data"><%= check_box_tag "deliveries_ids[]", delivery.id, false, :class => 'deliveries-ids' %></td>
 	        <td class="table-data"><%=h delivery.status.name %></td>
