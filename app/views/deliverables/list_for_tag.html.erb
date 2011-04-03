@@ -50,21 +50,21 @@ $(function (){
   Total number of deliverables: <%= @deliverables.count %>
 </div><br><br>
 
-<h2>Deliverables List</h1>
+<!-- <h2>Deliverables List</h1> -->
 
 
-<table>
+<!-- <table>
   <tr>
     <th>Number</th>
     <th>Title</th>
   </tr>
-  <% @deliverables.each do |deliverable| %>
+  <%# @deliverables.each do |deliverable| %>
   <tr>
-    <td><%=h deliverable.number %></td>
-    <td><%=h deliverable.title %></td>
-    <td><%= link_to 'Show', deliverable %></td>
-    <% if can? :edit, Deliverable  %><td><%= link_to 'Edit', edit_deliverable_path(deliverable) %></td><% end %>
-    <% if can? :destroy, Deliverable  %><td><%= link_to 'Destroy', deliverable, :confirm => 'Are you sure?', :method => :delete %></td><% end %>
+    <td><%#=h deliverable.number %></td>
+    <td><%#=h deliverable.title %></td>
+    <td><%#= link_to 'Show', deliverable %></td>
+    <%# if can? :edit, Deliverable  %><td><%#= link_to 'Edit', edit_deliverable_path(deliverable) %></td><%# end %>
+    <%# if can? :destroy, Deliverable  %><td><%#= link_to 'Destroy', deliverable, :confirm => 'Are you sure?', :method => :delete %></td><%# end %>
   </tr>
-  <% end %>
-</table><br>
+  <%# end %>
+</table><br> -->

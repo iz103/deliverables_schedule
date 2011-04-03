@@ -13,7 +13,7 @@
 </head>
 <body>
   <div id="header">
-	Deliverables Schedule - Welcome
+	Deliverables Schedule - <%= @current_user.username %>
 	<p>
 	  <div id="session-links">
 		  <%= link_to "Account", edit_user_path (:current)%>
@@ -21,8 +21,7 @@
 		  <% if can? :create, User  %><%= link_to "users", users_path %><% end %>
 	  </div>
 	  <div id="tab-links">
-	    <%= link_to "Deliverables", deliverables_path %>
-	  	<%= link_to "Deliveries Dashboard", deliveries_path %>	
+	    <%= link_to "Deliverables", deliverables_path %>	
 	  </div>
 
   </div>
@@ -34,6 +33,7 @@
 	      </div>
 	      <div id="left-menu-list">
 		    <%#= render :partial => "tag_cloud" %>
+		  <%= link_to "All Deliveries", deliveries_path %>
 		    <div id="left-menu-list-tags">
 			  <h4>Disciplines</h4>
 		      <ul>
