@@ -129,11 +129,31 @@ class DeliverablesController < ApplicationController
     end
   end
   
+  
+  
+    # Parameters: {"commit"=>"Complete", "deliveries_ids"=>["13744", "13745"], 
+    #   "authenticity_token"=>"7pXWK0JcEtPXTm58X6NqOt8AS4/7q6Olxs33A/RaIk4=", "actual_date_select"=>"04/10/2011"}
+  
+  
+  
   def manage
     if params[:commit] == "Delete"
       Deliverable.destroy_all(:id => params[:deliverables_ids])
     elsif params[:commit] == "Complete"
-      Delivery.update_all(["actual_date=?", DateTime.now], :id => params[:deliveries_ids])
+      if params[:actual_date_select] and params[:actual_date_select] != ""
+        # catch (:done) do 
+        unless params[:actual_date_select].to_datetime > Date.today
+        #params[:deliveries_ids].each do |id|
+         # Delivery.find(id).update_attributes(:actual_date => params[:actual_date_select])
+        #end
+          Delivery.update_all(["actual_date=?", params[:actual_date_select]], :id => params[:deliveries_ids])
+        else 
+          flash[:error] = "Cannot have an Actual Delivery date in the future"
+        end
+        # throw :done unless params[:actual_date_select] <= Date.today 
+      else
+        Delivery.update_all(["actual_date=?", DateTime.now], :id => params[:deliveries_ids])
+      end
     elsif params[:commit] == "Incomplete"
       Delivery.update_all(["actual_date=?", nil], :id => params[:deliveries_ids])
     end
@@ -180,3 +200,5 @@ class DeliverablesController < ApplicationController
   # csv.each {|row| Delivery.update_all(["actual_date=?", row['AB3_Actual']], :id => row['ID'])}
   
 end
+
+

@@ -1,3 +1,4 @@
+  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application" %>
 <h2 id="dd-heading">Deliveries for <%# if params[:search] %>: Discipline:<%#= params[:search][:tagged_with_disciplines]%>, Delivery Status:<%#= Status.find(params[:search][:deliveries_status_id_like]).name %> <%# else %> All Deliverables<%# end %></h1>
 
 <% form_for @search do |f| %>
@@ -11,6 +12,11 @@
 	  <%= f.label :tagged_with_disciplines, "Disciplines" %>
 	  <%= f.collection_select :tagged_with_disciplines, Deliverable.discipline_counts, :name, :name, :include_blank => true %>
 	</li>
+	<li>
+	  <%#= f.label :tagged_with, "Tags" %>
+	  <%#= f.collection_select :tagged_with, Deliverable.tag_counts, :name, :name, :include_blank => true %>
+	</li>
+	
     <li>
 	
 	  
@@ -38,11 +44,13 @@
 <%# path = params[:deliverable_id] ? complete_deliverable_deliveries_path : complete_deliveries_path %>
 
   <% form_tag manage_deliverables_path, :id => 'management-form', :method => :put do %>
+    <%= error_messages_for :delivery %>
     <!-- <tr><td></td></tr> -->
+    
     <% @deliverables.each do |deliverable|%>
       <% deliverable.deliveries.each do |delivery| %>
-          <% if params[:search] %>
-            <% if "#{delivery.status_id}" == params[:search][:deliveries_status_id_equals] or params[:search][:deliveries_status_id_equals] == "" or params[:search] == nil %>
+        <% if params[:search] %>
+          <% if "#{delivery.status_id}" == params[:search][:deliveries_status_id_equals] or params[:search][:deliveries_status_id_equals] == "" or params[:search] == nil %>
           <tr>
 	        <td class="table-data"><%= check_box_tag "deliveries_ids[]", delivery.id, false, :class => 'deliveries-ids' %></td>
 	        <td class="table-data"><%=h delivery.status.name %></td>
@@ -82,15 +90,23 @@
        <% end %>
          
       
-         <% if can? :edit, Delivery  %><%= submit_tag "Complete" %><%= submit_tag "Incomplete" %><%= submit_tag "Delete", :confirm => 'Are you sure?' %><% end %>  
+         <% if can? :edit, Delivery  %><%= text_field_tag 'actual_date_select', nil, :place_holder => 'Date' %><%= submit_tag "Complete" %><%= submit_tag "Incomplete" %><%= submit_tag "Delete", :confirm => 'Are you sure?' %><% end %>  
       <% end %>
     
 
 </table>
+
+<%= will_paginate @deliverables %>
 </fieldset>
 
 
+<script type="text/javascript" charset="utf-8">
 
+$(function() {
+  $("#actual_date_select").datepicker();
+});
+
+</script>
 
 
 

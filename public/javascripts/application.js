@@ -19,6 +19,19 @@
 
 // From http://briancray.com/2009/08/06/check-all-jquery-javascript/
 // Creative Commons terms http://creativecommons.org/licenses/by-sa/3.0/us/
+
+
+
+// --------------------------------------------
+// The graph doesn't seem to like it being in application.js
+// $(function() {
+//   $("#actual_date_select").datepicker();
+// });
+
+// ------------------------------------------
+
+
+
 $(function () {
 	$('#select-all').click(function () {
 		$(this).parents('fieldset:eq(0)').find(':checkbox').attr('checked', this.checked);
@@ -47,3 +60,7 @@ function toMultiDimensionalArray(array, subarraysize) {
 }
 
 // based on http://stackoverflow.com/questions/4492385/how-to-convert-simple-array-into-two-dimensional-arraymatrix-in-javascript-or
+
+
+// ------------------------------------------
+
