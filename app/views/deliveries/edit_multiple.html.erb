@@ -1,0 +1,42 @@
+<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application" %>
+<script type="text/javascript" charset="utf-8">
+
+$(function() {
+  $("#delivery_planned_date").datepicker();
+});
+
+$(function() {
+  $("#delivery_actual_date").datepicker();
+});
+
+</script>
+<h3>Edit The Following Deliveries</h3>
+
+<% form_for :delivery, :url => update_multiple_deliveries_path, :html => { :method => :put } do |f| %>
+  <%#= f.error_messages %>
+
+<ul>
+  <% for delivery in @deliveries %>
+    <li>
+	  <%= hidden_field_tag "deliveries_ids[]", delivery.id %>
+	  Current Planned Date: <%=h delivery.planned_date.to_date %><% if delivery.actual_date? %>,    Current Actual Date:  <%=h delivery.actual_date.to_date %><% end %>
+	</li>
+  <% end %>
+</ul>
+<p>
+  <%= f.label :planned_date %><br />
+  <%= f.text_field :planned_date %>
+</p>
+<p>
+  <%#= f.label :actual_date %><br />
+  <%#= f.text_field :actual_date %>
+</p>
+<p><%= f.submit "Update" %></p>
+<% end %>
+
+<p>
+
+
+
+
+

@@ -1,0 +1,43 @@
+
+
+# --------- Upload CSV---------------
+
+# require 'FasterCSV'
+# require 'pp'
+# csv = FasterCSV.read("deliverables230311.csv", :headers => true)
+# pp csv
+# csv.each {|row| Deliverable.create(:number => row['number'], :title => row['title'], :discipline_list => row ['tag1'], :document_type_list => row['tag2'], :tag_list => "#{row['tag3']}, #{row['tag4']}")}
+
+# csv.each {|row| Deliverable.create(:number => row['number'], :title => row['title'], :discipline_list => row ['tag1'], :document_type_list => row['tag2'], :tag_list => row['tag3'])}
+
+
+
+
+
+
+
+# require 'pp'
+# csv = FasterCSV.read("AB3_Act.csv", :headers => true)
+# pp csv
+# csv.each {|row| Delivery.create(:deliverable_id => row['ID'], :planned_date => row['AB3_Actual'], :status_id => "2")}
+
+
+
+
+
+# csv.each {|row| Delivery.update_all(["actual_date=?", row['AB3_Actual']], :id => row['ID'])}
+
+
+# ------------------------------------------
+
+# List deliveries for tag in deliverables controller
+
+# def list_deliveries_for_tag
+# 
+# all_deliveries
+# end
+
+# this is for uploading and parsing csv file
+
+
+# ------------------

@@ -130,13 +130,8 @@ class DeliverablesController < ApplicationController
   end
   
   
-  
-    # Parameters: {"commit"=>"Complete", "deliveries_ids"=>["13744", "13745"], 
-    #   "authenticity_token"=>"7pXWK0JcEtPXTm58X6NqOt8AS4/7q6Olxs33A/RaIk4=", "actual_date_select"=>"04/10/2011"}
-  
-  
-  
   def manage
+    # unless params[:commit] == "Edit"
     if params[:commit] == "Delete"
       Deliverable.destroy_all(:id => params[:deliverables_ids])
     elsif params[:commit] == "Complete"
@@ -156,9 +151,19 @@ class DeliverablesController < ApplicationController
       end
     elsif params[:commit] == "Incomplete"
       Delivery.update_all(["actual_date=?", nil], :id => params[:deliveries_ids])
+    elsif params[:commit] == "Edit"
+      # redirect_to edit_multiple_deliverables_path and return
+      redirect_to edit_multiple_deliveries_path(:deliveries_ids => params[:deliveries_ids]) and return
     end
-
-    redirect_to deliverables_path
+      redirect_to deliverables_path
+      
+    
+    # else
+    #   edit_multiple
+    # end
+    # if params[:commit] == "Edit"
+    #   render :action => edit_multiple
+    # end
     # elsif params[:commit] == "Show Deliveries"
     #      deliveries = []
     #      Deliverable.all.each do |deliverable|
@@ -166,38 +171,17 @@ class DeliverablesController < ApplicationController
     #      end
   end
   
-  # def list_deliveries_for_tag
-  # 
-  # all_deliveries
-  # end
+  def edit_multiple
+    
+  end
   
-  # this is for uploading and parsing csv file
+  def update_multiple
+    
+  end
   
-  
-  # require 'FasterCSV'
-  # require 'pp'
-  # csv = FasterCSV.read("deliverables230311.csv", :headers => true)
-  # pp csv
-  # csv.each {|row| Deliverable.create(:number => row['number'], :title => row['title'], :discipline_list => row ['tag1'], :document_type_list => row['tag2'], :tag_list => "#{row['tag3']}, #{row['tag4']}")}
-
-  # csv.each {|row| Deliverable.create(:number => row['number'], :title => row['title'], :discipline_list => row ['tag1'], :document_type_list => row['tag2'], :tag_list => row['tag3'])}
-
-
-
-
-
+  #Parameters: {"commit"=>"Edit", "deliveries_ids"=>["13744", "13745", "13746"], "authenticity_token"=>"2WNHtXvi1Gax9nJmBJWYG7WZiIrse4vnz0u8r8PipfA=", "actual_date_select"=>""}
   
   
-  # require 'pp'
-  # csv = FasterCSV.read("AB3_Act.csv", :headers => true)
-  # pp csv
-  # csv.each {|row| Delivery.create(:deliverable_id => row['ID'], :planned_date => row['AB3_Actual'], :status_id => "2")}
-  
-  
-  
-  
-  
-  # csv.each {|row| Delivery.update_all(["actual_date=?", row['AB3_Actual']], :id => row['ID'])}
   
 end
 

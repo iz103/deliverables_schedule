@@ -2,13 +2,13 @@ class Delivery < ActiveRecord::Base
   belongs_to :deliverables
   belongs_to :status
   validates_presence_of :planned_date, :message => "can't be blank"
-  validate :actual_date_cannot_be_in_the_future
+  # validate :actual_date_cannot_be_in_the_future
   
-  def actual_date_cannot_be_in_the_future
-    errors.add(:actual_date, "Cannot be in the future") if
-          !actual_date > Date.today
-          return false
-  end
+  # def actual_date_cannot_be_in_the_future
+  #   errors.add(:actual_date, "Cannot be in the future") if
+  #         !actual_date > Date.today
+  #         return false
+  # end
   
   # validates_format_of :planned_date, :with => /^[0-9]{2}+$/, :on => :create, :message => "is invalid"
   

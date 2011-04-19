@@ -191,6 +191,28 @@ def complete
   
 end
 
+def edit_multiple
+  if params[:deliveries_ids]
+    @deliveries = Delivery.find(params[:deliveries_ids])
+  else
+    redirect_to deliverables_path
+    flash[:error] = "No deliveries selected"
+  end
+end
+
+def update_multiple
+  # unless params[:delivery][:actual_date] and params[:delivery][:actual_date].to_datetime > Date.today
+    @deliveries = Delivery.find(params[:deliveries_ids])
+    @deliveries.each do |delivery|
+      delivery.update_attributes!(params[:delivery].reject { |k,v| v.blank? })
+    end
+    flash[:notice] = "Updated deliveries"
+  # else
+  #     flash[:error] = "Cannot have an Actual Delivery date in the future"
+  #   end
+    redirect_to deliverables_path
+end
+
 
     
     
