@@ -37,25 +37,17 @@ class Delivery < ActiveRecord::Base
   
 
   def self.planned_date_count(deliveries)
-    # deliveries = Delivery.all(:order => "planned_date")
-    dates = []
-    counts = Hash.new(0)
-    # cumulative = Hash.new(0)
-    deliveries.each do |delivery|
-      counts[delivery.planned_date] += 1
-    end
-    counts_array = counts.sort
     sum = 0
-    cumulative_array = []
-    counts_array.each do |date, count|
+    date_with_count.map do |date, count|
       sum += count
-      cumulative_pair = [date.to_time.to_i * 1000, sum]
-      cumulative_array << cumulative_pair
+      [date.to_time.to_i * 1000, sum]
     end
-    
-    cumulative_array
   end
   
+  def self.date_with_count
+    result = find_by_sql("SELECT distinct(planned_date), count(planned_date) as count FROM deliveries GROUP BY planned_date ORDER BY planned_date")
+    result.map{|row| [row["planned_date"], row["count"]]}
+  end
   
   def self.actual_date_count(deliveries)
     
