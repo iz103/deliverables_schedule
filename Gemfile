@@ -16,8 +16,18 @@ end
 group :test do
   gem "test-unit"
   gem "rspec-rails", "1.3"
+  gem "rspec", "1.3"
   gem "pickle"
-  gem "fabrication"
+  gem "factory_girl"
   gem "launchy"
   gem "cucumber-rails"
+end
+
+group :test, :development do
+  platforms :ruby_18 do
+    gem "ruby-debug"
+  end
+  platforms :ruby_19 do
+    gem "ruby-debug19"
+  end
 end
