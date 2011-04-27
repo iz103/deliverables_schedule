@@ -30,12 +30,12 @@ class DeliveriesController < ApplicationController
       #         @deliveries = @search.all.paginate(:page => params[:page])
       #         @text = "All deliverables"
       #       end
-    @text = "All deliverables"
+      @text = "All deliverables"
     else
     
-    @deliverable = Deliverable.find(params[:deliverable_id])
-    @deliveries = @deliverable.deliveries
-    @text = @deliverable.number
+      @deliverable = Deliverable.find(params[:deliverable_id])
+      @deliveries = @deliverable.deliveries
+      @text = @deliverable.number
     
     end
     # respond_to do |format|

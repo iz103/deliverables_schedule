@@ -44,13 +44,14 @@ class Delivery < ActiveRecord::Base
     deliveries.each do |delivery|
       counts[delivery.planned_date] += 1
     end
-    counts_array = counts.sort  
-      sum = 0
-      cumulative_array = []
-      counts_array.each do |y| sum += y[1]
-        cumulative_pair = [y[0].to_time.to_i*1000, sum]
-        cumulative_array << cumulative_pair
-        end
+    counts_array = counts.sort
+    sum = 0
+    cumulative_array = []
+    counts_array.each do |y|
+      sum += y[1]
+      cumulative_pair = [y[0].to_time.to_i*1000, sum]
+      cumulative_array << cumulative_pair
+    end
         
     cumulative_array
                     
@@ -65,14 +66,15 @@ class Delivery < ActiveRecord::Base
        counts[delivery.actual_date] += 1
      end
    end
-   counts_array = counts.sort  
-     sum = 0
-     cumulative_array = []
-     counts_array.each do |y| sum += y[1]
-       cumulative_pair = [y[0].to_time.to_i*1000, sum]
-       cumulative_array << cumulative_pair
-       end
-       
+   counts_array = counts.sort
+   sum = 0
+   cumulative_array = []
+   counts_array.each do |y|
+     sum += y[1]
+     cumulative_pair = [y[0].to_time.to_i*1000, sum]
+     cumulative_array << cumulative_pair
+   end
+   
    cumulative_array
    
  end
