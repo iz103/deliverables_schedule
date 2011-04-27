@@ -54,141 +54,134 @@ class Delivery < ActiveRecord::Base
     end
         
     cumulative_array
-                    
   end
   
- def self.actual_date_count(deliveries)
-   
-   # deliveries = Delivery.all(:order => "actual_date")
-   counts = Hash.new(0)
-   deliveries.each do |delivery|
-     unless delivery.actual_date == nil
-       counts[delivery.actual_date] += 1
-     end
-   end
-   counts_array = counts.sort
-   sum = 0
-   cumulative_array = []
-   counts_array.each do |y|
-     sum += y[1]
-     cumulative_pair = [y[0].to_time.to_i*1000, sum]
-     cumulative_array << cumulative_pair
-   end
-   
-   cumulative_array
-   
- end
   
-def self.overdue(deliveries)
-  # deliveries = Delivery.all
-  overdue =[]
-  deliveries.each do |delivery|
-    if delivery.actual_date == nil and delivery.planned_date < Date.today
-      overdue << delivery
+  def self.actual_date_count(deliveries)
+    
+    # deliveries = Delivery.all(:order => "actual_date")
+    counts = Hash.new(0)
+    deliveries.each do |delivery|
+      unless delivery.actual_date == nil
+        counts[delivery.actual_date] += 1
+      end
     end
-  end
-    overdue  
-end
-
-
-
-def self.late(deliveries)
-  # deliveries = Delivery.all
-  late =[]
-  deliveries.each do |delivery|
-    if delivery.actual_date != nil and delivery.actual_date > delivery.planned_date
-      late << delivery
+    counts_array = counts.sort
+    sum = 0
+    cumulative_array = []
+    counts_array.each do |y|
+      sum += y[1]
+      cumulative_pair = [y[0].to_time.to_i*1000, sum]
+      cumulative_array << cumulative_pair
     end
+    
+    cumulative_array
   end
+  
+  def self.overdue(deliveries)
+    # deliveries = Delivery.all
+    overdue =[]
+    deliveries.each do |delivery|
+      if delivery.actual_date == nil and delivery.planned_date < Date.today
+        overdue << delivery
+      end
+    end
+    overdue
+  end
+
+
+
+  def self.late(deliveries)
+    # deliveries = Delivery.all
+    late =[]
+    deliveries.each do |delivery|
+      if delivery.actual_date != nil and delivery.actual_date > delivery.planned_date
+        late << delivery
+      end
+    end
     late
-end
-
-def self.early(deliveries)
-  # deliveries = Delivery.all
-  early = []
-  deliveries.each do |delivery|
-    if delivery.actual_date != nil and delivery.actual_date < delivery.planned_date
-      early << delivery
-    end
   end
-  early
-end
 
-def self.due_today(deliveries)
-  # deliveries = Delivery.all
-  due =[]
-  deliveries.each do |delivery|
-    if delivery.planned_date == Date.today
-      due << delivery
+  def self.early(deliveries)
+    # deliveries = Delivery.all
+    early = []
+    deliveries.each do |delivery|
+      if delivery.actual_date != nil and delivery.actual_date < delivery.planned_date
+        early << delivery
+      end
     end
+    early
   end
-    due    
-end
 
-def self.due_in_next_week(deliveries)
-  # deliveries = Delivery.all
-  due =[]
-  deliveries.each do |delivery|
-    if delivery.planned_date <= Date.today+1.week and delivery.planned_date > Date.today
-      due << delivery
+  def self.due_today(deliveries)
+    # deliveries = Delivery.all
+    due =[]
+    deliveries.each do |delivery|
+      if delivery.planned_date == Date.today
+        due << delivery
+      end
     end
-  end
-    due  
-  
-end
-
-def self.due_in_next_two_weeks(deliveries)
-  # deliveries = Delivery.all
-  due =[]
-  deliveries.each do |delivery|
-    if delivery.planned_date <= Date.today+2.weeks and delivery.planned_date > Date.today
-      due << delivery
-    end
-  end
-    due 
-end
-
-def self.due_tomorrow(deliveries)
-  # deliveries = Delivery.all
-  due =[]
-  deliveries.each do |delivery|
-    if delivery.planned_date == Date.tomorrow
-      due << delivery
-    end
-  end
     due
-end
-         
-def self.complete(deliveries)
-  # deliveries = Delivery.all
-  complete_deliveries = []
-  deliveries.each do |delivery|
-    if delivery.actual_date?
-      complete_deliveries << delivery
+  end
+
+  def self.due_in_next_week(deliveries)
+    # deliveries = Delivery.all
+    due =[]
+    deliveries.each do |delivery|
+      if delivery.planned_date <= Date.today+1.week and delivery.planned_date > Date.today
+        due << delivery
+      end
     end
+    due
   end
-  
-  complete_deliveries.count.to_f
-  
-end
 
-def self.bsb(deliveries)
-  if Delivery.overdue(deliveries).count > 0 or Delivery.due_today(deliveries).count > 0 
-     bsb = Delivery.overdue(deliveries).count + Delivery.due_today(deliveries).count
-  else
-    puts 0
+  def self.due_in_next_two_weeks(deliveries)
+    # deliveries = Delivery.all
+    due =[]
+    deliveries.each do |delivery|
+      if delivery.planned_date <= Date.today+2.weeks and delivery.planned_date > Date.today
+        due << delivery
+      end
+    end
+    due
   end
-  bsb
-end
 
-def self.percentage_complete(deliveries)
-
-  complete_percentage = (Delivery.complete(deliveries) / Delivery.all.count.to_f)*100
-
-end
-
-
+  def self.due_tomorrow(deliveries)
+    # deliveries = Delivery.all
+    due =[]
+    deliveries.each do |delivery|
+      if delivery.planned_date == Date.tomorrow
+        due << delivery
+      end
+    end
+    due
+  end
+         
+  def self.complete(deliveries)
+    # deliveries = Delivery.all
+    complete_deliveries = []
+    deliveries.each do |delivery|
+      if delivery.actual_date?
+        complete_deliveries << delivery
+      end
+    end
   
+    complete_deliveries.count.to_f
+  end
+
+  def self.bsb(deliveries)
+    if Delivery.overdue(deliveries).count > 0 or Delivery.due_today(deliveries).count > 0 
+       bsb = Delivery.overdue(deliveries).count + Delivery.due_today(deliveries).count
+    else
+      puts 0
+    end
+    bsb
+  end
+
+  def self.percentage_complete(deliveries)
+    complete_percentage = (Delivery.complete(deliveries) / Delivery.all.count.to_f)*100
+  end
+
 end
 
 

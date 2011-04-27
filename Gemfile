@@ -15,4 +15,9 @@ end
 
 group :test do
   gem "test-unit"
+  gem "rspec-rails", "1.3"
+  gem "pickle"
+  gem "fabrication"
+  gem "launchy"
+  gem "cucumber-rails"
 end
