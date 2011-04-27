@@ -46,7 +46,7 @@ class Delivery < ActiveRecord::Base
   
   def self.date_with_count
     result = find_by_sql("SELECT distinct(planned_date), count(planned_date) as count FROM deliveries GROUP BY planned_date ORDER BY planned_date")
-    result.map{|row| [row["planned_date"], row["count"]]}
+    result.map{|row| [row["planned_date"].to_date, row["count"].to_i]}
   end
   
   def self.actual_date_count(deliveries)
