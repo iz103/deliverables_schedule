@@ -47,12 +47,12 @@ class Delivery < ActiveRecord::Base
     counts_array = counts.sort
     sum = 0
     cumulative_array = []
-    counts_array.each do |y|
-      sum += y[1]
-      cumulative_pair = [y[0].to_time.to_i*1000, sum]
+    counts_array.each do |date, count|
+      sum += count
+      cumulative_pair = [date.to_time.to_i * 1000, sum]
       cumulative_array << cumulative_pair
     end
-        
+    
     cumulative_array
   end
   
