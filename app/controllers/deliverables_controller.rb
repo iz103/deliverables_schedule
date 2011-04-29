@@ -135,7 +135,7 @@ class DeliverablesController < ApplicationController
     if params[:commit] == "Delete"
       Deliverable.destroy_all(:id => params[:deliverables_ids])
     elsif params[:commit] == "Complete"
-      if params[:actual_date_select] and params[:actual_date_select] != ""
+      unless params[:actual_date_select].blank?
         # catch (:done) do 
         unless params[:actual_date_select].to_datetime > Date.today
         #params[:deliveries_ids].each do |id|
