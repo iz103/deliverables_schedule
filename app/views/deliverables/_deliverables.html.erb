@@ -1,7 +1,7 @@
-  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application" %>
+<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application" %>
 <h2 id="dd-heading">Deliveries for <%# if params[:search] %>: Discipline:<%#= params[:search][:tagged_with_disciplines]%>, Delivery Status:<%#= Status.find(params[:search][:deliveries_status_id_like]).name %> <%# else %> All Deliverables<%# end %></h1>
 
-<% form_for @search do |f| %>
+<%= form_for @search do |f| %>
   <ol class="form-list">
 	<li>
       <%= f.label :deliveries_status_id_equals, "Status" %>
@@ -43,7 +43,7 @@
 
 <%# path = params[:deliverable_id] ? complete_deliverable_deliveries_path : complete_deliveries_path %>
 
-  <% form_tag manage_deliverables_path, :id => 'management-form', :method => :put do %>
+  <%= form_tag manage_deliverables_path, :id => 'management-form', :method => :put do %>
     <%= error_messages_for :delivery %>
     <!-- <tr><td></td></tr> -->
     

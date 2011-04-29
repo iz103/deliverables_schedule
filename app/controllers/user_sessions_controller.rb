@@ -14,10 +14,10 @@ class UserSessionsController < ApplicationController
     end
   end
 
-    def destroy
-      @user_session = UserSession.find   #(params[:id])
-      @user_session.destroy
-      flash[:notice] = "Successfully logged out"
-      redirect_to root_url
-    end
+  def destroy
+    @user_session = UserSession.find   #(params[:id])
+    @user_session.destroy
+    flash[:notice] = "Successfully logged out"
+    redirect_to root_url
+  end
 end

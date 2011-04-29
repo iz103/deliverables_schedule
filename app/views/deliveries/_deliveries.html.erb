@@ -1,6 +1,6 @@
 <% unless params[:deliverable_id] %>
   </br>
-  <% form_for @search do |f| %>
+  <%= form_for @search do |f| %>
     <ol class="form-list">
   	  <li>
         <%= f.label :status_id_equals, "Status" %>
@@ -36,7 +36,7 @@
 
 <% path = params[:deliverable_id] ? complete_deliverable_deliveries_path : complete_deliveries_path %>
 
-  <% form_tag path, :id => 'management-form', :method => :put do %>
+  <%= form_tag path, :id => 'management-form', :method => :put do %>
     <!-- <tr><td></td></tr> -->
     <% @deliveries.each do |delivery|%>
       <% unless params[:deliverable_id] %>

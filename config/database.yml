@@ -5,9 +5,14 @@ defaults: &defaults
   encoding: unicode
   host: localhost
 
+# development:
+#   <<: *defaults
+#   database: deliverables_schedule_development
 development:
-  <<: *defaults
-  database: deliverables_schedule_development
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
 
 test: &test
   <<: *defaults

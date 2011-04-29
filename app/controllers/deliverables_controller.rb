@@ -8,7 +8,7 @@ class DeliverablesController < ApplicationController
     # @deliverables = Deliverable.paginate :page => params[:page]  # , :order => 'number'
     
     @search = Deliverable.search(params[:search])
-    @deliverables = @search.all.paginate(:page => params[:page], :per_page => 100)
+    @deliverables = @search.paginate(:page => params[:page], :per_page => 100)
     
     # deliveries_status = params[:search][:deliveries_status_id_like]
     # @deliveries = Delivery.search(:status_id_like => deliveries_status)
@@ -119,9 +119,9 @@ class DeliverablesController < ApplicationController
       @deliveries_for_deliverable = deliverable.deliveries(:order => "planned_date")
       @deliveries_for_deliverable.each do |delivery|
         @deliveries << delivery
-        end
       end
-      @deliveries
+    end
+    @deliveries
                   
     respond_to do |format|
       format.html
