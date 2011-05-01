@@ -192,8 +192,10 @@ def complete
 end
 
 def edit_multiple
-  if params[:deliveries_ids]
-    @deliveries = Delivery.find(params[:deliveries_ids])
+  # if params[:deliveries_ids]
+  if session[:deliveries_ids]
+    # @deliveries = Delivery.find(params[:deliveries_ids])
+    @deliveries = Delivery.find(session[:deliveries_ids])
   else
     redirect_to deliverables_path
     flash[:error] = "No deliveries selected"
