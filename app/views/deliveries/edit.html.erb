@@ -4,8 +4,8 @@
   <%= f.error_messages %>
 
   <p>
-
-    <%= f.date_select ("planned_date", :start_year => 2009) %>
+    <%= f.label :planned_date %><br />
+    <%= f.text_field :planned_date %>
   </p>
   <p>
     <%= collection_select(:delivery, :status_id, Status.all, :id, :name) %>
@@ -20,3 +20,12 @@
 
 <%= link_to "Back to all deliveries", deliveries_path %></br>
 <%= link_to "Back to #{@deliverable.number} deliveries", deliverable_deliveries_path(@deliverable) %>
+
+<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application" %>
+<script type="text/javascript" charset="utf-8">
+
+$(function() {
+  $("#delivery_planned_date").datepicker({dateFormat: "dd/mm/yy"});
+});
+
+</script>
