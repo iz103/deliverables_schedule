@@ -153,7 +153,9 @@ class DeliverablesController < ApplicationController
       Delivery.update_all(["actual_date=?", nil], :id => params[:deliveries_ids])
     elsif params[:commit] == "Edit"
       # redirect_to edit_multiple_deliverables_path and return
-      redirect_to edit_multiple_deliveries_path(:deliveries_ids => params[:deliveries_ids]) and return
+      # redirect_to edit_multiple_deliveries_path(:deliveries_ids => params[:deliveries_ids]) and return
+      (session[:deliveries_ids] = params[:deliveries_ids]
+      redirect_to edit_multiple_deliveries_path) and return
     end
       redirect_to deliverables_path
       
