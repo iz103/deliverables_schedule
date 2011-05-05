@@ -179,3 +179,23 @@ a:hover { color: #fff; background-color:#000; }
 .css3 {font-size: 1.4 em;}
 .css4 {font-size: 1.6 em;}
 
+/*----------------- Table ------------------*/
+table {
+	width: 95%;
+	min-width: 700px;
+}
+
+/*----------------- Progress ------------------*/
+#overdue {
+	background-color: #ffb9a8;
+}
+#early {
+	background-color: #caffbc;
+}
+#complete {
+	background-color: #caffbc;
+}
+
+
+
+

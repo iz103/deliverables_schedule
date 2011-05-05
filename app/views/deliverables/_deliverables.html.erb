@@ -30,7 +30,7 @@
 
 
 <fieldset>
-<table id ="ddtable">
+<table class ="data-table" id ="ddtable">
 <tr>
   <th><%= check_box_tag 'select-all' %></th>
   <th>Status</th>
@@ -56,11 +56,19 @@
 	        <td class="table-data"><%=h delivery.status.name %></td>
 	        <td class="table-data"><%=h delivery.planned_date.to_date %></td>
 	        <td class="table-data"><%=h deliverable.number%></td>
-            <td class="table-data"><% if delivery.actual_date? %> 
-	                 Complete
-	             <% else %> 
-	                 Not Complete
-                 <% end %></td>
+            <td class="table-data">
+              <% if delivery.actual_date? %> 
+	              <% if delivery.actual_date < delivery.planned_date %>
+	                <div id="early">Complete - EARLY</div>
+                <% else %>
+                  <div id="complete">Complete</div>
+	              <% end %>
+	            <% elsif delivery.planned_date < Date.today %> 
+	                 <div id="overdue">Not Complete - OVERDUE</div>
+              <% else %> 
+  	               Not Complete
+              <% end %>
+            </td>
              
                  <td><%=h deliverable.discipline_list %>,<%=h deliverable.tag_list %></td>
              <td><% if can? :edit, Delivery  %>
@@ -74,11 +82,19 @@
 	        <td class="table-data"><%=h delivery.status.name %></td>
 	        <td class="table-data"><%=h delivery.planned_date.to_date %></td>
 	        <td class="table-data"><%=h deliverable.number%></td>
-           <td class="table-data"><% if delivery.actual_date? %> 
-	                 Complete
-	             <% else %> 
-	                 Not Complete
-                <% end %></td>
+          <td class="table-data">
+            <% if delivery.actual_date? %> 
+              <% if delivery.actual_date < delivery.planned_date %>
+                <div id="early">Complete - EARLY</div>
+              <% else %>
+                <div id="complete">Complete</div>
+              <% end %>
+            <% elsif delivery.planned_date < Date.today %> 
+                 <div id="overdue">Not Complete - OVERDUE</div>
+            <% else %> 
+	               Not Complete
+            <% end %>
+          </td>
             
                 <td><%=h deliverable.discipline_list %>,<%=h deliverable.tag_list %></td>
             <td><% if can? :edit, Delivery  %>
