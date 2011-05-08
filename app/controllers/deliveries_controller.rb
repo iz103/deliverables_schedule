@@ -5,7 +5,7 @@ class DeliveriesController < ApplicationController
     unless params[:deliverable_id]
       @all_deliveries = Delivery.all(:order => "planned_date")
       @search = Delivery.search(params[:search]) #need to git rid of
-      @deliveries = @search.all.paginate(:page => params[:page], :per_page => 100) #need to git rid of
+      @deliveries = @search.paginate(:page => params[:page], :per_page => 100) #need to git rid of
       
       # if params[:search]
       #         if params["search"]["tagged_with_disciplines"].empty?
@@ -30,12 +30,12 @@ class DeliveriesController < ApplicationController
       #         @deliveries = @search.all.paginate(:page => params[:page])
       #         @text = "All deliverables"
       #       end
-    @text = "All deliverables"
+      @text = "All deliverables"
     else
     
-    @deliverable = Deliverable.find(params[:deliverable_id])
-    @deliveries = @deliverable.deliveries
-    @text = @deliverable.number
+      @deliverable = Deliverable.find(params[:deliverable_id])
+      @deliveries = @deliverable.deliveries
+      @text = @deliverable.number
     
     end
     # respond_to do |format|
