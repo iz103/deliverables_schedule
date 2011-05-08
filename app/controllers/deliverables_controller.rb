@@ -8,7 +8,7 @@ class DeliverablesController < ApplicationController
     # @deliverables = Deliverable.paginate :page => params[:page]  # , :order => 'number'
     
     @search = Deliverable.search(params[:search])
-    @deliverables = @search.all.paginate(:page => params[:page], :per_page => 100)
+    @deliverables = @search.paginate(:page => params[:page], :per_page => 100)
     
     # deliveries_status = params[:search][:deliveries_status_id_like]
     # @deliveries = Delivery.search(:status_id_like => deliveries_status)
@@ -119,9 +119,9 @@ class DeliverablesController < ApplicationController
       @deliveries_for_deliverable = deliverable.deliveries(:order => "planned_date")
       @deliveries_for_deliverable.each do |delivery|
         @deliveries << delivery
-        end
       end
-      @deliveries
+    end
+    @deliveries
                   
     respond_to do |format|
       format.html
@@ -135,7 +135,7 @@ class DeliverablesController < ApplicationController
     if params[:commit] == "Delete"
       Deliverable.destroy_all(:id => params[:deliverables_ids])
     elsif params[:commit] == "Complete"
-      if params[:actual_date_select] and params[:actual_date_select] != ""
+      unless params[:actual_date_select].blank?
         # catch (:done) do 
         unless params[:actual_date_select].to_datetime > Date.today
         #params[:deliveries_ids].each do |id|
@@ -154,8 +154,13 @@ class DeliverablesController < ApplicationController
     elsif params[:commit] == "Edit"
       # redirect_to edit_multiple_deliverables_path and return
       # redirect_to edit_multiple_deliveries_path(:deliveries_ids => params[:deliveries_ids]) and return
+<<<<<<< HEAD
       (session[:deliveries_ids] = params[:deliveries_ids]
       redirect_to edit_multiple_deliveries_path) and return
+=======
+       (session[:deliveries_ids] = params[:deliveries_ids]
+       redirect_to edit_multiple_deliveries_path) and return
+>>>>>>> rails3
     end
       redirect_to deliverables_path
       

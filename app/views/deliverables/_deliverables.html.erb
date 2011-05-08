@@ -1,7 +1,7 @@
-  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application" %>
+<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application" %>
 <h2 id="dd-heading">Deliveries for <%# if params[:search] %>: Discipline:<%#= params[:search][:tagged_with_disciplines]%>, Delivery Status:<%#= Status.find(params[:search][:deliveries_status_id_like]).name %> <%# else %> All Deliverables<%# end %></h1>
 
-<% form_for @search do |f| %>
+<%= form_for @search do |f| %>
   <ol class="form-list">
 	<li>
       <%= f.label :deliveries_status_id_equals, "Status" %>
@@ -43,7 +43,7 @@
 
 <%# path = params[:deliverable_id] ? complete_deliverable_deliveries_path : complete_deliveries_path %>
 
-  <% form_tag manage_deliverables_path, :id => 'management-form', :method => :put do %>
+  <%= form_tag manage_deliverables_path, :id => 'management-form', :method => :put do %>
     <%= error_messages_for :delivery %>
     <!-- <tr><td></td></tr> -->
     
@@ -56,20 +56,19 @@
 	        <td class="table-data"><%=h delivery.status.name %></td>
 	        <td class="table-data"><%=h delivery.planned_date.to_date %></td>
 	        <td class="table-data"><%=h deliverable.number%></td>
-            <td class="table-data">
-              <% if delivery.actual_date? %> 
-	              <% if delivery.actual_date < delivery.planned_date %>
-	                <div id="early">Complete - EARLY</div>
-                <% else %>
-                  <div id="complete">Complete</div>
-	              <% end %>
-	            <% elsif delivery.planned_date < Date.today %> 
-	                 <div id="overdue">Not Complete - OVERDUE</div>
-              <% else %> 
-  	               Not Complete
+          <td class="table-data">
+            <% if delivery.actual_date? %> 
+              <% if delivery.actual_date < delivery.planned_date %>
+                <div id="early">Complete - EARLY</div>
+              <% else %>
+                <div id="complete">Complete</div>
               <% end %>
-            </td>
-             
+            <% elsif delivery.planned_date < Date.today %> 
+              <div id="overdue">Not Complete - OVERDUE</div>
+            <% else %> 
+              Not Complete
+            <% end %>
+          </td>
                  <td><%=h deliverable.discipline_list %>,<%=h deliverable.tag_list %></td>
              <td><% if can? :edit, Delivery  %>
                    <%= link_to "Edit", edit_deliverable_delivery_path(:id => delivery.id, :deliverable_id => deliverable.id)%><%end %></td>
@@ -90,12 +89,11 @@
                 <div id="complete">Complete</div>
               <% end %>
             <% elsif delivery.planned_date < Date.today %> 
-                 <div id="overdue">Not Complete - OVERDUE</div>
+              <div id="overdue">Not Complete - OVERDUE</div>
             <% else %> 
-	               Not Complete
+              Not Complete
             <% end %>
           </td>
-            
                 <td><%=h deliverable.discipline_list %>,<%=h deliverable.tag_list %></td>
             <td><% if can? :edit, Delivery  %>
                   <%= link_to "Edit", edit_deliverable_delivery_path(:id => delivery.id, :deliverable_id => deliverable.id)%><%end %></td>
@@ -119,7 +117,7 @@
 <script type="text/javascript" charset="utf-8">
 
 $(function() {
-  $("#actual_date_select").datepicker();
+  $("#actual_date_select").datepicker({dateFormat: "dd/mm/yy"});
 });
 
 </script>

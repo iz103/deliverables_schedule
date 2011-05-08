@@ -12,7 +12,9 @@ class Deliverable < ActiveRecord::Base
   # cattr_reader :per_page
   # @@per_page = 100
   
-  scope_procedure :tagged_with_disciplines, lambda {|tags| tagged_with(tags, :on => :disciplines )}
+  scope :tagged_with_disciplines, lambda {|tags| tagged_with(tags, :on => :disciplines )}
+  search_methods :tagged_with_disciplines
+  
   # scope_procedure :tagged_with, lambda {|tags| tagged_with (tags)}
   
   # def self.search(search, page)

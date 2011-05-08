@@ -2,21 +2,21 @@
 <script type="text/javascript" charset="utf-8">
 
 $(function() {
-  $("#delivery_planned_date").datepicker();
+  $("#delivery_planned_date").datepicker({dateFormat: "dd/mm/yy"});
 });
 
 $(function() {
-  $("#delivery_actual_date").datepicker();
+  $("#delivery_actual_date").datepicker({dateFormat: "dd/mm/yy"});
 });
 
 </script>
 <h3>Edit The Following Deliveries</h3>
 
-<% form_for :delivery, :url => update_multiple_deliveries_path, :html => { :method => :put } do |f| %>
+<%= form_for :delivery, :url => update_multiple_deliveries_path, :html => { :method => :put } do |f| %>
   <%#= f.error_messages %>
 
 <ul>
-  <% for delivery in @deliveries %>
+  <% @deliveries.each do |delivery| %>
     <li>
 	  <%= hidden_field_tag "deliveries_ids[]", delivery.id %>
 	  Current Planned Date: <%=h delivery.planned_date.to_date %><% if delivery.actual_date? %>,    Current Actual Date:  <%=h delivery.actual_date.to_date %><% end %>

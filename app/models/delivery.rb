@@ -33,16 +33,36 @@ class Delivery < ActiveRecord::Base
   # end
   
   # based on this gist https://gist.github.com/199027
-  scope_procedure :tagged_with_disciplines, lambda {|tags| tagged_with(tags, :on => :disciplines )}
+  scope :tagged_with_disciplines, lambda {|tags| tagged_with(tags, :on => :disciplines )}
   
-
+  
   def self.planned_date_count(deliveries)
-    sum = 0
-    date_with_count.map do |date, count|
-      sum += count
-      [date.to_time.to_i * 1000, sum]
+    # deliveries = Delivery.all(:order => "planned_date")
+    dates = []
+    counts = Hash.new(0)
+    # cumulative = Hash.new(0)
+    deliveries.each do |delivery|
+      counts[delivery.planned_date] += 1
     end
+    counts_array = counts.sort  
+    sum = 0
+    cumulative_array = []
+    counts_array.each do |y|
+      sum += y[1]
+      cumulative_pair = [y[0].to_time.to_i*1000, sum]
+      cumulative_array << cumulative_pair
+    end
+
+    cumulative_array
   end
+  
+  # def self.planned_date_count
+  #   sum = 0
+  #   date_with_count.map do |date, count|
+  #     sum += count
+  #     [date.to_time.to_i * 1000, sum]
+  #   end
+  # end
   
   def self.date_with_count
     result = find_by_sql("SELECT distinct(planned_date), count(planned_date) as count FROM deliveries GROUP BY planned_date ORDER BY planned_date")

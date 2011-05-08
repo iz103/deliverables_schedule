@@ -181,21 +181,18 @@ a:hover { color: #fff; background-color:#000; }
 
 /*----------------- Table ------------------*/
 table {
-	width: 95%;
-	min-width: 700px;
-}
+    width: 95%;
+    min-width: 700px;
+      }
 
 /*----------------- Progress ------------------*/
 #overdue {
-	background-color: #ffb9a8;
+  background-color: #ffb9a8;
 }
 #early {
-	background-color: #caffbc;
+  background-color: #caffbc;
 }
 #complete {
-	background-color: #caffbc;
+  background-color: #caffbc;
 }
-
-
-
 

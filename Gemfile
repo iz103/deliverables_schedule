@@ -1,19 +1,20 @@
 source "http://rubygems.org"
 
-gem "rails", "2.3.11"
-gem "haml", "3.0.24"
-gem "authlogic", "2.1.6"
-gem "searchlogic"
+gem "rails", "3.0.7"
+gem "haml"
+gem "authlogic"
+gem "meta_search"
 gem "fastercsv", "1.5.4"
-gem "will_paginate", "2.3.15"
+gem "will_paginate", "3.0.pre2"
 gem "cancan", "1.6.2"
 gem "acts-as-taggable-on", "2.0.6"
 gem "pg"
+gem "heroku"
 
 group :test do
   gem "test-unit"
-  gem "rspec-rails", "1.3"
-  gem "rspec", "1.3"
+  gem "rspec-rails"
+  gem "rspec"
   gem "pickle"
   gem "factory_girl"
   gem "launchy"
@@ -21,6 +22,8 @@ group :test do
 end
 
 group :test, :development do
+  gem "sqlite3-ruby"
+  gem "awesome_print", :require => "ap"
   platforms :ruby_18 do
     gem "ruby-debug"
   end
