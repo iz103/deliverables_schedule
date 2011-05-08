@@ -9,6 +9,7 @@ gem "will_paginate", "3.0.pre2"
 gem "cancan", "1.6.2"
 gem "acts-as-taggable-on", "2.0.6"
 gem "pg"
+gem "heroku"
 
 group :test do
   gem "test-unit"

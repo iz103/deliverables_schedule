@@ -56,6 +56,10 @@ GEM
     gherkin (2.3.6)
       json (>= 1.4.6)
     haml (3.1.1)
+    heroku (2.0.5)
+      launchy (>= 0.3.2)
+      rest-client (~> 1.6.1)
+      term-ansicolor (~> 1.0.5)
     i18n (0.5.0)
     json (1.5.1)
     launchy (0.4.0)
@@ -100,6 +104,8 @@ GEM
       rake (>= 0.8.7)
       thor (~> 0.14.4)
     rake (0.8.7)
+    rest-client (1.6.1)
+      mime-types (>= 1.16)
     rspec (2.5.0)
       rspec-core (~> 2.5.0)
       rspec-expectations (~> 2.5.0)
@@ -151,6 +157,7 @@ DEPENDENCIES
   factory_girl
   fastercsv (= 1.5.4)
   haml
+  heroku
   launchy
   meta_search
   pg
