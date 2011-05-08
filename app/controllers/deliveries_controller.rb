@@ -203,15 +203,15 @@ def edit_multiple
 end
 
 def update_multiple
-  unless params[:delivery][:actual_date] and params[:delivery][:actual_date].to_datetime > Date.today
+  # unless params[:delivery][:actual_date] and params[:delivery][:actual_date].to_datetime > Date.today
     @deliveries = Delivery.find(params[:deliveries_ids])
     @deliveries.each do |delivery|
       delivery.update_attributes!(params[:delivery].reject { |k,v| v.blank? })
     end
     flash[:notice] = "Updated deliveries"
-  else
-      flash[:error] = "Cannot have an Actual Delivery date in the future"
-    end
+  # else
+  #     flash[:error] = "Cannot have an Actual Delivery date in the future"
+  #   end
     redirect_to deliverables_path
 end
 
