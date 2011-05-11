@@ -15,7 +15,7 @@ class Deliverable < ActiveRecord::Base
   scope :tagged_with_disciplines, lambda {|tags| tagged_with(tags, :on => :disciplines )}
   search_methods :tagged_with_disciplines
   
-  # scope_procedure :tagged_with, lambda {|tags| tagged_with (tags)}
+  # scope :tagged_with, lambda {|tags| tagged_with (tags)}
   
   # def self.search(search, page)
   #   paginate :per_page => 100, :page => page,
