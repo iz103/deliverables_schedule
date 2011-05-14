@@ -22,7 +22,19 @@ class Delivery < ActiveRecord::Base
   # deliveries = Delivery.status_name_like "B"
   
   # based on this gist https://gist.github.com/199027
-  scope :tagged_with_disciplines, lambda {|tags| tagged_with(tags, :on => :disciplines )}
+  # scope :tagged_with_disciplines, lambda {|tags| tagged_with(tags, :on => :disciplines )}
+  
+  
+  scope :with_progress, lambda {|progress| {:conditions => "progresses_mask & #{2**PROGRESSES.index(progress.to_s)} > 0" }}
+  PROGRESSES = %w[complete overdue incomplete]
+  
+  def progresses=(progresses)
+    self.progresses_mask = (progresses & PROGRESSES).map { |r| 2**PROGRESSES.index(r) }.sum
+  end
+  
+  def progresses
+    PROGRESSES.reject { |r| ((progresses_mask || 0) & 2**PROGRESSES.index(r)).zero? }
+  end
   
   
   def self.planned_date_count(deliveries)
