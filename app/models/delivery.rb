@@ -2,6 +2,7 @@ class Delivery < ActiveRecord::Base
   belongs_to :deliverable
   belongs_to :status
   validates_presence_of :planned_date, :message => "can't be blank"
+  
   # validate :actual_date_cannot_be_in_the_future
   
   # def actual_date_cannot_be_in_the_future
@@ -33,7 +34,22 @@ class Delivery < ActiveRecord::Base
   # end
   
   # based on this gist https://gist.github.com/199027
-  scope :tagged_with_disciplines, lambda {|tags| tagged_with(tags, :on => :disciplines )}
+  # scope :deliverable_tagged_with_disciplines, lambda {|tags| deliverable_tagged_with(tags, :on => :disciplines )}
+  # search_methods :deliverable_tagged_with_disciplines
+  
+  scope :with_progress, lambda {|progress| {:conditions => "progresses_mask & #{2**PROGRESSES.index(progress.to_s)} > 0" }}
+  PROGRESSES = %w[complete overdue incomplete]
+  
+  def progresses=(progresses)
+    self.progresses_mask = (progresses & PROGRESSES).map { |r| 2**PROGRESSES.index(r) }.sum
+  end
+  
+  def progresses
+    PROGRESSES.reject { |r| ((progresses_mask || 0) & 2**PROGRESSES.index(r)).zero? }
+  end
+  
+  
+  
   
   
   def self.planned_date_count(deliveries)

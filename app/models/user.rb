@@ -29,3 +29,9 @@ end
 # role << User::ROLES[1]
 # user.roles = role
 # user.save
+
+# # progress = []
+# # progress << Delivery::PROGRESSES[0]
+# delivery.progresses = progress
+# delivery.save
+

@@ -14,6 +14,8 @@ class Deliverable < ActiveRecord::Base
   
   scope :tagged_with_disciplines, lambda {|tags| tagged_with(tags, :on => :disciplines )}
   search_methods :tagged_with_disciplines
+  # scope :marked_complete, :conditions =>['SELECT "actual_date" FROM "deliveries" WHERE EXISTS']
+  # search_methods :marked_complete
   
   # scope :tagged_with, lambda {|tags| tagged_with (tags)}
   

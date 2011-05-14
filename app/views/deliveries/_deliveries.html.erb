@@ -7,10 +7,15 @@
         <%= f.collection_select :status_id_equals, Status.all, :id, :name, :include_blank => true %>
       </li>
 
-		<!-- <li>
-		  <%#= f.label :tagged_with_disciplines, "Disciplines" %>
-		  <%#= f.collection_select :tagged_with_disciplines, Deliverable.discipline_counts, :name, :name, :include_blank => true %>
-		</li> -->
+    <li>
+      <%#= f.label :deliverable_tagged_with_disciplines, "Disciplines" %>
+      <%#= f.collection_select :deliverable_tagged_with_disciplines, Deliverable.discipline_counts, :name, :name, :include_blank => true %>
+    </li>
+    <li>
+  	  <%= f.label :with_progress, "Progress" %>
+  	  <%= f.collection_select :with_progress, Delivery::PROGRESSES, :name, :name, :include_blank => true %>
+  	</li>
+  	
       <li>
 	
 	  
@@ -28,7 +33,7 @@
 <tr>
   <th><%= check_box_tag 'select-all' %></th>
   <th>Status</th>
-  <th><%#= order @search, :by => :planned_date %></th>
+  <th>Planned Date</th>
   <% unless params[:deliverable_id] %><th>Deliverable</th><%end%>
   <th>Progress</th>
   <% unless params[:deliverable_id] %><th>Deliverable Tags</th><% end %>
@@ -37,25 +42,21 @@
 <% path = params[:deliverable_id] ? complete_deliverable_deliveries_path : complete_deliveries_path %>
 
   <%= form_tag path, :id => 'management-form', :method => :put do %>
-    <!-- <tr><td></td></tr> -->
     <% @deliveries.each do |delivery|%>
-      <% unless params[:deliverable_id] %>
-        <% @deliverable = Deliverable.find(delivery.deliverable_id) %>
-      <% end %>
       <tr>
 	    <td class="table-data"><%= check_box_tag "deliveries_ids[]", delivery.id, false, :class => 'deliveries-ids' %></td>
 	    <td class="table-data"><%=h delivery.status.name %></td>
 	    <td class="table-data"><%=h delivery.planned_date.to_date %></td>
-	    <% unless params[:deliverable_id] %><td class="table-data"><%=h @deliverable.number%></td><% end %>
+	    <% unless params[:deliverable_id] %><td class="table-data"><%=h delivery.deliverable.number %></td><% end %>
          <td class="table-data"><% if delivery.actual_date? %> 
 	             Complete <% if can? :edit, Delivery  %><%#= check_box_tag "deliveries_ids[]", delivery.id %><%end %>
 	         <% else %> 
 	             Not Complete <% if can? :edit, Delivery  %><%#= check_box_tag "deliveries_ids[]", delivery.id %><%end %>
              <% end %></td>
              
-             <% unless params[:deliverable_id] %><td><%=h @deliverable.discipline_list %>,<%=h @deliverable.tag_list %></td><% end %>
+             <% unless params[:deliverable_id] %><td><%=h delivery.deliverable.discipline_list %>,<%=h delivery.deliverable.tag_list %></td><% end %>
          <td><% if can? :edit, Delivery  %>
-               <%= link_to "Edit", edit_deliverable_delivery_path(:id => delivery.id, :deliverable_id => @deliverable.id)%>
+               <%= link_to "Edit", edit_deliverable_delivery_path(:id => delivery.id, :deliverable_id => delivery.deliverable)%>
          </td><% end %>
        </tr> 
            <% end %>
@@ -78,6 +79,6 @@
 	  <%= link_to 'back', deliverable_path(@deliverable) %>
 <%end %>
 <% if params[:deliverable_id]%>
-	  <% if can? :create, Delivery  %><%= link_to 'New delivery', new_deliverable_delivery_path(:deliverable_id => @deliverable)  %>
+	  <% if can? :create, Delivery  %><%= link_to 'New delivery', new_deliverable_delivery_path(:deliverable_id => delivery.deliverable)  %>
 <% end %>
 <% end %>
