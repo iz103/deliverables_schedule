@@ -14,7 +14,11 @@
 	<li>
 	  <%#= f.label :tagged_with, "Tags" %>
 	  <%#= f.collection_select :tagged_with, Deliverable.tag_counts, :name, :name, :include_blank => true %>
-	</li>	  
+	</li>
+  <li>
+	  <%= f.label :tagged_with_disciplines, "Disciplines" %>
+	  <%= f.collection_select :tagged_with_disciplines, Deliverable.discipline_counts, :name, :name, :include_blank => true %>
+	</li>		  
     <%= f.submit "Search" %>  
   </ol>
   
