@@ -17,9 +17,4 @@ class Deliverable < ActiveRecord::Base
   
   # scope :tagged_with, lambda {|tags| tagged_with (tags)}
   
-  # def self.search(search, page)
-  #   paginate :per_page => 100, :page => page,
-  #            :conditions => ['number like ?', "%#{search}%"] # , :order => 'number'
-  # end
-  
 end
