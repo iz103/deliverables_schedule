@@ -2,6 +2,7 @@ class Delivery < ActiveRecord::Base
   belongs_to :deliverable
   belongs_to :status
   validates_presence_of :planned_date, :message => "can't be blank"
+  
   # validate :actual_date_cannot_be_in_the_future
   
   # def actual_date_cannot_be_in_the_future
@@ -24,9 +25,22 @@ class Delivery < ActiveRecord::Base
   # based on this gist https://gist.github.com/199027
   # scope :tagged_with_disciplines, lambda {|tags| tagged_with(tags, :on => :disciplines )}
   
+  # based on this gist https://gist.github.com/199027
+  # scope :deliverable_tagged_with_disciplines, lambda {|tags| deliverable_tagged_with(tags, :on => :disciplines )}
+  # search_methods :deliverable_tagged_with_disciplines
   
   scope :with_progress, lambda {|progress| {:conditions => "progresses_mask & #{2**PROGRESSES.index(progress.to_s)} > 0" }}
+  search_methods :with_progress
   PROGRESSES = %w[complete overdue incomplete]
+  
+  
+  
+  # # p = []
+  # # progress << Delivery::PROGRESSES[0]
+  # delivery.progresses = p
+  # delivery.save
+  
+  
   
   def progresses=(progresses)
     self.progresses_mask = (progresses & PROGRESSES).map { |r| 2**PROGRESSES.index(r) }.sum
@@ -69,6 +83,8 @@ class Delivery < ActiveRecord::Base
     result = find_by_sql("SELECT distinct(planned_date), count(planned_date) as count FROM deliveries GROUP BY planned_date ORDER BY planned_date")
     result.map{|row| [row["planned_date"].to_date, row["count"].to_i]}
   end
+  
+
   
   def self.actual_date_count(deliveries)
     

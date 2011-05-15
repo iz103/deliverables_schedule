@@ -16,8 +16,8 @@
 	  <%#= f.collection_select :tagged_with, Deliverable.tag_counts, :name, :name, :include_blank => true %>
 	</li>
   <li>
-	  <%= f.label :tagged_with_disciplines, "Disciplines" %>
-	  <%= f.collection_select :tagged_with_disciplines, Deliverable.discipline_counts, :name, :name, :include_blank => true %>
+	  <%= f.label :deliveries_with_progress, "Progress" %>
+	  <%= f.select("deliveries_with_progress", Delivery::PROGRESSES, {:include_blank => true}) %>
 	</li>		  
     <%= f.submit "Search" %>  
   </ol>
