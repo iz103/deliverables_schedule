@@ -29,7 +29,7 @@ class Delivery < ActiveRecord::Base
   # scope :deliverable_tagged_with_disciplines, lambda {|tags| deliverable_tagged_with(tags, :on => :disciplines )}
   # search_methods :deliverable_tagged_with_disciplines
   
-  scope :with_progress, lambda {|progress| {:conditions => "progresses_mask & #{2**PROGRESSES.index(progress.to_s)} > 0" }}
+  scope :with_progress, lambda {|progress| {:conditions => "progresses_mask = #{2**PROGRESSES.index(progress.to_s)}" }}
   search_methods :with_progress
   PROGRESSES = %w[complete overdue incomplete]
   
