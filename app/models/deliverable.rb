@@ -19,7 +19,7 @@ class Deliverable < ActiveRecord::Base
   #   
   # }
   def self.deliveries_with_progress(progress)
-    joins(:deliveries).where("\"deliveries\".progresses_mask = #{2**Delivery::PROGRESSES.index(progress.to_s).to_i}")
+    joins(:deliveries).where("\"deliveries\".progresses_mask = #{Delivery::PROGRESSES.index(progress.to_s).to_i}")
   end
   
   search_methods :deliveries_with_progress
@@ -31,3 +31,10 @@ class Deliverable < ActiveRecord::Base
   # scope :tagged_with, lambda {|tags| tagged_with (tags)}
   
 end
+
+# deliveries.each do |delivery|
+#   if delivery.actual_date?
+#     delivery.progresses = ("complete")
+#     delivery.save
+#   end
+# end

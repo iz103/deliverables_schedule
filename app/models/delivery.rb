@@ -29,25 +29,17 @@ class Delivery < ActiveRecord::Base
   # scope :deliverable_tagged_with_disciplines, lambda {|tags| deliverable_tagged_with(tags, :on => :disciplines )}
   # search_methods :deliverable_tagged_with_disciplines
   
-  scope :with_progress, lambda {|progress| {:conditions => "progresses_mask = #{2**PROGRESSES.index(progress.to_s)}" }}
+  scope :with_progress, lambda {|progress| {:conditions => "progresses_mask = #{PROGRESSES.index(progress.to_s)}" }}
   search_methods :with_progress
   PROGRESSES = %w[complete overdue incomplete]
   
   
-  
-  # # p = []
-  # # progress << Delivery::PROGRESSES[0]
-  # delivery.progresses = p
-  # delivery.save
-  
-  
-  
   def progresses=(progresses)
-    self.progresses_mask = (progresses & PROGRESSES).map { |r| 2**PROGRESSES.index(r) }.sum
+    self.progresses_mask = (progresses & PROGRESSES).map { |r| PROGRESSES.index(r) }.sum
   end
   
   def progresses
-    PROGRESSES.reject { |r| ((progresses_mask || 0) & 2**PROGRESSES.index(r)).zero? }
+    PROGRESSES.reject { |r| ((progresses_mask || 0) & PROGRESSES.index(r)).zero? }
   end
   
   
@@ -212,3 +204,12 @@ class Delivery < ActiveRecord::Base
   end
 
 end
+
+
+
+
+  
+  # # p = []
+  # # p << Delivery::PROGRESSES[0]
+  # delivery.progresses = p
+  # delivery.save
