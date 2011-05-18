@@ -43,30 +43,33 @@
       <%= error_messages_for :delivery %>
       <% @deliverables.each do |deliverable|%>
         <% deliverable.deliveries.each do |delivery| %>
+          <% prog_array = Delivery::PROGRESSES  %>
           <% if params[:search] %>
-            <% if "#{delivery.status_id}" == params[:search][:deliveries_status_id_equals] || params[:search][:deliveries_status_id_equals] == "" || params[:search] == nil || params[:search][:deliveries_with_progress] == "#{Delivery::PROGRESSES[delivery.progresses_mask]}" %>
+          <% debugger %>
+            <% if "#{delivery.status_id}" == params[:search][:deliveries_status_id_equals] || params[:search][:deliveries_status_id_equals] == "" || params[:search] == nil || params[:search][:deliveries_with_progress] == prog_array[delivery.progresses_mask] %>
+            <!-- #it needs to be an %% -->
               <tr>
       	        <td class="table-data"><%= check_box_tag "deliveries_ids[]", delivery.id, false, :class => 'deliveries-ids' %></td>
       	        <td class="table-data"><%=h delivery.status.name %></td>
       	        <td class="table-data"><%=h delivery.planned_date.to_date %></td>
       	        <td class="table-data"><%=h deliverable.number%></td>
                 <td class="table-data">
-                  <% if delivery.actual_date? %> 
-                    <% if delivery.actual_date < delivery.planned_date %>
-                      <div id="early">
-                        Complete - EARLY
-                      </div>
-                    <% else %>
-                      <div id="complete">
-                        Complete
-                      </div>
-                    <% end %>
-                  <% elsif delivery.planned_date < Date.today %> 
+                  <% if delivery.progresses_mask == prog_array.index("complete") %>
+                    <div id="complete">
+                      Complete
+                    </div>
+                  <% elsif delivery.progresses_mask == prog_array.index("overdue") %>   
                     <div id="overdue">
                       Not Complete - OVERDUE
                     </div>
-                  <% else %> 
-                    Not Complete
+                  <% elsif delivery.progresses_mask == prog_array.index("due") %>
+                    <div id="overdue">
+                      DUE TODAY
+                    </div>
+                  <% else %>
+                    <div>
+                      Not Complete     
+                    </div>
                   <% end %>
                 </td>
                 <td>
@@ -86,16 +89,23 @@
     	        <td class="table-data"><%=h delivery.planned_date.to_date %></td>
     	        <td class="table-data"><%=h deliverable.number%></td>
               <td class="table-data">
-                <% if delivery.actual_date? %> 
-                  <% if delivery.actual_date < delivery.planned_date %>
-                    <div id="early">Complete - EARLY</div>
-                  <% else %>
-                    <div id="complete">Complete</div>
-                  <% end %>
-                <% elsif delivery.planned_date < Date.today %> 
-                  <div id="overdue">Not Complete - OVERDUE</div>
-                <% else %> 
-                  Not Complete
+                <% prog_array = Delivery::PROGRESSES %>
+                <% if delivery.progresses_mask == prog_array.index("complete") %>
+                  <div id="complete">
+                    Complete
+                  </div>
+                <% elsif delivery.progresses_mask == prog_array.index("overdue") %>   
+                  <div id="overdue">
+                    Not Complete - OVERDUE
+                  </div>
+                <% elsif delivery.progresses_mask == prog_array.index("due") %>
+                  <div id="overdue">
+                    DUE TODAY
+                  </div>
+                <% else %>
+                  <div>
+                    Not Complete     
+                  </div>
                 <% end %>
               </td>
               <td>

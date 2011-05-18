@@ -31,7 +31,7 @@ class Delivery < ActiveRecord::Base
   
   scope :with_progress, lambda {|progress| {:conditions => "progresses_mask = #{PROGRESSES.index(progress.to_s)}" }}
   search_methods :with_progress
-  PROGRESSES = %w[complete overdue incomplete]
+  PROGRESSES = %w[complete overdue incomplete due]
   
   
   def progresses=(progresses)

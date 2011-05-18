@@ -6,6 +6,9 @@ class DeliverablesController < ApplicationController
     # flash[:notice] = "logged in"  # TODO remove this after fixing cucumber 
     @search = Deliverable.search(params[:search])
     @deliverables = @search.paginate(:page => params[:page], :per_page => 100)    
+    
+    # {"search"=>{"deliveries_status_id_equals"=>"", "tagged_with_disciplines"=>"", "deliveries_with_progress"=>"complete"}, "commit"=>"Search"}
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @deliverables }
