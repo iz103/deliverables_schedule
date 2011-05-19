@@ -2,6 +2,7 @@ class Delivery < ActiveRecord::Base
   belongs_to :deliverable
   belongs_to :status
   validates_presence_of :planned_date, :message => "can't be blank"
+  
   # validate :actual_date_cannot_be_in_the_future
   
   # def actual_date_cannot_be_in_the_future
@@ -21,19 +22,25 @@ class Delivery < ActiveRecord::Base
   # searchlogic searches
   # deliveries = Delivery.status_name_like "B"
   
-  
-  
-  #based on http://stackoverflow.com/questions/5434326/a-question-about-will-paginates-with-multiple-conditions
-  # def self.search(discipline_list, tag_list,  page)
-  #   conditions = []
-  #   conditions << "discipline_list = #{discipline_list}"
-  #   conditions << "tag_list = #{tag_list}"
-  #   paginate :per_page => 100, :page => page,
-  #            :conditions => conditions.join('and')  # , :order => 'number'
-  # end
+  # based on this gist https://gist.github.com/199027
+  # scope :tagged_with_disciplines, lambda {|tags| tagged_with(tags, :on => :disciplines )}
   
   # based on this gist https://gist.github.com/199027
-  scope :tagged_with_disciplines, lambda {|tags| tagged_with(tags, :on => :disciplines )}
+  # scope :deliverable_tagged_with_disciplines, lambda {|tags| deliverable_tagged_with(tags, :on => :disciplines )}
+  # search_methods :deliverable_tagged_with_disciplines
+  
+  scope :with_progress, lambda {|progress| {:conditions => "progresses_mask = #{PROGRESSES.index(progress.to_s)}" }}
+  search_methods :with_progress
+  PROGRESSES = %w[complete overdue incomplete due]
+  
+  
+  def progresses=(progresses)
+    self.progresses_mask = (progresses & PROGRESSES).map { |r| PROGRESSES.index(r) }.sum
+  end
+  
+  def progresses
+    PROGRESSES.reject { |r| ((progresses_mask || 0) & PROGRESSES.index(r)).zero? }
+  end
   
   
   def self.planned_date_count(deliveries)
@@ -68,6 +75,8 @@ class Delivery < ActiveRecord::Base
     result = find_by_sql("SELECT distinct(planned_date), count(planned_date) as count FROM deliveries GROUP BY planned_date ORDER BY planned_date")
     result.map{|row| [row["planned_date"].to_date, row["count"].to_i]}
   end
+  
+
   
   def self.actual_date_count(deliveries)
     
@@ -199,140 +208,8 @@ end
 
 
 
-
-
-
-
-
-
-
-# sum = 0
-#     counts.each do |date, count|
-#       sum += count
-#       cumulative[date] = sum
-#     end
-#     cumulative_array = []
-#     cumulative.each do |key, value|
-#       cumulative_pair = [key.to_time.to_i*1000, value]
-#       cumulative_array << cumulative_pair
-#     end
-
-
-
- # def planned_date_count
- #   deliveries = Delivery.all(:order => "planned_date")
- #   dates = []
- #   counts = []
- #   cumulative = []
- #   deliveries.each do |delivery|
- #     count = 0
- #     if dates.empty?
- #       # count += 1
- #       dates << delivery.planned_date
- #       # counts << count
- #     else    
- #       dates.each do |date|
- #         if date == delivery.planned_date
- #           # x = dates.index(date)
- #           # counts[x] += 1
- #         else
- #           # count += 1
- #           dates << delivery.planned_date
- #           # counts << count
- #         end
- #         end
- #       # dates.uniq!
- #     end
- #     end
- #     deliveries.each do |delivery|
- #       
- #          end
- #        end
- #      end
- #    end
- #       
- #     
- #     
- #     
- #     
- #     
- #     sum = 0
- #     counts.each do |y| sum += y
- #     cumulative << sum
- #   end  
- # end
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- # def planned_date_count
- #   deliveries = Delivery.all(:order => "planned_date")
- #   dates = []
- #   counts = []
- #   cumulative = []
- #   deliveries.each do |delivery|
- #     count = 0
- #     if dates.empty?
- #       count += 1
- #       dates << delivery.planned_date
- #       counts << count
- #     else    
- #       dates.each do |date|
- #         if date == delivery.planned_date
- #           x = dates.index(date)
- #           counts[x] += 1
- #         else
- #           count += 1
- #           dates << delivery.planned_date
- #           counts << count
- #         end
- #         end
- #       dates.uniq!
- #     end
- #     end
- #     sum = 0
- #     counts.each do |y| sum += y
- #     cumulative << sum
- #   end  
- # end
-
-
-     
- 
- 
- 
- 
- 
- 
- # def planned_date_hash
- #   deliveries = Delivery.all(:order => "planned_date")
- #   hash = Hash.new
- #   count = 0
- #   deliveries.each do |delivery|
- #     
- #     unless hash.any? do |key, value| value = delivery.planned_date end
- #       count += 1
- #       hash[count] = delivery.planned_date
- #     else 
- #       key += 1   # how to to get the key of a value in a hash and add it to another key
- #     hash.sort
- #   end
- # end
- # 
- # unless hash.any
- # # 
- # # def cumulative_sum
- # #   planned_date_hash
- # #   sum = 0
- # #   
- # #   
- # # end
- # 
+  
+  # # p = []
+  # # p << Delivery::PROGRESSES[0]
+  # delivery.progresses = p
+  # delivery.save

@@ -1,0 +1,33 @@
+<tr>
+  <td class="table-data"><%= check_box_tag "deliveries_ids[]", delivery.id, false, :class => 'deliveries-ids' %></td>
+  <td class="table-data"><%=h delivery.status.name %></td>
+  <td class="table-data"><%=h delivery.planned_date.to_date %></td>
+  <td class="table-data"><%=h deliverable.number%></td>
+  <td class="table-data">
+    <% if delivery.progresses_mask == prog_array.index("complete") %>
+      <div id="complete">
+        Complete
+      </div>
+    <% elsif delivery.progresses_mask == prog_array.index("overdue") %>   
+      <div id="overdue">
+        Not Complete - OVERDUE
+      </div>
+    <% elsif delivery.progresses_mask == prog_array.index("due") %>
+      <div id="overdue">
+        DUE TODAY
+      </div>
+    <% else %>
+      <div>
+        Not Complete     
+      </div>
+    <% end %>
+  </td>
+  <td>
+    <%=h deliverable.discipline_list %>,<%=h deliverable.tag_list %>
+  </td>
+  <td>
+    <% if can? :edit, Delivery  %>
+      <%= link_to "Edit", edit_deliverable_delivery_path(:id => delivery.id, :deliverable_id => deliverable.id)%>
+    <% end %>
+  </td>
+</tr>

@@ -15,11 +15,26 @@ class Deliverable < ActiveRecord::Base
   scope :tagged_with_disciplines, lambda {|tags| tagged_with(tags, :on => :disciplines )}
   search_methods :tagged_with_disciplines
   
-  # scope_procedure :tagged_with, lambda {|tags| tagged_with (tags)}
+  # scope :deliveries_with_progress, lambda {|progress|
+  #   
+  # }
+  def self.deliveries_with_progress(progress)
+    joins(:deliveries).where("\"deliveries\".progresses_mask = #{Delivery::PROGRESSES.index(progress.to_s).to_i}")
+  end
   
-  # def self.search(search, page)
-  #   paginate :per_page => 100, :page => page,
-  #            :conditions => ['number like ?', "%#{search}%"] # , :order => 'number'
-  # end
+  search_methods :deliveries_with_progress
+  
+  
+  # scope :marked_complete, :conditions =>['SELECT "actual_date" FROM "deliveries" WHERE EXISTS']
+  # search_methods :marked_complete
+  
+  # scope :tagged_with, lambda {|tags| tagged_with (tags)}
   
 end
+
+# deliveries.each do |delivery|
+#   if delivery.actual_date?
+#     delivery.progresses = ("complete")
+#     delivery.save
+#   end
+# end
