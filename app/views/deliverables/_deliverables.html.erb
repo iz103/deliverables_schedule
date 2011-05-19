@@ -45,78 +45,16 @@
         <% deliverable.deliveries.each do |delivery| %>
           <% prog_array = Delivery::PROGRESSES  %>
           <% if params[:search] %>
-          <% debugger %>
-            <% if "#{delivery.status_id}" == params[:search][:deliveries_status_id_equals] || params[:search][:deliveries_status_id_equals] == "" || params[:search] == nil || params[:search][:deliveries_with_progress] == prog_array[delivery.progresses_mask] %>
+            <% if "#{delivery.status_id}" == params[:search][:deliveries_status_id_equals] || params[:search][:deliveries_status_id_equals] == "" || params[:search] == nil %>
+            
+              <% if params[:search][:deliveries_with_progress] == prog_array[delivery.progresses_mask] %>
+                <%= render :partial => "deliverables_tr", :locals => {:deliverable => deliverable, :delivery => delivery, :prog_array => prog_array} %>
+              <% end %>
             <!-- #it needs to be an %% -->
-              <tr>
-      	        <td class="table-data"><%= check_box_tag "deliveries_ids[]", delivery.id, false, :class => 'deliveries-ids' %></td>
-      	        <td class="table-data"><%=h delivery.status.name %></td>
-      	        <td class="table-data"><%=h delivery.planned_date.to_date %></td>
-      	        <td class="table-data"><%=h deliverable.number%></td>
-                <td class="table-data">
-                  <% if delivery.progresses_mask == prog_array.index("complete") %>
-                    <div id="complete">
-                      Complete
-                    </div>
-                  <% elsif delivery.progresses_mask == prog_array.index("overdue") %>   
-                    <div id="overdue">
-                      Not Complete - OVERDUE
-                    </div>
-                  <% elsif delivery.progresses_mask == prog_array.index("due") %>
-                    <div id="overdue">
-                      DUE TODAY
-                    </div>
-                  <% else %>
-                    <div>
-                      Not Complete     
-                    </div>
-                  <% end %>
-                </td>
-                <td>
-                  <%=h deliverable.discipline_list %>,<%=h deliverable.tag_list %>
-                </td>
-                <td>
-                  <% if can? :edit, Delivery  %>
-                    <%= link_to "Edit", edit_deliverable_delivery_path(:id => delivery.id, :deliverable_id => deliverable.id)%>
-                  <% end %>
-                </td>
-              </tr>
+              <%= render :partial => "deliverables_tr", :locals => {:deliverable => deliverable, :delivery => delivery, :prog_array => prog_array} %>
             <% end %>
           <% else %>
-            <tr>
-    	        <td class="table-data"><%= check_box_tag "deliveries_ids[]", delivery.id, false, :class => 'deliveries-ids' %></td>
-    	        <td class="table-data"><%=h delivery.status.name %></td>
-    	        <td class="table-data"><%=h delivery.planned_date.to_date %></td>
-    	        <td class="table-data"><%=h deliverable.number%></td>
-              <td class="table-data">
-                <% prog_array = Delivery::PROGRESSES %>
-                <% if delivery.progresses_mask == prog_array.index("complete") %>
-                  <div id="complete">
-                    Complete
-                  </div>
-                <% elsif delivery.progresses_mask == prog_array.index("overdue") %>   
-                  <div id="overdue">
-                    Not Complete - OVERDUE
-                  </div>
-                <% elsif delivery.progresses_mask == prog_array.index("due") %>
-                  <div id="overdue">
-                    DUE TODAY
-                  </div>
-                <% else %>
-                  <div>
-                    Not Complete     
-                  </div>
-                <% end %>
-              </td>
-              <td>
-                <%=h deliverable.discipline_list %>,<%=h deliverable.tag_list %>
-              </td>
-              <td>
-                <% if can? :edit, Delivery  %>
-                  <%= link_to "Edit", edit_deliverable_delivery_path(:id => delivery.id, :deliverable_id => deliverable.id)%>
-                <% end %>
-              </td>
-            </tr>
+              <%= render :partial => "deliverables_tr", :locals => {:deliverable => deliverable, :delivery => delivery, :prog_array => prog_array} %>
           <% end %>    
         <% end %>
       <% end %>
