@@ -10,7 +10,6 @@ gem "cancan", "1.6.2"
 gem "acts-as-taggable-on", "2.0.6"
 gem "pg"
 gem "heroku"
-gem 'hoptoad_notifier'
 
 group :test do
   gem "test-unit"
