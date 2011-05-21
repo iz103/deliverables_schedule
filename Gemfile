@@ -17,7 +17,7 @@ group :test do
   gem "rspec-rails"
   gem "rspec"
   gem "pickle"
-  gem "factory_girl"
+  gem "factory_girl_rails"
   gem "launchy"
   gem "cucumber-rails"
 end

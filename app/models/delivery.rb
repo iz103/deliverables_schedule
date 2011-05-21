@@ -38,14 +38,40 @@ class Delivery < ActiveRecord::Base
   PROGRESSES = %w[complete overdue incomplete due]
   
   
-  def progresses=(progresses)
-    self.progresses_mask = (progresses & PROGRESSES).map { |r| PROGRESSES.index(r) }.sum
+  # def progresses=(progresses)
+  #   self.progresses_mask = (progresses & PROGRESSES).map { |r| PROGRESSES.index(r) }.sum
+  # end
+  # 
+  # def progresses
+  #   PROGRESSES.reject { |r| ((progresses_mask || 0) & PROGRESSES.index(r)).zero? }
+  # end
+  
+  
+  def self.complete
+    where("actual_date is not null")
   end
   
-  def progresses
-    PROGRESSES.reject { |r| ((progresses_mask || 0) & PROGRESSES.index(r)).zero? }
+  def self.incomplete
+    where("actual_date is null AND planned_date > ?", Date.today)
   end
   
+  def self.overdue
+    where("actual_date is null AND planned_date < ?", Date.today)
+  end
+  
+  def progress
+    if actual_date
+      "complete"
+    else
+      if planned_date == Date.today
+        "due"
+      elsif planned_date > Date.today
+        "incomplete"
+      else
+        "overdue"
+      end
+    end
+  end
   
   def self.planned_date_count(deliveries)
     # deliveries = Delivery.all(:order => "planned_date")
@@ -103,16 +129,16 @@ class Delivery < ActiveRecord::Base
     cumulative_array
   end
   
-  def self.overdue(deliveries)
-    # deliveries = Delivery.all
-    overdue =[]
-    deliveries.each do |delivery|
-      if delivery.actual_date == nil and delivery.planned_date < Date.today
-        overdue << delivery
-      end
-    end
-    overdue
-  end
+  # def self.overdue(deliveries)
+  #   # deliveries = Delivery.all
+  #   overdue =[]
+  #   deliveries.each do |delivery|
+  #     if delivery.actual_date == nil and delivery.planned_date < Date.today
+  #       overdue << delivery
+  #     end
+  #   end
+  #   overdue
+  # end
 
 
 
@@ -182,17 +208,17 @@ class Delivery < ActiveRecord::Base
     due
   end
          
-  def self.complete(deliveries)
-    # deliveries = Delivery.all
-    complete_deliveries = []
-    deliveries.each do |delivery|
-      if delivery.actual_date?
-        complete_deliveries << delivery
-      end
-    end
-  
-    complete_deliveries.count.to_f
-  end
+  # def self.complete(deliveries)
+  #   # deliveries = Delivery.all
+  #   complete_deliveries = []
+  #   deliveries.each do |delivery|
+  #     if delivery.actual_date?
+  #       complete_deliveries << delivery
+  #     end
+  #   end
+  # 
+  #   complete_deliveries.count.to_f
+  # end
 
   def self.bsb(deliveries)
     if Delivery.overdue(deliveries).count > 0 or Delivery.due_today(deliveries).count > 0 

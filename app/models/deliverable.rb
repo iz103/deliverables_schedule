@@ -19,7 +19,24 @@ class Deliverable < ActiveRecord::Base
   #   
   # }
   def self.deliveries_with_progress(progress)
-    joins(:deliveries).where("\"deliveries\".progresses_mask = #{Delivery::PROGRESSES.index(progress.to_s).to_i}")
+    return [] unless ["complete", "incomplete", "overdue", "due"].include?(progress)
+    self.send(progress)
+  end
+  
+  def self.complete
+    joins(:deliveries).where("\"deliveries\".actual_date is not null")
+  end
+  
+  def self.incomplete
+    joins(:deliveries).where("\"deliveries\".actual_date is null AND planned_date > ?", Date.today.midnight)
+  end
+  
+  def self.overdue
+    joins(:deliveries).where("\"deliveries\".actual_date is null AND planned_date < ?", Date.today.midnight)
+  end
+  
+  def self.due
+    joins(:deliveries).where("\"deliveries\".actual_date is null AND planned_date = ?", Date.today.midnight)
   end
   
   search_methods :deliveries_with_progress

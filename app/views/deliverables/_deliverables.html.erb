@@ -42,16 +42,17 @@
     <%= form_tag manage_deliverables_path, :id => 'management-form', :method => :put do %>
       <%= error_messages_for :delivery %>
       <% @deliverables.each do |deliverable|%>
-        <% deliverable.deliveries.each do |delivery| %>
+        <% deliveries = deliverable.deliveries %>
+        <% if params[:search] && params[:search][:deliveries_with_progress] %>
+          <% deliveries = deliveries.select{|d| d.progress == params[:search][:deliveries_with_progress]}%>
+        <% end %>
+        <% deliveries.each do |delivery| %>
           <% prog_array = Delivery::PROGRESSES  %>
           <% if params[:search] %>
             <% if "#{delivery.status_id}" == params[:search][:deliveries_status_id_equals] || params[:search][:deliveries_status_id_equals] == "" || params[:search] == nil %>
             
-              <% if params[:search][:deliveries_with_progress] == prog_array[delivery.progresses_mask] %>
-                <%= render :partial => "deliverables_tr", :locals => {:deliverable => deliverable, :delivery => delivery, :prog_array => prog_array} %>
-              <% end %>
-            <!-- #it needs to be an %% -->
               <%= render :partial => "deliverables_tr", :locals => {:deliverable => deliverable, :delivery => delivery, :prog_array => prog_array} %>
+
             <% end %>
           <% else %>
               <%= render :partial => "deliverables_tr", :locals => {:deliverable => deliverable, :delivery => delivery, :prog_array => prog_array} %>
