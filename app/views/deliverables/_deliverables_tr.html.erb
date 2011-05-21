@@ -4,23 +4,7 @@
   <td class="table-data"><%=h delivery.planned_date.to_date %></td>
   <td class="table-data"><%=h deliverable.number%></td>
   <td class="table-data">
-    <% if delivery.progresses_mask == prog_array.index("complete") %>
-      <div id="complete">
-        Complete
-      </div>
-    <% elsif delivery.progresses_mask == prog_array.index("overdue") %>   
-      <div id="overdue">
-        Not Complete - OVERDUE
-      </div>
-    <% elsif delivery.progresses_mask == prog_array.index("due") %>
-      <div id="overdue">
-        DUE TODAY
-      </div>
-    <% else %>
-      <div>
-        Not Complete     
-      </div>
-    <% end %>
+    <%= delivery.progress %>
   </td>
   <td>
     <%=h deliverable.discipline_list %>,<%=h deliverable.tag_list %>
