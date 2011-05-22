@@ -47,17 +47,17 @@ class Delivery < ActiveRecord::Base
   # end
   
   
-  def self.complete
-    where("actual_date is not null")
-  end
-  
-  def self.incomplete
-    where("actual_date is null AND planned_date > ?", Date.today)
-  end
-  
-  def self.overdue
-    where("actual_date is null AND planned_date < ?", Date.today)
-  end
+  # def self.complete
+  #   where("actual_date is not null")
+  # end
+  # 
+  # def self.incomplete
+  #   where("actual_date is null AND planned_date > ?", Date.today)
+  # end
+  # 
+  # def self.overdue
+  #   where("actual_date is null AND planned_date < ?", Date.today)
+  # end
   
   def progress
     if actual_date
@@ -129,16 +129,16 @@ class Delivery < ActiveRecord::Base
     cumulative_array
   end
   
-  # def self.overdue(deliveries)
-  #   # deliveries = Delivery.all
-  #   overdue =[]
-  #   deliveries.each do |delivery|
-  #     if delivery.actual_date == nil and delivery.planned_date < Date.today
-  #       overdue << delivery
-  #     end
-  #   end
-  #   overdue
-  # end
+  def self.overdue(deliveries)
+    # deliveries = Delivery.all
+    overdue =[]
+    deliveries.each do |delivery|
+      if delivery.actual_date == nil and delivery.planned_date < Date.today
+        overdue << delivery
+      end
+    end
+    overdue
+  end
 
 
 
@@ -208,17 +208,17 @@ class Delivery < ActiveRecord::Base
     due
   end
          
-  # def self.complete(deliveries)
-  #   # deliveries = Delivery.all
-  #   complete_deliveries = []
-  #   deliveries.each do |delivery|
-  #     if delivery.actual_date?
-  #       complete_deliveries << delivery
-  #     end
-  #   end
-  # 
-  #   complete_deliveries.count.to_f
-  # end
+  def self.complete(deliveries)
+    # deliveries = Delivery.all
+    complete_deliveries = []
+    deliveries.each do |delivery|
+      if delivery.actual_date?
+        complete_deliveries << delivery
+      end
+    end
+  
+    complete_deliveries.count.to_f
+  end
 
   def self.bsb(deliveries)
     if Delivery.overdue(deliveries).count > 0 or Delivery.due_today(deliveries).count > 0 
