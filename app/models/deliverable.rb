@@ -15,8 +15,8 @@ class Deliverable < ActiveRecord::Base
   scope :tagged_with_disciplines, lambda {|tags| tagged_with(tags, :on => :disciplines )}
   search_methods :tagged_with_disciplines
   
-  scope :tagged_with, lambda {|tags| tagged_with (tags)}
-  search_methods :tagged_with
+  # scope :tagged_with, lambda {|tags| tagged_with (tags)}
+  # search_methods :tagged_with
   
   # scope :deliveries_with_progress, lambda {|progress|
   #   
