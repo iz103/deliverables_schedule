@@ -4,7 +4,23 @@
   <td class="table-data"><%=h delivery.planned_date.to_date %></td>
   <td class="table-data"><%=h deliverable.number%></td>
   <td class="table-data">
-    <%= delivery.progress %>
+    <% if delivery.progress == "complete" %>
+      <div id="complete">
+        <%= delivery.progress %>
+      </div>
+    <% elsif delivery.progress == "overdue" %>   
+      <div id="overdue">
+      <%= delivery.progress %>
+      </div>
+    <% elsif delivery.progress == "due" %>
+      <div id="overdue">
+      <%= delivery.progress %>
+      </div>
+    <% else %>
+      <div>
+      <%= delivery.progress %>     
+      </div>
+    <% end %>
   </td>
   <td>
     <%=h deliverable.discipline_list %>,<%=h deliverable.tag_list %>
@@ -15,3 +31,6 @@
     <% end %>
   </td>
 </tr>
+
+
+
