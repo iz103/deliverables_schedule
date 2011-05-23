@@ -9,7 +9,7 @@
     Number of complete deliveries <%= Delivery.complete(deliveries).to_i %><br>
 	Percentage Complete: <%= Delivery.percentage_complete(deliveries).round(1) %>%<br><br>
 	To be on schedule, <%=h Delivery.bsb(deliveries) %> Deliveries will have to be made<br>
-    Number of overdue Deliveries <%= link_to Delivery.overdue(deliveries).count %><br>
+    Number of overdue Deliveries <%= Delivery.overdue(deliveries).count %><br>
     Total number of deliveries: <%= Delivery.all.count %> <br><br>
     Number of late deliveries: <%= Delivery.late(deliveries).count %><br>
     Number of deliveries due today: <%= Delivery.due_today(deliveries).count %><br>
