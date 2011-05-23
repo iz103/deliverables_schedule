@@ -24,6 +24,7 @@ end
 
 group :test, :development do
   gem "sqlite3-ruby"
+  gem 'web-app-theme', '>= 0.6.2'
   gem "awesome_print", :require => "ap"
   platforms :ruby_18 do
     gem "ruby-debug"
