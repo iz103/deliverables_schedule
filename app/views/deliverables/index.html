@@ -1,0 +1,29 @@
+<div class="block" id="block-text">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="active">
+       <%= link_to " Deliveries", deliverables_path %>        
+      </li>
+      <li>
+        <%= link_to "Statuses", statuses_path %>
+      </li>
+    </ul>
+    
+  </div>
+  <div class="content">
+    <h2 class="title">
+      Tables
+    </h2>
+    <div class="inner">
+      <%= render :partial => "deliverables" %>
+    </div>
+    
+  </div>
+</div>
+<div class="block">
+  <h3>Deliveries</h3>
+  <div class="content">
+    blah
+    
+  </div>
+</div>

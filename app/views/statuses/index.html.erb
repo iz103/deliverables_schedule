@@ -11,3 +11,16 @@
 </table>
 
 
+<!-- .block{:id => "block-tables"}
+  %h3 Dashboards
+  %ul{:class => "navigation"}
+    %li=link_to "All Deliveries", deliveries_path
+    - Deliverable.discipline_counts.each do |tag|
+      - unless Deliverable.tagged_with(tag).count < 1
+        %li
+          = link_to tag.name, :controller => "deliverables", :action => "list_for_tag", :id => tag.id
+    - Status.all(:order => "position").each do |status|
+      %li
+        = link_to status.name, :controller => "statuses", :action => "list_for_status", :id => status.id -->
+
+
