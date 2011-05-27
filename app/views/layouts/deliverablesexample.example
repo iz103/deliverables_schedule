@@ -1,0 +1,17 @@
+%html
+  %head
+    =stylesheet_link_tag 'scaffold'
+  %body
+    %div#header Hello
+    %div#container
+      %div#left-column
+        %div#left-menu
+          %div#left-menu-header
+          %div#left-menu-list
+            %ul
+              %li Deliverables
+              %li Deliveries
+              %li Milestones
+      %div#right-column
+        =yield
+    %div#footer hello

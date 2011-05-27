@@ -1,4 +1,4 @@
-<div class="block" id="block-text">
+<div class="block" id="block-table">
   <div class="secondary-navigation">
     <ul class="wat-cf">
       <li class="active">
@@ -20,10 +20,12 @@
     
   </div>
 </div>
-<div class="block">
-  <h3>Deliveries</h3>
-  <div class="content">
-    blah
-    
+<% content_for :sidebar do %>
+  <div class="block">
+    <h3>Deliveries</h3>
+    <div class="content">
+      <%= render :partial => "search_form" %>
+    </div>
   </div>
-</div>
+<% end %>
+

@@ -1,0 +1,24 @@
+<%= form_for @search, :url => deliverables_path, :html => {:method => :get}  do |f| %>
+  <ul class="form-list">
+	<li>
+      <%= f.label :deliveries_status_id_equals, "Status" %>
+      <%= f.collection_select :deliveries_status_id_equals, Status.all, :id, :name, :include_blank => true %>
+  </li>
+  <li>
+	  <%= f.label :tagged_with_disciplines, "Disciplines" %>
+	  <%= f.collection_select :tagged_with_disciplines, Deliverable.discipline_counts, :name, :name, :include_blank => true %>
+	</li>
+	<li>
+	  <%#= f.label :tagged_with, "Tags" %>
+	  <%#= f.collection_select :tagged_with, Deliverable.tag_counts, :name, :name, :include_blank => true %>
+	</li>
+  <li>
+	  <%= f.label :deliveries_with_progress, "Progress" %>
+	  <%= f.select("deliveries_with_progress", Delivery::PROGRESSES, {:include_blank => true}) %>
+	</li>		  
+    <%= f.submit "Search" %>  
+  </ul>
+  
+  <!-- <p><%#= sort_link @search, :deliveries_planned_date %></p> -->
+
+<% end %>
