@@ -1,11 +1,8 @@
-.block{:id => "block-text"}
-  .secondary-navigation
-    %ul{:class => "wat-cf"}
-      %li{:class => "active"}
-        = link_to " Deliveries", deliverables_path
-      %li=link_to "Statuses", statuses_path
-  .content
-    %h2{:class => "title"}
-      Tables
-      .inner
-        = render :partial => "deliverables"
+<h2 class="title">Tables</h2>
+<div class="inner">
+<%= render :partial => "deliverables" %>
+</div>
+
+  			
+
+

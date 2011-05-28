@@ -25,7 +25,7 @@
   <td>
     <%=h deliverable.discipline_list %>,<%=h deliverable.tag_list %>
   </td>
-  <td>
+  <td class="last">
     <% if can? :edit, Delivery  %>
       <%= link_to "Edit", edit_deliverable_delivery_path(:id => delivery.id, :deliverable_id => deliverable.id)%>
     <% end %>
