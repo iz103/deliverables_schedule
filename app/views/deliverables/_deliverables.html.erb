@@ -43,7 +43,7 @@
       <%= error_messages_for :delivery %>
       <% @deliverables.each do |deliverable|%>
         <% deliveries = deliverable.deliveries %>
-        <% if params[:search] && params[:search][:deliveries_with_progress] %>
+        <% if params[:search] && params[:search][:deliveries_with_progress] != "" %>
           <% deliveries = deliveries.select{|d| d.progress == params[:search][:deliveries_with_progress]}%>
         <% end %>
         <% deliveries.each do |delivery| %>
@@ -59,7 +59,6 @@
           <% end %>    
         <% end %>
       <% end %>
-         
 
       <% if can? :edit, Delivery  %><%= text_field_tag 'actual_date_select', nil, :place_holder => 'Date' %><%= submit_tag "Complete" %><%= submit_tag "Incomplete" %><%= submit_tag "Edit" %><%= submit_tag "Delete", :confirm => 'Are you sure?' %>
       <% end %> 
