@@ -4,6 +4,7 @@
 <%= will_paginate @deliverables %>
 
 <fieldset>
+  <%= form_tag manage_deliverables_path, :id => 'management-form', :method => :put do %>
   <table class ="table">
     <tbody>
       <tr>
@@ -16,7 +17,7 @@
         <th>Deliverable Tags</th>
         <th class="last"/>
       </tr>
-      <%= form_tag manage_deliverables_path, :id => 'management-form', :method => :put do %>
+      <%#= form_tag manage_deliverables_path, :id => 'management-form', :method => :put do %>
         <%= error_messages_for :delivery %>
         <% @deliverables.each do |deliverable|%>
           <% deliveries = deliverable.deliveries %>
@@ -40,13 +41,23 @@
 
         <% if can? :edit, Delivery  %><%= text_field_tag 'actual_date_select', nil, :place_holder => 'Date' %><%= submit_tag "Complete" %><%= submit_tag "Incomplete" %><%= submit_tag "Edit" %><%= submit_tag "Delete", :confirm => 'Are you sure?' %>
         <% end %> 
-        <% end %>
+    <%# end %>
     <tbody>
     
 
   </table>
 
-<%= will_paginate @deliverables %>
+
+<div class="actions-bar wat-cf">
+  <div class="actions">
+    <% if can? :edit, Delivery %><%= submit_tag "Complete" %><%= submit_tag "Incomplete" %><%= submit_tag "Edit" %><%= submit_tag "Delete", :confirm => 'Are you sure?' %>
+    <% end %>
+    <% end  %>
+  </div>
+  
+  <%= will_paginate @deliverables %>
+  
+</div>
 </fieldset>
 
 
