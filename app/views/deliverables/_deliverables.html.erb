@@ -39,7 +39,7 @@
         <% end %>
          
 
-        <% if can? :edit, Delivery  %><%= text_field_tag 'actual_date_select', nil, :place_holder => 'Date' %><%= submit_tag "Complete" %><%= submit_tag "Incomplete" %><%= submit_tag "Edit" %><%= submit_tag "Delete", :confirm => 'Are you sure?' %>
+        <% if can? :edit, Delivery  %><%= text_field_tag 'actual_date_select', nil, :place_holder => 'Date' %><%= submit_tag "Complete" %><%= submit_tag "Incomplete" %><%= submit_tag "Edit" %><%= submit_tag "Delete", :confirm => true %>
         <% end %> 
     <%# end %>
     <tbody>
