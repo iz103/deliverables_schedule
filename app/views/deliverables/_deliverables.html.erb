@@ -1,7 +1,7 @@
 <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application" %>
 <h2 id="dd-heading">Deliveries for <%# if params[:search] %>: Discipline:<%#= params[:search][:tagged_with_disciplines]%>, Delivery Status:<%#= Status.find(params[:search][:deliveries_status_id_like]).name %> <%# else %> All Deliverables<%# end %></h1>
 
-<%= will_paginate @deliverables %>
+<%#= will_paginate @deliverables %>
 
 <fieldset>
   <%= form_tag manage_deliverables_path, :id => 'management-form', :method => :put do %>
@@ -39,7 +39,7 @@
         <% end %>
          
 
-        <% if can? :edit, Delivery  %><%= text_field_tag 'actual_date_select', nil, :place_holder => 'Date' %><%= submit_tag "Complete" %><%= submit_tag "Incomplete" %><%= submit_tag "Edit" %><%= submit_tag "Delete", :confirm => true %>
+        <% if can? :edit, Delivery  %><%= text_field_tag 'actual_date_select', nil, :place_holder => 'Date' %><%= submit_tag "Complete" %><%= submit_tag "Incomplete" %><%= submit_tag "Edit" %><%= submit_tag "Delete", :confirm => "Are you sure" %>
         <% end %> 
     <%# end %>
     <tbody>
