@@ -1,0 +1,34 @@
+.block
+  .secondary-navigation
+    %ul.wat-cf
+      %li.first.active= link_to "#{t("web-app-theme.list", :default => "Deliverables")}", deliverables_path
+      %li= link_to "#{t("web-app-theme.new", :default => "New Deliverable")}", new_deliverable_path
+      %li= link_to "#{t("web-app-theme.list", :default => "Deliveries")}", deliveries_index_deliverables_path
+  .content
+    %h2.title
+      = t("web-app-theme.all", :default => "All")
+      Deliverables
+    .inner
+      %table.table
+        %tr
+          %th.first ID
+          %th
+            = t("activerecord.attributes.deliverable.number", :default => t("activerecord.labels.number", :default => "Number"))
+          %th= t("web-app-theme.created_at", :default => "Created at")
+          %th.last &nbsp;
+        - @deliverables.each do |deliverable|
+          %tr{:class => cycle("odd", "even")}
+            %td
+              = deliverable.id
+            %td
+              = link_to deliverable.number, deliverable_path(deliverable)
+            %td
+              = deliverable.created_at
+            %td.last
+              = link_to "#{t("web-app-theme.show", :default => "Show")}", deliverable_path(deliverable)
+              |
+              \#{link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_deliverable_path(deliverable)} |
+              \#{link_to "#{t("web-app-theme.delete", :default => "Delete")}", deliverable_path(deliverable), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"}
+      .actions-bar.wat-cf
+        .actions
+- content_for :sidebar, render(:partial => 'sidebar')

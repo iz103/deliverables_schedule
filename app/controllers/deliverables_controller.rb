@@ -1,7 +1,5 @@
 class DeliverablesController < ApplicationController
   before_filter :require_user
-  # GET /deliverables
-  # GET /deliverables.xml
   def index
     # flash[:notice] = "logged in"  # TODO remove this after fixing cucumber 
     @search = Deliverable.search(params[:search])
@@ -16,9 +14,16 @@ class DeliverablesController < ApplicationController
       format.xml  { render :xml => @deliverables }
     end
   end
+  
+  def deliveries_index
+    @search = Deliverable.search(params[:search])
+    @deliverables = @search.paginate(:page => params[:page], :per_page => 100)
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @deliverables }
+    end
+  end
 
-  # GET /deliverables/1
-  # GET /deliverables/1.xml
   def show
     @deliverable = Deliverable.find(params[:id])
 
@@ -29,8 +34,7 @@ class DeliverablesController < ApplicationController
     end
   end
 
-  # GET /deliverables/new
-  # GET /deliverables/new.xml
+
   def new
     @deliverable = Deliverable.new
 
@@ -40,13 +44,12 @@ class DeliverablesController < ApplicationController
     end
   end
 
-  # GET /deliverables/1/edit
+
   def edit
     @deliverable = Deliverable.find(params[:id])
   end
 
-  # POST /deliverables
-  # POST /deliverables.xml
+
   def create
     @deliverable = Deliverable.new(params[:deliverable])
     respond_to do |format|
@@ -60,8 +63,7 @@ class DeliverablesController < ApplicationController
     end
   end
 
-  # PUT /deliverables/1
-  # PUT /deliverables/1.xml
+
   def update
     @deliverable = Deliverable.find(params[:id])
 
@@ -76,8 +78,7 @@ class DeliverablesController < ApplicationController
     end
   end
 
-  # DELETE /deliverables/1
-  # DELETE /deliverables/1.xml
+
   def destroy
     @deliverable = Deliverable.find(params[:id])
     @deliverable.destroy

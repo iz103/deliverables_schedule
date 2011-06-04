@@ -34,3 +34,18 @@
 
 
 
+
+
+
+<!-- %tr{:class => cycle("odd", "even")}
+  %td
+    = deliverable.id
+  %td
+    = link_to deliverable.number, deliverable_path(deliverable)
+  %td
+    = deliverable.created_at
+  %td.last
+    = link_to "#{t("web-app-theme.show", :default => "Show")}", deliverable_path(deliverable)
+    |
+    \#{link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_deliverable_path(deliverable)} |
+    \#{link_to "#{t("web-app-theme.delete", :default => "Delete")}", deliverable_path(deliverable), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"} -->

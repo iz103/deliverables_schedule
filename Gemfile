@@ -11,6 +11,8 @@ gem "acts-as-taggable-on", "2.0.6"
 gem "pg"
 gem "heroku"
 gem 'hoptoad_notifier'
+gem "hpricot", "~> 0.8.4"
+gem "ruby_parser", "~> 2.0.6"
 
 group :test do
   gem "test-unit"
