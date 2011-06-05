@@ -1,0 +1,35 @@
+<h1>Deliveries for <%= @text %></h1>
+
+<% unless params[:deliverable_id] %>
+  <div id="graph">
+    <%= render :partial => "graph" %>
+  </div>
+  <div id="right-column-2">
+	<% deliveries = @all_deliveries %>
+    Number of complete deliveries <%= Delivery.complete(deliveries).to_i %><br>
+	Percentage Complete: <%= Delivery.percentage_complete(deliveries).round(1) %>%<br><br>
+	To be on schedule, <%=h Delivery.bsb(deliveries) %> Deliveries will have to be made<br>
+    Number of overdue Deliveries <%= Delivery.overdue(deliveries).count %><br>
+    Total number of deliveries: <%= Delivery.all.count %> <br><br>
+    Number of late deliveries: <%= Delivery.late(deliveries).count %><br>
+    Number of deliveries due today: <%= Delivery.due_today(deliveries).count %><br>
+    Number of deliveries due in the next week: <%= Delivery.due_in_next_week(deliveries).count %><br>
+    Number of deliveries due in the next two weeks: <%= Delivery.due_in_next_two_weeks(deliveries).count %><br>
+    Number of deliveries delivered early: <%= Delivery.early(deliveries).count %><br>
+    Total number of deliverables: <%= Deliverable.all.count %>
+  </div>
+  <div id="right-column-1">
+    <%#= render :partial => "deliveries" %>
+  </div>
+<% else %>
+
+	<% if @deliveries.empty?%>
+	  <p>There are no deliveries for this deliverable</p>
+	<% else %>
+	  <% if params[:deliverable_id] %>
+	    <%= render :partial => "deliveries" %>
+	    
+	  <% end %>
+	<% end %>
+<% end %>
+
