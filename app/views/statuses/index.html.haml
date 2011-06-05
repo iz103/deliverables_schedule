@@ -2,7 +2,7 @@
   .secondary-navigation
     %ul.wat-cf
       %li.first.active= link_to "#{t("web-app-theme.list", :default => "List")}", statuses_path
-      %li= link_to "#{t("web-app-theme.new", :default => "New")}", new_status_path
+      / %li= link_to "#{t("web-app-theme.new", :default => "New")}", new_status_path
   .content
     %h2.title
       = t("web-app-theme.all", :default => "All")
@@ -10,24 +10,21 @@
     .inner
       %table.table
         %tr
-          %th.first ID
+          %th.first Position
           %th
             = t("activerecord.attributes.status.name", :default => t("activerecord.labels.name", :default => "Name"))
-          %th= t("web-app-theme.created_at", :default => "Created at")
           %th.last &nbsp;
         - @statuses.each do |status|
           %tr{:class => cycle("odd", "even")}
             %td
-              = status.id
+              = status.position
             %td
               = link_to status.name, status_path(status)
-            %td
-              = status.created_at
             %td.last
               = link_to "#{t("web-app-theme.show", :default => "Show")}", status_path(status)
               |
               \#{link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_status_path(status)} |
-              \#{link_to "#{t("web-app-theme.delete", :default => "Delete")}", status_path(status), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"}
+              / \#{link_to "#{t("web-app-theme.delete", :default => "Delete")}", status_path(status), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"}
       .actions-bar.wat-cf
         .actions
 - content_for :sidebar, render(:partial => 'sidebar')

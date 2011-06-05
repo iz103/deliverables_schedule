@@ -16,6 +16,30 @@
           = t("activerecord.attributes.deliverable.title", :default => t("activerecord.labels.title", :default => "Title"))
           \:
         = @deliverable.title
+      %p
+        %b
+          = t("activerecord.attributes.deliverable.tags", :default => t("activerecord.labels.tags", :default => "Tags"))
+          \:
+        = @deliverable.discipline_list
+        = @deliverable.tag_list
+      %p
+        %b
+          = t("activerecord.attributes.deliverable.deliveries", :default => t("activerecord.labels.deliveries", :default => "Deliveries"))
+          \:
+      %table.table
+        %tr
+          %th.first
+            = t("activerecord.attributes.status.name", :default => t("activerecord.labels.name", :default => "Status"))
+          %th
+            = t("activerecord.attributes.planned_date", :default => t("activerecord.labels.planned_date", :default => "Planned Date"))
+          %th
+            = t("activerecord.attributes.Progress", :default => t("activerecord.labels.progress", :default => "Progress"))
+          %th.last &nbsp;
+        - @deliverable.deliveries.each do |delivery|
+          %tr                
+            %td.first= delivery.status.name
+            %td= delivery.planned_date.to_date
+            %td.last= delivery.progress
       .wat-cf
         = link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_deliverable_path(@deliverable), :class => "button"
         = link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), deliverable_path(@deliverable), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"
