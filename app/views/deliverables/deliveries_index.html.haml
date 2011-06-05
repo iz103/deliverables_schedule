@@ -13,6 +13,12 @@
       %fieldset
         = form_tag manage_deliverables_path, :id => 'management-form', :method => :put do
           %table.table
+            - if can? :edit, Delivery
+              = text_field_tag 'actual_date_select', nil, :place_holder => 'Date'
+              = submit_tag "Complete"
+              = submit_tag "Incomplete"
+              = submit_tag "Edit"
+              = submit_tag "Delete", :confirm => "Are you sure"
             %tr
               %th.first= check_box_tag 'select-all'
               %th
@@ -21,6 +27,7 @@
               %th
                 = t("activerecord.attributes.deliverable.number", :default => t("activerecord.labels.number", :default => "Deliverable Number"))
               %th= t("web-app-theme.progress", :default => "Progress")
+              %th Tags
               %th.last &nbsp;
             - @deliverables.each do |deliverable|
               - deliveries = deliverable.deliveries
@@ -42,7 +49,7 @@
                 = submit_tag "Delete", :confirm => 'Are you sure?'
             = will_paginate @deliverables
                 
-- content_for :sidebar, render(:partial => 'sidebar')
+- content_for :sidebar, render(:partial => 'deliveries_sidebar')
 :javascript
   $(function() {
     $("#actual_date_select").datepicker({dateFormat: "dd/mm/yy"});

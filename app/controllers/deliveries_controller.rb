@@ -99,7 +99,7 @@ def update_multiple
   # else
   #     flash[:error] = "Cannot have an Actual Delivery date in the future"
   #   end
-    redirect_to deliverables_path
+    redirect_to deliveries_index_deliverables_path
 end
 
 

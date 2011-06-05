@@ -133,7 +133,7 @@ class DeliverablesController < ApplicationController
        (session[:deliveries_ids] = params[:deliveries_ids]
        redirect_to edit_multiple_deliveries_path) and return
     end
-      redirect_to deliverables_path
+      redirect_to deliveries_index_deliverables_path
   end
       
 end

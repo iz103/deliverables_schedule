@@ -2,7 +2,7 @@
   .secondary-navigation
     %ul.wat-cf
       %li.first.active= link_to "#{t("web-app-theme.list", :default => "Deliverables")}", deliverables_path
-      %li= link_to "#{t("web-app-theme.new", :default => "New Deliverable")}", new_deliverable_path
+      / %li= link_to "#{t("web-app-theme.new", :default => "New Deliverable")}", new_deliverable_path
       %li= link_to "#{t("web-app-theme.list", :default => "Deliveries")}", deliveries_index_deliverables_path
   .content
     %h2.title
@@ -14,7 +14,8 @@
           %th.first ID
           %th
             = t("activerecord.attributes.deliverable.number", :default => t("activerecord.labels.number", :default => "Number"))
-          %th= t("web-app-theme.created_at", :default => "Created at")
+          %th= t("web-app-theme.name", :default => "Title")
+          %th Tags
           %th.last &nbsp;
         - @deliverables.each do |deliverable|
           %tr{:class => cycle("odd", "even")}
@@ -23,12 +24,17 @@
             %td
               = link_to deliverable.number, deliverable_path(deliverable)
             %td
-              = deliverable.created_at
+              = deliverable.title
+            %td
+              = deliverable.discipline_list
+              = deliverable.tag_list
             %td.last
               = link_to "#{t("web-app-theme.show", :default => "Show")}", deliverable_path(deliverable)
               |
-              \#{link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_deliverable_path(deliverable)} |
-              \#{link_to "#{t("web-app-theme.delete", :default => "Delete")}", deliverable_path(deliverable), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"}
+              - if can? :edit, Deliverable
+                \#{link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_deliverable_path(deliverable)} |
+                \#{link_to "#{t("web-app-theme.delete", :default => "Delete")}", deliverable_path(deliverable), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"}
       .actions-bar.wat-cf
+        = will_paginate @deliverables
         .actions
 - content_for :sidebar, render(:partial => 'sidebar')
