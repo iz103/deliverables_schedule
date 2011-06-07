@@ -18,10 +18,10 @@ class DeliverablesController < ApplicationController
   def deliveries_index
     @search = Deliverable.search(params[:search])
     @deliverables = @search.paginate(:page => params[:page], :per_page => 100)
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @deliverables }
-    end
+    # respond_to do |format|
+    #   format.html # index.html.erb
+    #   format.xml  { render :xml => @deliverables }
+    # end
   end
 
   def show
