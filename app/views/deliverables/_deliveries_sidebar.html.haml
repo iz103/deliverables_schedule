@@ -1,11 +1,14 @@
 .block.notice
   %h3 Tracking Deliveries
   .content
-    %p Use the filters below to filter through the Delivery list.  You can filter by Status, Discipline or delivery progress.
-    %p Under the Summaries, there are a series of links to graphs and stats to summarise the progress of discipline specific / status specific deliveries.
+    %p Use the filters below to filter through the Delivery list.  You can filter by Status, Discipline or Delivery Progress.
+    %p Below, there are also a series of links to graphs and stats to summarise the progress of discipline specific / status specific deliveries.
 .block
   %h3 Filters
+  %br
   = render :partial => "search_form"
+  %br
+  %br
   %h3 Summaries
   %ul.navigation
     %li=link_to "All Deliveries", deliveries_path
