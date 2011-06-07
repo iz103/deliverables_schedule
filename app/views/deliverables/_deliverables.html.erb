@@ -1,73 +1,62 @@
 <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application" %>
 <h2 id="dd-heading">Deliveries for <%# if params[:search] %>: Discipline:<%#= params[:search][:tagged_with_disciplines]%>, Delivery Status:<%#= Status.find(params[:search][:deliveries_status_id_like]).name %> <%# else %> All Deliverables<%# end %></h1>
 
-<%= form_for @search, :url => deliverables_path, :html => {:method => :get}  do |f| %>
-  <ol class="form-list">
-	<li>
-      <%= f.label :deliveries_status_id_equals, "Status" %>
-      <%= f.collection_select :deliveries_status_id_equals, Status.all, :id, :name, :include_blank => true %>
-  </li>
-  <li>
-	  <%= f.label :tagged_with_disciplines, "Disciplines" %>
-	  <%= f.collection_select :tagged_with_disciplines, Deliverable.discipline_counts, :name, :name, :include_blank => true %>
-	</li>
-	<li>
-	  <%#= f.label :tagged_with, "Tags" %>
-	  <%#= f.collection_select :tagged_with, Deliverable.tag_counts, :name, :name, :include_blank => true %>
-	</li>
-  <li>
-	  <%= f.label :deliveries_with_progress, "Progress" %>
-	  <%= f.select("deliveries_with_progress", Delivery::PROGRESSES, {:include_blank => true}) %>
-	</li>		  
-    <%= f.submit "Search" %>  
-  </ol>
-  
-  <p><%= sort_link @search, :deliveries_planned_date %> |</p>
-
-<% end %>
-
-<%= will_paginate @deliverables %>
+<%#= will_paginate @deliverables %>
 
 <fieldset>
-  <table class ="data-table" id ="ddtable">
-    <tr>
-      <th><%= check_box_tag 'select-all' %></th>
-      <th>Status</th>
-      <!-- <th><%#= order @search, :by => :deliveries_planned_date %></th> -->
-      <th>Planned Date</th>
-      <th>Deliverable Number</th></th>
-      <th>Progress</th>
-      <th>Deliverable Tags</th>
-    </tr>
-    <%= form_tag manage_deliverables_path, :id => 'management-form', :method => :put do %>
-      <%= error_messages_for :delivery %>
-      <% @deliverables.each do |deliverable|%>
-        <% deliveries = deliverable.deliveries %>
-        <% if params[:search] && params[:search][:deliveries_with_progress] != "" %>
-          <% deliveries = deliveries.select{|d| d.progress == params[:search][:deliveries_with_progress]}%>
-        <% end %>
-        <% deliveries.each do |delivery| %>
-          <% prog_array = Delivery::PROGRESSES  %>
-          <% if params[:search] %>
-            <% if "#{delivery.status_id}" == params[:search][:deliveries_status_id_equals] || params[:search][:deliveries_status_id_equals] == "" || params[:search] == nil %>
+  <%= form_tag manage_deliverables_path, :id => 'management-form', :method => :put do %>
+  <table class ="table">
+    <tbody>
+      <tr>
+        <th class="first"><%= check_box_tag 'select-all' %></th>
+        <th>Status</th>
+        <!-- <th><%#= order @search, :by => :deliveries_planned_date %></th> -->
+        <th>Planned Date</th>
+        <th>Deliverable Number</th></th>
+        <th>Progress</th>
+        <th>Deliverable Tags</th>
+        <th class="last"/>
+      </tr>
+      <%#= form_tag manage_deliverables_path, :id => 'management-form', :method => :put do %>
+        <%= error_messages_for :delivery %>
+        <% @deliverables.each do |deliverable|%>
+          <% deliveries = deliverable.deliveries %>
+          <% if params[:search] && params[:search][:deliveries_with_progress] != "" %>
+            <% deliveries = deliveries.select{|d| d.progress == params[:search][:deliveries_with_progress]}%>
+          <% end %>
+          <% deliveries.each do |delivery| %>
+            <% prog_array = Delivery::PROGRESSES  %>
+            <% if params[:search] %>
+              <% if "#{delivery.status_id}" == params[:search][:deliveries_status_id_equals] || params[:search][:deliveries_status_id_equals] == "" || params[:search] == nil %>
             
-              <%= render :partial => "deliverables_tr", :locals => {:deliverable => deliverable, :delivery => delivery, :prog_array => prog_array} %>
+                <%= render :partial => "deliverables_tr", :locals => {:deliverable => deliverable, :delivery => delivery, :prog_array => prog_array} %>
 
-            <% end %>
-          <% else %>
-              <%= render :partial => "deliverables_tr", :locals => {:deliverable => deliverable, :delivery => delivery, :prog_array => prog_array} %>
-          <% end %>    
+              <% end %>
+            <% else %>
+                <%= render :partial => "deliverables_tr", :locals => {:deliverable => deliverable, :delivery => delivery, :prog_array => prog_array} %>
+            <% end %>    
+          <% end %>
         <% end %>
-      <% end %>
 
-      <% if can? :edit, Delivery  %><%= text_field_tag 'actual_date_select', nil, :place_holder => 'Date' %><%= submit_tag "Complete" %><%= submit_tag "Incomplete" %><%= submit_tag "Edit" %><%= submit_tag "Delete", :confirm => 'Are you sure?' %>
-      <% end %> 
-      <% end %>
+        <% if can? :edit, Delivery  %><%= text_field_tag 'actual_date_select', nil, :place_holder => 'Date' %><%= submit_tag "Complete" %><%= submit_tag "Incomplete" %><%= submit_tag "Edit" %><%= submit_tag "Delete", :confirm => "Are you sure" %>
+        <% end %> 
+    <%# end %>
+    <tbody>
     
 
   </table>
 
-<%= will_paginate @deliverables %>
+
+<div class="actions-bar wat-cf">
+  <div class="actions">
+    <% if can? :edit, Delivery %><%= submit_tag "Complete" %><%= submit_tag "Incomplete" %><%= submit_tag "Edit" %><%= submit_tag "Delete", :confirm => 'Are you sure?' %>
+    <% end %>
+    <% end  %>
+  </div>
+  
+  <%= will_paginate @deliverables %>
+  
+</div>
 </fieldset>
 
 

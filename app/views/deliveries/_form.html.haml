@@ -1,0 +1,30 @@
+= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application"
+.group
+  = f.label :planned_date, t("activerecord.attributes.delivery.planned_date", :default => "Planned date"), :class => :label
+  / = f.datetime_select :planned_date, :class => 'datetime_select'
+  = f.text_field :planned_date
+  %span.description Ex: a simple text
+/ .group
+/   = f.label :actual_date, t("activerecord.attributes.delivery.actual_date", :default => "Actual date"), :class => :label
+/   = f.datetime_select :actual_date, :class => 'datetime_select'
+/   %span.description Ex: a simple text
+/ .group
+/   = f.label :deliverable_id, t("activerecord.attributes.delivery.deliverable_id", :default => "Deliverable"), :class => :label
+/   = f.text_field :deliverable_id, :class => 'text_field'
+/   %span.description Ex: a simple text
+%p
+.group
+  = f.label :status_id, t("activerecord.attributes.delivery.status_id", :default => "Status"), :class => :label
+  = collection_select(:delivery, :status_id, Status.all, :id, :name)
+  %span.description Ex: a simple text
+%p
+.group.navform.wat-cf
+  %button.button{:type => "submit"}
+    = image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}")
+    = t("web-app-theme.save", :default => "Save")
+  %span.text_button_padding= t("web-app-theme.or", :default => "or")
+  = link_to t("web-app-theme.cancel", :default => "Cancel"), deliveries_index_deliverables_path, :class => "text_button_padding link_button"
+:javascript
+  $(function() {
+    $("#delivery_planned_date").datepicker({dateFormat: "dd/mm/yy"});
+  });

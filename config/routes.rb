@@ -13,6 +13,7 @@ DeliverablesSchedule::Application.routes.draw do
     collection do
       get :list_for_tag
       put :manage
+      get :deliveries_index
     end
     resources :deliveries do
       collection do

@@ -1,0 +1,32 @@
+.block
+  .secondary-navigation
+    %ul.wat-cf
+      %li.first= link_to "#{t("web-app-theme.list", :default => "List")}", deliveries_path
+      %li= link_to "#{t("web-app-theme.new", :default => "New")}", new_delivery_path
+      %li.active= link_to "#{t("web-app-theme.show", :default => "Show")}", delivery_path
+  .content
+    .inner
+      %p
+        %b
+          = t("activerecord.attributes.delivery.planned_date", :default => t("activerecord.labels.planned_date", :default => "Planned date"))
+          \:
+        = @delivery.planned_date
+      %p
+        %b
+          = t("activerecord.attributes.delivery.actual_date", :default => t("activerecord.labels.actual_date", :default => "Actual date"))
+          \:
+        = @delivery.actual_date
+      %p
+        %b
+          = t("activerecord.attributes.delivery.deliverable_id", :default => t("activerecord.labels.deliverable_id", :default => "Deliverable"))
+          \:
+        = @delivery.deliverable_id
+      %p
+        %b
+          = t("activerecord.attributes.delivery.status_id", :default => t("activerecord.labels.status_id", :default => "Status"))
+          \:
+        = @delivery.status_id
+      .wat-cf
+        = link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_delivery_path(@delivery), :class => "button"
+        = link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), delivery_path(@delivery), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"
+- content_for :sidebar, render(:partial => 'sidebar')

@@ -1,0 +1,30 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+  %head
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/html'}/
+    = javascript_include_tag "jquery-1.6.1.min", "jquery.flot.min", "excanvas.min", "rails", "application"
+    = stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css", 'web-app-theme/base', "web-app-theme/themes/warehouse/style","web-app-theme/override", :cache => true
+  %body
+    #container
+      #header
+        %h1 Deliverables Schedule
+        #user-navigation
+          %ul{:class => "wat-cf"}
+            %li 
+              = link_to "Account", edit_user_path(:current)
+            %li 
+              = link_to "Logout", logout_path
+        #main-navigation
+          %ul{:class => "wat-cf"}
+            %li= link_to "Dashboard", deliveries_path
+            %li
+              = link_to "Schedule", deliverables_path
+            %li= link_to "Statuses", statuses_path
+            - if can? :create, User
+              %li= link_to "Users", users_path
+      #wrapper{:class => "wat-cf"}
+        #main
+          = yield
+          = notice
+        #sidebar
+          = yield :sidebar

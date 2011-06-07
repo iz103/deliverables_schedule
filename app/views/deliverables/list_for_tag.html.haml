@@ -1,0 +1,50 @@
+.block
+  .secondary-navigation
+    %ul.wat-cf      
+      %li.first= link_to "#{t("web-app-theme.list", :default => "Deliverables")}", deliverables_path
+      %li= link_to "#{t("web-app-theme.list", :default => "Deliveries")}", deliveries_index_deliverables_path
+      %li.active= link_to "#{t("web-app-theme.list_for_tag", :default => "Tag Chart")}", list_for_tag_deliverables_path(:id => @tag.id)
+      / %li= link_to "#{t("web-app-theme.new", :default => "New")}", new_delivery_path
+      / %li.active= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_delivery_path
+  .content
+    %h2.title
+      = t("web-app-theme.list_for_tag", :default => "Deliveries for")
+    .inner
+      %h2= @tag
+      = render(:partial => 'tag_graph')
+      - deliveries = @deliveries  
+      %table.table
+        %tr
+          %td.first Number of complete deliveries
+          %td= Delivery.complete(deliveries).to_i
+        %tr
+          %td Percentage Complete:
+          %td= Delivery.percentage_complete(deliveries).round(1)
+        %tr
+          %td Number of overdue Deliveries
+          %td= Delivery.bsb(deliveries)
+        %tr
+          %td To be on schedule,
+          %td= Delivery.overdue(deliveries).count
+        %tr
+          %td Total number of deliveries:
+          %td= @deliveries.count
+        %tr
+          %td Number of late deliveries:
+          %td= Delivery.late(deliveries).count
+        %tr
+          %td Number of deliveries due today:
+          %td= Delivery.due_today(deliveries).count
+        %tr
+          %td Number of deliveries due in the next week:
+          %td= Delivery.due_in_next_week(deliveries).count
+        %tr
+          %td Number of deliveries due in the next two weeks:
+          %td= Delivery.due_in_next_two_weeks(deliveries).count
+        %tr
+          %td Number of deliveries delivered early:
+          %td= Delivery.early(deliveries).count
+        %tr
+          %td Total number of deliverables:
+          %td= @deliverables.count
+- content_for :sidebar, render(:partial => 'sidebar')

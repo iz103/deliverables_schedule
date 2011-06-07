@@ -1,0 +1,56 @@
+= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application"
+.block
+  .secondary-navigation
+    %ul.wat-cf
+      %li.first= link_to "#{t("web-app-theme.list", :default => "Deliverables")}", deliverables_path
+      / %li= link_to "#{t("web-app-theme.new", :default => "New")}", new_deliverable_path
+      %li.active= link_to "#{t("web-app-theme.list", :default => "Deliveries")}", deliveries_index_deliverables_path
+  .content
+    %h2.title
+      = t("web-app-theme.all", :default => "All")
+      Deliveries
+    .inner
+      %fieldset
+        = form_tag manage_deliverables_path, :id => 'management-form', :method => :put do
+          %table.table
+            - if can? :edit, Delivery
+              = text_field_tag 'actual_date_select', nil, :place_holder => 'Date'
+              = submit_tag "Complete"
+              = submit_tag "Incomplete"
+              = submit_tag "Edit"
+              = submit_tag "Delete", :confirm => "Are you sure"
+            %tr
+              %th.first= check_box_tag 'select-all'
+              %th
+                = t("activerecord.attributes.status.name", :default => t("activerecord.labels.name", :default => "Status"))
+              %th= t("web-app-theme.planned_date", :default => "Planned Date")
+              %th
+                = t("activerecord.attributes.deliverable.number", :default => t("activerecord.labels.number", :default => "Deliverable Number"))
+              %th= t("web-app-theme.progress", :default => "Progress")
+              %th Tags
+              %th.last &nbsp;
+            - @deliverables.each do |deliverable|
+              - deliveries = deliverable.deliveries
+              - prog_array = Delivery::PROGRESSES
+              - if params[:search] && params[:search][:deliveries_with_progress] != ""
+                - deliveries = deliveries.select{|d| d.progress == params[:search][:deliveries_with_progress]}
+              - deliveries.each do |delivery|
+                - if params[:search]
+                  - if "#{delivery.status_id}" == params[:search][:deliveries_status_id_equals] || params[:search][:deliveries_status_id_equals] == "" || params[:search] == nil
+                    = render :partial => "deliverables_tr", :locals => {:deliverable => deliverable, :delivery => delivery, :prog_array => prog_array}
+                - else
+                  = render :partial => "deliverables_tr", :locals => {:deliverable => deliverable, :delivery => delivery, :prog_array => prog_array}
+          .actions-bar.wat-cf
+            .actions
+              - if can? :edit, Delivery
+                = submit_tag "Complete"
+                = submit_tag "Incomplete"
+                = submit_tag "Edit"
+                = submit_tag "Delete", :confirm => 'Are you sure?'
+            = will_paginate @deliverables
+                
+- content_for :sidebar, render(:partial => 'deliveries_sidebar')
+:javascript
+  $(function() {
+    $("#actual_date_select").datepicker({dateFormat: "dd/mm/yy"});
+  });
