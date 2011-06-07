@@ -9,10 +9,10 @@ class DeliverablesController < ApplicationController
     
     # {"search"=>{"deliveries_status_id_equals"=>"", "tagged_with_disciplines"=>"", "deliveries_with_progress"=>"complete"}, "commit"=>"Search"}
     
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @deliverables }
-    end
+    # respond_to do |format|
+    #   format.html # index.html.erb
+    #   format.xml  { render :xml => @deliverables }
+    # end
   end
   
   def deliveries_index
