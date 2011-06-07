@@ -22,10 +22,10 @@
           %td= Delivery.percentage_complete(deliveries).round(1)
         %tr
           %td Number of overdue Deliveries
-          %td= Delivery.bsb(deliveries)
+          %td= Delivery.overdue(deliveries).count
         %tr
           %td To be on schedule,
-          %td= Delivery.overdue(deliveries).count
+          %td= Delivery.bsb(deliveries)
         %tr
           %td Total number of deliveries:
           %td= @deliveries.count
