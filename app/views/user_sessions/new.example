@@ -1,0 +1,22 @@
+%h1 Deliverables Schedule
+.block{:id => "block-login"}
+  %h2 Login
+  %div{:class => "content login"}
+    .flash
+      .message-notice
+        - [:notice]
+    = form_for @user_session, :url => {:action => :create} do |f|
+      = f.error_messages
+      %div{:class => "group wat-cf"}
+        .left
+          = f.label :username
+        .right
+          = f.text_field :username
+      %div{:class => "group wat-cf"}
+        .left
+          = f.label :password
+        .right
+          = f.password_field :password
+   	  %div{:class => "group wat-cf"}
+     	  .right
+     	    = f.submit "Log in", :class => "button"

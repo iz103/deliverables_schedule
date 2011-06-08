@@ -1,19 +1,32 @@
-<%# title "Login"%>
-<div id="login-header">
-  <h2>Login</h2>	
-</div>
+<h1>Deliverables Schedule</h1>
+<div class="block" id="block-login">
+  
+  <h2>Login</h2>
+  <div class="content login">
+      <%= form_for @user_session, :url => {:action => :create}, :html => {:class => "form login"} do |f| -%>
+        <%= f.error_messages%>
+    	<div class="group wat-cf">
+    	  <div class="left">
+    	    <%= f.label :username, :class => "label right" %>
+    	  </div>
+    	  <div class="right">
+      	  <%= f.text_field :username, :class => "text_field" %>
+    	  </div>
+    	</div>
+    	<div class="group wat-cf">
+    	  <div class="left">
+      	  <%= f.label :password, :class => "label right" %>
+    	  </div>
+        <div class="right">
+      	  <%= f.password_field :password, :class => "text_field" %>
+        </div>
+    	</div>
+    	<div class="group wat-cf">
+    	  <div class"right">
+       	  <%= f.submit "Log in" %>
+    	  </div>
+    	</div>
+    	<% end -%>	
 
-<div id="login-form">
-  <%= form_for @user_session, :url => {:action => :create} do |f| -%>
-    <%= f.error_messages%>
-	<p>
-	  <%= f.label :username %>
-	  <%= f.text_field :username %>
-	 </p>
-	   <%= f.label :password %>
-	   <%= f.password_field :password %>
-	 </p>
-	 <p><%= f.submit "Log in" %></p>
-	<% end -%>	
+  </div>
 </div>
-

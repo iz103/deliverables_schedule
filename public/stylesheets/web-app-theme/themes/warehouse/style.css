@@ -389,14 +389,3 @@ ul.list li .left  {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-
-/*----------------- Progress ------------------*/
-#overdue {
-  background-color: #ffb9a8;
-}
-#early {
-  background-color: #caffbc;
-}
-#complete {
-  background-color: #caffbc;
-}
