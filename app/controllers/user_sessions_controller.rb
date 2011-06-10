@@ -1,5 +1,5 @@
 class UserSessionsController < ApplicationController
-    layout "sign"
+  layout "sign"
   def new
     @user_session = UserSession.new
   end
