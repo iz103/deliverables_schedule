@@ -393,3 +393,20 @@ ul.list li .left  {
 fieldset {
 	border-style: none;
 }
+
+/*----------------- Progress ------------------*/
+#overdue {
+  background-color: #ffb9a8;
+}
+#early {
+  background-color: #caffbc;
+}
+#complete {
+  background-color: #caffbc;
+}
+
+/*----------------Graph----------------*/
+#placeholder {
+	width: 950px;
+	height: 500px;
+}
