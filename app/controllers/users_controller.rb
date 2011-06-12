@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   before_filter :require_user
   def index
     @users = User.all
-
+    # authorize! :index, @user
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @users }
@@ -26,6 +26,7 @@ class UsersController < ApplicationController
   # GET /users/new.xml
   def new
     @user = User.new
+    authorize! :new, @user
   
     respond_to do |format|
       format.html # new.html.erb
@@ -36,6 +37,9 @@ class UsersController < ApplicationController
   # GET /users/1/edit
   def edit
     @user = current_user #User.find(params[:id])
+    unless params[:id] == "current"
+      authorize! :edit, @user
+    end
   end
 
   # POST /users

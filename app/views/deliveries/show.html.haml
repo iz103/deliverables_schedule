@@ -2,7 +2,7 @@
   .secondary-navigation
     %ul.wat-cf
       %li.first= link_to "#{t("web-app-theme.list", :default => "List")}", deliveries_path
-      %li= link_to "#{t("web-app-theme.new", :default => "New")}", new_delivery_path
+      / %li= link_to "#{t("web-app-theme.new", :default => "New")}", new_delivery_path
       %li.active= link_to "#{t("web-app-theme.show", :default => "Show")}", delivery_path
   .content
     .inner
@@ -27,6 +27,7 @@
           \:
         = @delivery.status_id
       .wat-cf
-        = link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_delivery_path(@delivery), :class => "button"
-        = link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), delivery_path(@delivery), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"
+        - if can? :edit, Delivery
+          = link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_delivery_path(@delivery), :class => "button"
+          = link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), delivery_path(@delivery), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"
 - content_for :sidebar, render(:partial => 'sidebar')

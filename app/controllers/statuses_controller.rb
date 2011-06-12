@@ -10,6 +10,7 @@ class StatusesController < ApplicationController
 
   def new
     @status = Status.new
+    authorize! :new, @status
   end
   
   def create
@@ -28,6 +29,7 @@ class StatusesController < ApplicationController
   
   def edit
     @status = Status.find(params[:id])
+    authorize! :new, @status
   end
   
   def update

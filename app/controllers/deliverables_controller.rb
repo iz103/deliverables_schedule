@@ -37,6 +37,7 @@ class DeliverablesController < ApplicationController
 
   def new
     @deliverable = Deliverable.new
+    authorize! :new, @deliverable
 
     respond_to do |format|
       format.html # new.html.erb
@@ -47,6 +48,7 @@ class DeliverablesController < ApplicationController
 
   def edit
     @deliverable = Deliverable.find(params[:id])
+    authorize! :edit, @deliverable
   end
 
 

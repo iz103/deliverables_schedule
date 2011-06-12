@@ -26,8 +26,9 @@
             %td.last
               = link_to "#{t("web-app-theme.show", :default => "Show")}", user_path(user)
               |
-              \#{link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_user_path(user)} |
-              \#{link_to "#{t("web-app-theme.delete", :default => "Delete")}", user_path(user), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"}
+              - if can? :edit, User
+                \#{link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_user_path(user)} |
+                \#{link_to "#{t("web-app-theme.delete", :default => "Delete")}", user_path(user), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}"}
       .actions-bar.wat-cf
         .actions
 - content_for :sidebar, render(:partial => 'sidebar')

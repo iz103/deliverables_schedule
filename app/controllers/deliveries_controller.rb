@@ -32,6 +32,7 @@ class DeliveriesController < ApplicationController
     @statuses = Status.all
     # @delivery = @deliverable.deliveries.build
     @delivery = Delivery.new
+    authorize! :new, @delivery
     # respond_to do |format|
     #   format.html # new.html.erb
     #   format.xml  { render :xml => @deliverable }
@@ -42,6 +43,7 @@ class DeliveriesController < ApplicationController
     @deliverable = Deliverable.find(params[:deliverable_id])
     @delivery = Delivery.find(params[:id])
     @statuses = Status.all
+    authorize! :edit, @delivery
   end
   
 
