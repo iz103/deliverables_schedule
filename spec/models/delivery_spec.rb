@@ -17,6 +17,20 @@ describe Delivery do
     end
   end
   
+  describe ".planned_deliveries" do
+    before do
+      @delivery_1 = Factory(:delivery, :planned_date => Date.parse("2010-02-01"))
+      @delivery_2 = Factory(:delivery, :planned_date => Date.parse("2010-02-01"))
+      @delivery_3 = Factory(:delivery, :planned_date => Date.parse("2010-02-02"))
+    end
+    
+    it "should give a count for each delivery planned date"
+      deliveries = Delivery.planned_deliveries([@delivery_1, @delivery_2, @delivery_3])
+      deliveries.should == [
+        [Date.parse("2010-02-01").to_time.to_i * 1000, 2],
+        [Date.parse("2010-02-02").to_time.to_i * 1000, 1]
+      ]
+  
   describe ".date_with_count" do
     before do
       @delivery_1 = Factory(:delivery, :planned_date => Date.parse("2010-02-01"))

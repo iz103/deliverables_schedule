@@ -3,7 +3,7 @@ class DeliverablesController < ApplicationController
   def index
     # flash[:notice] = "logged in"  # TODO remove this after fixing cucumber 
     @search = Deliverable.search(params[:search])
-    @deliverables = @search.paginate(:page => params[:page], :per_page => 100)
+    @deliverables = @search.paginate(:page => params[:page], :per_page => 50)
     
     # if "#{delivery.status_id}" == params[:search][:deliveries_status_id_equals] || params[:search][:deliveries_status_id_equals] == "" || params[:search] == nil || params[:search][:deliveries_with_progress] == prog_array[delivery.progresses_mask]  
     
@@ -17,7 +17,7 @@ class DeliverablesController < ApplicationController
   
   def deliveries_index
     @search = Deliverable.search(params[:search])
-    @deliverables = @search.paginate(:page => params[:page], :per_page => 100)
+    @deliverables = @search.paginate(:page => params[:page], :per_page => 50)
     # respond_to do |format|
     #   format.html # index.html.erb
     #   format.xml  { render :xml => @deliverables }

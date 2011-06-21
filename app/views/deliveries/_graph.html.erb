@@ -1,7 +1,26 @@
-<div id="placeholder" style = "width:950px; height:500px"> </div>
+<div id="placeholder" style = "width:800px; height:500px"> </div>
 <script type="text/javascript" charset="utf-8">
 
 <% deliveries = @all_deliveries  %>
+<% dates = deliveries.collect do |d| %>
+  <% if d.actual_date.to_i > d.planned_date.to_i %>
+    <% d.actual_date.to_i %>
+  <% else %>
+    <% d.planned_date.to_i %>
+  <% end %>
+  <% end %>
+<% max_date = (dates.max * 1000) %>
+
+<% dates = deliveries.collect do |d| %>
+  <% if d.actual_date.to_i < d.planned_date.to_i %>
+    <% d.actual_date.to_i %>
+  <% else %>
+    <% d.planned_date.to_i %>
+  <% end %>
+  <% end %>
+<% dates = dates.reject {|d| d == 0}%>
+<% min_date = dates.min * 1000 %>
+  
 var array = <%=h array_or_string_for_javascript(Delivery.planned_date_count(deliveries)) %>;
 var array2 = <%=h array_or_string_for_javascript(Delivery.actual_date_count(deliveries)) %>;
 var cumulativeArray =  toMultiDimensionalArray(array, 2);
@@ -16,8 +35,10 @@ var options = {
 		mode: "time",
 		timeformat: "%b%y",
 		min:1291161600000,
-		max:1354320000000,
-		ticks: 12
+		max:<%= max_date + (1.month.to_i * 1000) %>,
+		ticks: 12,
+		autoscaleMargin: 0.5
+		
 	},
 
 	yaxis: {
@@ -28,8 +49,8 @@ var options = {
 };
 
 $(function (){
-  $.plot($("#placeholder"), [ { label: "Planned Deliveries", data: cumulativeArray  },
-                              { label: "Actual Deliveries", data: cumulativeArray2  }  ], options);	
+  $.plot($("#placeholder"), [ { label: "Cumulative Planned Deliveries", data: cumulativeArray  },
+                              { label: "Cumulative Actual Deliveries", data: cumulativeArray2  }  ], options);	
 });
 
 

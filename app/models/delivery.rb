@@ -73,6 +73,22 @@ class Delivery < ActiveRecord::Base
     end
   end
   
+  def self.planned_date_deliveries(deliveries)
+    dates = []
+    counts = Hash.new(0)
+    deliveries.each do |delivery|
+      counts[delivery.planned_date] += 1
+    end
+    counts_array = counts.sort
+    counts_array_to_i = []
+    counts_array.each do |d|
+      pair = [d[0].to_i * 1000, d[1]]
+      counts_array_to_i << pair
+    end
+    counts_array_to_i
+  end
+  
+  
   def self.planned_date_count(deliveries)
     # deliveries = Delivery.all(:order => "planned_date")
     dates = []
