@@ -88,6 +88,8 @@ class Delivery < ActiveRecord::Base
     counts_array_to_i
   end
   
+
+  
   
   def self.planned_date_count(deliveries)
     # deliveries = Delivery.all(:order => "planned_date")
@@ -122,7 +124,22 @@ class Delivery < ActiveRecord::Base
     result.map{|row| [row["planned_date"].to_date, row["count"].to_i]}
   end
   
-
+  def self.actual_date_deliveries(deliveries)
+    dates = []
+    counts = Hash.new(0)
+    deliveries.each do |delivery|
+      unless delivery.actual_date == nil
+        counts[delivery.actual_date] += 1
+      end
+    end
+    counts_array = counts.sort
+    counts_array_to_i = []
+    counts_array.each do |d|
+      pair = [d[0].to_i * 1000, d[1]]
+      counts_array_to_i << pair
+    end
+    counts_array_to_i
+  end
   
   def self.actual_date_count(deliveries)
     

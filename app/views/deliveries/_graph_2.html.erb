@@ -1,4 +1,4 @@
-<div id="placeholder" style = "width:800px; height:500px"> </div>
+<div id="placeholder_2" style = "width:800px; height:500px"> </div>
 <script type="text/javascript" charset="utf-8">
 
 <% deliveries = @all_deliveries  %>
@@ -21,18 +21,21 @@
 <% dates = dates.reject {|d| d == 0}%>
 <% min_date = dates.min * 1000 %>
   
-var array = <%=h array_or_string_for_javascript(Delivery.planned_date_count(deliveries)) %>;
-var array2 = <%=h array_or_string_for_javascript(Delivery.actual_date_count(deliveries)) %>;
 
-var cumulativeArray =  toMultiDimensionalArray(array, 2);
-var cumulativeArray2 =  toMultiDimensionalArray(array2, 2);
+var array3 = <%=h array_or_string_for_javascript(Delivery.planned_date_deliveries(deliveries)) %>;
+var array4 = <%=h array_or_string_for_javascript(Delivery.actual_date_deliveries(deliveries)) %>;
 
+var cumulativeArray3 =  toMultiDimensionalArray(array3, 2);
+var cumulativeArray4 =  toMultiDimensionalArray(array4, 2);
 var options = {
 	series: {
 		lines: { show: true },
 		points: { show: true }
 	},
 	
+	grid : {
+	  hoverable: true
+	},
 
 	xaxis: {
 		mode: "time",
@@ -40,8 +43,8 @@ var options = {
 		min:1291161600000,
 		max:<%= max_date + (1.month.to_i * 1000) %>,
 		ticks: 12,
-		autoscaleMargin: 0.5	
-	},
+		autoscaleMargin: 0.5
+  },
 
 	yaxis: {
 		min: 0,
@@ -51,8 +54,8 @@ var options = {
 };
 
 $(function (){
-  $.plot($("#placeholder"), [ { label: "Cumulative Planned Deliveries", data: cumulativeArray  },
-                              { label: "Cumulative Actual Deliveries", data: cumulativeArray2  } ], options);	
+  $.plot($("#placeholder_2"), [{ label: "Planned Deliveries Production", data: cumulativeArray3  },
+                               { label: "Actual Deliveries Production", data: cumulativeArray4}], options);	
 });
 
 
