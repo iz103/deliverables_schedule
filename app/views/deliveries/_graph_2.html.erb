@@ -21,13 +21,13 @@
 <% dates = dates.reject {|d| d == 0}%>
 <% min_date = dates.min * 1000 %>
   
-
-var array3 = <%=h array_or_string_for_javascript(Delivery.planned_date_deliveries(deliveries)) %>;
+<% planned_date_deliveries = Delivery.planned_date_deliveries(deliveries) %>
+var array3 = <%=h array_or_string_for_javascript(planned_date_deliveries) %>;
 var array4 = <%=h array_or_string_for_javascript(Delivery.actual_date_deliveries(deliveries)) %>;
 
 var cumulativeArray3 =  toMultiDimensionalArray(array3, 2);
 var cumulativeArray4 =  toMultiDimensionalArray(array4, 2);
-var options = {
+var options_2 = {
 	series: {
 		lines: { show: true },
 		points: { show: true }
@@ -48,14 +48,14 @@ var options = {
 
 	yaxis: {
 		min: 0,
-		max: <%= deliveries.count + 500 %>,
+		max: <%=(planned_date_deliveries.collect {|d| d[1]}.max) + 100  %>,
 		ticks: 10
 	}
 };
 
 $(function (){
   $.plot($("#placeholder_2"), [{ label: "Planned Deliveries Production", data: cumulativeArray3  },
-                               { label: "Actual Deliveries Production", data: cumulativeArray4}], options);	
+                               { label: "Actual Deliveries Production", data: cumulativeArray4}], options_2);	
 });
 
 

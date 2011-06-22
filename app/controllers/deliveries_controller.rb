@@ -5,7 +5,7 @@ class DeliveriesController < ApplicationController
     unless params[:deliverable_id]
       @all_deliveries = Delivery.all(:order => "planned_date")
       @search = Delivery.search(params[:search]) #need to git rid of
-      @deliveries = @search.paginate(:page => params[:page], :per_page => 100) #need to git rid of
+      @deliveries = @search.paginate(:page => params[:page], :per_page => 50) #need to git rid of
       @text = "All deliverables"
     else
     
