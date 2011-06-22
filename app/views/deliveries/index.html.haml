@@ -22,7 +22,9 @@
           %td= Delivery.complete(deliveries).to_i
         %tr
           %td Percentage Complete:
-          %td#complete= Delivery.percentage_complete(deliveries).round(1)
+          %td#complete
+            = Delivery.percentage_complete(deliveries).round(1) 
+            ="%"
         %tr
           %td Number of overdue Deliveries
           %td#overdue= Delivery.overdue(deliveries).count
