@@ -56,7 +56,7 @@ class DeliverablesController < ApplicationController
     @deliverable = Deliverable.new(params[:deliverable])
     respond_to do |format|
       if @deliverable.save
-        format.html { redirect_to(@deliverable, :notice => 'Deliverable was successfully created.') }
+        format.html { redirect_to(deliverables_path, :notice => 'Deliverable was successfully created.') }
         format.xml  { render :xml => @deliverable, :status => :created, :location => @deliverable }
       else
         format.html { render :action => "new" }

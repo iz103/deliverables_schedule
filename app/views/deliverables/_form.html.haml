@@ -1,11 +1,23 @@
 .group
   = f.label :number, t("activerecord.attributes.deliverable.number", :default => "Number"), :class => :label
   = f.text_field :number, :class => 'text_field'
-  %span.description Ex: a simple text
+  %span.description Enter Deliverable Number / Ref
 .group
   = f.label :title, t("activerecord.attributes.deliverable.title", :default => "Title"), :class => :label
   = f.text_field :title, :class => 'text_field'
-  %span.description Ex: a simple text
+  %span.description Ex: Enter Deliverable Description
+  %br
+  %br
+  .group
+    = f.label :discipline, t("activerecord.attributes.deliverable.tags", :default => "Disciplines"), :class => :label
+    = f.select(:discipline_list, Deliverable.discipline_counts, :class => 'text_field')
+    %span.description Ex: Select Discipline
+  %br    
+  .group
+    = f.label :tags, t("activerecord.attributes.deliverable.tags", :default => "Tags"), :class => :label
+    = f.select(:tag_list, Deliverable.tag_counts, :class => 'text_field')
+    %span.description Ex: Select Tag
+  
 .group.navform.wat-cf
   %button.button{:type => "submit"}
     = image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}")
