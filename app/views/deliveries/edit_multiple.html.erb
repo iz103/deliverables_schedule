@@ -31,6 +31,10 @@ $(function() {
   <%#= f.label :actual_date %><br />
   <%#= f.text_field :actual_date %>
 </p>
+<p>
+  <%= f.label :status_id %><br />
+  <%= collection_select(:delivery, :status_id, Status.all, :id, :name) %>
+</p>
 <p><%= f.submit "Update" %></p>
 <% end %>
 

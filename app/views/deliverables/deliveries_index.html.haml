@@ -4,7 +4,7 @@
     %ul.wat-cf
       %li.first= link_to "#{t("web-app-theme.list", :default => "Deliverables")}", deliverables_path
       / %li= link_to "#{t("web-app-theme.new", :default => "New")}", new_deliverable_path
-      %li.active= link_to "#{t("web-app-theme.list", :default => "Deliveries")}", deliveries_index_deliverables_path
+      %li.active= link_to "#{t("web-app-theme.list", :default => "Schedule")}", deliveries_index_deliverables_path
   .content
     %h2.title
       = t("web-app-theme.all", :default => "All")
@@ -45,7 +45,7 @@
               - if can? :edit, Delivery
                 = submit_tag "Complete"
                 = submit_tag "Incomplete"
-                = submit_tag "Edit"
+                = submit_tag "Edit Selection"
                 = submit_tag "Delete", :confirm => 'Are you sure?'
             = will_paginate @deliverables
                 

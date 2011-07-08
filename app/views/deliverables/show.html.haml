@@ -24,22 +24,26 @@
         = @deliverable.tag_list
       %p
         %b
-          = t("activerecord.attributes.deliverable.deliveries", :default => t("activerecord.labels.deliveries", :default => "Deliveries"))
-          \:
-      %table.table
-        %tr
-          %th.first
-            = t("activerecord.attributes.status.name", :default => t("activerecord.labels.name", :default => "Status"))
-          %th
-            = t("activerecord.attributes.planned_date", :default => t("activerecord.labels.planned_date", :default => "Planned Date"))
-          %th
-            = t("activerecord.attributes.Progress", :default => t("activerecord.labels.progress", :default => "Progress"))
-          %th.last &nbsp;
-        - @deliverable.deliveries.each do |delivery|
-          %tr                
-            %td.first= delivery.status.name
-            %td= delivery.planned_date.to_date
-            %td.last= delivery.progress
+          = t("activerecord.attributes.deliverable.deliveries", :default => t("activerecord.labels.deliveries", :default => "Schedule"))
+      - if @deliverable.deliveries == nil    
+        \:
+        %table.table
+          %tr
+            %th.first
+              = t("activerecord.attributes.status.name", :default => t("activerecord.labels.name", :default => "Status"))
+            %th
+              = t("activerecord.attributes.planned_date", :default => t("activerecord.labels.planned_date", :default => "Planned Date"))
+            %th
+              = t("activerecord.attributes.Progress", :default => t("activerecord.labels.progress", :default => "Progress"))
+            %th.last &nbsp;
+          - @deliverable.deliveries.each do |delivery|
+            %tr                
+              %td.first= delivery.status.name
+              %td= delivery.planned_date.to_date
+              %td.last= delivery.progress
+      - else
+        %h4 No scheduled deliveries
+      = link_to "New Delivery", new_deliverable_delivery_path(@deliverable)
       .wat-cf
         - if can? :edit, Deliverable
           = link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_deliverable_path(@deliverable), :class => "button"
